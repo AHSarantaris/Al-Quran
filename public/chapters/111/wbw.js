@@ -15,7 +15,7 @@
         "he earned."
     ],
     "3": [
-        "He will be burnt",
+        "He will burn",
         "(in) a Fire",
         "of",
         "Blazing Flames"
