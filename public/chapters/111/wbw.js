@@ -1,18 +1,18 @@
 {
     "1": [
-        "Perish",
+        "Perished be",
         "(the) hands",
         "(of) Abu",
         "Lahab",
-        "and perish he"
+        "and perished (is) he."
     ],
     "2": [
         "Not",
-        "(will) avail",
-        "him",
+        "avails",
+        "[for] him",
         "his wealth",
         "and what",
-        "he earned"
+        "he earned."
     ],
     "3": [
         "He will be burnt",
