@@ -1,0 +1,9 @@
+s[114].da = {
+    0: "Mennesket",
+    1: "Sig: Jeg søger tilflugt hos menneskets Herre,",
+    2: "menneskets Konge,",
+    3: "menneskets Gud.",
+    4: "Fra ondskaben af den vigende hvisker.",
+    5: "Der hvisker i menneskets bryst.",
+    6: "Fra jinn og mennesker.",
+}

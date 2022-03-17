@@ -1,0 +1,48 @@
+1a {
+    "1": "By the sky containing the forts [i.e. constellations]",
+}
+2a {
+    "2": "And [by] the promised Day",
+}
+3a {
+    "3": "And [by] the witness and what is witnessed,",
+}
+4a {
+    "4": "Destroyed [i.e., cursed] were the companions of the trench",
+    "5": "[Containing] the fire full of fuel,",
+    "6": "When they were sitting near it.",
+    "7": "And they, to what they were doing against the believers, were witnesses. ",
+}
+5a {
+    "8": "And they resented them not except because they believed in Allah, the Exalted in Might, the Praiseworthy,",
+    "9": "To whom belongs the dominion of the heavens and the earth. And Allah, over all things, is Witness.",
+}
+6a {
+    "10": "Indeed, those who have tortured the believing men and believing women and then have not repented will have the punishment of Hell, and they will have the punishment of the Burning Fire.",
+}
+7 {
+    "11": "Indeed, those who have believed and done righteous deeds will have gardens beneath which rivers flow. That is the great attainment.",
+}
+6b {
+    "12": "Indeed, the assault [i.e., vengeance] of your Lord is severe.",
+}
+5b {
+    "13": "Indeed, it is He who originates [creation] and repeats.",
+    "14": "And He is the Forgiving, the Affectionate,",
+    "15": "Honorable Owner of the Throne,",
+    "16": "Effecter of what He intends.",
+}
+4b {
+    "17": "Has there reached you the story of the soldiers -",
+    "18": "[Those of] Pharaoh and Thamūd?",
+}
+3b {
+    "19": "But they who disbelieve are in [persistent] denial,",
+}
+2b {
+    "20": "While Allah encompasses them from behind.",
+}
+1b {
+    "21": "But this is an honored Qur’ān",
+    "22": "[Inscribed] in a Preserved Slate."
+}

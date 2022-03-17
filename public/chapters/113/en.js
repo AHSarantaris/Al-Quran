@@ -1,0 +1,8 @@
+{
+    "0": "Daybreak",
+    "1": "Say: I seek refuge in The Lord of daybreak.",
+    "2": "From the evil of what He has created.",
+    "3": "And from the evil of darkness when it spreads.",
+    "4": "And from the evil of those who blow on knots.",
+    "5": "And from the evil of the envious when he envies."
+}

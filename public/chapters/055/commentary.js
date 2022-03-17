@@ -1,0 +1,3 @@
+{
+    "19-22": "Most say that the 'seas' in verse 19 refers to saltwater and freshwater. This can be justified by verse 25:53 which is very similar to verses 19-20 but specifies that one is fresh and sweet and the other is salty and bitter. However most translate verse 22 to say that 'From both [seas] comes forth pearls and precious coral'. Precious coral is a red gemstone made from a species of corals, however corals do not live in freshwater. This leads to the conclusion that the two seas are the Mediteranean and the Indian Ocean in both of which there are pearls and precious coral even though there is a barrier between them (now the Suez Canal has connected them)."
+}

@@ -1,0 +1,3 @@
+{
+    "41": "Most translations and commentaries change the word descendants to forefathers because they assume that the forefathers of all mankind was on the ship with Noah and it was a global flood. But the word being descendants instead of forefathers it opens up the opportunity that it was a local flood and that all the descendants of the arabs at the time of revelation would have been carried in the ship by their forefathers, but not all their forefathers were carried in the ship."
+}
