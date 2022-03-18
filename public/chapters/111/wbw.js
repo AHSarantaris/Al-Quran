@@ -3,7 +3,7 @@
         "Perished be",
         "(the) hands",
         "(of) Abu",
-        "Lahab",
+        "Lahab,",
         "and perished (is) he."
     ],
     "2": [
@@ -15,10 +15,10 @@
         "he earned."
     ],
     "3": [
-        "He will burn",
-        "(in) a Fire",
-        "of",
-        "Blazing Flames"
+        "He shall burn",
+        "(in) a fire",
+        "full of",
+        "flames."
     ],
     "4": [
         "And his wife",
