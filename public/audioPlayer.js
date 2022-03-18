@@ -20,6 +20,10 @@ function createAudioControls() {
 }
 
 function createRecitationsButton() {
+    let oldElement = document.getElementById('recitations-button');
+    if (oldElement) {
+        oldElement.parentNode.removeChild(oldElement);
+    }
     let numberOfRecitations = audioInfo ? audioInfo.length : 0;
     let recitationsStr = numberOfRecitations === 1 ? 'Recitation' : 'Recitations';
     let button = createDoubleLineDiv(numberOfRecitations + ' <i class="fas fa-caret-up"></i>', recitationsStr, {tagName: 'button', id: 'recitations-button', className: 'icon-button'});
