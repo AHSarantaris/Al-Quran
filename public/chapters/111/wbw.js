@@ -21,15 +21,15 @@
         "flames."
     ],
     "4": [
-        "And his wife",
+        "And his wife,",
         "(the) carrier",
-        "(of) firewood"
+        "(of) firewood."
     ],
     "5": [
-        "In",
+        "Around",
         "her neck",
-        "(will be) a rope",
+        "(is) a rope",
         "of",
-        "palm-fiber"
+        "palm-fiber."
     ]
 }
