@@ -75,9 +75,7 @@ function clickPlayButton(e) {
     let versePlayingButton = document.getElementById('verse-playing');
     let v = parseInt(versePlayingButton.value);
     if (audioPlayerElement.paused) {
-        if (verseView === 1) {
-            audioPlayerElement.currentTime = timeStamps[v] - 0.05;
-        }
+        audioPlayerElement.currentTime = timeStamps[v] - 0.05;
         playFromVerse(v);
         playButton.className = 'fas fa-pause';
         audioPlayerElement.play();
@@ -124,8 +122,8 @@ function setAudio() {
     let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
     $.getJSON(folderPath + 'audio_info.json', function(json){
         audioInfo = json.audio_info;
-        audioPlayerElement.src = folderPath + audioInfo.fileName;
-        timeStamps = audioInfo.timeStamps;
+        audioPlayerElement.src = folderPath + audioInfo[0].fileName;
+        timeStamps = audioInfo[0].timeStamps;
     }).catch(function(){
         console.log("Cannot read local file.");
     }).always(function(){
@@ -134,7 +132,7 @@ function setAudio() {
 }
 
 function audioTimeUpdate(e) {
-    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1]) {
+    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.05) {
         playNextVerse();
     }
 }
