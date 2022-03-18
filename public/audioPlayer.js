@@ -8,37 +8,36 @@ function createAudioPlayer() {
 
 function createAudioControls() {
     currentRecitation = 0;
-    setAudio();
     let res = document.getElementById('audio-controls');
     res.innerHTML = '';
     let playButton = createDiv({tagName: 'button', id: 'play-button', className: 'icon-button fas fa-play'});
     let versePlayingButton = createVersePlayingButton();
     playButton.addEventListener('click', clickPlayButton);
-    let recitationsButton = createRecitationsButton();
     res.appendChild(playButton);
     res.appendChild(versePlayingButton);
-    res.appendChild(recitationsButton);
+    setAudio();
     return res;
 }
 
 function createRecitationsButton() {
-    let numberOfRecitations = audioInfo[currentChapter] ? audioInfo[currentChapter].length : 0;
+    let numberOfRecitations = audioInfo ? audioInfo.length : 0;
     let recitationsStr = numberOfRecitations === 1 ? 'Recitation' : 'Recitations';
     let button = createDoubleLineDiv(numberOfRecitations + ' <i class="fas fa-caret-up"></i>', recitationsStr, {tagName: 'button', id: 'recitations-button', className: 'icon-button'});
     button.disabled = numberOfRecitations ? false : true;
     let items = [];
     for (let i = 0; i < numberOfRecitations; i++) {
-        items.push(createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: audioInfo[currentChapter][i].name}));
+        items.push(createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: audioInfo[i].name}));
         items[i].value = i;
         items[i].addEventListener('click', clickRecitation);
         if (i === currentRecitation) {
             items[i].setAttribute('selected',true);
         }
     }
-    let dropdownContent = createDropdownContent(items);
-    let res = createDropdownButton(button, dropdownContent, {id: 'recitations-dropdown'});
+    let res = createDropdownButton(button, {id: 'recitations-dropdown'});
+    res.appendChild(createDropdownContent(items));
     return res;
 }
+
 
 function clickRecitation(e) {
     let oldElement = document.querySelector(`.dropdown-item[selected]`);
@@ -118,20 +117,16 @@ function blurVersePlaying(e) {
 }
 
 function setAudio() {
-    $.getJSON("timeStamps.json", function(data){
-        console.log(data);
-    }).fail(function(){
+    let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
+    $.getJSON(folderPath + 'audio_info.json', function(json){
+        audioInfo = json.audio_info;
+        audioPlayerElement.src = folderPath + audioInfo.fileName;
+        timeStamps = audioInfo.timeStamps;
+    }).catch(function(){
         console.log("Cannot read local file.");
+    }).always(function(){
+        audioControlsElement.appendChild(createRecitationsButton());
     });
-    if (!audioInfo[currentChapter]) {
-        return;
-    }
-    let currentAudioInfo = audioInfo[currentChapter][currentRecitation];
-    let loc = window.location.href;
-    let dir = loc.substring(0, loc.lastIndexOf('/'));
-    let audioPath = `${dir}/audio/${currentChapter}/${currentAudioInfo.fileName}.ogg`;
-    audioPlayerElement.src = audioPath;
-    timeStamps = currentAudioInfo.timeStamps;
 }
 
 function audioTimeUpdate(e) {

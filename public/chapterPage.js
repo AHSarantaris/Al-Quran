@@ -157,8 +157,8 @@ function createChapterButton() {
     let tafsirButton = createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: 'Tafsir - Sayyid Abul Ala Maududi'});
     tafsirButton.addEventListener('click', clickTafsirButton);
     let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
-    let dropdownContent = createDropdownContent([tafsirButton]);
-    let res = createDropdownButton(button, dropdownContent, {id: 'chapter-button'});
+    let res = createDropdownButton(button, {id: 'chapter-button'});
+    res.appendChild(createDropdownContent([tafsirButton]));
     return res;
 }
 

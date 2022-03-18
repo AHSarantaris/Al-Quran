@@ -1,0 +1,23 @@
+{
+    "audio_info": [
+        {
+            "fileName": "alafasy_fatihah_1428_bismillah.ogg",
+            "name": "Mishary Rashid Alafasy - 1428",
+            "timeStamps": {
+                "1": 0.2,
+                "2": 12.619,
+                "3": 18.943,
+                "4": 24.919,
+                "5": 30.383,
+                "6": 38.051,
+                "7": 44.172
+            }
+        },
+        {
+            "fileName": "alafasy_fatihah_1424.ogg",
+            "name": "Mishary Rashid Alafasy - 1424",
+            "timeStamps": {
+            }
+        }
+    ]
+}

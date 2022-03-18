@@ -99,8 +99,8 @@ function createVerseButton(v) {
     elements[0].addEventListener('click', clickQuranWebsite);
     elements[1].addEventListener('click', clickBetaQuranWebsite);
     let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
-    let dropdownContent = createDropdownContent(elements);
-    let res = createDropdownButton(button, dropdownContent);
+    let res = createDropdownButton(button);
+    res.appendChild(createDropdownContent(elements));
     res.setAttribute('verse',v);
     return res;
 }

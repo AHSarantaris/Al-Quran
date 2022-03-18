@@ -228,7 +228,7 @@ function scrollToCard(chapter) {
     card.scrollIntoView({block: 'center'});
 }
 
-function createDropdownButton(button, dropdownContent, args) {
+function createDropdownButton(button, args) {
     if (!args) {
         args = {};
     }
@@ -239,7 +239,6 @@ function createDropdownButton(button, dropdownContent, args) {
     let res = createDiv(args);
     res.addEventListener('click', clickDropdownButton);
     res.appendChild(button);
-    res.appendChild(dropdownContent);
     return res;
 }
 
@@ -267,6 +266,16 @@ function clickDropdownButton(e) {
         previousContentElement.removeAttribute('selected');
     }
     e.stopPropagation();
+}
+
+function addLeadingZeros(x) {
+    if (x >= 100) {
+        return x;
+    } else if (x >= 10) {
+        return '0'+x;
+    } else {
+        return '00'+x;
+    }
 }
 
 
