@@ -17,7 +17,7 @@
     "3": [
         "He shall burn",
         "(in) a fire",
-        "full of",
+        "(full) of",
         "flames."
     ],
     "4": [
