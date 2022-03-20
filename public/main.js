@@ -55,8 +55,6 @@ let exteriorWordsContainerElement = createDiv({id: 'exterior-words-container'});
 let singleVerseElement = createDiv({id: 'single-verse'});
 let bismillahElement = createDiv({id: 'bismillah', className: 'verse'});
 
-var translationNameElement;
-
 var currentChapter;
 var currentVerse;
 var verseView; // 1: single verse, 2: all verses, 3: external words
@@ -122,7 +120,6 @@ function selectTranslation(translations) {
     for (let i = 0; i < translations.length; i++) {
         if (translations[i].name === 'Saheeh International') {
             translation = translations[i];
-            translationNameElement = createDiv({className: 'translation-name', innerHTML: '— ' + translation.name});
             return;
         }
     }

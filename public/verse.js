@@ -68,7 +68,7 @@ function createVerseElement(v, isSingle, text, words) {
     verseButtonElement = createVerseButton(v);
     wordContainerElement = createDiv({className:'word-container'});
     translationElement = createDiv({className:'verse-translated', innerHTML: text});
-    translationElement.appendChild(translationNameElement.cloneNode(true));
+    translationElement.appendChild(createTranslationName());
     translationElement.querySelectorAll('sup').forEach(element => {
         element.setAttribute('verse',v);
         element.addEventListener('click', clickFootnote);
@@ -84,6 +84,13 @@ function createVerseElement(v, isSingle, text, words) {
     verseElement.appendChild(wordContainerElement);
     verseElement.appendChild(translationElement);
     appendToVerseContainer(verseElement, v, isSingle);
+}
+
+function createTranslationName() {
+    let name = '— ';
+    name += verseTranslations ? 'Andreas Hussain' : translation.name;
+    let res = createDiv({className: 'translation-name', innerHTML:  name});
+    return res;
 }
 
 function createWordElement(v, w, word) {
