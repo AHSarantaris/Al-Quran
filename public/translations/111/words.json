@@ -3,7 +3,7 @@
         [
             "تَبَّتْ",
             "tabbat",
-            "Perish"
+            "Ruined be"
         ],
         [
             "يَدَآ",
@@ -18,12 +18,12 @@
         [
             "لَهَبٍۢ",
             "lahabin",
-            "Lahab"
+            "Lahab,"
         ],
         [
             "وَتَبَّ",
             "watabba",
-            "and perish he"
+            "and ruined (is) he."
         ]
     ],
     "2": [
@@ -35,7 +35,7 @@
         [
             "أَغْنَىٰ",
             "aghnā",
-            "(will) avail"
+            "avails"
         ],
         [
             "عَنْهُ",
@@ -55,14 +55,14 @@
         [
             "كَسَبَ",
             "kasaba",
-            "he earned"
+            "he earned."
         ]
     ],
     "3": [
         [
             "سَيَصْلَىٰ",
             "sayaṣlā",
-            "He will be burnt"
+            "He shall burn"
         ],
         [
             "نَارًۭا",
@@ -72,19 +72,19 @@
         [
             "ذَاتَ",
             "dhāta",
-            "of"
+            "(full) of"
         ],
         [
             "لَهَبٍۢ",
             "lahabin",
-            "Blazing Flames"
+            "flames."
         ]
     ],
     "4": [
         [
             "وَٱمْرَأَتُهُۥ",
             "wa-im'ra-atuhu",
-            "And his wife"
+            "And his wife,"
         ],
         [
             "حَمَّالَةَ",
@@ -94,14 +94,14 @@
         [
             "ٱلْحَطَبِ",
             "l-ḥaṭabi",
-            "(of) firewood"
+            "(of) firewood."
         ]
     ],
     "5": [
         [
             "فِى",
             "fī",
-            "In"
+            "Around"
         ],
         [
             "جِيدِهَا",
@@ -111,7 +111,7 @@
         [
             "حَبْلٌۭ",
             "ḥablun",
-            "(will be) a rope"
+            "(is) a rope"
         ],
         [
             "مِّن",
@@ -121,7 +121,7 @@
         [
             "مَّسَدٍۭ",
             "masadin",
-            "palm-fiber"
+            "palm-fiber."
         ]
     ]
 }

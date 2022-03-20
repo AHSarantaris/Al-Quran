@@ -3,7 +3,7 @@
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "أَعُوذُ",
@@ -18,7 +18,7 @@
         [
             "ٱلْفَلَقِ",
             "l-falaqi",
-            "(of) the dawn"
+            "(of) the daybreak,"
         ]
     ],
     "2": [
@@ -40,7 +40,7 @@
         [
             "خَلَقَ",
             "khalaqa",
-            "He created"
+            "He created,"
         ]
     ],
     "3": [
@@ -67,7 +67,7 @@
         [
             "وَقَبَ",
             "waqaba",
-            "it spreads"
+            "it spreads,"
         ]
     ],
     "4": [
@@ -83,7 +83,7 @@
         ],
         [
             "ٱلنَّفَّـٰثَـٰتِ",
-            "l-nafāthāti",
+            "l-naffāthāti",
             "(of) the blowers"
         ],
         [
@@ -94,7 +94,7 @@
         [
             "ٱلْعُقَدِ",
             "l-Ꜥuqadi",
-            "the knots"
+            "the knots,"
         ]
     ],
     "5": [
@@ -121,7 +121,7 @@
         [
             "حَسَدَ",
             "ḥasada",
-            "he envies"
+            "he envies."
         ]
     ]
 }

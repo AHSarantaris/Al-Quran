@@ -3,7 +3,7 @@
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "أَعُوذُ",
@@ -18,7 +18,7 @@
         [
             "ٱلنَّاسِ",
             "l-nāsi",
-            "(of) mankind"
+            "(of) mankind,"
         ]
     ],
     "2": [
@@ -30,7 +30,7 @@
         [
             "ٱلنَّاسِ",
             "l-nāsi",
-            "(of) mankind"
+            "(of) mankind,"
         ]
     ],
     "3": [
@@ -42,7 +42,7 @@
         [
             "ٱلنَّاسِ",
             "l-nāsi",
-            "(of) mankind"
+            "(of) mankind,"
         ]
     ],
     "4": [
@@ -59,12 +59,12 @@
         [
             "ٱلْوَسْوَاسِ",
             "l-waswāsi",
-            "(of) the whisperer"
+            "(of) the whisperer,"
         ],
         [
             "ٱلْخَنَّاسِ",
-            "l-khanāsi",
-            "the one who withdraws"
+            "l-khannāsi",
+            "the withdrawing."
         ]
     ],
     "5": [
@@ -86,12 +86,12 @@
         [
             "صُدُورِ",
             "ṣudūri",
-            "(the) breasts"
+            "(the) chests"
         ],
         [
             "ٱلنَّاسِ",
             "l-nāsi",
-            "(of) mankind"
+            "(of) mankind,"
         ]
     ],
     "6": [
@@ -102,13 +102,13 @@
         ],
         [
             "ٱلْجِنَّةِ",
-            "l-jinati",
+            "l-jinnati",
             "the jinn"
         ],
         [
             "وَٱلنَّاسِ",
             "wal-nāsi",
-            "and men"
+            "and mandkind."
         ]
     ]
 }

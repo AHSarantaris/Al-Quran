@@ -64,6 +64,7 @@ var chapterScrollTop;
 var verseTranslations;
 var wordTranslations;
 let wordSettings = {arabic: false, transliteration: true, translation: true};
+let canReadLocalFiles = true;
 
 document.onclick = function(e) {
     let dropdownContentElement = document.querySelector('.dropdown-content[selected]');

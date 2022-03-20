@@ -3,7 +3,7 @@
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "هُوَ",
@@ -13,24 +13,24 @@
         [
             "ٱللَّهُ",
             "l-lahu",
-            "(is) Allah"
+            "(is) Allah,"
         ],
         [
             "أَحَدٌ",
             "aḥadun",
-            "the One"
+            "One."
         ]
     ],
     "2": [
         [
             "ٱللَّهُ",
             "al-lahu",
-            "Allah"
+            "Allah,"
         ],
         [
             "ٱلصَّمَدُ",
             "l-ṣamadu",
-            "the Eternal, the Absolute"
+            "the Self-Sufficient."
         ]
     ],
     "3": [
@@ -52,7 +52,7 @@
         [
             "يُولَدْ",
             "yūlad",
-            "He is begotten"
+            "He is begotten,"
         ]
     ],
     "4": [
@@ -64,12 +64,12 @@
         [
             "يَكُن",
             "yakun",
-            "is"
+            "(there) is"
         ],
         [
             "لَّهُۥ",
             "lahu",
-            "for Him"
+            "to Him"
         ],
         [
             "كُفُوًا",
@@ -79,7 +79,7 @@
         [
             "أَحَدٌۢ",
             "aḥadun",
-            "any [one]"
+            "anyone."
         ]
     ]
 }

@@ -5,12 +5,11 @@ function showChapterPage() {
     chapterPageElement.style.display = 'flex';
     createChapterTopbar(currentChapter);
     audioControlsElement = createAudioControls();
-    loadVerseTranslations();
-    loadWordTranslations();
-    if (verseView) {
-        showVerseView();
+    if (canReadLocalFiles) {
+        loadVerseTranslations();
+        loadWordTranslations();
     } else {
-        showVerseSelector();
+        showVerseView();
     }
 }
 
@@ -18,6 +17,9 @@ function loadVerseTranslations() {
     let folderPath = `translations/${addLeadingZeros(currentChapter)}/`;
     $.getJSON(folderPath + 'en.json', function(json){
         verseTranslations = json;
+        if (wordTranslations) {
+            showVerseView();
+        }
     }).catch(function(){
         console.log("Cannot read local file.");
     });
@@ -27,6 +29,9 @@ function loadWordTranslations() {
     let folderPath = `translations/${addLeadingZeros(currentChapter)}/`;
     $.getJSON(folderPath + 'words.json', function(json){
         wordTranslations = json;
+        if (verseTranslations) {
+            showVerseView();
+        }
     }).catch(function(){
         console.log("Cannot read local file.");
     });
@@ -39,10 +44,14 @@ function showVerseSelector() {
 }
 
 function showVerseView() {
-    previousVerseElement.style.display = 'flex';
-    nextVerseElement.style.display = 'flex';
-    setVerseView(verseView);
-    showCurrentVerse();
+    if (verseView) {
+        previousVerseElement.style.display = 'flex';
+        nextVerseElement.style.display = 'flex';
+        setVerseView(verseView);
+        showCurrentVerse();
+    } else {
+        showVerseSelector();
+    }
 }
 
 
