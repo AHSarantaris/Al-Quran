@@ -33,6 +33,8 @@ var chapters;
 main();
 
 function main() {
+    getChapters();
+    createFiles2();
 }
 
 
@@ -43,7 +45,7 @@ function folderStr(c) {
     } else if (str.length === 2) {
         str = '0'+str;
     }
-    return 'Chapter/' + str;
+    return 'translations/' + str;
 }
 
 function getChapters() {
@@ -52,7 +54,33 @@ function getChapters() {
     chapters = response.chapters;
 }
 
-function createFiles() {
+function createFiles2() {
+    var wbwPath, wbw, verse, arabic, translated, transliterated, str;
+    for (let c = 1; c <= 114; c++) {
+        str = folderStr(c);
+        wbwPath = str+'/words.json';
+        wbw = {};
+        for (let v = 1; v <= chapters[c-1].verses_count; v++) {
+            settings.url = `${baseURL}verses/by_key/${c}:${v}${languageQuery}&words=1&word_fields=location,text_uthmani`;
+            verse = JSON.parse($.ajax(settings).responseText).verse;
+            wbw[v] = [];
+            for (let w = 0; w < verse.words.length - 1; w++) {
+                arabic = verse.words[w].text_uthmani;
+                translated = verse.words[w].translation.text;
+                transliterated = verse.words[w].transliteration.text.replace(/ʿ/g, 'Ꜥ');
+                if (translated) {
+                   wbw[v].push([arabic, transliterated, translated]); 
+                }                
+            }
+        }
+        fs.writeFile(wbwPath, JSON.stringify(wbw, null, 4), function (err) {
+            if (err) throw err;
+        });
+        console.log(c)
+    }
+}
+
+function createFilesOld() {
     var wbwPath, enPath, wbw, en, verse, word, str;
     let enElement = document.createElement('div');
     for (let c = 1; c <= 114; c++) {

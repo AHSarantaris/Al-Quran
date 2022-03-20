@@ -63,6 +63,10 @@ var verseView; // 1: single verse, 2: all verses, 3: external words
 var homeScrollTop;
 var chapterScrollTop;
 
+var verseTranslations;
+var wordTranslations;
+let wordSettings = {arabic: false, transliteration: true, translation: true};
+
 document.onclick = function(e) {
     let dropdownContentElement = document.querySelector('.dropdown-content[selected]');
     if (dropdownContentElement) {
@@ -216,6 +220,10 @@ function scrollToVerse(verseElement) {
 
 function createDoubleLineDiv(line1, line2, args) {
     args = args ? args : {};
+    if (!args.className) {
+        args.className = '';
+    }
+    args.className += ' double-line';
     let lineElement1 = createDiv({className: 'medium-text', innerHTML: line1});
     let lineElement2 = createDiv({className: 'small-text', innerHTML: line2});
     args.children = [lineElement1, lineElement2];

@@ -1,8 +1,4 @@
 
-function createHomePage() {
-}
-
-
 function showHomePage() {
     chapterPageElement.style.display = 'none';
     homePageElement.style.display = 'flex';

@@ -5,11 +5,31 @@ function showChapterPage() {
     chapterPageElement.style.display = 'flex';
     createChapterTopbar(currentChapter);
     audioControlsElement = createAudioControls();
+    loadVerseTranslations();
+    loadWordTranslations();
     if (verseView) {
         showVerseView();
     } else {
         showVerseSelector();
     }
+}
+
+function loadVerseTranslations() {
+    let folderPath = `translations/${addLeadingZeros(currentChapter)}/`;
+    $.getJSON(folderPath + 'en.json', function(json){
+        verseTranslations = json;
+    }).catch(function(){
+        console.log("Cannot read local file.");
+    });
+}
+
+function loadWordTranslations() {
+    let folderPath = `translations/${addLeadingZeros(currentChapter)}/`;
+    $.getJSON(folderPath + 'words.json', function(json){
+        wordTranslations = json;
+    }).catch(function(){
+        console.log("Cannot read local file.");
+    });
 }
 
 function showVerseSelector() {
@@ -154,11 +174,9 @@ function createVerseSelectorButton() {
 }
 
 function createChapterButton() {
-    let tafsirButton = createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: 'Tafsir - Sayyid Abul Ala Maududi'});
-    tafsirButton.addEventListener('click', clickTafsirButton);
     let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
     let res = createDropdownButton(button, {id: 'chapter-button'});
-    res.appendChild(createDropdownContent([tafsirButton]));
+    res.appendChild(createDropdownContent([]));
     return res;
 }
 
@@ -169,8 +187,4 @@ function clickVerseSelectorButton(e) {
     showVerseSelector();
 }
 
-function clickTafsirButton(e) {
-    let url = `http://www.englishtafsir.com/Quran/${currentChapter}/index.html`;
-    window.open(url);
-}
 

@@ -43,61 +43,87 @@ function createBismillah() {
     bismillahElement.appendChild(wordContainerElement);
 }
 
-
-
 function createVerse(v, isSingle) {
     if (v === 0) {
         appendToVerseContainer(bismillahElement, 0, true);
         return;
+    } else if (verseTranslations) {
+        createVerseElement(v, isSingle, verseTranslations[v], wordTranslations[v]);
+    } else {
+        settings.url = `${baseURL}verses/by_key/${currentChapter}:${v}${languageQuery}&translations=${translation.id}&words=1&word_fields=location`;
+        $.ajax(settings).done(function (response) {
+            let verseData = response.verse;
+            createVerseElement(v, isSingle, verseData.translations[0].text, verseData.words);
+        });
     }
-    var verseData, word, wordContainerElement, translationElement, wordElement, numberElement, verseElement, headerElement, verseButtonElement;
-    settings.url = `${baseURL}verses/by_key/${currentChapter}:${v}${languageQuery}&translations=${translation.id}&words=1&word_fields=location,text_uthmani`;
-    $.ajax(settings).done(function (response) {
-        verseData = response.verse;
-        verseElement = createDiv({className: 'verse'});
-        headerElement = createDiv({className: 'verse-header'});
-        numberElement = createDiv({tagName: 'span', className:'verse-number', innerHTML: v});
-        verseButtonElement = createVerseButton(v);
-        wordContainerElement = createDiv({className:'word-container'});
-        translationElement = createDiv({className:'verse-translated', innerHTML: verseData.translations[0].text});
-        translationElement.appendChild(translationNameElement.cloneNode(true));
-        translationElement.querySelectorAll('sup').forEach(element => {
-            element.setAttribute('verse',v);
-            element.addEventListener('click', clickFootnote);
-        });;
-        for (let j = 0; j < verseData.words.length - 1; j++) {
-            word = verseData.words[j];
-            wordElement = createWordElement(v,j,word);
-            wordContainerElement.appendChild(wordElement);
-        }
-        headerElement.appendChild(numberElement);
-        headerElement.appendChild(verseButtonElement);
-        verseElement.appendChild(headerElement);
-        verseElement.appendChild(wordContainerElement);
-        verseElement.appendChild(translationElement);
-        appendToVerseContainer(verseElement, v, isSingle);
-    });
 }
 
-function createWordElement(v,w,word) {
+
+function createVerseElement(v, isSingle, text, words) {
+    let wordCount = words.length - (verseTranslations ? 0 : 1);
+    var word, wordContainerElement, translationElement, wordElement, numberElement, verseElement, headerElement, verseButtonElement;
+    verseElement = createDiv({className: 'verse'});
+    headerElement = createDiv({className: 'verse-header'});
+    numberElement = createDiv({tagName: 'span', className:'verse-number', innerHTML: v});
+    verseButtonElement = createVerseButton(v);
+    wordContainerElement = createDiv({className:'word-container'});
+    translationElement = createDiv({className:'verse-translated', innerHTML: text});
+    translationElement.appendChild(translationNameElement.cloneNode(true));
+    translationElement.querySelectorAll('sup').forEach(element => {
+        element.setAttribute('verse',v);
+        element.addEventListener('click', clickFootnote);
+    });
+    for (let j = 0; j < wordCount; j++) {
+        word = words[j];
+        wordElement = createWordElement(v,j,word);
+        wordContainerElement.appendChild(wordElement);
+    }
+    headerElement.appendChild(numberElement);
+    headerElement.appendChild(verseButtonElement);
+    verseElement.appendChild(headerElement);
+    verseElement.appendChild(wordContainerElement);
+    verseElement.appendChild(translationElement);
+    appendToVerseContainer(verseElement, v, isSingle);
+}
+
+function createWordElement(v, w, word) {
+    let wordText = createWordText(word);
     let wordElement = createDiv({className:'word'});
-    let transliteratedWord = createDiv({className:'transliterated-word', id: `${currentChapter}:${v}:${w+1}`, innerHTML: word.transliteration.text.replace(/ʿ/g, 'Ꜥ')});
-    transliteratedWord.addEventListener('click',clickWord)
-    let translatedWord = createDiv({className:'translated-word', innerHTML: word.translation.text});
-    wordElement.appendChild(transliteratedWord);
-    wordElement.appendChild(translatedWord);
+    if (wordSettings.transliteration) {
+        let transliteratedWord = createDiv({className:'transliterated-word', id: `${currentChapter}:${v}:${w+1}`, innerHTML: wordText.transliteration});
+        transliteratedWord.addEventListener('click',clickWord);
+        wordElement.appendChild(transliteratedWord);
+    }
+    if (wordSettings.translation) {
+        let translatedWord = createDiv({className:'translated-word', innerHTML: wordText.translation});
+        wordElement.appendChild(translatedWord);
+    }
     return wordElement;
+}
+
+function createWordText(word) {
+    let res = {};
+    if (wordSettings.arabic) {
+        res.arabic = verseTranslations ? word[0] : word.text_uthmani;
+    }
+    if (wordSettings.transliteration) {
+        res.transliteration = verseTranslations ? word[1] : word.transliteration.text;
+    }
+    if (wordSettings.translation) {
+        res.translation = verseTranslations ? word[2] : word.translation.text;
+    }
+    return res;   
 }
 
 
 function createVerseButton(v) {
-    let titles = ['quran.com', 'beta.quran.com'];
+    let titles = ['Tafsir - Sayyid Abul Ala Maududi', 'Quran.com'];
     let elements = [];
     for (let i = 0; i < titles.length; i++) {
         elements.push(createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: titles[i]}));
     }
-    elements[0].addEventListener('click', clickQuranWebsite);
-    elements[1].addEventListener('click', clickBetaQuranWebsite);
+    elements[0].addEventListener('click', clickTafsirWebsite);
+    elements[1].addEventListener('click', clickQuranWebsite);
     let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
     let res = createDropdownButton(button);
     res.appendChild(createDropdownContent(elements));
@@ -126,9 +152,9 @@ function clickQuranWebsite(e) {
     openQuranWebsite(false,currentChapter, e.currentTarget.parentNode.parentNode.getAttribute('verse'));
 }
 
-function clickBetaQuranWebsite(e) {
-    console.log(e.currentTarget.parentNode.parentNode)
-    openQuranWebsite(true,currentChapter, e.currentTarget.parentNode.parentNode.getAttribute('verse'));
+function clickTafsirWebsite(e) {
+    let url = `http://www.englishtafsir.com/Quran/${currentChapter}/index.html`;
+    window.open(url);
 }
 
 function clickFootnote(e) {

@@ -44,10 +44,15 @@ function createRecitationsButton() {
 
 
 function clickRecitation(e) {
-    let oldElement = document.querySelector(`.dropdown-item[selected]`);
+    let oldElement = document.querySelector('.dropdown-item[selected]');
+    if (oldElement === e.currentTarget) {
+        return;
+    }
+    pauseAudio();
     oldElement.removeAttribute('selected');
     currentRecitation = e.currentTarget.value;
-    e.currentTarget.setAttribute('selected',true);;
+    e.currentTarget.setAttribute('selected',true);
+    updateRecitation();
 }
 
 function createVersePlayingButton() {
@@ -92,7 +97,7 @@ function pauseAudio() {
 
 function clickVersePlayingButton(e) {
     pauseAudio();
-    document.getElementById('verse-playing').select();
+    document.getElementById('verse-playing').value = '';
 }
 
 function keyupVersePlaying(e) {
@@ -107,10 +112,11 @@ function blurVersePlaying(e) {
     if (isNaN(v) || v < -versePlayingButton.max || v > versePlayingButton.max || (v === 0 && versePlayingButton.min === '1')) {
         v = parseInt(versePlayingButton.defaultValue);
         versePlayingButton.value = v;
+        return;
     } else if (v < 0) {
         v = chapters[currentChapter-1].verses_count+v+1;
     } 
-    if (Number.isInteger(currentVerse)) {
+    if (verseView === 1) {
         setCurrentVerse(v);
     } else {
         let nextVerseElement = document.querySelector(`.verse[verse="${v}"]`);
@@ -122,13 +128,19 @@ function setAudio() {
     let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
     $.getJSON(folderPath + 'audio_info.json', function(json){
         audioInfo = json.audio_info;
-        audioPlayerElement.src = folderPath + audioInfo[0].fileName;
-        timeStamps = audioInfo[0].timeStamps;
+        currentRecitation = 0;
+        updateRecitation();
     }).catch(function(){
         console.log("Cannot read local file.");
     }).always(function(){
         audioControlsElement.appendChild(createRecitationsButton());
     });
+}
+
+function updateRecitation() {
+    let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
+    audioPlayerElement.src = folderPath + audioInfo[currentRecitation].fileName;
+    timeStamps = audioInfo[currentRecitation].timeStamps;
 }
 
 function audioTimeUpdate(e) {

@@ -1,0 +1,947 @@
+{
+    "1": [
+        [
+            "عَمَّ",
+            "Ꜥamma",
+            "About what"
+        ],
+        [
+            "يَتَسَآءَلُونَ",
+            "yatasāalūna",
+            "are they asking one another"
+        ]
+    ],
+    "2": [
+        [
+            "عَنِ",
+            "Ꜥani",
+            "About"
+        ],
+        [
+            "ٱلنَّبَإِ",
+            "l-naba-i",
+            "the News"
+        ],
+        [
+            "ٱلْعَظِيمِ",
+            "l-Ꜥaẓīmi",
+            "the Great"
+        ]
+    ],
+    "3": [
+        [
+            "ٱلَّذِى",
+            "alladhī",
+            "(About) which"
+        ],
+        [
+            "هُمْ",
+            "hum",
+            "they"
+        ],
+        [
+            "فِيهِ",
+            "fīhi",
+            "(are) concerning it"
+        ],
+        [
+            "مُخْتَلِفُونَ",
+            "mukh'talifūna",
+            "(in) disagreement"
+        ]
+    ],
+    "4": [
+        [
+            "كَلَّا",
+            "kallā",
+            "Nay"
+        ],
+        [
+            "سَيَعْلَمُونَ",
+            "sayaꜤlamūna",
+            "(soon) they will know"
+        ]
+    ],
+    "5": [
+        [
+            "ثُمَّ",
+            "thumma",
+            "Then"
+        ],
+        [
+            "كَلَّا",
+            "kallā",
+            "Nay"
+        ],
+        [
+            "سَيَعْلَمُونَ",
+            "sayaꜤlamūna",
+            "(soon) they will know"
+        ]
+    ],
+    "6": [
+        [
+            "أَلَمْ",
+            "alam",
+            "Have not"
+        ],
+        [
+            "نَجْعَلِ",
+            "najꜤali",
+            "We made"
+        ],
+        [
+            "ٱلْأَرْضَ",
+            "l-arḍa",
+            "the earth"
+        ],
+        [
+            "مِهَـٰدًۭا",
+            "mihādan",
+            "a resting place"
+        ]
+    ],
+    "7": [
+        [
+            "وَٱلْجِبَالَ",
+            "wal-jibāla",
+            "And the mountains"
+        ],
+        [
+            "أَوْتَادًۭا",
+            "awtādan",
+            "(as) pegs"
+        ]
+    ],
+    "8": [
+        [
+            "وَخَلَقْنَـٰكُمْ",
+            "wakhalaqnākum",
+            "And We created you"
+        ],
+        [
+            "أَزْوَٰجًۭا",
+            "azwājan",
+            "(in) pairs"
+        ]
+    ],
+    "9": [
+        [
+            "وَجَعَلْنَا",
+            "wajaꜤalnā",
+            "And We made"
+        ],
+        [
+            "نَوْمَكُمْ",
+            "nawmakum",
+            "your sleep"
+        ],
+        [
+            "سُبَاتًۭا",
+            "subātan",
+            "(for) rest"
+        ]
+    ],
+    "10": [
+        [
+            "وَجَعَلْنَا",
+            "wajaꜤalnā",
+            "And We made"
+        ],
+        [
+            "ٱلَّيْلَ",
+            "al-layla",
+            "the night"
+        ],
+        [
+            "لِبَاسًۭا",
+            "libāsan",
+            "(as) covering"
+        ]
+    ],
+    "11": [
+        [
+            "وَجَعَلْنَا",
+            "wajaꜤalnā",
+            "And We made"
+        ],
+        [
+            "ٱلنَّهَارَ",
+            "l-nahāra",
+            "the day"
+        ],
+        [
+            "مَعَاشًۭا",
+            "maꜤāshan",
+            "(for) livelihood"
+        ]
+    ],
+    "12": [
+        [
+            "وَبَنَيْنَا",
+            "wabanaynā",
+            "And We constructed"
+        ],
+        [
+            "فَوْقَكُمْ",
+            "fawqakum",
+            "over you"
+        ],
+        [
+            "سَبْعًۭا",
+            "sabꜤan",
+            "seven"
+        ],
+        [
+            "شِدَادًۭا",
+            "shidādan",
+            "strong"
+        ]
+    ],
+    "13": [
+        [
+            "وَجَعَلْنَا",
+            "wajaꜤalnā",
+            "And We placed"
+        ],
+        [
+            "سِرَاجًۭا",
+            "sirājan",
+            "a lamp"
+        ],
+        [
+            "وَهَّاجًۭا",
+            "wahhājan",
+            "burning"
+        ]
+    ],
+    "14": [
+        [
+            "وَأَنزَلْنَا",
+            "wa-anzalnā",
+            "And We sent down"
+        ],
+        [
+            "مِنَ",
+            "mina",
+            "from"
+        ],
+        [
+            "ٱلْمُعْصِرَٰتِ",
+            "l-muꜤ'ṣirāti",
+            "the rain clouds"
+        ],
+        [
+            "مَآءًۭ",
+            "māan",
+            "water"
+        ],
+        [
+            "ثَجَّاجًۭا",
+            "thajjājan",
+            "pouring abundantly"
+        ]
+    ],
+    "15": [
+        [
+            "لِّنُخْرِجَ",
+            "linukh'rija",
+            "That We may bring forth"
+        ],
+        [
+            "بِهِۦ",
+            "bihi",
+            "thereby"
+        ],
+        [
+            "حَبًّۭا",
+            "ḥabban",
+            "grain"
+        ],
+        [
+            "وَنَبَاتًۭا",
+            "wanabātan",
+            "and vegetation"
+        ]
+    ],
+    "16": [
+        [
+            "وَجَنَّـٰتٍ",
+            "wajannātin",
+            "And gardens"
+        ],
+        [
+            "أَلْفَافًا",
+            "alfāfan",
+            "(of) thick foliage"
+        ]
+    ],
+    "17": [
+        [
+            "إِنَّ",
+            "inna",
+            "Indeed"
+        ],
+        [
+            "يَوْمَ",
+            "yawma",
+            "(the) Day"
+        ],
+        [
+            "ٱلْفَصْلِ",
+            "l-faṣli",
+            "(of) the Judgment"
+        ],
+        [
+            "كَانَ",
+            "kāna",
+            "is"
+        ],
+        [
+            "مِيقَـٰتًۭا",
+            "mīqātan",
+            "an appointed time"
+        ]
+    ],
+    "18": [
+        [
+            "يَوْمَ",
+            "yawma",
+            "(The) Day"
+        ],
+        [
+            "يُنفَخُ",
+            "yunfakhu",
+            "(in which) shall be blown"
+        ],
+        [
+            "فِى",
+            "fī",
+            "in"
+        ],
+        [
+            "ٱلصُّورِ",
+            "l-ṣūri",
+            "the trumpet"
+        ],
+        [
+            "فَتَأْتُونَ",
+            "fatatūna",
+            "and you will come forth"
+        ],
+        [
+            "أَفْوَاجًۭا",
+            "afwājan",
+            "(in) crowds"
+        ]
+    ],
+    "19": [
+        [
+            "وَفُتِحَتِ",
+            "wafutiḥati",
+            "And is opened"
+        ],
+        [
+            "ٱلسَّمَآءُ",
+            "l-samāu",
+            "the heaven"
+        ],
+        [
+            "فَكَانَتْ",
+            "fakānat",
+            "and becomes"
+        ],
+        [
+            "أَبْوَٰبًۭا",
+            "abwāban",
+            "gateways"
+        ]
+    ],
+    "20": [
+        [
+            "وَسُيِّرَتِ",
+            "wasuyyirati",
+            "And are moved"
+        ],
+        [
+            "ٱلْجِبَالُ",
+            "l-jibālu",
+            "the mountains"
+        ],
+        [
+            "فَكَانَتْ",
+            "fakānat",
+            "and become"
+        ],
+        [
+            "سَرَابًا",
+            "sarāban",
+            "a mirage"
+        ]
+    ],
+    "21": [
+        [
+            "إِنَّ",
+            "inna",
+            "Indeed"
+        ],
+        [
+            "جَهَنَّمَ",
+            "jahannama",
+            "Hell"
+        ],
+        [
+            "كَانَتْ",
+            "kānat",
+            "is"
+        ],
+        [
+            "مِرْصَادًۭا",
+            "mir'ṣādan",
+            "lying in wait"
+        ]
+    ],
+    "22": [
+        [
+            "لِّلطَّـٰغِينَ",
+            "lilṭṭāghīna",
+            "For the transgressors"
+        ],
+        [
+            "مَـَٔابًۭا",
+            "maāban",
+            "a place of return"
+        ]
+    ],
+    "23": [
+        [
+            "لَّـٰبِثِينَ",
+            "lābithīna",
+            "(They will) be remaining"
+        ],
+        [
+            "فِيهَآ",
+            "fīhā",
+            "therein"
+        ],
+        [
+            "أَحْقَابًۭا",
+            "aḥqāban",
+            "(for) ages"
+        ]
+    ],
+    "24": [
+        [
+            "لَّا",
+            "lā",
+            "Not"
+        ],
+        [
+            "يَذُوقُونَ",
+            "yadhūqūna",
+            "they will taste"
+        ],
+        [
+            "فِيهَا",
+            "fīhā",
+            "therein"
+        ],
+        [
+            "بَرْدًۭا",
+            "bardan",
+            "coolness"
+        ],
+        [
+            "وَلَا",
+            "walā",
+            "and not"
+        ],
+        [
+            "شَرَابًا",
+            "sharāban",
+            "any drink"
+        ]
+    ],
+    "25": [
+        [
+            "إِلَّا",
+            "illā",
+            "Except"
+        ],
+        [
+            "حَمِيمًۭا",
+            "ḥamīman",
+            "scalding water"
+        ],
+        [
+            "وَغَسَّاقًۭا",
+            "waghassāqan",
+            "and purulence"
+        ]
+    ],
+    "26": [
+        [
+            "جَزَآءًۭ",
+            "jazāan",
+            "A recompense"
+        ],
+        [
+            "وِفَاقًا",
+            "wifāqan",
+            "appropriate"
+        ]
+    ],
+    "27": [
+        [
+            "إِنَّهُمْ",
+            "innahum",
+            "Indeed, they"
+        ],
+        [
+            "كَانُوا۟",
+            "kānū",
+            "were"
+        ],
+        [
+            "لَا",
+            "lā",
+            "not"
+        ],
+        [
+            "يَرْجُونَ",
+            "yarjūna",
+            "expecting"
+        ],
+        [
+            "حِسَابًۭا",
+            "ḥisāban",
+            "an account"
+        ]
+    ],
+    "28": [
+        [
+            "وَكَذَّبُوا۟",
+            "wakadhabū",
+            "And they denied"
+        ],
+        [
+            "بِـَٔايَـٰتِنَا",
+            "biāyātinā",
+            "Our Signs"
+        ],
+        [
+            "كِذَّابًۭا",
+            "kidhāban",
+            "(with) denial"
+        ]
+    ],
+    "29": [
+        [
+            "وَكُلَّ",
+            "wakulla",
+            "And every"
+        ],
+        [
+            "شَىْءٍ",
+            "shayin",
+            "thing"
+        ],
+        [
+            "أَحْصَيْنَـٰهُ",
+            "aḥṣaynāhu",
+            "We have enumerated it"
+        ],
+        [
+            "كِتَـٰبًۭا",
+            "kitāban",
+            "(in) a Book"
+        ]
+    ],
+    "30": [
+        [
+            "فَذُوقُوا۟",
+            "fadhūqū",
+            "So taste"
+        ],
+        [
+            "فَلَن",
+            "falan",
+            "and never"
+        ],
+        [
+            "نَّزِيدَكُمْ",
+            "nazīdakum",
+            "We will increase you"
+        ],
+        [
+            "إِلَّا",
+            "illā",
+            "except"
+        ],
+        [
+            "عَذَابًا",
+            "Ꜥadhāban",
+            "(in) punishment"
+        ]
+    ],
+    "31": [
+        [
+            "إِنَّ",
+            "inna",
+            "Indeed"
+        ],
+        [
+            "لِلْمُتَّقِينَ",
+            "lil'muttaqīna",
+            "for the righteous"
+        ],
+        [
+            "مَفَازًا",
+            "mafāzan",
+            "(is) success"
+        ]
+    ],
+    "32": [
+        [
+            "حَدَآئِقَ",
+            "ḥadāiqa",
+            "Gardens"
+        ],
+        [
+            "وَأَعْنَـٰبًۭا",
+            "wa-aꜤnāban",
+            "and grapevines"
+        ]
+    ],
+    "33": [
+        [
+            "وَكَوَاعِبَ",
+            "wakawāꜤiba",
+            "And splendid companions"
+        ],
+        [
+            "أَتْرَابًۭا",
+            "atrāban",
+            "well-matched"
+        ]
+    ],
+    "34": [
+        [
+            "وَكَأْسًۭا",
+            "wakasan",
+            "And a cup"
+        ],
+        [
+            "دِهَاقًۭا",
+            "dihāqan",
+            "full"
+        ]
+    ],
+    "35": [
+        [
+            "لَّا",
+            "lā",
+            "Not"
+        ],
+        [
+            "يَسْمَعُونَ",
+            "yasmaꜤūna",
+            "they will hear"
+        ],
+        [
+            "فِيهَا",
+            "fīhā",
+            "therein"
+        ],
+        [
+            "لَغْوًۭا",
+            "laghwan",
+            "any vain talk"
+        ],
+        [
+            "وَلَا",
+            "walā",
+            "and not"
+        ],
+        [
+            "كِذَّٰبًۭا",
+            "kidhāban",
+            "any falsehood"
+        ]
+    ],
+    "36": [
+        [
+            "جَزَآءًۭ",
+            "jazāan",
+            "(As) a reward"
+        ],
+        [
+            "مِّن",
+            "min",
+            "from"
+        ],
+        [
+            "رَّبِّكَ",
+            "rabbika",
+            "your Lord"
+        ],
+        [
+            "عَطَآءً",
+            "Ꜥaṭāan",
+            "a gift"
+        ],
+        [
+            "حِسَابًۭا",
+            "ḥisāban",
+            "(according to) account"
+        ]
+    ],
+    "37": [
+        [
+            "رَّبِّ",
+            "rabbi",
+            "Lord"
+        ],
+        [
+            "ٱلسَّمَـٰوَٰتِ",
+            "l-samāwāti",
+            "(of) the heavens"
+        ],
+        [
+            "وَٱلْأَرْضِ",
+            "wal-arḍi",
+            "and the earth"
+        ],
+        [
+            "وَمَا",
+            "wamā",
+            "and whatever"
+        ],
+        [
+            "بَيْنَهُمَا",
+            "baynahumā",
+            "(is) between both of them"
+        ],
+        [
+            "ٱلرَّحْمَـٰنِ ۖ",
+            "l-raḥmāni",
+            "the Most Gracious"
+        ],
+        [
+            "لَا",
+            "lā",
+            "not"
+        ],
+        [
+            "يَمْلِكُونَ",
+            "yamlikūna",
+            "they have power"
+        ],
+        [
+            "مِنْهُ",
+            "min'hu",
+            "from Him"
+        ],
+        [
+            "خِطَابًۭا",
+            "khiṭāban",
+            "(to) address"
+        ]
+    ],
+    "38": [
+        [
+            "يَوْمَ",
+            "yawma",
+            "(The) Day"
+        ],
+        [
+            "يَقُومُ",
+            "yaqūmu",
+            "will stand"
+        ],
+        [
+            "ٱلرُّوحُ",
+            "l-rūḥu",
+            "the Spirit"
+        ],
+        [
+            "وَٱلْمَلَـٰٓئِكَةُ",
+            "wal-malāikatu",
+            "and the Angels"
+        ],
+        [
+            "صَفًّۭا ۖ",
+            "ṣaffan",
+            "(in) rows"
+        ],
+        [
+            "لَّا",
+            "lā",
+            "not"
+        ],
+        [
+            "يَتَكَلَّمُونَ",
+            "yatakallamūna",
+            "they will speak"
+        ],
+        [
+            "إِلَّا",
+            "illā",
+            "except"
+        ],
+        [
+            "مَنْ",
+            "man",
+            "(one) who "
+        ],
+        [
+            "أَذِنَ",
+            "adhina",
+            "permits"
+        ],
+        [
+            "لَهُ",
+            "lahu",
+            "[for] him"
+        ],
+        [
+            "ٱلرَّحْمَـٰنُ",
+            "l-raḥmānu",
+            "the Most Gracious"
+        ],
+        [
+            "وَقَالَ",
+            "waqāla",
+            "and he (will) say"
+        ],
+        [
+            "صَوَابًۭا",
+            "ṣawāban",
+            "(what is) correct"
+        ]
+    ],
+    "39": [
+        [
+            "ذَٰلِكَ",
+            "dhālika",
+            "That"
+        ],
+        [
+            "ٱلْيَوْمُ",
+            "l-yawmu",
+            "(is) the Day"
+        ],
+        [
+            "ٱلْحَقُّ ۖ",
+            "l-ḥaqu",
+            "the True"
+        ],
+        [
+            "فَمَن",
+            "faman",
+            "So whoever"
+        ],
+        [
+            "شَآءَ",
+            "shāa",
+            "wills"
+        ],
+        [
+            "ٱتَّخَذَ",
+            "ittakhadha",
+            "let him take"
+        ],
+        [
+            "إِلَىٰ",
+            "ilā",
+            "towards"
+        ],
+        [
+            "رَبِّهِۦ",
+            "rabbihi",
+            "his Lord"
+        ],
+        [
+            "مَـَٔابًا",
+            "maāban",
+            "a return"
+        ]
+    ],
+    "40": [
+        [
+            "إِنَّآ",
+            "innā",
+            "Indeed We"
+        ],
+        [
+            "أَنذَرْنَـٰكُمْ",
+            "andharnākum",
+            "[We] have warned you"
+        ],
+        [
+            "عَذَابًۭا",
+            "Ꜥadhāban",
+            "(of) a punishment"
+        ],
+        [
+            "قَرِيبًۭا",
+            "qarīban",
+            "near"
+        ],
+        [
+            "يَوْمَ",
+            "yawma",
+            "(the) Day"
+        ],
+        [
+            "يَنظُرُ",
+            "yanẓuru",
+            "will see"
+        ],
+        [
+            "ٱلْمَرْءُ",
+            "l-maru",
+            "the man"
+        ],
+        [
+            "مَا",
+            "mā",
+            "what"
+        ],
+        [
+            "قَدَّمَتْ",
+            "qaddamat",
+            "have sent forth"
+        ],
+        [
+            "يَدَاهُ",
+            "yadāhu",
+            "his hands"
+        ],
+        [
+            "وَيَقُولُ",
+            "wayaqūlu",
+            "and will say"
+        ],
+        [
+            "ٱلْكَافِرُ",
+            "l-kāfiru",
+            "the disbeliever"
+        ],
+        [
+            "يَـٰلَيْتَنِى",
+            "yālaytanī",
+            "O I wish"
+        ],
+        [
+            "كُنتُ",
+            "kuntu",
+            "I were"
+        ],
+        [
+            "تُرَٰبًۢا",
+            "turāban",
+            "dust"
+        ]
+    ]
+}

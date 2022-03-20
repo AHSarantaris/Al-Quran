@@ -7,15 +7,19 @@
     --theme-color: #caa673;
     --theme-color: #caa269;
     --theme-color: #c9a677;
-    --theme-color: rgb(199, 164, 118);
-    --theme-color-opaque: rgba(199, 164, 118, 0.6);
+    --theme-color: hsl(34, 42%, 62%);
+    --theme-color: hsl(34, 42%, 58%);
+    --theme-color: hsl(30, 42%, 58%);
+    --theme-color-opaque: hsla(30, 42%, 58%, 0.6);
 
     --text-color-1: #ccc;
+    --text-color-1: #bbb;
     --text-color-2: #bbb;
-    --hover-opacity-1: 0.7;
+    --text-color-2: #aaa;
+    --hover-opacity-1: 0.8;
 
     --border-radius: 6px;
-    --background-color-1: #2d2d2d;
+    --background-color-1: #292929;
     --background-color-2: #333;
     --background-color-3: #444;
     --background-color-4: #555;
@@ -103,6 +107,10 @@ sup:hover  {
     background-color: var(--theme-color-opaque);
     color: white;
 }
+.double-line {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Topbar */
@@ -121,8 +129,15 @@ sup:hover  {
     box-shadow: 0px 2px 8px -2px #222;
 }
 #home-topbar {
+    font-size: 1.1em;
+}
+#title {
     padding: 0 var(--padding-1);
-    font-size: 1.2em;
+    color: var(--theme-color-title);
+}
+#title-english {
+    font-size: 0.65em;
+    color: var(--text-color-2);
 }
 
 /* Content */
@@ -235,8 +250,6 @@ sup:hover  {
     margin: 0 4px 0 8px;
 }
 #chapter-name {
-    display: flex;
-    flex-direction: column;
     flex: 1;
     align-items: baseline;
     column-gap: var(--padding-2);
@@ -259,7 +272,7 @@ sup:hover  {
     font-weight: bold;
 }
 .small-text {
-    font-size: 0.6em;
+    font-size: 0.65em;
     font-weight: bold;
     color: var(--text-color-2);
 }
@@ -580,6 +593,9 @@ sup:hover  {
     .content, .topbar, #audio-controls {
         padding-right: 10%;
         padding-left: 10%;
+    }
+    #title {
+        padding: 0;
     }
     #chapter-name {
         flex-direction: row;

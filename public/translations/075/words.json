@@ -1,0 +1,902 @@
+{
+    "1": [
+        [
+            "لَآ",
+            "lā",
+            "Nay"
+        ],
+        [
+            "أُقْسِمُ",
+            "uq'simu",
+            "I swear"
+        ],
+        [
+            "بِيَوْمِ",
+            "biyawmi",
+            "by (the) Day"
+        ],
+        [
+            "ٱلْقِيَـٰمَةِ",
+            "l-qiyāmati",
+            "(of) the Resurrection"
+        ]
+    ],
+    "2": [
+        [
+            "وَلَآ",
+            "walā",
+            "And nay"
+        ],
+        [
+            "أُقْسِمُ",
+            "uq'simu",
+            "I swear"
+        ],
+        [
+            "بِٱلنَّفْسِ",
+            "bil-nafsi",
+            "by the soul"
+        ],
+        [
+            "ٱللَّوَّامَةِ",
+            "l-lawāmati",
+            "self-accusing"
+        ]
+    ],
+    "3": [
+        [
+            "أَيَحْسَبُ",
+            "ayaḥsabu",
+            "Does think"
+        ],
+        [
+            "ٱلْإِنسَـٰنُ",
+            "l-insānu",
+            "[the] man"
+        ],
+        [
+            "أَلَّن",
+            "allan",
+            "that not"
+        ],
+        [
+            "نَّجْمَعَ",
+            "najmaꜤa",
+            "We will assemble"
+        ],
+        [
+            "عِظَامَهُۥ",
+            "Ꜥiẓāmahu",
+            "his bones"
+        ]
+    ],
+    "4": [
+        [
+            "بَلَىٰ",
+            "balā",
+            "Nay"
+        ],
+        [
+            "قَـٰدِرِينَ",
+            "qādirīna",
+            "(We are) Able"
+        ],
+        [
+            "عَلَىٰٓ",
+            "Ꜥalā",
+            "on"
+        ],
+        [
+            "أَن",
+            "an",
+            "that"
+        ],
+        [
+            "نُّسَوِّىَ",
+            "nusawwiya",
+            "We can restore"
+        ],
+        [
+            "بَنَانَهُۥ",
+            "banānahu",
+            "his fingertips"
+        ]
+    ],
+    "5": [
+        [
+            "بَلْ",
+            "bal",
+            "Nay"
+        ],
+        [
+            "يُرِيدُ",
+            "yurīdu",
+            "Desires"
+        ],
+        [
+            "ٱلْإِنسَـٰنُ",
+            "l-insānu",
+            "[the] man"
+        ],
+        [
+            "لِيَفْجُرَ",
+            "liyafjura",
+            "to give (the) lie"
+        ],
+        [
+            "أَمَامَهُۥ",
+            "amāmahu",
+            "(to) what is before him"
+        ]
+    ],
+    "6": [
+        [
+            "يَسْـَٔلُ",
+            "yasalu",
+            "He asks"
+        ],
+        [
+            "أَيَّانَ",
+            "ayyāna",
+            "When"
+        ],
+        [
+            "يَوْمُ",
+            "yawmu",
+            "(is the) Day"
+        ],
+        [
+            "ٱلْقِيَـٰمَةِ",
+            "l-qiyāmati",
+            "(of) the Resurrection"
+        ]
+    ],
+    "7": [
+        [
+            "فَإِذَا",
+            "fa-idhā",
+            "So when"
+        ],
+        [
+            "بَرِقَ",
+            "bariqa",
+            "is dazzled"
+        ],
+        [
+            "ٱلْبَصَرُ",
+            "l-baṣaru",
+            "the vision"
+        ]
+    ],
+    "8": [
+        [
+            "وَخَسَفَ",
+            "wakhasafa",
+            "And becomes dark"
+        ],
+        [
+            "ٱلْقَمَرُ",
+            "l-qamaru",
+            "the moon"
+        ]
+    ],
+    "9": [
+        [
+            "وَجُمِعَ",
+            "wajumiꜤa",
+            "And are joined"
+        ],
+        [
+            "ٱلشَّمْسُ",
+            "l-shamsu",
+            "the sun"
+        ],
+        [
+            "وَٱلْقَمَرُ",
+            "wal-qamaru",
+            "and the moon"
+        ]
+    ],
+    "10": [
+        [
+            "يَقُولُ",
+            "yaqūlu",
+            "Will say"
+        ],
+        [
+            "ٱلْإِنسَـٰنُ",
+            "l-insānu",
+            "[the] man"
+        ],
+        [
+            "يَوْمَئِذٍ",
+            "yawma-idhin",
+            "that Day"
+        ],
+        [
+            "أَيْنَ",
+            "ayna",
+            "Where"
+        ],
+        [
+            "ٱلْمَفَرُّ",
+            "l-mafaru",
+            "(is) the escape"
+        ]
+    ],
+    "11": [
+        [
+            "كَلَّا",
+            "kallā",
+            "By no means"
+        ],
+        [
+            "لَا",
+            "lā",
+            "(There is) no"
+        ],
+        [
+            "وَزَرَ",
+            "wazara",
+            "refuge"
+        ]
+    ],
+    "12": [
+        [
+            "إِلَىٰ",
+            "ilā",
+            "To"
+        ],
+        [
+            "رَبِّكَ",
+            "rabbika",
+            "your Lord"
+        ],
+        [
+            "يَوْمَئِذٍ",
+            "yawma-idhin",
+            "that Day"
+        ],
+        [
+            "ٱلْمُسْتَقَرُّ",
+            "l-mus'taqaru",
+            "(is) the place of rest"
+        ]
+    ],
+    "13": [
+        [
+            "يُنَبَّؤُا۟",
+            "yunabba-u",
+            "Will be informed"
+        ],
+        [
+            "ٱلْإِنسَـٰنُ",
+            "l-insānu",
+            "[the] man"
+        ],
+        [
+            "يَوْمَئِذٍۭ",
+            "yawma-idhin",
+            "that Day"
+        ],
+        [
+            "بِمَا",
+            "bimā",
+            "of what"
+        ],
+        [
+            "قَدَّمَ",
+            "qaddama",
+            "he sent forth"
+        ],
+        [
+            "وَأَخَّرَ",
+            "wa-akhara",
+            "and kept back"
+        ]
+    ],
+    "14": [
+        [
+            "بَلِ",
+            "bali",
+            "Nay"
+        ],
+        [
+            "ٱلْإِنسَـٰنُ",
+            "l-insānu",
+            "[The] man"
+        ],
+        [
+            "عَلَىٰ",
+            "Ꜥalā",
+            "against"
+        ],
+        [
+            "نَفْسِهِۦ",
+            "nafsihi",
+            "himself"
+        ],
+        [
+            "بَصِيرَةٌۭ",
+            "baṣīratun",
+            "(will be) a witness"
+        ]
+    ],
+    "15": [
+        [
+            "وَلَوْ",
+            "walaw",
+            "Even if"
+        ],
+        [
+            "أَلْقَىٰ",
+            "alqā",
+            "he presents"
+        ],
+        [
+            "مَعَاذِيرَهُۥ",
+            "maꜤādhīrahu",
+            "his excuses"
+        ]
+    ],
+    "16": [
+        [
+            "لَا",
+            "lā",
+            "Not"
+        ],
+        [
+            "تُحَرِّكْ",
+            "tuḥarrik",
+            "move"
+        ],
+        [
+            "بِهِۦ",
+            "bihi",
+            "with it"
+        ],
+        [
+            "لِسَانَكَ",
+            "lisānaka",
+            "your tongue"
+        ],
+        [
+            "لِتَعْجَلَ",
+            "litaꜤjala",
+            "to hasten"
+        ],
+        [
+            "بِهِۦٓ",
+            "bihi",
+            "with it"
+        ]
+    ],
+    "17": [
+        [
+            "إِنَّ",
+            "inna",
+            "Indeed"
+        ],
+        [
+            "عَلَيْنَا",
+            "Ꜥalaynā",
+            "upon Us"
+        ],
+        [
+            "جَمْعَهُۥ",
+            "jamꜤahu",
+            "(is) its collection"
+        ],
+        [
+            "وَقُرْءَانَهُۥ",
+            "waqur'ānahu",
+            "and its recitation"
+        ]
+    ],
+    "18": [
+        [
+            "فَإِذَا",
+            "fa-idhā",
+            "And when"
+        ],
+        [
+            "قَرَأْنَـٰهُ",
+            "qaranāhu",
+            "We have recited it"
+        ],
+        [
+            "فَٱتَّبِعْ",
+            "fa-ittabiꜤ",
+            "then follow"
+        ],
+        [
+            "قُرْءَانَهُۥ",
+            "qur'ānahu",
+            "its recitation"
+        ]
+    ],
+    "19": [
+        [
+            "ثُمَّ",
+            "thumma",
+            "Then"
+        ],
+        [
+            "إِنَّ",
+            "inna",
+            "indeed"
+        ],
+        [
+            "عَلَيْنَا",
+            "Ꜥalaynā",
+            "upon Us"
+        ],
+        [
+            "بَيَانَهُۥ",
+            "bayānahu",
+            "(is) its explanation"
+        ]
+    ],
+    "20": [
+        [
+            "كَلَّا",
+            "kallā",
+            "No"
+        ],
+        [
+            "بَلْ",
+            "bal",
+            "But"
+        ],
+        [
+            "تُحِبُّونَ",
+            "tuḥibbūna",
+            "you love"
+        ],
+        [
+            "ٱلْعَاجِلَةَ",
+            "l-Ꜥājilata",
+            "the immediate"
+        ]
+    ],
+    "21": [
+        [
+            "وَتَذَرُونَ",
+            "watadharūna",
+            "And leave"
+        ],
+        [
+            "ٱلْـَٔاخِرَةَ",
+            "l-ākhirata",
+            "the Hereafter"
+        ]
+    ],
+    "22": [
+        [
+            "وُجُوهٌۭ",
+            "wujūhun",
+            "Faces"
+        ],
+        [
+            "يَوْمَئِذٍۢ",
+            "yawma-idhin",
+            "that Day"
+        ],
+        [
+            "نَّاضِرَةٌ",
+            "nāḍiratun",
+            "(will be) radiant"
+        ]
+    ],
+    "23": [
+        [
+            "إِلَىٰ",
+            "ilā",
+            "Towards"
+        ],
+        [
+            "رَبِّهَا",
+            "rabbihā",
+            "their Lord"
+        ],
+        [
+            "نَاظِرَةٌۭ",
+            "nāẓiratun",
+            "looking"
+        ]
+    ],
+    "24": [
+        [
+            "وَوُجُوهٌۭ",
+            "wawujūhun",
+            "And faces"
+        ],
+        [
+            "يَوْمَئِذٍۭ",
+            "yawma-idhin",
+            "that Day"
+        ],
+        [
+            "بَاسِرَةٌۭ",
+            "bāsiratun",
+            "(will be) distorted"
+        ]
+    ],
+    "25": [
+        [
+            "تَظُنُّ",
+            "taẓunnu",
+            "Thinking"
+        ],
+        [
+            "أَن",
+            "an",
+            "that"
+        ],
+        [
+            "يُفْعَلَ",
+            "yuf'Ꜥala",
+            "will be done"
+        ],
+        [
+            "بِهَا",
+            "bihā",
+            "to them"
+        ],
+        [
+            "فَاقِرَةٌۭ",
+            "fāqiratun",
+            "backbreaking"
+        ]
+    ],
+    "26": [
+        [
+            "كَلَّآ",
+            "kallā",
+            "No"
+        ],
+        [
+            "إِذَا",
+            "idhā",
+            "When"
+        ],
+        [
+            "بَلَغَتِ",
+            "balaghati",
+            "it reaches"
+        ],
+        [
+            "ٱلتَّرَاقِىَ",
+            "l-tarāqiya",
+            "the collar bones"
+        ]
+    ],
+    "27": [
+        [
+            "وَقِيلَ",
+            "waqīla",
+            "And it is said"
+        ],
+        [
+            "مَنْ ۜ",
+            "man",
+            "Who"
+        ],
+        [
+            "رَاقٍۢ",
+            "rāqin",
+            "(will) cure"
+        ]
+    ],
+    "28": [
+        [
+            "وَظَنَّ",
+            "waẓanna",
+            "And he is certain"
+        ],
+        [
+            "أَنَّهُ",
+            "annahu",
+            "that it"
+        ],
+        [
+            "ٱلْفِرَاقُ",
+            "l-firāqu",
+            "(is) the parting"
+        ]
+    ],
+    "29": [
+        [
+            "وَٱلْتَفَّتِ",
+            "wal-tafati",
+            "And is wound"
+        ],
+        [
+            "ٱلسَّاقُ",
+            "l-sāqu",
+            "the leg"
+        ],
+        [
+            "بِٱلسَّاقِ",
+            "bil-sāqi",
+            "about the leg"
+        ]
+    ],
+    "30": [
+        [
+            "إِلَىٰ",
+            "ilā",
+            "To"
+        ],
+        [
+            "رَبِّكَ",
+            "rabbika",
+            "your Lord"
+        ],
+        [
+            "يَوْمَئِذٍ",
+            "yawma-idhin",
+            "that Day"
+        ],
+        [
+            "ٱلْمَسَاقُ",
+            "l-masāqu",
+            "(will be) the driving"
+        ]
+    ],
+    "31": [
+        [
+            "فَلَا",
+            "falā",
+            "And not"
+        ],
+        [
+            "صَدَّقَ",
+            "ṣaddaqa",
+            "he accepted (the) truth"
+        ],
+        [
+            "وَلَا",
+            "walā",
+            "and not"
+        ],
+        [
+            "صَلَّىٰ",
+            "ṣallā",
+            "he prayed"
+        ]
+    ],
+    "32": [
+        [
+            "وَلَـٰكِن",
+            "walākin",
+            "But"
+        ],
+        [
+            "كَذَّبَ",
+            "kadhaba",
+            "he denied"
+        ],
+        [
+            "وَتَوَلَّىٰ",
+            "watawallā",
+            "and turned away"
+        ]
+    ],
+    "33": [
+        [
+            "ثُمَّ",
+            "thumma",
+            "Then"
+        ],
+        [
+            "ذَهَبَ",
+            "dhahaba",
+            "he went"
+        ],
+        [
+            "إِلَىٰٓ",
+            "ilā",
+            "to"
+        ],
+        [
+            "أَهْلِهِۦ",
+            "ahlihi",
+            "his family"
+        ],
+        [
+            "يَتَمَطَّىٰٓ",
+            "yatamaṭṭā",
+            "swaggering"
+        ]
+    ],
+    "34": [
+        [
+            "أَوْلَىٰ",
+            "awlā",
+            "Woe"
+        ],
+        [
+            "لَكَ",
+            "laka",
+            "to you"
+        ],
+        [
+            "فَأَوْلَىٰ",
+            "fa-awlā",
+            "and woe"
+        ]
+    ],
+    "35": [
+        [
+            "ثُمَّ",
+            "thumma",
+            "Then"
+        ],
+        [
+            "أَوْلَىٰ",
+            "awlā",
+            "woe"
+        ],
+        [
+            "لَكَ",
+            "laka",
+            "to you"
+        ],
+        [
+            "فَأَوْلَىٰٓ",
+            "fa-awlā",
+            "and woe"
+        ]
+    ],
+    "36": [
+        [
+            "أَيَحْسَبُ",
+            "ayaḥsabu",
+            "Does think"
+        ],
+        [
+            "ٱلْإِنسَـٰنُ",
+            "l-insānu",
+            "man"
+        ],
+        [
+            "أَن",
+            "an",
+            "that"
+        ],
+        [
+            "يُتْرَكَ",
+            "yut'raka",
+            "he will be left"
+        ],
+        [
+            "سُدًى",
+            "sudan",
+            "neglected"
+        ]
+    ],
+    "37": [
+        [
+            "أَلَمْ",
+            "alam",
+            "Was not"
+        ],
+        [
+            "يَكُ",
+            "yaku",
+            "he"
+        ],
+        [
+            "نُطْفَةًۭ",
+            "nuṭ'fatan",
+            "a semen-drop"
+        ],
+        [
+            "مِّن",
+            "min",
+            "of"
+        ],
+        [
+            "مَّنِىٍّۢ",
+            "maniyyin",
+            "semen"
+        ],
+        [
+            "يُمْنَىٰ",
+            "yum'nā",
+            "emitted"
+        ]
+    ],
+    "38": [
+        [
+            "ثُمَّ",
+            "thumma",
+            "Then"
+        ],
+        [
+            "كَانَ",
+            "kāna",
+            "he was"
+        ],
+        [
+            "عَلَقَةًۭ",
+            "Ꜥalaqatan",
+            "a clinging substance"
+        ],
+        [
+            "فَخَلَقَ",
+            "fakhalaqa",
+            "then He created"
+        ],
+        [
+            "فَسَوَّىٰ",
+            "fasawwā",
+            "and proportioned"
+        ]
+    ],
+    "39": [
+        [
+            "فَجَعَلَ",
+            "fajaꜤala",
+            "Then made"
+        ],
+        [
+            "مِنْهُ",
+            "min'hu",
+            "of him"
+        ],
+        [
+            "ٱلزَّوْجَيْنِ",
+            "l-zawjayni",
+            "two kinds"
+        ],
+        [
+            "ٱلذَّكَرَ",
+            "l-dhakara",
+            "(the) male"
+        ],
+        [
+            "وَٱلْأُنثَىٰٓ",
+            "wal-unthā",
+            "and the female"
+        ]
+    ],
+    "40": [
+        [
+            "أَلَيْسَ",
+            "alaysa",
+            "Is not"
+        ],
+        [
+            "ذَٰلِكَ",
+            "dhālika",
+            "[that]"
+        ],
+        [
+            "بِقَـٰدِرٍ",
+            "biqādirin",
+            "(He) Able"
+        ],
+        [
+            "عَلَىٰٓ",
+            "Ꜥalā",
+            "[over]"
+        ],
+        [
+            "أَن",
+            "an",
+            "to"
+        ],
+        [
+            "يُحْـِۧىَ",
+            "yuḥ'yiya",
+            "give life"
+        ],
+        [
+            "ٱلْمَوْتَىٰ",
+            "l-mawtā",
+            "(to) the dead"
+        ]
+    ]
+}
