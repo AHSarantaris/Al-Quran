@@ -47,20 +47,23 @@ function createVerse(v, isSingle) {
     if (v === 0) {
         appendToVerseContainer(bismillahElement, 0, true);
         return;
-    } else if (canReadLocalFiles) {
-        createVerseElement(v, isSingle, verseTranslations[v], wordTranslations[v]);
-    } else {
+    } else if (isTestMode) {
         settings.url = `${baseURL}verses/by_key/${currentChapter}:${v}${languageQuery}&translations=${translation.id}&words=1&word_fields=location`;
         $.ajax(settings).done(function (response) {
             let verseData = response.verse;
             createVerseElement(v, isSingle, verseData.translations[0].text, verseData.words);
         });
+        return;
     }
+    createVerseElement(v, isSingle, verseTranslations[v], wordTranslations[v]);
 }
 
 
 function createVerseElement(v, isSingle, text, words) {
-    let wordCount = words.length - (canReadLocalFiles ? 0 : 1);
+    let wordCount = words.length;
+    if (isTestMode) {
+        wordCount--;
+    }
     var word, wordContainerElement, translationElement, wordElement, numberElement, verseElement, headerElement, verseButtonElement;
     verseElement = createDiv({className: 'verse'});
     headerElement = createDiv({className: 'verse-header'});
@@ -88,7 +91,7 @@ function createVerseElement(v, isSingle, text, words) {
 
 function createTranslationName() {
     let name = '— ';
-    name += canReadLocalFiles ? 'Andreas Hussain' : translation.name;
+    name += isTestMode ? translation.name : 'Andreas Hussain';
     let res = createDiv({className: 'translation-name', innerHTML:  name});
     return res;
 }
@@ -111,13 +114,13 @@ function createWordElement(v, w, word) {
 function createWordText(word) {
     let res = {};
     if (wordSettings.arabic) {
-        res.arabic = canReadLocalFiles ? word[0] : word.text_uthmani;
+        res.arabic = isTestMode ? word.text_uthmani : word[0];
     }
     if (wordSettings.transliteration) {
-        res.transliteration = canReadLocalFiles ? word[1] : word.transliteration.text;
+        res.transliteration = isTestMode ? word.transliteration.text : word[1];
     }
     if (wordSettings.translation) {
-        res.translation = canReadLocalFiles ? word[2] : word.translation.text;
+        res.translation = isTestMode ? word.translation.text : word[2];
     }
     return res;   
 }

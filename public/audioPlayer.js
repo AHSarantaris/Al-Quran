@@ -44,7 +44,7 @@ function createRecitationsButton() {
 
 
 function clickRecitation(e) {
-    let oldElement = document.querySelector('.dropdown-item[selected]');
+    let oldElement = document.querySelector(`.dropdown-item[value="${currentRecitation}"]`);
     if (oldElement === e.currentTarget) {
         return;
     }
@@ -125,6 +125,9 @@ function blurVersePlaying(e) {
 }
 
 function setAudio() {
+    if (isTestMode) {
+        return;
+    }
     let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
     $.getJSON(folderPath + 'audio_info.json', function(json){
         audioInfo = json.audio_info;

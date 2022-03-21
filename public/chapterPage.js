@@ -5,12 +5,12 @@ function showChapterPage() {
     chapterPageElement.style.display = 'flex';
     createChapterTopbar(currentChapter);
     audioControlsElement = createAudioControls();
-    if (canReadLocalFiles) {
-        loadVerseTranslations();
-        loadWordTranslations();
-    } else {
+    if (isTestMode) {
         showVerseView();
+        return;
     }
+    loadVerseTranslations();
+    loadWordTranslations();
 }
 
 function loadVerseTranslations() {
