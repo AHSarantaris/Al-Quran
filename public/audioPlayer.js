@@ -134,7 +134,7 @@ function setAudio() {
         currentRecitation = 0;
         updateRecitation();
     }).catch(function(){
-        console.log("Cannot read local file.");
+        audioInfo = undefined;
     }).always(function(){
         audioControlsElement.appendChild(createRecitationsButton());
     });

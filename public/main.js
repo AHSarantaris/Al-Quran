@@ -158,7 +158,6 @@ function setCurrentChapter(c) {
     setCurrentVerse(NaN);
     if (c) {
         showChapterPage();
-        audioControlsElement = createAudioControls();
     }
 }
 
