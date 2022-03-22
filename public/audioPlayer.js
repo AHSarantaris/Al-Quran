@@ -130,7 +130,7 @@ function setAudio() {
     }
     let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
     $.getJSON(folderPath + 'audio_info.json', function(json){
-        audioInfo = json.audio_info;
+        audioInfo = json;
         currentRecitation = 0;
         updateRecitation();
     }).catch(function(){
