@@ -91,7 +91,7 @@ function createVerseElement(v, isSingle, text, words) {
 
 function createTranslationName() {
     let name = '— ';
-    name += isTestMode ? translation.name : 'Andreas Hussain';
+    name += isTestMode ? translation.name : 'A. Hussain Sarantaris';
     let res = createDiv({className: 'translation-name', innerHTML:  name});
     return res;
 }
