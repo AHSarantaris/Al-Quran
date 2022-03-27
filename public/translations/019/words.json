@@ -1902,12 +1902,12 @@
         [
             "أَسْمِعْ",
             "asmiꜤ",
-            "How they will hear"
+            ""
         ],
         [
             "بِهِمْ",
             "bihim",
-            ""
+            "How they will hear"
         ],
         [
             "وَأَبْصِرْ",
@@ -1922,12 +1922,12 @@
         [
             "يَأْتُونَنَا ۖ",
             "yatūnanā",
-            "they will come to Us"
+            "they come to Us."
         ],
         [
             "لَـٰكِنِ",
             "lākini",
-            "but"
+            "But"
         ],
         [
             "ٱلظَّـٰلِمُونَ",
@@ -1952,7 +1952,7 @@
         [
             "مُّبِينٍۢ",
             "mubīnin",
-            "clear"
+            "clear."
         ]
     ],
     "39": [
@@ -1969,7 +1969,7 @@
         [
             "ٱلْحَسْرَةِ",
             "l-ḥasrati",
-            "(of) the Regret"
+            "(of) Regret"
         ],
         [
             "إِذْ",
@@ -1999,7 +1999,7 @@
         [
             "غَفْلَةٍۢ",
             "ghaflatin",
-            "heedlessness"
+            "heedlessness,"
         ],
         [
             "وَهُمْ",
@@ -2014,24 +2014,24 @@
         [
             "يُؤْمِنُونَ",
             "yu'minūna",
-            "believe"
+            "believe."
         ]
     ],
     "40": [
         [
             "إِنَّا",
             "innā",
-            "Indeed, We"
+            "Indeed"
         ],
         [
             "نَحْنُ",
             "naḥnu",
-            "[We]"
+            "We"
         ],
         [
             "نَرِثُ",
             "narithu",
-            "[We] will inherit"
+            "will inherit"
         ],
         [
             "ٱلْأَرْضَ",
@@ -2046,7 +2046,7 @@
         [
             "عَلَيْهَا",
             "Ꜥalayhā",
-            "(is) on it"
+            "(is) on it,"
         ],
         [
             "وَإِلَيْنَا",
@@ -2056,7 +2056,7 @@
         [
             "يُرْجَعُونَ",
             "yur'jaꜤūna",
-            "they will be returned"
+            "they will be returned."
         ]
     ],
     "41": [
