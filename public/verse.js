@@ -127,13 +127,14 @@ function createWordText(word) {
 
 
 function createVerseButton(v) {
-    let titles = ['Tafsir - Sayyid Abul Ala Maududi', 'Quran.com'];
+    let titles = ['Tafsir - Maududi', 'Tafsir - Ibn Kathir', 'Quran.com'];
     let elements = [];
     for (let i = 0; i < titles.length; i++) {
         elements.push(createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: titles[i]}));
     }
-    elements[0].addEventListener('click', clickTafsirWebsite);
-    elements[1].addEventListener('click', clickQuranWebsite);
+    elements[0].addEventListener('click', clickMaududi);
+    elements[1].addEventListener('click', clickIbnKathir);
+    elements[2].addEventListener('click', clickQuranWebsite);
     let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
     let res = createDropdownButton(button);
     res.appendChild(createDropdownContent(elements));
@@ -156,24 +157,27 @@ function appendToVerseContainer(verseElement, v, isSingle) {
     }
 }
 
-
-function clickQuranWebsite(e) {
-    console.log(e.currentTarget.parentNode.parentNode)
-    openQuranWebsite(false,currentChapter, e.currentTarget.parentNode.parentNode.getAttribute('verse'));
+function clickIbnKathir(e) {
+    let url = `https://www.alim.org/quran/tafsir/ibn-kathir/surah/${currentChapter}/0`;
+    window.open(url);
 }
 
-function clickTafsirWebsite(e) {
-    let url = `http://www.englishtafsir.com/Quran/${currentChapter}/index.html`;
+function clickQuranWebsite(e) {
+    openQuranWebsite(currentChapter, e.currentTarget.parentNode.parentNode.getAttribute('verse'));
+}
+
+function clickMaududi(e) {
+    let url = `https://www.alim.org/quran/tafsir/maududi/surah/${currentChapter}/0`;
     window.open(url);
 }
 
 function clickFootnote(e) {
     // https://quran.com/foot_note/129137?resource_content_id=20
-    openQuranWebsite(false,currentChapter, e.currentTarget.getAttribute('verse'));
+    openQuranWebsite(currentChapter, e.currentTarget.getAttribute('verse'));
 }
 
-function openQuranWebsite(isBeta, chapter,verse) {
-    let url = `https://${isBeta ? 'beta.' : ''}quran.com/${chapter}/${verse}`;
+function openQuranWebsite(chapter,verse) {
+    let url = `https://quran.com/${chapter}/${verse}`;
     window.open(url);
 }
 

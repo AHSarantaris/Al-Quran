@@ -299,7 +299,7 @@ sup:hover  {
     display: flex;
 }
 .dropdown-item {
-    text-align: right;
+    text-align: left;
     background-color: var(--background-color-2);
 }
 .dropdown-item:hover {
@@ -616,14 +616,6 @@ sup:hover  {
         align-self: center;
         width: max-content;
     }
-
-    .verse .dropdown-content {
-        right: initial;
-        left: 14px;
-    }
-    .verse .dropdown-item {
-        text-align: left;
-    }
 }
 @media only screen and (min-width: 800px) {
     .content, .topbar, #audio-controls {
@@ -632,6 +624,13 @@ sup:hover  {
     }
     .word-container {
         margin-left: 10px;
+    }
+    .verse .dropdown-content {
+        right: initial;
+        left: 14px;
+    }
+    .verse .dropdown-item {
+        text-align: left;
     }
 }
 @media only screen and (min-width: 1000px) {
