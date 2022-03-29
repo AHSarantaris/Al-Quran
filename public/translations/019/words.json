@@ -4328,17 +4328,17 @@
         [
             "مِن",
             "min",
-            "besides Allah"
+            ""
         ],
         [
             "دُونِ",
             "dūni",
-            "besides Allah"
+            "besides"
         ],
         [
             "ٱللَّهِ",
             "l-lahi",
-            "besides Allah"
+            "Allah"
         ],
         [
             "ءَالِهَةًۭ",
@@ -4358,14 +4358,14 @@
         [
             "عِزًّۭا",
             "Ꜥizzan",
-            "an honor"
+            "an honor."
         ]
     ],
     "82": [
         [
             "كَلَّا ۚ",
             "kallā",
-            "Nay"
+            "No,"
         ],
         [
             "سَيَكْفُرُونَ",
@@ -4390,7 +4390,7 @@
         [
             "ضِدًّا",
             "ḍiddan",
-            "opponents"
+            "opponents."
         ]
     ],
     "83": [
@@ -4407,12 +4407,12 @@
         [
             "أَنَّآ",
             "annā",
-            "that We"
+            "that"
         ],
         [
             "أَرْسَلْنَا",
             "arsalnā",
-            "[We] have sent"
+            "We have sent"
         ],
         [
             "ٱلشَّيَـٰطِينَ",
@@ -4437,7 +4437,7 @@
         [
             "أَزًّۭا",
             "azzan",
-            "(with) incitement"
+            "(with) incitement."
         ]
     ],
     "84": [
@@ -4454,12 +4454,12 @@
         [
             "عَلَيْهِمْ ۖ",
             "Ꜥalayhim",
-            "against them"
+            "against them,"
         ],
         [
             "إِنَّمَا",
             "innamā",
-            "Only"
+            "only"
         ],
         [
             "نَعُدُّ",
@@ -4474,7 +4474,7 @@
         [
             "عَدًّۭا",
             "Ꜥaddan",
-            "a number"
+            "a number."
         ]
     ],
     "85": [
@@ -4491,7 +4491,7 @@
         [
             "ٱلْمُتَّقِينَ",
             "l-mutaqīna",
-            "the righteous"
+            "the fearing"
         ],
         [
             "إِلَى",
@@ -4501,12 +4501,12 @@
         [
             "ٱلرَّحْمَـٰنِ",
             "l-raḥmāni",
-            "the Most Gracious"
+            "the Merciful"
         ],
         [
             "وَفْدًۭا",
             "wafdan",
-            "(as) a delegation"
+            "(as) a delegation,"
         ]
     ],
     "86": [
@@ -4533,7 +4533,7 @@
         [
             "وِرْدًۭا",
             "wir'dan",
-            "thirsty"
+            "thirsty."
         ]
     ],
     "87": [
@@ -4550,7 +4550,7 @@
         [
             "ٱلشَّفَـٰعَةَ",
             "l-shafāꜤata",
-            "(of) the intercession"
+            "(of) intercession"
         ],
         [
             "إِلَّا",
@@ -4560,7 +4560,7 @@
         [
             "مَنِ",
             "mani",
-            "(he) who"
+            "(the one) who"
         ],
         [
             "ٱتَّخَذَ",
@@ -4575,19 +4575,19 @@
         [
             "ٱلرَّحْمَـٰنِ",
             "l-raḥmāni",
-            "the Most Gracious"
+            "the Merciful"
         ],
         [
             "عَهْدًۭا",
             "Ꜥahdan",
-            "a covenant"
+            "a promise."
         ]
     ],
     "88": [
         [
             "وَقَالُوا۟",
             "waqālū",
-            "And they say"
+            "And they say:"
         ],
         [
             "ٱتَّخَذَ",
@@ -4597,24 +4597,24 @@
         [
             "ٱلرَّحْمَـٰنُ",
             "l-raḥmānu",
-            "the Most Gracious"
+            "the Merciful"
         ],
         [
             "وَلَدًۭا",
             "waladan",
-            "a son"
+            "a son."
         ]
     ],
     "89": [
         [
             "لَّقَدْ",
             "laqad",
-            "Verily"
+            "Certainly"
         ],
         [
             "جِئْتُمْ",
             "ji'tum",
-            "you have put forth"
+            "you have brought forth"
         ],
         [
             "شَيْـًٔا",
@@ -4624,7 +4624,7 @@
         [
             "إِدًّۭا",
             "iddan",
-            "atrocious"
+            "atrocious."
         ]
     ],
     "90": [
@@ -4651,7 +4651,7 @@
         [
             "وَتَنشَقُّ",
             "watanshaqqu",
-            "and splits asunder"
+            "and splits open"
         ],
         [
             "ٱلْأَرْضُ",
@@ -4671,7 +4671,7 @@
         [
             "هَدًّا",
             "haddan",
-            "(in) devastation"
+            "(in) devastation."
         ]
     ],
     "91": [
