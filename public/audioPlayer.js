@@ -147,7 +147,7 @@ function updateRecitation() {
 }
 
 function audioTimeUpdate(e) {
-    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.05) {
+    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.5) {
         playNextVerse();
     }
 }

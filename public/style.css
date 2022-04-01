@@ -182,11 +182,14 @@ sup:hover  {
     pointer-events: auto !important;
     font-size: 1em !important;
     font-weight: bold;
-    /* text-decoration: underline;
-    text-underline-offset: 3px; */
 }
 .header {
     cursor: pointer;
+}
+.header[selected] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
 }
 .chapter-name.header {
     width: max-content;

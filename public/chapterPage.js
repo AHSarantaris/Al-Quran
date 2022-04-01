@@ -78,8 +78,8 @@ function clickPreviousVerseButton() {
         verse = document.querySelector(`.verse[verse="${i}"]`);
         verseRect = verse.getBoundingClientRect();
         contentRect = chapterContentWrapperElement.getBoundingClientRect();
-        verseTop = verseRect.top + parseFloat(computedStyle.paddingTop);
-        verseBottom = verseRect.bottom + parseFloat(computedStyle.paddingBottom);
+        verseTop = verseRect.top + 3*parseFloat(computedStyle.paddingTop);
+        verseBottom = verseRect.bottom + 3*parseFloat(computedStyle.paddingBottom);
         if (verseTop >= contentRect.top) {
             if (i === 1) {
                 chapterContentElement.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -114,8 +114,8 @@ function clickNextVerseButton() {
         verse = document.querySelector(`.verse[verse="${i}"]`);
         verseRect = verse.getBoundingClientRect();
         contentRect = chapterContentWrapperElement.getBoundingClientRect();
-        verseTop = verseRect.top - parseFloat(computedStyle.paddingTop);
-        verseBottom = verseRect.bottom - parseFloat(computedStyle.paddingBottom);
+        verseTop = verseRect.top - 2*parseFloat(computedStyle.paddingTop);
+        verseBottom = verseRect.bottom - 2*parseFloat(computedStyle.paddingBottom);
         if (verseBottom <= contentRect.bottom) {
             if (i === chapters[currentChapter-1].verses_count) {
                 chapterContentElement.scrollIntoView({ behavior: "smooth", block: "end" });
