@@ -158,7 +158,8 @@ function appendToVerseContainer(verseElement, v, isSingle) {
 }
 
 function clickIbnKathir(e) {
-    let url = `https://www.alim.org/quran/tafsir/ibn-kathir/surah/${currentChapter}/0`;
+    let verse = e.currentTarget.parentNode.parentNode.getAttribute('verse');
+    let url = `https://quran.com/${currentChapter}:${verse}/tafsirs/en-tafisr-ibn-kathir`;
     window.open(url);
 }
 
