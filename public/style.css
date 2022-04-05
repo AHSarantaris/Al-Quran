@@ -3,33 +3,23 @@
 
     --button-border: 1px;
 
-    --theme-color: #bd955a;
-    --theme-color: #caa673;
-    --theme-color: #caa269;
-    --theme-color: #c9a677;
-    --theme-color: hsl(34, 42%, 62%);
-    --theme-color: hsl(34, 42%, 58%);
-    --theme-color: hsl(30, 42%, 58%);
-    --theme-color-opaque: hsla(30, 42%, 58%, 0.6);
-
-    --text-color-1: #ccc;
-    --text-color-1: #bbb;
-    --text-color-2: #bbb;
-    --text-color-2: #aaa;
     --hover-opacity-1: 0.8;
 
     --border-radius: 6px;
-    --background-color-1: #292929;
-    --background-color-2: #333;
-    --background-color-3: #444;
-    --background-color-4: #555;
-    --background-color: #222;
+
 
     --gap: 2px;
 
     --padding-1: 20px;
     --padding-2: 12px;
     --padding-3: 8px; 
+
+    
+    --background-color: rgb(var(--background-value),var(--background-value),var(--background-value));
+    --background-color-1: rgb(var(--background-value-1),var(--background-value-1),var(--background-value-1));
+    --background-color-2: rgb(var(--background-value-2),var(--background-value-2),var(--background-value-2));
+    --background-color-3: rgb(var(--background-value-3),var(--background-value-3),var(--background-value-3));
+    --background-color-4: rgb(var(--background-value-4),var(--background-value-4),var(--background-value-4));
 }
 html {
     overflow: hidden;
@@ -71,7 +61,7 @@ button {
     -webkit-tap-highlight-color: transparent;
 }
 button:disabled {
-    color: var(--text-color-2) !important;    
+    color: var(--text-color-2);    
     pointer-events: none;
 }
 button:focus-visible, input:focus-visible {
@@ -126,7 +116,7 @@ sup:hover  {
     width: 100%;
     border-bottom: 1px solid var(--background-color);
     z-index: 3;
-    box-shadow: 0px 2px 8px -2px #222;
+    box-shadow: 0px 2px 8px -2px var(--background-color);
 }
 #home-topbar {
     font-size: 1.1em;
@@ -246,7 +236,7 @@ sup:hover  {
     margin-left: 6px;
 }
 #verse-selector-button:disabled {
-    color: var(--theme-color-opaque) !important;
+    color: var(--theme-color-opaque);
 }
 #number {
     font-size: 1.2em;
@@ -280,9 +270,90 @@ sup:hover  {
     color: var(--text-color-2);
 }
 
-#chapter-button {
+#settings-button {
     margin: 0 6px;
 }
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    transition: width 0.4s;
+}
+.overlay-content {
+    padding: var(--padding-1);
+
+}
+.sidenav[open] {
+    width: 100%;
+}
+.sidenav .closebtn {
+    position: relative;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: var(--text-color-2);
+    border-radius: 50%;
+  }
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--theme-color);
+  }
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 4px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--text-color-1);
+  }
+
+
 .dropdown-button {
     position: relative;
     display: inline-block;
@@ -349,7 +420,7 @@ sup:hover  {
 }
 
 #bismillah {
-    padding: 36px 0 12px 12px;
+    padding: calc(2*var(--padding-1)) 0 var(--padding-1) var(--padding-1);
 }
 #single-verse {
     display: flex;
@@ -563,7 +634,7 @@ sup:hover  {
 /* Scrollable */
 .scrollable::-webkit-scrollbar {
     height: 4px;
-    width: var(--padding-2);
+    width: calc(1.3*var(--padding-2));
     border-top: 1px solid var(--background-color);
     border-bottom: 1px solid var(--background-color);
 }
@@ -605,6 +676,9 @@ sup:hover  {
     }
     #chapter-name > .small-text {
         font-size: 0.9em;
+    }
+    .sidenav[open] {
+        width: 50%;
     }
     #chapter-navigator {
         width: initial;

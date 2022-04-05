@@ -75,7 +75,7 @@ document.onclick = function(e) {
 }
 
 let backButtonElement = createBackButton();
-let chapterButtonElement = createChapterButton();
+let settingsButtonElement = createSettingsButton();
 
 document.onreadystatechange = function(e) {
     if (document.readyState === 'interactive') {  
@@ -233,6 +233,8 @@ function scrollToCard(chapter) {
     let card = document.getElementsByClassName('card')[chapter-1]
     card.scrollIntoView({block: 'center'});
 }
+
+
 
 function createDropdownButton(button, args) {
     if (!args) {

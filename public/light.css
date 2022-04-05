@@ -1,0 +1,28 @@
+:root {
+    --theme-color: hsl(42, 42%, 53%);
+    --theme-color: hsl(50, 100%, 25%);
+    --theme-color-opaque: hsla(51, 51%, 30%, 0.6);
+
+    --text-color-1: #222;
+    --text-color-2: #666;
+
+    --background-value: 230;
+    --background-value-1: calc(-6 + var(--background-value));
+    --background-value-2: calc(-4 + var(--background-value-1));
+    --background-value-3: calc(-8 + var(--background-value-2));
+    --background-value-4: calc(-10 + var(--background-value-3));
+}
+
+.topbar {
+    background-color: var(--theme-color) !important;
+    color: var(--background-color) !important;
+}
+.topbar .small-text {
+    color: var(--background-color-4) !important;
+}
+#title-english {
+    color: var(--background-color-4) !important;
+}
+#verse-selector-button:disabled {
+    color: var(--background-color-4) !important;
+}

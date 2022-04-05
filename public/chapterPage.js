@@ -9,6 +9,8 @@ function showChapterPage() {
         showVerseView();
         return;
     }
+    verseTranslations = undefined;
+    wordTranslations = undefined;
     loadVerseTranslations();
     loadWordTranslations();
 }
@@ -78,24 +80,24 @@ function clickPreviousVerseButton() {
         verse = document.querySelector(`.verse[verse="${i}"]`);
         verseRect = verse.getBoundingClientRect();
         contentRect = chapterContentWrapperElement.getBoundingClientRect();
-        verseTop = verseRect.top + 3*parseFloat(computedStyle.paddingTop);
-        verseBottom = verseRect.bottom + 3*parseFloat(computedStyle.paddingBottom);
+        verseTop = verseRect.top + 2.5*parseFloat(computedStyle.paddingTop);
+        verseBottom = verseRect.bottom + parseFloat(computedStyle.paddingBottom);
         if (verseTop >= contentRect.top) {
             if (i === 1) {
                 chapterContentElement.scrollIntoView({ behavior: "smooth", block: "start" });
             } else {
-                document.querySelector(`.verse[verse="${i-1}"]`).scrollIntoView({behavior: "smooth", block: "start"});
+                scrollToVerseSmooth(i-1,"start");
             }
             return;
         } else if (verseBottom <= contentRect.bottom && verseBottom >= contentRect.top) {
             if (verseRect.height > contentRect.height) {
-                document.querySelector(`.verse[verse="${i}"]`).scrollIntoView({behavior: "smooth", block: "end"});
+                scrollToVerseSmooth(i,"end");
             } else {
-                document.querySelector(`.verse[verse="${i}"]`).scrollIntoView({behavior: "smooth", block: "start"});
+                scrollToVerseSmooth(i,"start");
             }
             return;
         } else if (verseBottom >= contentRect.top) {
-            document.querySelector(`.verse[verse="${i}"]`).scrollIntoView({behavior: "smooth", block: "start"});
+            scrollToVerseSmooth(i,"start");
             return;
         }
     }
@@ -108,37 +110,54 @@ function clickNextVerseButton() {
         nextVerse();
         return;
     }
-    var verse, verseRect, contentRect, verseTop, verseBottom;
+    var verse, verseRect, verseTop, verseBottom;
+    let contentRect = chapterContentWrapperElement.getBoundingClientRect();
     let computedStyle = getComputedStyle(document.querySelector(`.verse[verse="1"]`));
     for (let i = chapters[currentChapter-1].verses_count; i > 0; i--) {
         verse = document.querySelector(`.verse[verse="${i}"]`);
         verseRect = verse.getBoundingClientRect();
-        contentRect = chapterContentWrapperElement.getBoundingClientRect();
-        verseTop = verseRect.top - 2*parseFloat(computedStyle.paddingTop);
+        verseTop = verseRect.top - parseFloat(computedStyle.paddingTop);
         verseBottom = verseRect.bottom - 2*parseFloat(computedStyle.paddingBottom);
         if (verseBottom <= contentRect.bottom) {
             if (i === chapters[currentChapter-1].verses_count) {
-                chapterContentElement.scrollIntoView({ behavior: "smooth", block: "end" });
+                let scrollTop = 0.5*$('#chapter-content-wrapper').height();
+                smoothScroll(scrollTop);
             } else {
-                document.querySelector(`.verse[verse="${i+1}"]`).scrollIntoView({behavior: "smooth", block: "end"});
+                scrollToVerseSmooth(i+1,"end");
             }
             return;
         } else if (verseTop >= contentRect.top && verseTop <= contentRect.bottom) {
             if (verseRect.height > contentRect.height) {
-                document.querySelector(`.verse[verse="${i}"]`).scrollIntoView({behavior: "smooth", block: "start"});
+                scrollToVerseSmooth(i, "start");
             } else {
-                document.querySelector(`.verse[verse="${i}"]`).scrollIntoView({behavior: "smooth", block: "end"});
+                scrollToVerseSmooth(i,"end");
             }
             return;
         } else if (verseTop <= contentRect.bottom) {
             if (verseBottom - contentRect.top > 3/2*contentRect.height) {
-                chapterContentWrapperElement.scrollBy({left: 0, top: contentRect.height/2, behavior: 'smooth'});
+                let scrollTop = 0.5*contentRect.height;
+                smoothScroll(scrollTop);
             } else {
-                document.querySelector(`.verse[verse="${i}"]`).scrollIntoView({behavior: "smooth", block: "end"});
+                scrollToVerseSmooth(i,"end");
             }
             return;
         }
     }
+}
+
+function scrollToVerseSmooth(i, block) {
+    let element = $(`.verse[verse="${i}"]`);
+    let scrollTop = - $('#chapter-content-wrapper').position().top + element.offset().top;
+    if (block === 'end') {
+        scrollTop = scrollTop - $('#chapter-content-wrapper').height() + element.outerHeight();
+    }
+    smoothScroll(scrollTop);
+}
+
+function smoothScroll(scrollTop) {
+    $('#chapter-content-wrapper').stop().animate({
+        scrollTop: scrollTop + $('#chapter-content-wrapper').scrollTop()
+    }, Math.min(600, 1.5*Math.abs(scrollTop)));
 }
 
 function createChapterTopbar() {
@@ -151,7 +170,7 @@ function createChapterTopbar() {
     chapterTopbarElement.appendChild(chapterName);
     chapterTopbarElement.appendChild(createDiv({id:'name-arabic', innerHTML: chapterInfo.name_arabic}));
     chapterTopbarElement.appendChild(createDoubleLineDiv(chapterInfo.verses_count, 'Verses', {id: 'verses'}));
-    chapterTopbarElement.appendChild(chapterButtonElement);
+    chapterTopbarElement.appendChild(settingsButtonElement);
 }
 
 
@@ -182,12 +201,6 @@ function createVerseSelectorButton() {
     return res;
 }
 
-function createChapterButton() {
-    let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
-    let res = createDropdownButton(button, {id: 'chapter-button'});
-    res.appendChild(createDropdownContent([]));
-    return res;
-}
 
 function clickVerseSelectorButton(e) {
     chapterContentWrapperElement.scrollTop = 0;

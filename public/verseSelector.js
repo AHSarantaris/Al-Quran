@@ -67,16 +67,16 @@ function createChapterNavigator() {
 
 function previousChapter() {
     setCurrentChapter(currentChapter-1);
-    if (verseView > 1) {
-        setVerseView(verseView);
-    }
+    // if (verseView > 1) {
+    //     setVerseView(verseView);
+    // }
 }
 
 function nextChapter() {
     setCurrentChapter(currentChapter+1);
-    if (verseView > 1) {
-        setVerseView(verseView);
-    }
+    // if (verseView > 1) {
+    //     setVerseView(verseView);
+    // }
 }
 
 

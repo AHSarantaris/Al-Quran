@@ -1,0 +1,25 @@
+:root {
+    --theme-color: #bd955a;
+    --theme-color: #caa673;
+    --theme-color: #caa269;
+    --theme-color: #c9a677;
+    --theme-color: hsl(34, 42%, 62%);
+    --theme-color: hsl(34, 42%, 58%);
+    --theme-color: hsl(30, 42%, 58%);
+    --theme-color: hsl(20, 50%, 65%);
+    --theme-color: hsl(25, 60%, 65%);
+    --theme-color-opaque: hsla(25, 60%, 65%, 0.6);
+
+    --text-color-1: #ccc;
+    --text-color-1: #ccc;
+    --text-color-2: #bbb;
+    --text-color-2: #bbb;
+
+    
+    --background-value: 30;
+    --background-value-1: calc(6 + var(--background-value));
+    --background-value-2: calc(4 + var(--background-value-1));
+    --background-value-3: calc(8 + var(--background-value-2));
+    --background-value-4: calc(10 + var(--background-value-3));
+
+}

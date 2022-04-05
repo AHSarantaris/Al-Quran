@@ -17,11 +17,14 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=false"></script>
     <script src="https://kit.fontawesome.com/f25dd1e83e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dark.css">
+    <!-- <link rel="stylesheet" href="light.css"> -->
     <link rel="stylesheet" href="style.css">
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
+    <script src="settings.js"></script>
     <script src="homePage.js"></script>
     <script src="verseSelector.js"></script>
     <script src="chapterPage.js"></script>
@@ -31,6 +34,23 @@
 </head>
 
 <body>
+    <!-- The overlay -->
+    <div id="settings-drawer" class="sidenav">
+        <button class="closebtn fas fa-times" onclick="closeNav()"></button>
+        <div class="overlay-content">
+            <label class="container">
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+              Light Theme
+            </label>
+            <label class="container">
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+              Dark Theme
+            </label>
+        </div>
+    
+    </div>
     <div id="home-page" style="display: none;">
         <div id="home-topbar" class="topbar">
             <div id="title">

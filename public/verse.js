@@ -28,7 +28,7 @@ function createAllVerses() {
 
 function createBismillah() {
     let transliteratedWords = ["bis'mi","l-lahi","l-raḥmāni","l-raḥīmi"];
-    let translatedWords = ["In (the) name", "(of) God","the Merciful","the Compassionate"];
+    let translatedWords = ["In (the) name", "(of) Allah,","the Merciful,","the Compassionate."];
     let wordContainerElement = createDiv({className:'word-container'});
     var transliteratedElement, translatedElement, wordElement;
     for (let j = 0; j < 4; j++) {
