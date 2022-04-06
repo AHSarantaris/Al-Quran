@@ -4,6 +4,7 @@ function showHomePage() {
     homePageElement.style.display = 'flex';
     previousVerseElement.style.display = 'none';
     nextVerseElement.style.display = 'none';
+    homeTopbarElement.appendChild(settingsButtonElement);
     if (!cardContainerElement) {
         createCardContainer();
     } else {

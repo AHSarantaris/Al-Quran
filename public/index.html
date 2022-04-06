@@ -35,22 +35,31 @@
 
 <body>
     <!-- The overlay -->
-    <div id="settings-drawer" class="sidenav">
-        <button class="closebtn fas fa-times" onclick="closeNav()"></button>
-        <div class="overlay-content">
-            <label class="container">
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span>
-              Light Theme
-            </label>
-            <label class="container">
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-              Dark Theme
-            </label>
+    <div id="settings-overlay">
+        <div id="overlay-opaque"></div>
+        <div id="settings" class="sidenav">
+            <button class="closebtn fas fa-times" onclick="closeNav()"></button>
+            <div id="theme-settings">
+                Theme
+                <div class="overlay-content">
+                    <div class="container" onclick="clickTheme(this)">
+                        <input id="light-theme" type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <span class="theme-text">Light Theme</span>
+                    </div>
+                    <div class="container" onclick="clickTheme(this)">
+                        <input id="dark-theme" type="radio" checked="true" name="radio">
+                        <span class="checkmark"></span>
+                        <span class="theme-text">Dark Theme</span>
+                    </div>
+                </div>
+            </div>
+            <div id="translation-settings">
+                Translations
+            </div>
         </div>
-    
     </div>
+
     <div id="home-page" style="display: none;">
         <div id="home-topbar" class="topbar">
             <div id="title">

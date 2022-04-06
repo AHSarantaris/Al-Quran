@@ -31,6 +31,11 @@ let homeContentElement = document.getElementById('home-content');
 var cardContainerElement;
 
 /**
+ * Settings Drawer
+ */
+let settingsOverlayElement = document.getElementById('settings-overlay');
+
+/**
  * Chapter Page
  */
 let chapterPageElement = document.getElementById('chapter-page');
@@ -67,12 +72,16 @@ var wordTranslations;
 let wordSettings = {arabic: false, transliteration: true, translation: true};
 let isTestMode = true;
 
-document.onclick = function(e) {
+document.addEventListener('click', function(e) {
+    if (settingsOverlayElement.getAttribute('open') && !e.target.matches('#settings, #settings *, #settings-button, #settings-button *')) {
+        closeNav();
+        e.stopImmediatePropagation();
+    }
     let dropdownContentElement = document.querySelector('.dropdown-content[selected]');
     if (dropdownContentElement) {
         dropdownContentElement.removeAttribute('selected');
     }
-}
+}, true);
 
 let backButtonElement = createBackButton();
 let settingsButtonElement = createSettingsButton();

@@ -78,6 +78,9 @@ function clickPreviousVerseButton() {
     let computedStyle = getComputedStyle(document.querySelector(`.verse[verse="1"]`));
     for (let i = 1; i <= chapters[currentChapter-1].verses_count; i++) {
         verse = document.querySelector(`.verse[verse="${i}"]`);
+        if (!verse) {
+            continue;
+        }
         verseRect = verse.getBoundingClientRect();
         contentRect = chapterContentWrapperElement.getBoundingClientRect();
         verseTop = verseRect.top + 2.5*parseFloat(computedStyle.paddingTop);
@@ -115,6 +118,9 @@ function clickNextVerseButton() {
     let computedStyle = getComputedStyle(document.querySelector(`.verse[verse="1"]`));
     for (let i = chapters[currentChapter-1].verses_count; i > 0; i--) {
         verse = document.querySelector(`.verse[verse="${i}"]`);
+        if (!verse) {
+            continue;
+        }
         verseRect = verse.getBoundingClientRect();
         verseTop = verseRect.top - parseFloat(computedStyle.paddingTop);
         verseBottom = verseRect.bottom - 2*parseFloat(computedStyle.paddingBottom);
@@ -157,7 +163,7 @@ function scrollToVerseSmooth(i, block) {
 function smoothScroll(scrollTop) {
     $('#chapter-content-wrapper').stop().animate({
         scrollTop: scrollTop + $('#chapter-content-wrapper').scrollTop()
-    }, Math.min(600, 1.5*Math.abs(scrollTop)));
+    }, Math.min(300, 2*Math.abs(scrollTop)));
 }
 
 function createChapterTopbar() {

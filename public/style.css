@@ -119,9 +119,10 @@ sup:hover  {
     box-shadow: 0px 2px 8px -2px var(--background-color);
 }
 #home-topbar {
-    font-size: 1.1em;
+    justify-content: space-between;
 }
 #title {
+    font-size: 1.1em;
     padding: 0 var(--padding-1);
     color: var(--theme-color-title);
 }
@@ -271,87 +272,81 @@ sup:hover  {
 }
 
 #settings-button {
-    margin: 0 6px;
+    margin: 0 var(--padding-3);
 }
-/* The side navigation menu */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
+#settings-overlay {
+    display: flex;
+    position:fixed;
     z-index: 5;
     top: 0;
     right: 0;
+    width: 0;
+    height: 100%;
+}
+#settings-overlay[open] {
+    min-width: 100%;
+}
+#overlay-opaque {
+    flex: 1;
+    background-color: var(--text-color-2);
+    opacity: 0.2;
+}
+.sidenav {
+    height: 100%;
+    /* position: fixed; */
     background-color: var(--background-color);
     overflow-x: hidden;
-    transition: width 0.4s;
 }
-.overlay-content {
-    padding: var(--padding-1);
-
+.sidenav > * {
+    padding: var(--padding-3);
 }
-.sidenav[open] {
-    width: 100%;
+.sidenav {
+    width: fit-content;
+    /* max-width: 80%; */
+    padding: var(--padding-3);
 }
 .sidenav .closebtn {
     position: relative;
 }
-
-
+.overlay-content {
+    display: flex;
+    padding: var(--padding-2);
+    gap: calc(2*var(--padding-1));
+}
 .container {
-    display: block;
+    display: flex;
+    align-items: center;
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
     cursor: pointer;
-    /* font-size: 22px; */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  /* Hide the browser's default radio button */
-  .container input {
-    position: absolute;
+    color: var(--text-color-3);
+}
+/* Hide the browser's default radio button */
+.container input {
     opacity: 0;
-    cursor: pointer;
-  }
-  /* Create a custom radio button */
-  .checkmark {
+}
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 16px;
-    width: 16px;
-    background-color: var(--text-color-2);
+    height: 8px;
+    width: 8px;
+    background-color: var(--background-color-4);
     border-radius: 50%;
-  }
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+    border: 4px solid var(--text-color-3);
+}
+.container:hover input:not(input:checked) ~ .checkmark {
     background-color: var(--theme-color);
-  }
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-       top: 4px;
-      left: 4px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--text-color-1);
-  }
+}
+.container input:checked ~ .checkmark {
+    border-color: var(--theme-color);
+}
+.container input:checked ~ .theme-text {
+    color: var(--theme-color);
+}
 
 
 .dropdown-button {
@@ -420,7 +415,7 @@ sup:hover  {
 }
 
 #bismillah {
-    padding: calc(2*var(--padding-1)) 0 var(--padding-1) var(--padding-1);
+    padding: calc(2*var(--padding-1)) 0 var(--padding-1) var(--padding-3);
 }
 #single-verse {
     display: flex;
@@ -678,7 +673,7 @@ sup:hover  {
         font-size: 0.9em;
     }
     .sidenav[open] {
-        width: 50%;
+        max-width: initial;
     }
     #chapter-navigator {
         width: initial;
