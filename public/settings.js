@@ -20,21 +20,9 @@ function closeNav() {
 function clickTheme(element) {
     let lightTheme = document.getElementById('light-theme');
     let darkTheme = document.getElementById('dark-theme');
-    if (element === lightTheme.parentNode) {
-        if (lightTheme.checked) {
-            return;
-        }
-        lightTheme.checked = true;
-        darkTheme.checked = false;
-        $('link[href="dark.css"]').remove();
-        $('head').append('<link rel="stylesheet" href="light.css" type="text/css" />');
-    } else {
-        if (darkTheme.checked) {
-            return;
-        }
-        darkTheme.checked = true;
-        lightTheme.checked = false;
-        $('link[href="light.css"]').remove();
-        $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
+    if (element === lightTheme.parentNode && !lightTheme.checked) {
+        setCurrentTheme(1);
+    } else if (!darkTheme.checked) {
+        setCurrentTheme(0);
     }
 }

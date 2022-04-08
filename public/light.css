@@ -2,6 +2,7 @@
     --theme-color: hsl(42, 42%, 53%);
     --theme-color: hsl(50, 100%, 25%);
     --theme-color: hsl(40, 60%, 40%);
+    --theme-color: hsl(40, 70%, 35%);
     --theme-color-opaque: hsla(45, 60%, 40%, 0.6);
 
     --text-color-1: #222;
@@ -9,7 +10,7 @@
     --text-color-3: #888;
 
     --background-value: 255;
-    --background-value-1: calc(-6 + var(--background-value));
+    --background-value-1: calc(-8 + var(--background-value));
     --background-value-2: calc(-4 + var(--background-value-1));
     --background-value-3: calc(-8 + var(--background-value-2));
     --background-value-4: calc(-10 + var(--background-value-3));

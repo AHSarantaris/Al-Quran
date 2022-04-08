@@ -1,5 +1,7 @@
 'use strict'
 
+let isTestMode = 0;
+
 let baseURL = "https://api.quran.com/api/v4/";
 let verseURL = "verses/by_chapter/";
 let languageQuery = "?language=en";
@@ -34,6 +36,7 @@ var cardContainerElement;
  * Settings Drawer
  */
 let settingsOverlayElement = document.getElementById('settings-overlay');
+var currentTheme;
 
 /**
  * Chapter Page
@@ -70,7 +73,6 @@ var chapterScrollTop;
 var verseTranslations;
 var wordTranslations;
 let wordSettings = {arabic: false, transliteration: true, translation: true};
-let isTestMode = true;
 
 document.addEventListener('click', function(e) {
     if (settingsOverlayElement.getAttribute('open') && !e.target.matches('#settings, #settings *, #settings-button, #settings-button *')) {
@@ -91,12 +93,13 @@ document.onreadystatechange = function(e) {
         currentChapter = parseInt(localStorage.getItem('chapter'));
         currentVerse = parseInt(localStorage.getItem('verse'));
         verseView = parseInt(localStorage.getItem('verse-view'));
+        setCurrentTheme(parseInt(localStorage.getItem('theme')));
         if (currentVerse || currentChapter) {
             chapterPageElement.style.display = 'flex';
         } else {
             homePageElement.style.display = 'flex';
         }
-    } 
+    }
 };
 
 init();
@@ -209,6 +212,24 @@ function setVerseView(view) {
     } else if (verseView === 1) {
         singleVerseElement.innerHTML = '';
         chapterContentElement.appendChild(singleVerseElement);
+    }
+}
+
+function setCurrentTheme(theme) {
+    currentTheme = theme;
+    localStorage.setItem('theme', theme);
+    let lightTheme = document.getElementById('light-theme');
+    let darkTheme = document.getElementById('dark-theme');
+    if (!theme) {
+        darkTheme.checked = true;
+        lightTheme.checked = false;
+        $('link[href="light.css"]').remove();
+        $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
+    } else {
+        lightTheme.checked = true;
+        darkTheme.checked = false;
+        $('link[href="dark.css"]').remove();
+        $('head').append('<link rel="stylesheet" href="light.css" type="text/css" />');
     }
 }
 
