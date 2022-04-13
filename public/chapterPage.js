@@ -50,7 +50,6 @@ function showVerseView() {
         previousVerseElement.style.display = 'flex';
         nextVerseElement.style.display = 'flex';
         setVerseView(verseView);
-        showCurrentVerse();
     } else {
         showVerseSelector();
     }

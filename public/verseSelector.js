@@ -36,7 +36,6 @@ function clickShowAllVerses(e) {
 
 function clickVerseCard(e) {
     let v = parseInt(e.currentTarget.getAttribute('verse'));
-    setVerseView(1);
     setCurrentVerse(v);
 }
 

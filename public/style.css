@@ -26,12 +26,12 @@ html {
     overflow: hidden;
     position: fixed;
     height: 100%;
+    font-size: 3.8vmin; /* font-size: 16px; */
 }
 body {
     position: fixed;
     margin: 0px;
     font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    font-size: 3.8vmin; /* font-size: 16px; */
     color: var(--theme-color);
     height: 100%;
     width: 100vw;
@@ -284,6 +284,7 @@ sup:hover  {
     width: 0;
     height: 100%;
     font-weight: bold;
+    font-size: 0.95em;
 }
 #settings-overlay[open] {
     min-width: 100%;
@@ -293,27 +294,33 @@ sup:hover  {
     background-color: var(--text-color-2);
     opacity: 0.2;
 }
-.sidenav {
+#settings {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-1);
     /* position: fixed; */
     background-color: var(--background-color);
     overflow-x: hidden;
-}
-.sidenav > * {
-    padding: var(--padding-3);
-}
-.sidenav {
     width: fit-content;
+    align-items: flex-start;
     /* max-width: 80%; */
-    padding: var(--padding-3);
-}
-.sidenav .closebtn {
-    position: relative;
-}
-.overlay-content {
-    display: flex;
     padding: var(--padding-2);
+}
+#settings > * {
+    padding: var(--padding-2);
+}
+.settings-container {
+    display: flex;
+    align-items: baseline;
+    padding: var(--padding-1) 0;
+    color: var(--text-color-3);
+}
+#theme-settings .settings-container {
     gap: calc(2*var(--padding-1));
+}
+#font-settings .settings-container {
+    gap: var(--padding-2);
 }
 .container {
     display: flex;
@@ -324,7 +331,6 @@ sup:hover  {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: var(--text-color-3);
 }
 /* Hide the browser's default radio button */
 .container input {
@@ -349,6 +355,17 @@ sup:hover  {
 .container input:checked ~ .theme-text {
     color: var(--theme-color);
 }
+#font-counter {
+    width: 2em;
+    text-align: center;
+}
+#font-settings .block-button {
+    background-color: var(--background-color-1);
+}
+#translation-container {
+    flex-direction: column;
+}
+
 
 
 .dropdown-button {
@@ -517,10 +534,7 @@ sup:hover  {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-}
-.divider {
-    height: 3px;
-    width: 100%;
+    gap: 3px;
     background-color: var(--background-color-1);
 }
 .verse {
@@ -530,10 +544,11 @@ sup:hover  {
     align-items: stretch;
     width: 100%;
     padding: var(--padding-1) 0 var(--padding-1) var(--padding-1);
+    background-color: var(--background-color);
     order: 1;
 }
 .verse[playing] {
-    background-color: #1d1d1d;
+    background-color: var(--background-color-1);
 }
 #exterior-words-container {
     overflow-x: auto;
@@ -674,7 +689,7 @@ sup:hover  {
     #chapter-name > .small-text {
         font-size: 0.9em;
     }
-    .sidenav[open] {
+    #settings[open] {
         max-width: initial;
     }
     #chapter-navigator {

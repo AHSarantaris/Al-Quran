@@ -1,6 +1,6 @@
 'use strict'
 
-let isTestMode = 0;
+let isTestMode = 1;
 
 let baseURL = "https://api.quran.com/api/v4/";
 let verseURL = "verses/by_chapter/";
@@ -61,7 +61,6 @@ var timeStamps, currentVersePlaying, audioInfo, currentRecitation;
  */
 let verseContainerElement = createDiv({id:'verse-container'});
 let exteriorWordsContainerElement = createDiv({id: 'exterior-words-container'});
-let singleVerseElement = createDiv({id: 'single-verse'});
 let bismillahElement = createDiv({id: 'bismillah', className: 'verse'});
 
 var currentChapter;
@@ -69,6 +68,7 @@ var currentVerse;
 var verseView; // 1: single verse, 2: all verses, 3: external words
 var homeScrollTop;
 var chapterScrollTop;
+var fontSizeCounter;
 
 var verseTranslations;
 var wordTranslations;
@@ -94,6 +94,7 @@ document.onreadystatechange = function(e) {
         currentVerse = parseInt(localStorage.getItem('verse'));
         verseView = parseInt(localStorage.getItem('verse-view'));
         setCurrentTheme(parseInt(localStorage.getItem('theme')));
+        setFontSize(parseInt(localStorage.getItem('font-size-counter')));
         if (currentVerse || currentChapter) {
             chapterPageElement.style.display = 'flex';
         } else {
@@ -131,10 +132,15 @@ function getTranslations() {
 }
 
 function selectTranslation(translations) {
+    var translationElement;
+    let translationContainer = document.getElementById('translation-container');
     for (let i = 0; i < translations.length; i++) {
-        if (translations[i].name === 'Saheeh International') {
-            translation = translations[i];
-            return;
+        if (translations[i].language_name === "english") {
+            translationElement = createDiv({innerHTML: translations[i].name});
+            translationContainer.appendChild(translationElement);
+            if (translations[i].name === 'Saheeh International') {
+                translation = translations[i];
+            }
         }
     }
 }
@@ -162,76 +168,6 @@ function createDiv(args) {
     return res;
 }
 
-function setCurrentChapter(c) {
-    if (currentChapter === c) {
-        return;
-    }
-    currentChapter = c;
-    localStorage.setItem('chapter', c);
-    setCurrentVerse(NaN);
-    if (c) {
-        showChapterPage();
-    }
-}
-
-function setCurrentVerse(v) {
-    if (currentVerse === v) {
-        return;
-    }
-    currentVerse = v;
-    localStorage.setItem('verse', v);
-    if (Number.isInteger(currentVerse)) {
-        let versePlayingButton = document.getElementById('verse-playing');
-        versePlayingButton.defaultValue = currentVerse;
-        versePlayingButton.value = currentVerse;
-        showCurrentVerse();
-    }
-}
-
-function setVerseView(view) {
-    verseView = view;
-    localStorage.setItem('verse-view', view);
-    chapterContentElement.innerHTML = '';
-    chapterContentWrapperElement.scrollTop = 0;
-    previousVerseElement.style.display = 'flex';
-    nextVerseElement.style.display = 'flex';
-    let verseSelectorButton = document.getElementById('verse-selector-button');
-    if (verseView) {
-        audioControlsElement.style.display = 'flex';
-        verseSelectorButton.disabled = false;
-    } else {
-        audioControlsElement.style.display = 'none';
-        verseSelectorButton.disabled = true;
-    }
-    if (verseView === 3) {
-        createExteriorView();
-        showCurrentVerse();
-    } else if (verseView === 2) {
-        createAllVerses();
-        showCurrentVerse();
-    } else if (verseView === 1) {
-        singleVerseElement.innerHTML = '';
-        chapterContentElement.appendChild(singleVerseElement);
-    }
-}
-
-function setCurrentTheme(theme) {
-    currentTheme = theme;
-    localStorage.setItem('theme', theme);
-    let lightTheme = document.getElementById('light-theme');
-    let darkTheme = document.getElementById('dark-theme');
-    if (!theme) {
-        darkTheme.checked = true;
-        lightTheme.checked = false;
-        $('link[href="light.css"]').remove();
-        $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
-    } else {
-        lightTheme.checked = true;
-        darkTheme.checked = false;
-        $('link[href="dark.css"]').remove();
-        $('head').append('<link rel="stylesheet" href="light.css" type="text/css" />');
-    }
-}
 
 function scrollToVerse(verseElement) {
     let verseRect = verseElement.getBoundingClientRect();
@@ -314,6 +250,93 @@ function addLeadingZeros(x) {
     } else {
         return '00'+x;
     }
+}
+
+
+/**
+ * Setters
+ */
+function setCurrentChapter(c) {
+    if (currentChapter === c) {
+        return;
+    }
+    currentChapter = c;
+    localStorage.setItem('chapter', c);
+    setCurrentVerse(NaN);
+    if (c) {
+        showChapterPage();
+    }
+}
+
+function setCurrentVerse(v) {
+    if (currentVerse === v) {
+        return;
+    }
+    currentVerse = v;
+    localStorage.setItem('verse', v);
+    if (Number.isInteger(currentVerse)) {
+        let versePlayingButton = document.getElementById('verse-playing');
+        versePlayingButton.defaultValue = currentVerse;
+        versePlayingButton.value = currentVerse;
+        setVerseView(1);
+    }
+}
+
+function setVerseView(view) {
+    verseView = view;
+    localStorage.setItem('verse-view', view);
+    chapterContentElement.innerHTML = '';
+    verseContainerElement.innerHTML = '';
+    chapterContentElement.appendChild(verseContainerElement)
+    chapterContentWrapperElement.scrollTop = 0;
+    previousVerseElement.style.display = 'flex';
+    nextVerseElement.style.display = 'flex';
+    let verseSelectorButton = document.getElementById('verse-selector-button');
+    if (verseView) {
+        audioControlsElement.style.display = 'flex';
+        verseSelectorButton.disabled = false;
+    } else {
+        audioControlsElement.style.display = 'none';
+        verseSelectorButton.disabled = true;
+    }
+    if (verseView === 3) {
+        createExteriorView();
+        showCurrentVerse();
+    } else if (verseView === 2) {
+        createAllVerses();
+        showCurrentVerse();
+    } else if (verseView === 1) {
+        createVerse(currentVerse);
+        showCurrentVerse();
+    }
+}
+
+function setCurrentTheme(theme) {
+    currentTheme = theme;
+    localStorage.setItem('theme', theme);
+    let lightTheme = document.getElementById('light-theme');
+    let darkTheme = document.getElementById('dark-theme');
+    if (!theme) {
+        darkTheme.checked = true;
+        lightTheme.checked = false;
+        $('link[href="light.css"]').remove();
+        $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
+    } else {
+        lightTheme.checked = true;
+        darkTheme.checked = false;
+        $('link[href="dark.css"]').remove();
+        $('head').append('<link rel="stylesheet" href="light.css" type="text/css" />');
+    }
+}
+
+function setFontSize(counter) {
+    if (!counter) {
+        counter = 0;
+    }
+    fontSizeCounter = counter;
+    localStorage.setItem('font-size-counter', counter);
+    document.getElementById('font-counter').innerHTML = counter;
+    chapterContentElement.style.fontSize = (1 + counter*0.05) + "em";
 }
 
 

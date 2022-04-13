@@ -17,9 +17,9 @@
     --text-color-3: #ddd;
 
     
-    --background-value: 30;
+    --background-value: 24;
     --background-value-1: calc(6 + var(--background-value));
-    --background-value-2: calc(4 + var(--background-value-1));
+    --background-value-2: calc(6 + var(--background-value-1));
     --background-value-3: calc(8 + var(--background-value-2));
     --background-value-4: calc(10 + var(--background-value-3));
 

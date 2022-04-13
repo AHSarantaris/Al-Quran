@@ -1,9 +1,5 @@
 
 function showCurrentVerse() {
-    if (verseView === 1) {
-        singleVerseElement.innerHTML = '';
-        createVerse(currentVerse, true);
-    }
     previousVerseElement.disabled = false;
     nextVerseElement.disabled = false;
     if (currentVerse === 0 || (currentVerse === 1 && !chapters[currentChapter-1].bismillah_pre)) {
@@ -14,14 +10,12 @@ function showCurrentVerse() {
 }
 
 function createAllVerses() {
-    verseContainerElement.innerHTML = '';
     createChapterNavigator();
-    chapterContentElement.appendChild(verseContainerElement)
     if (chapters[currentChapter-1].bismillah_pre) {
-        appendToVerseContainer(bismillahElement, 0, false);
+        appendToVerseContainer(bismillahElement, 0);
     }
     for (let i = 0; i < chapters[currentChapter-1].verses_count; i++) {
-        createVerse(i+1, false);
+        createVerse(i+1);
     }
     chapterContentElement.appendChild(chapterNavigatorElement);
 }
@@ -43,23 +37,23 @@ function createBismillah() {
     bismillahElement.appendChild(wordContainerElement);
 }
 
-function createVerse(v, isSingle) {
+function createVerse(v) {
     if (v === 0) {
-        appendToVerseContainer(bismillahElement, 0, true);
+        appendToVerseContainer(bismillahElement, 0);
         return;
     } else if (isTestMode) {
         settings.url = `${baseURL}verses/by_key/${currentChapter}:${v}${languageQuery}&translations=${translation.id}&words=1&word_fields=location`;
         $.ajax(settings).done(function (response) {
             let verseData = response.verse;
-            createVerseElement(v, isSingle, verseData.translations[0].text, verseData.words);
+            createVerseElement(v, verseData.translations[0].text, verseData.words);
         });
         return;
     }
-    createVerseElement(v, isSingle, verseTranslations[v], wordTranslations[v]);
+    createVerseElement(v, verseTranslations[v], wordTranslations[v]);
 }
 
 
-function createVerseElement(v, isSingle, text, words) {
+function createVerseElement(v, text, words) {
     let wordCount = words.length;
     if (isTestMode) {
         wordCount--;
@@ -86,7 +80,7 @@ function createVerseElement(v, isSingle, text, words) {
     verseElement.appendChild(headerElement);
     verseElement.appendChild(wordContainerElement);
     verseElement.appendChild(translationElement);
-    appendToVerseContainer(verseElement, v, isSingle);
+    appendToVerseContainer(verseElement, v);
 }
 
 function createTranslationName() {
@@ -143,18 +137,11 @@ function createVerseButton(v) {
 }
 
 
-function appendToVerseContainer(verseElement, v, isSingle) {
-    var dividerElement, verseElement;
-    if (isSingle) {
-        singleVerseElement.appendChild(verseElement);
-    } else {
-        dividerElement = createDiv({className:'divider'});
-        verseElement.setAttribute('verse', v);
-        verseElement.style.order = 2*(v-1);
-        dividerElement.style.order = 2*v-1;
-        verseContainerElement.appendChild(verseElement);
-        verseContainerElement.appendChild(dividerElement);
-    }
+function appendToVerseContainer(verseElement, v) {
+    var verseElement;
+    verseElement.setAttribute('verse', v);
+    verseElement.style.order = v-1;
+    verseContainerElement.appendChild(verseElement);
 }
 
 function clickIbnKathir(e) {

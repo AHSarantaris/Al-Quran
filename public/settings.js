@@ -26,3 +26,11 @@ function clickTheme(element) {
         setCurrentTheme(0);
     }
 }
+
+function changeFontSize(increase) {
+    if (increase) {
+        setFontSize(fontSizeCounter+1);
+    } else {
+        setFontSize(fontSizeCounter-1);
+    }
+}
