@@ -37,34 +37,51 @@
     <!-- The overlay -->
     <div id="settings-overlay">
         <div id="overlay-opaque"></div>
-        <div id="settings">
+        <div id="settings-wrapper">
             <button id="close-settings-button" class="icon-button fas fa-times" onclick="closeNav()"></button>
-            <div id="theme-settings">
-                <span class="settings-title">Theme</span>
-                <div class="settings-container">
-                    <div class="container" onclick="clickTheme(this)">
-                        <input id="light-theme" type="radio" name="theme">
-                        <span class="checkmark"></span>
-                        <span class="theme-text">Light Theme</span>
-                    </div>
-                    <div class="container" onclick="clickTheme(this)">
-                        <input id="dark-theme" type="radio" name="theme" checked="true">
-                        <span class="checkmark"></span>
-                        <span class="theme-text">Dark Theme</span>
+            <div id="settings" class="scrollable">
+                <div id="name-settings">
+                    <span class="settings-title">Theme</span>
+                    <div class="settings-container">
+                        <div class="container" onclick="clickNameOfGod(this)">
+                            <input id="name-Allah" type="radio" name="name-of-God">
+                            <span class="checkmark"></span>
+                            <span class="theme-text">Allah</span>
+                        </div>
+                        <div class="container" onclick="clickNameOfGod(this)">
+                            <input id="name-God" type="radio" name="name-of-God">
+                            <span class="checkmark"></span>
+                            <span class="theme-text">God</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="font-settings">
-                <span class="settings-title">Font Size</span>
-                <div class="settings-container">
-                    <button class="block-button fas fa-minus" onclick="changeFontSize(false)"></button>
-                    <div id="font-counter"></div>
-                    <button class="block-button fas fa-plus" onclick="changeFontSize(true)"></button>
+                <div id="theme-settings">
+                    <span class="settings-title">Theme</span>
+                    <div class="settings-container">
+                        <div class="container" onclick="clickTheme(this)">
+                            <input id="light-theme" type="radio" name="theme">
+                            <span class="checkmark"></span>
+                            <span class="theme-text">Light Theme</span>
+                        </div>
+                        <div class="container" onclick="clickTheme(this)">
+                            <input id="dark-theme" type="radio" name="theme" checked="true">
+                            <span class="checkmark"></span>
+                            <span class="theme-text">Dark Theme</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="translation-settings">
-                <span class="settings-title">Translations</span>
-                <div id="translation-container" class="settings-container"></div>
+                <div id="font-settings">
+                    <span class="settings-title">Font Size</span>
+                    <div class="settings-container">
+                        <button class="block-button fas fa-minus" onclick="changeFontSize(false)"></button>
+                        <div id="font-counter"></div>
+                        <button class="block-button fas fa-plus" onclick="changeFontSize(true)"></button>
+                    </div>
+                </div>
+                <div id="translation-settings">
+                    <span class="settings-title">Translations</span>
+                    <div id="translation-container" class="settings-container"></div>
+                </div>
             </div>
         </div>
     </div>

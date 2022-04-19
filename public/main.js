@@ -1,15 +1,18 @@
 'use strict'
 
-let isTestMode = 1;
+let isTestMode = 0;
 
 let baseURL = "https://api.quran.com/api/v4/";
 let verseURL = "verses/by_chapter/";
 let languageQuery = "?language=en";
 let translitterationId = "57";
 
-var chapters, translation;
+var chapters, translationsInfo;
+let currentTranslations = [];
 let chaptersLoaded = false;
 let translationLoaded = false;
+
+var nameOfGod;
 
 let settings = {
     "async": true,
@@ -21,6 +24,74 @@ let settings = {
     "data": {},
     "credentials": 'include'
 };
+
+
+let translationOrder = [
+    // {
+    //     name: "Transliteration",
+    //     id: 57
+    // },
+    // {
+    //     name: "A. Hussain Sarantaris",
+    //     id: -1,
+    // },
+    {
+        name: "Saheeh International", 
+        id: 20
+    },
+    {
+        name: "Dr. Mustafa Khattab, the Clear Quran",
+        id: 131
+    },
+    {
+        name: "Abdul Haleem", 
+        id: 85
+    },
+    {
+        name: "English Translation (Pickthall)",
+        id: 19
+    },
+    {
+        name: "English Translation (Yusuf Ali)",
+        id: 22
+    },
+    {
+        name: "Tafheem-ul-Quran - Abul Ala Maududi",
+        id: 95
+    },
+    {
+        name: "Fadel Soliman, Bridges’ translation",
+        id: 149
+    },
+    {
+        name: "Maarif-ul-Quran",
+        id: 167
+    },
+    {
+        name: "Mufti Taqi Usmani",
+        id: 84
+    },
+    // {
+    //     name: "Abridged Explanation of the Quran",
+    //     id: 171
+    // },
+    {
+        name: "Dr. Ghali",
+        id: 17
+    },
+    {
+        name: "Ruwwad Center",
+        id: 206
+    },
+    {
+        name: "Dr. T. B. Irving",
+        id: 207
+    },
+    // {
+    //     name: "Muhammad Taqi-ud-Din al-Hilali & Muhammad Muhsin Khan",
+    //     id: 203
+    // },
+];
 
 
 /**
@@ -75,7 +146,7 @@ var wordTranslations;
 let wordSettings = {arabic: false, transliteration: true, translation: true};
 
 document.addEventListener('click', function(e) {
-    if (settingsOverlayElement.getAttribute('open') && !e.target.matches('#settings, #settings *, #settings-button, #settings-button *')) {
+    if (settingsOverlayElement.getAttribute('open') && !e.target.matches('#settings-wrapper, #settings-wrapper *, #settings-button, #settings-button *')) {
         closeNav();
         e.stopImmediatePropagation();
     }
@@ -95,6 +166,8 @@ document.onreadystatechange = function(e) {
         verseView = parseInt(localStorage.getItem('verse-view'));
         setCurrentTheme(parseInt(localStorage.getItem('theme')));
         setFontSize(parseInt(localStorage.getItem('font-size-counter')));
+        setCurrentTranslations(JSON.parse(localStorage.getItem('current-translations')));
+        setNameOfGod(JSON.parse(localStorage.getItem('name-of-God')));
         if (currentVerse || currentChapter) {
             chapterPageElement.style.display = 'flex';
         } else {
@@ -106,14 +179,12 @@ document.onreadystatechange = function(e) {
 init();
 
 function init() {
-    getTranslations();
     getChapters();
 }
 
 function onReload() {
-    if (!chaptersLoaded || !translationLoaded) {
-        return;
-    }
+    createTranslationSettings();
+    createBismillah();
     if (currentChapter) {
         showChapterPage();
     } else {
@@ -121,35 +192,35 @@ function onReload() {
     }
 }
 
-function getTranslations() {
-    settings.url = baseURL + "resources/translations?language=en";
-    $.ajax(settings).done(function (response) {
-        selectTranslation(response.translations);
-        createBismillah();
-        translationLoaded = true;
-        onReload();
-    });
-}
-
-function selectTranslation(translations) {
-    var translationElement;
+function createTranslationSettings() {
     let translationContainer = document.getElementById('translation-container');
-    for (let i = 0; i < translations.length; i++) {
-        if (translations[i].language_name === "english") {
-            translationElement = createDiv({innerHTML: translations[i].name});
-            translationContainer.appendChild(translationElement);
-            if (translations[i].name === 'Saheeh International') {
-                translation = translations[i];
-            }
+    let selectAllBox = createCheckbox('all-translations', 'Select All');
+    let sarantarisTranslation = createCheckbox('AHS','A. Hussain Sarantaris');
+    translationContainer.appendChild(selectAllBox);
+    // translationContainer.appendChild(sarantarisTranslation);
+    for (let i = 0; i < translationOrder.length; i++) {
+        let checkboxElement = createCheckbox(i,translationOrder[i].name);
+        translationContainer.appendChild(checkboxElement);
+        if (translationOrder[i].name === 'Saheeh International') {
+            currentTranslations.push(translationOrder[i]);
         }
     }
+}
+
+function createCheckbox(value, label) {
+    let checkbox = createDiv({tagName: 'input'});
+    let labelElement = createDiv({tagName: 'label', innerHTML: label});
+    checkbox.type = 'checkbox';
+    checkbox.name = 'translations';
+    checkbox.value = value;
+    labelElement.for = value;
+    return createDiv({id: value, children: [checkbox, labelElement]});
 }
 
 function getChapters() {
     settings.url = baseURL + "chapters" + languageQuery;
     $.ajax(settings).done(function (response) {
         chapters = response.chapters;
-        chaptersLoaded = true;
         onReload();
     });
 }
@@ -169,17 +240,19 @@ function createDiv(args) {
 }
 
 
-function scrollToVerse(verseElement) {
-    let verseRect = verseElement.getBoundingClientRect();
-    let contentRect = chapterContentWrapperElement.getBoundingClientRect();
-    let verseHeight = verseRect.height;
-    var blockPosition; 
-    if (verseHeight < contentRect.height) {
-        blockPosition = 'end';
-    } else {
-        blockPosition = 'start';
+function scrollToVerse(v, behavior, blockPosition) {
+    let verseElement = document.querySelector(`.verse[verse="${v}"]`);
+    if (!blockPosition) {
+        let verseRect = verseElement.getBoundingClientRect();
+        let contentRect = chapterContentWrapperElement.getBoundingClientRect();
+        let verseHeight = verseRect.height;
+        if (verseHeight < contentRect.height) {
+            blockPosition = 'end';
+        } else {
+            blockPosition = 'start';
+        }
     }
-    verseElement.scrollIntoView({behavior: "auto", block: blockPosition});
+    verseElement.scrollIntoView({behavior: behavior, block: blockPosition});
 }
 
 function createDoubleLineDiv(line1, line2, args) {
@@ -339,6 +412,27 @@ function setFontSize(counter) {
     chapterContentElement.style.fontSize = (1 + counter*0.05) + "em";
 }
 
+function setCurrentTranslations(translations) {
+    if (!translations) {
+        translations = [];
+    }
+    currentTranslations = translations;
+    localStorage.setItem('current-translations', JSON.stringify(translations));
+}
+
+function setNameOfGod(name) {
+    nameOfGod = name;
+    localStorage.setItem('name-of-God', name);
+    let nameGod = document.getElementById('name-God');
+    let nameAllah = document.getElementById('name-Allah');
+    if (name) {
+        nameGod.checked = false;
+        nameAllah.checked = true;
+    } else {
+        nameAllah.checked = false;
+        nameGod.checked = true;
+    }
+}
 
 
 

@@ -119,8 +119,7 @@ function blurVersePlaying(e) {
     if (verseView === 1) {
         setCurrentVerse(v);
     } else {
-        let nextVerseElement = document.querySelector(`.verse[verse="${v}"]`);
-        scrollToVerse(nextVerseElement);
+        scrollToVerse(v, "auto");
     }
 }
 

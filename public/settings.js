@@ -27,6 +27,19 @@ function clickTheme(element) {
     }
 }
 
+function clickNameOfGod(element) {
+    let nameGod = document.getElementById('name-God');
+    let nameAllah = document.getElementById('name-Allah');
+    if (element === nameGod.parentNode && !nameGod.checked) {
+        setNameOfGod(0);
+    } else if (!nameAllah.checked) {
+        setNameOfGod(1);
+    } else {
+        return;
+    }
+    setVerseView(verseView);
+}
+
 function changeFontSize(increase) {
     if (increase) {
         setFontSize(fontSizeCounter+1);
