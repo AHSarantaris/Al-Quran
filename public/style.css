@@ -12,20 +12,40 @@
 
     --padding-1: 20px;
     --padding-2: 12px;
-    --padding-3: 8px; 
+    --padding-3: 8px;
+    --padding-4: 4px;
 
     --medium-text: 0.95em;
+    
     
     --background-color: rgb(var(--background-value),var(--background-value),var(--background-value));
     --background-color-1: rgb(var(--background-value-1),var(--background-value-1),var(--background-value-1));
     --background-color-2: rgb(var(--background-value-2),var(--background-value-2),var(--background-value-2));
     --background-color-3: rgb(var(--background-value-3),var(--background-value-3),var(--background-value-3));
     --background-color-4: rgb(var(--background-value-4),var(--background-value-4),var(--background-value-4));
+
+    /* Dark Theme */
+    --theme-color: hsl(30, 70%, 65%);
+    --theme-color-opaque: hsla(30, 60%, 65%, 0.6);
+
+    --text-color-1: #ccc;
+    --text-color-2: #bbb;
+    --text-color-3: #ddd;
+    --text-color-4: #999;
+
+    
+    --background-value: 24;
+    --background-value-1: calc(6 + var(--background-value));
+    --background-value-2: calc(6 + var(--background-value-1));
+    --background-value-3: calc(8 + var(--background-value-2));
+    --background-value-4: calc(10 + var(--background-value-3));
+    
 }
 html {
     overflow: hidden;
     position: fixed;
     height: 100%;
+    background-color: var(--background-color);
 }
 body {
     font-size: 3.8vmin; /* font-size: 16px; */
@@ -86,9 +106,6 @@ input[type=number] {
 }
 .icon-button:hover {
     opacity: var(--hover-opacity-1);
-}
-.block-button:hover {
-    background-color: var(--background-color-2) !important;
 }
 sup {
     cursor: pointer;
@@ -188,7 +205,7 @@ sup:hover  {
 }
 .header[selected] {
     text-decoration: underline;
-    text-underline-offset: calc(0.5*var(--padding-3));
+    text-underline-offset: var(--padding-4);
 
 }
 .chapter-name.header {
@@ -243,7 +260,7 @@ sup:hover  {
 
 /* Chapter topbar */
 #back-button {
-    margin-left: calc(0.5*var(--padding-3));
+    margin-left: var(--padding-4);
 }
 #verse-selector-button:disabled {
     color: var(--theme-color-opaque);
@@ -359,7 +376,7 @@ sup:hover  {
     width: var(--padding-3);
     background-color: var(--background-color-4);
     border-radius: 50%;
-    border: calc(0.5*var(--padding-3)) solid var(--text-color-3);
+    border: var(--padding-4) solid var(--text-color-3);
 }
 .container:hover input:not(input:checked) ~ .checkmark {
     background-color: var(--theme-color);
@@ -380,6 +397,13 @@ sup:hover  {
 #translation-container {
     flex-direction: column;
     gap: var(--padding-3);
+}
+.checkbox-container {
+    display: flex;
+    gap: var(--padding-4);
+}
+.checkbox {
+    display: block;
 }
 
 
@@ -514,6 +538,7 @@ sup:hover  {
     background-color: var(--background-color-1);
     box-shadow: 0px -2px 8px -2px var(--background-color);
     border-top: 1px solid var(--background-color);
+    /* padding: var(--padding-4); */
 }
 #verse-playing {
     max-width: 48px;
@@ -542,6 +567,7 @@ sup:hover  {
     background-color: var(--background-color-1);
     justify-content: center;
     align-items: center;
+    /* padding: var(--padding-3); */
 }
 #verse-container {
     max-width: 900px;
@@ -638,10 +664,10 @@ sup:hover  {
 .transliterated-word {
     display: inline-block;
     text-decoration: underline;
-    text-underline-offset: calc(0.5*var(--padding-3));
+    text-underline-offset: var(--padding-4);
     padding-bottom: var(--padding-3);
     cursor: pointer;
-    font-size: 0.95em;
+    /* font-size: 0.95em; */
     font-weight: bold;
     letter-spacing: 0.5pt;
 }
@@ -666,7 +692,7 @@ sup:hover  {
 
 /* Scrollable */
 .scrollable::-webkit-scrollbar {
-    height: calc(0.5*var(--padding-3));
+    height: var(--padding-4);
     width: var(--padding-2);
     border-top: 1px solid var(--background-color);
     border-bottom: 1px solid var(--background-color);
@@ -678,11 +704,18 @@ sup:hover  {
     background-color: var(--background-color-4);
 }
 
+@media(hover: hover) and (pointer: fine) {
+    .block-button:hover {
+        background-color: var(--background-color-2) !important;
+    }
+}
+
 @media only screen and (max-width: 350px) {
     :root {
         --padding-1: 10px;
         --padding-2: 6px;
         --padding-3: 4px;
+        --padding-4: 2px;
     }
     body {
         font-size: 4vw;
@@ -759,3 +792,4 @@ sup:hover  {
         padding-left: 20%;
     }
 }
+

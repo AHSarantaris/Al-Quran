@@ -8,6 +8,30 @@ function createSettingsButton() {
     return button;
 }
 
+function createTranslationSettings() {
+    let translationContainer = document.getElementById('translation-container');
+    let selectAllBox = createCheckbox('all-translations', 'Select All');
+    let sarantarisTranslation = createCheckbox('AHS','A. Hussain Sarantaris');
+    translationContainer.appendChild(selectAllBox);
+    // translationContainer.appendChild(sarantarisTranslation);
+    for (let i = 0; i < translationOrder.length; i++) {
+        let checkboxElement = createCheckbox(i,translationOrder[i].name);
+        translationContainer.appendChild(checkboxElement);
+        if (translationOrder[i].name === 'Saheeh International') {
+            currentTranslations.push(translationOrder[i]);
+        }
+    }
+}
+
+function createCheckbox(value, label) {
+    let checkbox = createDiv({tagName: 'input', className: 'checkbox'});
+    let labelElement = createDiv({tagName: 'label', innerHTML: label});
+    checkbox.type = 'checkbox';
+    checkbox.name = 'translations';
+    checkbox.value = value;
+    labelElement.for = value;
+    return createDiv({id: value, className: 'checkbox-container', children: [checkbox, labelElement]});
+}
 
 function openNav() {
     settingsOverlayElement.setAttribute('open',true);

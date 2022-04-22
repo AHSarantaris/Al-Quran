@@ -1,14 +1,15 @@
 :root {
-    --theme-color: hsl(42, 42%, 53%);
+    /* --theme-color: hsl(42, 42%, 53%);
     --theme-color: hsl(50, 100%, 25%);
     --theme-color: hsl(40, 60%, 40%);
     --theme-color: hsl(40, 60%, 35%);
     /* --theme-color: #96760d;
     --theme-color: #b0892b;
     --theme-color: hsl(43, 61%, 37%); */
-    --theme-color: hsl(40, 63%, 36%);
-    --theme-color: hsl(37, 50%, 36%);
-    --theme-color-opaque: hsla(45, 60%, 40%, 0.6);
+    /* --theme-color: hsl(40, 63%, 36%); */
+    /* --theme-color: hsl(37, 50%, 36%); */
+    --theme-color: hsl(37, 55%, 36%);
+    --theme-color-opaque: hsla(37, 55%, 36%, 0.6);
 
     --text-color-1: #222;
     --text-color-2: #666;
@@ -22,16 +23,30 @@
     --background-value-4: calc(-10 + var(--background-value-3));
 }
 
+
 .topbar {
-    background-color: var(--theme-color) !important;
-    color: var(--background-color) !important;
+    background-color: var(--theme-color);
+    color: var(--background-color);
+    box-shadow: none;
+    border: none;
+}
+#audio-controls {
+    /* background-color: var(--background-color-2); */
+    border-top: 1px solid var(--background-color-4);
+    box-shadow: none;
+}
+#previous-verse-button {
+    border-bottom: 1px solid var(--background-color-4);
+}
+#next-verse-button {
+    border-top: 1px solid var(--background-color-4);
 }
 .topbar .small-text {
-    color: var(--background-color-4) !important;
+    color: var(--background-color-4);
 }
 #title-english {
-    color: var(--background-color-4) !important;
+    color: var(--background-color-4);
 }
 #verse-selector-button:disabled {
-    color: var(--background-color-4) !important;
+    color: var(--background-color-4);
 }

@@ -160,7 +160,8 @@ let backButtonElement = createBackButton();
 let settingsButtonElement = createSettingsButton();
 
 document.onreadystatechange = function(e) {
-    if (document.readyState === 'interactive') {  
+    if (document.readyState === 'interactive') {
+        document.body.style.display = 'none'; 
         currentChapter = parseInt(localStorage.getItem('chapter'));
         currentVerse = parseInt(localStorage.getItem('verse'));
         verseView = parseInt(localStorage.getItem('verse-view'));
@@ -173,6 +174,9 @@ document.onreadystatechange = function(e) {
         } else {
             homePageElement.style.display = 'flex';
         }
+    }
+    if (document.readyState === 'complete') {
+        document.body.style.display = 'block'; 
     }
 };
 
@@ -190,31 +194,6 @@ function onReload() {
     } else {
         showHomePage();
     }
-}
-
-function createTranslationSettings() {
-    let translationContainer = document.getElementById('translation-container');
-    let selectAllBox = createCheckbox('all-translations', 'Select All');
-    let sarantarisTranslation = createCheckbox('AHS','A. Hussain Sarantaris');
-    translationContainer.appendChild(selectAllBox);
-    // translationContainer.appendChild(sarantarisTranslation);
-    for (let i = 0; i < translationOrder.length; i++) {
-        let checkboxElement = createCheckbox(i,translationOrder[i].name);
-        translationContainer.appendChild(checkboxElement);
-        if (translationOrder[i].name === 'Saheeh International') {
-            currentTranslations.push(translationOrder[i]);
-        }
-    }
-}
-
-function createCheckbox(value, label) {
-    let checkbox = createDiv({tagName: 'input'});
-    let labelElement = createDiv({tagName: 'label', innerHTML: label});
-    checkbox.type = 'checkbox';
-    checkbox.name = 'translations';
-    checkbox.value = value;
-    labelElement.for = value;
-    return createDiv({id: value, children: [checkbox, labelElement]});
 }
 
 function getChapters() {
