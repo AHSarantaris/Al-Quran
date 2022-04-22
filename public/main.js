@@ -1,6 +1,6 @@
 'use strict'
 
-let isTestMode = 0;
+let isTestMode = 1;
 
 let baseURL = "https://api.quran.com/api/v4/";
 let verseURL = "verses/by_chapter/";
@@ -71,10 +71,6 @@ let translationOrder = [
         name: "Mufti Taqi Usmani",
         id: 84
     },
-    // {
-    //     name: "Abridged Explanation of the Quran",
-    //     id: 171
-    // },
     {
         name: "Dr. Ghali",
         id: 17
@@ -87,10 +83,14 @@ let translationOrder = [
         name: "Dr. T. B. Irving",
         id: 207
     },
-    // {
-    //     name: "Muhammad Taqi-ud-Din al-Hilali & Muhammad Muhsin Khan",
-    //     id: 203
-    // },
+    {
+        name: "Muhammad Taqi-ud-Din al-Hilali & Muhammad Muhsin Khan",
+        id: 203
+    },
+    {
+        name: "Abridged Explanation of the Quran",
+        id: 171
+    },
 ];
 
 
@@ -392,13 +392,13 @@ function setCurrentTheme(theme) {
     if (!theme) {
         darkTheme.checked = true;
         lightTheme.checked = false;
-        $('link[href="light.css"]').remove();
         $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
+        $('link[href="light.css"]').remove();
     } else {
         lightTheme.checked = true;
         darkTheme.checked = false;
-        $('link[href="dark.css"]').remove();
         $('head').append('<link rel="stylesheet" href="light.css" type="text/css" />');
+        $('link[href="dark.css"]').remove();
     }
 }
 

@@ -9,9 +9,10 @@ function showChapterPage() {
         showVerseView();
         return;
     }
-    verseTranslations = undefined;
+    // verseTranslations = undefined;
+    verseTranslations = true;
     wordTranslations = undefined;
-    loadVerseTranslations();
+    // loadVerseTranslations();
     loadWordTranslations();
 }
 

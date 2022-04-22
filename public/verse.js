@@ -69,25 +69,31 @@ function getTranslationData(v, translationInfo, getWords, scroll) {
 
 
 function createVerseElement(v) {
-    var wordContainerElement, numberElement, verseElement, headerElement, verseButtonElement, translationContainerElement;
+    var wordContainerElement, numberElement, verseElement, headerElement, verseButtonElement, translationContainerElement, translationWrapperElement;
     verseElement = createDiv({className: 'verse'});
     headerElement = createDiv({className: 'verse-header'});
     numberElement = createDiv({tagName: 'span', className:'verse-number', innerHTML: v});
     verseButtonElement = createVerseButton(v);
     wordContainerElement = createDiv({className:'word-container'});
+    translationWrapperElement = createDiv({className: 'translation-container-wrapper'});
     translationContainerElement = createDiv({className: 'translation-container'});
+    translationWrapperElement.appendChild(translationContainerElement);
+    translationWrapperElement.appendChild(createAllTranslationsButton(v));
     headerElement.appendChild(numberElement);
     headerElement.appendChild(verseButtonElement);
     verseElement.appendChild(headerElement);
     verseElement.appendChild(wordContainerElement);
-    verseElement.appendChild(translationContainerElement);
+    verseElement.appendChild(translationWrapperElement);
+    appendToVerseContainer(verseElement, v);
+}
+
+function createAllTranslationsButton(v) {
     let allTranslationsButtonContainer = createDiv({className: 'all-translations-button-container'});
-    let allTranslationsButton = createDiv({tagName: 'button', className: 'all-translations-button text-button', innerHTML: '+ More Translations'});
+    let allTranslationsButton = createDiv({tagName: 'button', className: 'all-translations-button icon-button fas fa-chevron-down'});
     allTranslationsButton.setAttribute('verse', v);
     allTranslationsButton.addEventListener('click', clickAllTranslationsButton);
     allTranslationsButtonContainer.appendChild(allTranslationsButton);
-    verseElement.appendChild(allTranslationsButtonContainer);
-    appendToVerseContainer(verseElement, v);
+    return allTranslationsButtonContainer;
 }
 
 function createWordContainer(v,words) {
@@ -127,12 +133,13 @@ function clickAllTranslationsButton(e) {
     var translationInfo, isSelected;
     let v = e.currentTarget.getAttribute('verse');
     isSelected = e.currentTarget.getAttribute('selected'); 
+    e.currentTarget.className = 'all-translations-button icon-button fas fa-chevron-'
     if (isSelected) {
-        e.currentTarget.innerHTML = '+ More Translations';
+        e.currentTarget.className += 'down';
         translationInfo = currentTranslations;
         e.currentTarget.removeAttribute('selected');
     } else {
-        e.currentTarget.innerHTML = '- Less Translations';
+        e.currentTarget.className += 'up';
         translationInfo = translationOrder;
         if (isTestMode) {
             for (let i = 0; i < translationInfo.length; i++) {
@@ -212,7 +219,7 @@ function createVerseButton(v) {
     elements[1].addEventListener('click', clickIbnKathir);
     elements[2].addEventListener('click', clickMaarifUlQuran);
     elements[3].addEventListener('click', clickQuranWebsite);
-    let button = createDiv({tagName: 'button', className: ' icon-button fa fa-ellipsis-v'});
+    let button = createDiv({tagName: 'button', className: 'icon-button fas fa-ellipsis-v'});
     let res = createDropdownButton(button);
     res.appendChild(createDropdownContent(elements));
     res.setAttribute('verse',v);
