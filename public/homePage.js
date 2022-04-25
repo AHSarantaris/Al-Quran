@@ -19,7 +19,7 @@ function createCardContainer() {
 }
 
 
-function createCardHeader(order) {
+function createCardHeader(order, isReverse) {
     let headerElements = [];
     headerElements.push(createDiv({className: 'row'}));
     headerElements.push(createDiv({tagName: 'span', className: 'number',innerHTML: 'No.'}));
@@ -32,6 +32,7 @@ function createCardHeader(order) {
         }
         if (i === order) {
             headerElements[i].setAttribute('selected',true);
+            headerElements[i].setAttribute('isReverse', isReverse);
         }
         headerElements[i].style.gridRowStart = 1;
         headerElements[i].style.gridColumnStart = i;
@@ -43,20 +44,23 @@ function createCardHeader(order) {
 }
 
 function clickHeaderElement(e) {
+    var isReverse;
     let order = parseInt(e.currentTarget.style.gridColumnStart);
     let previousElement = document.querySelector('.header[selected]');
-    let isReverse = previousElement.getAttribute('isReverse');
-    console.log(isReverse)
-    isReverse = !isReverse && previousElement === e.currentTarget;
-    console.log(isReverse)
-    // TODO
+    if (previousElement === e.currentTarget) {
+        isReverse = 'true' === previousElement.getAttribute('isReverse');
+        isReverse = !isReverse;
+    } else {
+        isReverse = false;
+        previousElement.setAttribute('isReverse', isReverse);
+    }
     e.currentTarget.setAttribute('isReverse', isReverse);
     createCardsOrdered(order, isReverse);
 }
 
 function createCardsOrdered(order, isReverse) {
     cardContainerElement.innerHTML = '';
-    createCardHeader(order);
+    createCardHeader(order, isReverse);
     var rowElements;
     for (let i = 0; i < 114; i++) {
         rowElements = createChapterCard(i, order, isReverse);

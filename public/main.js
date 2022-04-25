@@ -1,6 +1,6 @@
 'use strict'
 
-let isTestMode = 1;
+let isTestMode = 0;
 
 let baseURL = "https://api.quran.com/api/v4/";
 let verseURL = "verses/by_chapter/";
@@ -327,9 +327,7 @@ function setCurrentVerse(v) {
     currentVerse = v;
     localStorage.setItem('verse', v);
     if (Number.isInteger(currentVerse)) {
-        let versePlayingButton = document.getElementById('verse-playing');
-        versePlayingButton.defaultValue = currentVerse;
-        versePlayingButton.value = currentVerse;
+        setVersePlayingValue(v);
         setVerseView(1);
     }
 }

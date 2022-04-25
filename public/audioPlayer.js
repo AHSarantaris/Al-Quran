@@ -78,10 +78,13 @@ function createVersePlayingButton() {
 function clickPlayButton(e) {
     let playButton = document.getElementById('play-button');
     let versePlayingButton = document.getElementById('verse-playing');
-    let v = parseInt(versePlayingButton.value);
+    let v = Number(versePlayingButton.value);
+    let t = v === 0 ? 0 : timeStamps[v] - 0.05;
     if (audioPlayerElement.paused) {
-        audioPlayerElement.currentTime = timeStamps[v] - 0.05;
-        playFromVerse(v);
+        if (!isNaN(t) && v % 1 === 0) {
+            audioPlayerElement.currentTime = t;
+            playFromVerse(v, "smooth");
+        }
         playButton.className = 'fas fa-pause';
         audioPlayerElement.play();
     } else {
@@ -108,14 +111,23 @@ function keyupVersePlaying(e) {
 
 function blurVersePlaying(e) {
     let versePlayingButton = document.getElementById('verse-playing');
-    let v = parseInt(versePlayingButton.value);
-    if (isNaN(v) || v < -versePlayingButton.max || v > versePlayingButton.max || (v === 0 && versePlayingButton.min === '1')) {
+    let v = Number(versePlayingButton.value); 
+    if (!isNaN(v) && v % 1 !== 0) {
+        alert(`Current time = ${Math.round(audioPlayerElement.currentTime/60 * 100) / 100} minutes.\nDuration = ${Math.round(audioPlayerElement.duration/60 * 100) / 100} minutees.`)
+        if (v*60 < audioPlayerElement.duration) {
+            audioPlayerElement.currentTime = v*60;
+            if (!isNaN(timeStamps[versePlayingButton.min])) {
+                findVerseFromTime();
+            }
+        }
+        return;
+    } else if (isNaN(v) || v < -versePlayingButton.max || v > versePlayingButton.max || (v === 0 && versePlayingButton.min === '1')) {
         v = parseInt(versePlayingButton.defaultValue);
         versePlayingButton.value = v;
         return;
     } else if (v < 0) {
         v = chapters[currentChapter-1].verses_count+v+1;
-    } 
+    }
     if (verseView === 1) {
         setCurrentVerse(v);
     } else {
@@ -146,9 +158,25 @@ function updateRecitation() {
 }
 
 function audioTimeUpdate(e) {
-    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.5) {
-        playNextVerse();
+    if (!timeStamps[currentVersePlaying + 1] 
+        || (audioPlayerElement.currentTime < timeStamps[currentVersePlaying + 1] - 0.5 && audioPlayerElement.currentTime > timeStamps[currentVersePlaying] - 0.5)) {
+        return;
     }
+    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.5 && audioPlayerElement.currentTime < timeStamps[currentVersePlaying + 2]) {
+        playNextVerse();
+    } else {
+        findVerseFromTime();
+    }
+}
+
+function findVerseFromTime() {
+    for (let i = 0; i < chapters[currentChapter-1].verses_count-1; i++) {
+        if (audioPlayerElement.currentTime < timeStamps[i+1]) {
+            playFromVerse(i, "auto");
+            return;
+        }
+    }
+    playFromVerse(i, "auto");
 }
 
 function audioEnded(e) {
@@ -168,7 +196,7 @@ function playNextVerse() {
     playFromVerse(currentVersePlaying+1);
 }
 
-function playFromVerse(v) {
+function playFromVerse(v, behavior) {
     setVersePlayingValue(v);
     currentVersePlaying = v;
     if (verseView === 1) {
@@ -176,7 +204,7 @@ function playFromVerse(v) {
     } else {
         let nextVerseElement = document.querySelector(`.verse[verse="${v}"]`);
         nextVerseElement.setAttribute('playing', true);
-        nextVerseElement.scrollIntoView({behavior: "smooth", block: "end"});
+        nextVerseElement.scrollIntoView({behavior: behavior, block: "end"});
     }
 }
 
