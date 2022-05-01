@@ -79,9 +79,9 @@ function clickPlayButton(e) {
     let playButton = document.getElementById('play-button');
     let versePlayingButton = document.getElementById('verse-playing');
     let v = Number(versePlayingButton.value);
-    let t = v === 0 ? 0 : timeStamps[v] - 0.05;
+    let t = timeStamps[v] - 0.05;
     if (audioPlayerElement.paused) {
-        if (!isNaN(t) && v % 1 === 0) {
+        if (!isNaN(timeStamps[v]) && v % 1 === 0) {
             audioPlayerElement.currentTime = t;
             playFromVerse(v, "smooth");
         }
@@ -111,7 +111,7 @@ function keyupVersePlaying(e) {
 
 function blurVersePlaying(e) {
     let versePlayingButton = document.getElementById('verse-playing');
-    let v = Number(versePlayingButton.value); 
+    let v = Number(versePlayingButton.value);
     if (!isNaN(v) && v % 1 !== 0) {
         alert(`Current time = ${Math.round(audioPlayerElement.currentTime/60 * 100) / 100} minutes.\nDuration = ${Math.round(audioPlayerElement.duration/60 * 100) / 100} minutees.`)
         if (v*60 < audioPlayerElement.duration) {
@@ -127,6 +127,8 @@ function blurVersePlaying(e) {
         return;
     } else if (v < 0) {
         v = chapters[currentChapter-1].verses_count+v+1;
+    } else if (v === 0) {
+        audioPlayerElement.currentTime = 0;
     }
     if (verseView === 1) {
         setCurrentVerse(v);
