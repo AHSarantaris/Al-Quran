@@ -114,6 +114,11 @@ sup {
 sup:hover  {
     opacity: var(--hover-opacity-1);
 }
+.h {
+    /* color: var(--theme-color); */
+    font-weight: bold;
+    margin-right: 2px;
+}
 ::selection {
     background-color: var(--theme-color-opaque);
     color: white;

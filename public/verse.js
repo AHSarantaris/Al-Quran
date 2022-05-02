@@ -162,7 +162,7 @@ function createTranslationElement(v, text, name, id) {
         }
     } else if (name === 'Dr. T. B. Irving') {
         text = text.replaceAll("Allah (God)", nameOfGod ? "Allah" : "God");
-    } else if (!nameOfGod) {
+    } else if (!nameOfGod && name !== 'Transliteration') {
         text = text.replaceAll(/All(a|ā|â)h/g, "God");
     }
     let translationElement = createDiv({className:'verse-translated', innerHTML: text});

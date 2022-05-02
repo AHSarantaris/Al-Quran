@@ -28,16 +28,16 @@ let settings = {
 
 let translationOrder = [
     // {
-    //     name: "Transliteration",
-    //     id: 57
-    // },
-    // {
     //     name: "A. Hussain Sarantaris",
     //     id: -1,
     // },
     {
         name: "Saheeh International", 
         id: 20
+    },
+    {
+        name: "Transliteration",
+        id: 57
     },
     {
         name: "Dr. Mustafa Khattab, the Clear Quran",
@@ -153,6 +153,7 @@ document.addEventListener('click', function(e) {
     let dropdownContentElement = document.querySelector('.dropdown-content[selected]');
     if (dropdownContentElement) {
         dropdownContentElement.removeAttribute('selected');
+        e.stopImmediatePropagation();
     }
 }, true);
 
@@ -183,7 +184,17 @@ document.onreadystatechange = function(e) {
 init();
 
 function init() {
+    setIsTestMode();
     getChapters();
+}
+
+function setIsTestMode() {
+    let folderPath = `translations/108/`;
+    $.getJSON(folderPath + 'words.json', function(json){
+        isTestMode = 0;
+    }).catch(function(){
+        isTestMode = 1;
+    });
 }
 
 function onReload() {
