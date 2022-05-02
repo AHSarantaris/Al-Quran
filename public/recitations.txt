@@ -11,5 +11,6 @@
 }
 
 82: {
-	A)afasy - 1427
+	Alafasy - 1427
+	Alafasy - 1419
 }
