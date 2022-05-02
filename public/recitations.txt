@@ -9,3 +9,7 @@
 	Alafasy - 1421
 	Alafasy - 1419
 }
+
+82: {
+	A)afasy - 1427
+}
