@@ -594,7 +594,7 @@
         [
             "ٱلْمَرْءُ",
             "l-maru",
-            "a man"
+            "man"
         ],
         [
             "مِنْ",
@@ -604,7 +604,7 @@
         [
             "أَخِيهِ",
             "akhīhi",
-            "his brother"
+            "his brother,"
         ]
     ],
     "35": [
@@ -616,7 +616,7 @@
         [
             "وَأَبِيهِ",
             "wa-abīhi",
-            "and his father"
+            "and his father,"
         ]
     ],
     "36": [
@@ -628,7 +628,7 @@
         [
             "وَبَنِيهِ",
             "wabanīhi",
-            "and his children"
+            "and his children."
         ]
     ],
     "37": [
@@ -654,20 +654,20 @@
         ],
         [
             "شَأْنٌۭ",
-            "shanun",
-            "(will be) a matter"
+            "sha'nun",
+            "a matter"
         ],
         [
             "يُغْنِيهِ",
             "yugh'nīhi",
-            "occupying him"
+            "will occupy him."
         ]
     ],
     "38": [
         [
             "وُجُوهٌۭ",
             "wujūhun",
-            "Faces"
+            "(Some) faces"
         ],
         [
             "يَوْمَئِذٍۢ",
@@ -677,19 +677,19 @@
         [
             "مُّسْفِرَةٌۭ",
             "mus'firatun",
-            "(will be) bright"
+            "being bright,"
         ]
     ],
     "39": [
         [
             "ضَاحِكَةٌۭ",
             "ḍāḥikatun",
-            "Laughing"
+            "Laughing,"
         ],
         [
             "مُّسْتَبْشِرَةٌۭ",
             "mus'tabshiratun",
-            "rejoicing at good news"
+            "rejoicing at good news."
         ]
     ],
     "40": [
@@ -711,7 +711,7 @@
         [
             "غَبَرَةٌۭ",
             "ghabaratun",
-            "(will be) dust"
+            "(will be) dust,"
         ]
     ],
     "41": [
@@ -723,7 +723,7 @@
         [
             "قَتَرَةٌ",
             "qataratun",
-            "darkness"
+            "darkness,"
         ]
     ],
     "42": [
@@ -735,17 +735,17 @@
         [
             "هُمُ",
             "humu",
-            "[they]"
+            "they"
         ],
         [
             "ٱلْكَفَرَةُ",
             "l-kafaratu",
-            "(are) the disbelievers"
+            "(are) the disbelievers,"
         ],
         [
             "ٱلْفَجَرَةُ",
             "l-fajaratu",
-            "the wicked ones"
+            "the wicked."
         ]
     ]
 }
