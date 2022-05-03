@@ -1,7 +1,8 @@
 
 56: {
 	Alafasy - 1427
-	Abu Hafs Jamat Ud-Dawah
+	Jamat Ud-Dawah
+	Humeid
 }
 
 79: {
