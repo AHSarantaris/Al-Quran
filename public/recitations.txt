@@ -1,0 +1,24 @@
+
+56: {
+	Jamat Ud-Dawah
+	Alafasy - 1427
+	Humeid
+}
+
+79: {
+	Alafasy -1421
+}
+
+80: {
+	Alafasy - 1419
+}
+
+81: {
+	Alafasy - 1421
+	Alafasy - 1419
+}
+
+82: {
+	Alafasy - 1427
+	Alafasy - 1419
+}
