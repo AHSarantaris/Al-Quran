@@ -146,7 +146,7 @@ function setAudio() {
         audioInfo = json;
         currentRecitation = 0;
         updateRecitation();
-    }).catch(function(){
+    }).fail(function(){
         audioInfo = undefined;
     }).always(function(){
         audioControlsElement.appendChild(createRecitationsButton());

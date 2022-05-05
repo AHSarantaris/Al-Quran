@@ -698,7 +698,7 @@ sup:hover  {
 /* Scrollable */
 .scrollable::-webkit-scrollbar {
     height: var(--padding-4);
-    width: var(--padding-2);
+    width: var(--padding-3);
     border-top: 1px solid var(--background-color);
     border-bottom: 1px solid var(--background-color);
 }

@@ -23,8 +23,6 @@ function loadVerseTranslations() {
         if (wordTranslations) {
             showVerseView();
         }
-    }).catch(function(){
-        console.log("Cannot read local file.");
     });
 }
 
@@ -35,8 +33,6 @@ function loadWordTranslations() {
         if (verseTranslations) {
             showVerseView();
         }
-    }).catch(function(){
-        console.log("Cannot read local file.");
     });
 }
 
@@ -74,32 +70,28 @@ function clickPreviousVerseButton() {
         }
         return;
     }
-    var verse, verseRect, contentRect, verseTop, verseBottom;
-    let computedStyle = getComputedStyle(document.querySelector(`.verse[verse="1"]`));
+    var verseRect;
+    let contentRect = chapterContentWrapperElement.getBoundingClientRect();
     for (let i = 1; i <= chapters[currentChapter-1].verses_count; i++) {
-        verse = document.querySelector(`.verse[verse="${i}"]`);
-        if (!verse) {
+        verseRect = getVersePositionsPrevious(i);
+        if (!verseRect) {
             continue;
         }
-        verseRect = verse.getBoundingClientRect();
-        contentRect = chapterContentWrapperElement.getBoundingClientRect();
-        verseTop = verseRect.top + 2.5*parseFloat(computedStyle.paddingTop);
-        verseBottom = verseRect.bottom + parseFloat(computedStyle.paddingBottom);
-        if (verseTop >= contentRect.top) {
+        if (verseRect.internalTop >= contentRect.top) {
             if (i === 1) {
                 chapterContentElement.scrollIntoView({ behavior: "smooth", block: "start" });
             } else {
                 scrollToVerseSmooth(i-1,"start");
             }
             return;
-        } else if (verseBottom <= contentRect.bottom && verseBottom >= contentRect.top) {
-            if (verseRect.height > contentRect.height) {
+        } else if (verseRect.internalBottom <= contentRect.bottom && verseRect.internalBottom >= contentRect.top) {
+            if (verseRect.externalBottom - verseRect.externalTop > contentRect.height) {
                 scrollToVerseSmooth(i,"end");
             } else {
                 scrollToVerseSmooth(i,"start");
             }
             return;
-        } else if (verseBottom >= contentRect.top) {
+        } else if (verseRect.internalBottom >= contentRect.top) {
             scrollToVerseSmooth(i,"start");
             return;
         }
@@ -113,18 +105,14 @@ function clickNextVerseButton() {
         nextVerse();
         return;
     }
-    var verse, verseRect, verseTop, verseBottom;
+    var verseRect;
     let contentRect = chapterContentWrapperElement.getBoundingClientRect();
-    let computedStyle = getComputedStyle(document.querySelector(`.verse[verse="1"]`));
     for (let i = chapters[currentChapter-1].verses_count; i > 0; i--) {
-        verse = document.querySelector(`.verse[verse="${i}"]`);
-        if (!verse) {
+        verseRect = getVersePositionsNext(i);
+        if (!verseRect) {
             continue;
         }
-        verseRect = verse.getBoundingClientRect();
-        verseTop = verseRect.top - parseFloat(computedStyle.paddingTop);
-        verseBottom = verseRect.bottom - 2*parseFloat(computedStyle.paddingBottom);
-        if (verseBottom <= contentRect.bottom) {
+        if (verseRect.internalBottom <= contentRect.bottom) {
             if (i === chapters[currentChapter-1].verses_count) {
                 let scrollTop = 0.5*$('#chapter-content-wrapper').height();
                 smoothScroll(scrollTop);
@@ -132,15 +120,15 @@ function clickNextVerseButton() {
                 scrollToVerseSmooth(i+1,"end");
             }
             return;
-        } else if (verseTop >= contentRect.top && verseTop <= contentRect.bottom) {
-            if (verseRect.height > contentRect.height) {
+        } else if (verseRect.internalTop >= contentRect.top && verseRect.internalTop <= contentRect.bottom) {
+            if (verseRect.externalBottom - verseRect.externalTop > contentRect.height) {
                 scrollToVerseSmooth(i, "start");
             } else {
                 scrollToVerseSmooth(i,"end");
             }
             return;
-        } else if (verseTop <= contentRect.bottom) {
-            if (verseBottom - contentRect.top > 3/2*contentRect.height) {
+        } else if (verseRect.internalTop <= contentRect.bottom) {
+            if (verseRect.internalBottom - contentRect.top > 3/2*contentRect.height) {
                 let scrollTop = 0.5*contentRect.height;
                 smoothScroll(scrollTop);
             } else {
@@ -149,6 +137,37 @@ function clickNextVerseButton() {
             return;
         }
     }
+}
+
+function getVersePositionsPrevious(i) {
+    let verse = document.querySelector(`.verse[verse="${i}"]`);
+    if (!verse) {
+        return undefined;
+    } 
+    let currentContainer = document.querySelector(`.verse[verse="${i}"] .word-container`);
+    let previousContainer = document.querySelector(`.verse[verse="${i+1}"] .word-container`);
+    let verseRect = verse.getBoundingClientRect();
+    var internalBottom;
+    let internalTop = currentContainer.getBoundingClientRect().top;
+    if (previousContainer) {
+        internalBottom = previousContainer.getBoundingClientRect().top;
+    } else {
+        internalBottom = verseRect.bottom;
+    }
+    return {externalTop: verseRect.top, externalBottom: verseRect.bottom, internalTop: internalTop, internalBottom: internalBottom};
+}
+
+function getVersePositionsNext(i) {
+    let verse = document.querySelector(`.verse[verse="${i}"]`);
+    if (!verse) {
+        return undefined;
+    } 
+    let currentContainer = document.querySelector(`.verse[verse="${i}"] .translation-container`);
+    let previousContainer = document.querySelector(`.verse[verse="${i-1}"] .translation-container`);
+    let verseRect = verse.getBoundingClientRect();
+    let internalBottom = currentContainer.getBoundingClientRect().bottom;
+    let internalTop = previousContainer.getBoundingClientRect().bottom;
+    return {externalTop: verseRect.top, externalBottom: verseRect.bottom, internalTop: internalTop, internalBottom: internalBottom};
 }
 
 function scrollToVerseSmooth(i, block) {

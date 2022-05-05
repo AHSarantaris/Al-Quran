@@ -185,15 +185,15 @@ init();
 
 function init() {
     setIsTestMode();
-    getChapters();
 }
 
 function setIsTestMode() {
-    let folderPath = `translations/108/`;
-    $.getJSON(folderPath + 'words.json', function(json){
+    $.getJSON('translations/108/words.json', function(){
         isTestMode = 0;
-    }).catch(function(){
+    }).fail(function(){
         isTestMode = 1;
+    }).always(function() {
+        getChapters();
     });
 }
 
