@@ -252,7 +252,7 @@
         [
             "إِنَّ",
             "inna",
-            "Indeed"
+            "Indeed,"
         ],
         [
             "ٱلْأَبْرَارَ",
@@ -274,7 +274,7 @@
         [
             "وَإِنَّ",
             "wa-inna",
-            "And indeed"
+            "And indeed,"
         ],
         [
             "ٱلْفُجَّارَ",
@@ -289,7 +289,7 @@
         [
             "جَحِيمٍۢ",
             "jaḥīmin",
-            "Hellfire"
+            "Hellfire."
         ]
     ],
     "15": [
@@ -424,12 +424,12 @@
         [
             "وَٱلْأَمْرُ",
             "wal-amru",
-            "and the Command"
+            "and the command"
         ],
         [
             "يَوْمَئِذٍۢ",
             "yawma-idhin",
-            "that Day"
+            "that day"
         ],
         [
             "لِّلَّهِ",
