@@ -13,11 +13,15 @@
     --padding-1: 20px;
     --padding-2: 12px;
     --padding-3: 8px;
-    --padding-4: 4px;
+    --padding-4: 6px;
+    --padding-5: 4px;
+
 
     --medium-text: 0.95em;
     
-    
+    /* --playing-background-value: calc(-6 + var(--background-value));
+    --playing-background-color: rgb(var(--playing-background-value),var(--playing-background-value),var(--playing-background-value)) */
+
     --background-color: rgb(var(--background-value),var(--background-value),var(--background-value));
     --background-color-1: rgb(var(--background-value-1),var(--background-value-1),var(--background-value-1));
     --background-color-2: rgb(var(--background-value-2),var(--background-value-2),var(--background-value-2));
@@ -26,7 +30,7 @@
 
     /* Dark Theme */
     --theme-color: hsl(30, 70%, 65%);
-    --theme-color-opaque: hsla(30, 60%, 65%, 0.6);
+    --theme-color-opaque: hsla(30, 70%, 65%, 0.6);
 
     --text-color-1: #ccc;
     --text-color-2: #bbb;
@@ -188,7 +192,7 @@ sup:hover  {
     width: 100%;
     max-width: 600px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-auto-rows: auto;
     background-color: var(--background-color-1);
     align-items: center;
@@ -210,7 +214,7 @@ sup:hover  {
 }
 .header[selected] {
     text-decoration: underline;
-    text-underline-offset: var(--padding-4);
+    text-underline-offset: var(--padding-5);
 
 }
 .chapter-name.header {
@@ -228,7 +232,7 @@ sup:hover  {
 }
 .card {
     box-sizing: border-box;
-    grid-column: 1/5;
+    grid-column: 1/6;
     pointer-events: auto !important;
     align-self: stretch;
     height: 3em;
@@ -251,7 +255,7 @@ sup:hover  {
     white-space: nowrap;
 }
 .revelation {
-    grid-column-start: 3;
+    grid-column-start: 4;
     text-align: center;
     margin-right: var(--padding-2);
     text-transform:capitalize;
@@ -259,13 +263,17 @@ sup:hover  {
 .verse-count {
     box-sizing: border-box;
     margin: 0 var(--padding-2) 0 0;
-    grid-column-start: 4;
+    grid-column-start: 5;
+    text-align: center;
+}
+.recitation-count {
+    grid-column-start: 3;
     text-align: center;
 }
 
 /* Chapter topbar */
 #back-button {
-    margin-left: var(--padding-4);
+    margin-left: var(--padding-5);
 }
 #verse-selector-button:disabled {
     color: var(--theme-color-opaque);
@@ -381,7 +389,7 @@ sup:hover  {
     width: var(--padding-3);
     background-color: var(--background-color-4);
     border-radius: 50%;
-    border: var(--padding-4) solid var(--text-color-3);
+    border: var(--padding-5) solid var(--text-color-3);
 }
 .container:hover input:not(input:checked) ~ .checkmark {
     background-color: var(--theme-color);
@@ -405,7 +413,7 @@ sup:hover  {
 }
 .checkbox-container {
     display: flex;
-    gap: var(--padding-4);
+    gap: var(--padding-5);
 }
 .checkbox {
     display: block;
@@ -543,7 +551,7 @@ sup:hover  {
     background-color: var(--background-color-1);
     box-shadow: 0px -2px 8px -2px var(--background-color);
     border-top: 1px solid var(--background-color);
-    /* padding: var(--padding-4); */
+    /* padding: var(--padding-5); */
 }
 #verse-playing {
     max-width: 48px;
@@ -584,6 +592,7 @@ sup:hover  {
 }
 .verse {
     box-sizing: border-box;
+    border-left: 4px solid transparent;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -594,7 +603,8 @@ sup:hover  {
     gap: var(--padding-2);
 }
 .verse[playing] {
-    background-color: var(--background-color-1);
+    /* background-color: var(--playing-background-color); */
+    border-color: var(--theme-color-opaque);
 }
 .all-translations-button-container {
     display: flex;
@@ -669,8 +679,8 @@ sup:hover  {
 .transliterated-word {
     display: inline-block;
     text-decoration: underline;
-    text-underline-offset: var(--padding-4);
-    padding-bottom: var(--padding-3);
+    text-underline-offset: var(--padding-5);
+    padding-bottom: var(--padding-4);
     cursor: pointer;
     /* font-size: 0.95em; */
     font-weight: bold;
@@ -697,7 +707,7 @@ sup:hover  {
 
 /* Scrollable */
 .scrollable::-webkit-scrollbar {
-    height: var(--padding-4);
+    height: var(--padding-5);
     width: var(--padding-3);
     border-top: 1px solid var(--background-color);
     border-bottom: 1px solid var(--background-color);
@@ -720,7 +730,8 @@ sup:hover  {
         --padding-1: 10px;
         --padding-2: 6px;
         --padding-3: 4px;
-        --padding-4: 2px;
+        --padding-4: 3px;
+        --padding-5: 2px;
     }
     body {
         font-size: 4vw;

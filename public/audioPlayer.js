@@ -141,22 +141,22 @@ function setAudio() {
     if (isTestMode) {
         return;
     }
-    let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
-    $.getJSON(folderPath + 'audio_info.json', function(json){
-        audioInfo = json;
-        currentRecitation = 0;
+    currentRecitation = 0;
+    audioInfo = chapters[currentChapter-1].recitations;
+    if (audioInfo) {
         updateRecitation();
-    }).fail(function(){
-        audioInfo = undefined;
-    }).always(function(){
-        audioControlsElement.appendChild(createRecitationsButton());
-    });
+    }
 }
 
 function updateRecitation() {
-    let folderPath = `audio/${addLeadingZeros(currentChapter)}/`;
-    audioPlayerElement.src = folderPath + audioInfo[currentRecitation].fileName;
-    timeStamps = audioInfo[currentRecitation].timeStamps;
+    let folderPath = `audio/${addLeadingZeros(currentChapter)}/${audioInfo[currentRecitation].file}`;
+    audioPlayerElement.src = folderPath + '.ogg';
+    timeStamps = {};
+    $.getJSON(folderPath + '.json', function(json){
+        timeStamps = json;
+    }).always(function(){
+        audioControlsElement.appendChild(createRecitationsButton());
+    });
 }
 
 function audioTimeUpdate(e) {
@@ -164,7 +164,9 @@ function audioTimeUpdate(e) {
         || (audioPlayerElement.currentTime < timeStamps[currentVersePlaying + 1] - 0.5 && audioPlayerElement.currentTime > timeStamps[currentVersePlaying] - 0.5)) {
         return;
     }
-    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.5 && audioPlayerElement.currentTime < timeStamps[currentVersePlaying + 2]) {
+    if (audioPlayerElement.currentTime > timeStamps[currentVersePlaying + 1] - 0.5 
+        && (currentVersePlaying === chapters[currentChapter-1].verses_count-1 || audioPlayerElement.currentTime < timeStamps[currentVersePlaying + 2])
+        ) {
         playNextVerse();
     } else {
         findVerseFromTime();

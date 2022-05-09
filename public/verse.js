@@ -210,18 +210,21 @@ function createWordText(word) {
 
 
 function createVerseButton(v) {
+    var element;
     let titles = ['Tafsir - Maududi', 'Tafsir - Ibn Kathir', 'Tafsir - Maarif-Ul-Quran', 'Quran.com'];
     let elements = [];
     for (let i = 0; i < titles.length; i++) {
-        elements.push(createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: titles[i]}));
+        element = createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: titles[i]});
+        elements.push(element);
     }
     elements[0].addEventListener('click', clickMaududi);
     elements[1].addEventListener('click', clickIbnKathir);
     elements[2].addEventListener('click', clickMaarifUlQuran);
     elements[3].addEventListener('click', clickQuranWebsite);
-    let button = createDiv({tagName: 'button', className: 'icon-button fas fa-ellipsis-v'});
+    let button = createDiv({tagName: 'button', className: 'verse-links-button icon-button fas fa-ellipsis-v'});
     let res = createDropdownButton(button);
-    res.appendChild(createDropdownContent(elements));
+    let dropdownContent = createDropdownContent(elements);
+    res.appendChild(dropdownContent);
     res.setAttribute('verse',v);
     return res;
 }

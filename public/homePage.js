@@ -26,6 +26,7 @@ function createCardHeader(order, isReverse) {
     headerElements.push(createDiv({tagName: 'span', className: 'chapter-name',innerHTML: 'Name'}));
     headerElements.push(createDiv({tagName: 'span', className: 'revelation', innerHTML: 'Order'}));
     headerElements.push(createDiv({tagName: 'span', className: 'verse-count',innerHTML: 'Verses'}));
+    headerElements.push(createDiv({tagName: 'span', className: 'recitation-count',innerHTML: 'Audio'}));
     for (let i = 0; i < headerElements.length; i++) {
         if (i > 0) {
             headerElements[i].classList.add('header', 'text-button');
@@ -35,7 +36,6 @@ function createCardHeader(order, isReverse) {
             headerElements[i].setAttribute('isReverse', isReverse);
         }
         headerElements[i].style.gridRowStart = 1;
-        headerElements[i].style.gridColumnStart = i;
         headerElements[i].addEventListener('click', clickHeaderElement);
         cardContainerElement.appendChild(headerElements[i]);
     }
@@ -71,17 +71,32 @@ function createCardsOrdered(order, isReverse) {
 }
 
 function createChapterCard(i, order, isReverse) {
+    let recitationInfo = chapters[i].recitations;
+    var audioText, audioCount;
+    if (!recitationInfo) {
+        audioCount = 0;
+    } else {
+        audioCount = recitationInfo.length;
+        audioText = 'Recital';
+        if (audioCount > 1) {
+            audioText += 's';
+        }
+    }
     let rowElements = [];
+    let card = createDiv({tagName: 'button', className:'card block-button'});
+    let number = createDiv({className:'number', innerHTML: chapters[i].id});
     let name = createDoubleLineDiv(chapters[i].name_simple, chapters[i].translated_name.name, {className: 'chapter-name'});
     let revelation = createDoubleLineDiv(chapters[i].revelation_order, chapters[i].revelation_place, {className: 'revelation'});
     let versesCount = createDoubleLineDiv(chapters[i].verses_count, 'Verses', {className:'verse-count'});
-    rowElements.push(createDiv({tagName: 'button', className:'card block-button'}));
-    rowElements.push(createDiv({className:'number', innerHTML: chapters[i].id}));
+    let recitationCount = createDoubleLineDiv(audioCount, audioText, {className:'recitation-count'});
+    rowElements.push(card);
+    rowElements.push(number);
     rowElements.push(name);
+    rowElements.push(recitationCount);
     rowElements.push(revelation);
     rowElements.push(versesCount);
-    rowElements[0].setAttribute('chapter', i + 1 + "");
-    rowElements[0].addEventListener('click', clickCard);
+    card.setAttribute('chapter', i + 1 + "");
+    card.addEventListener('click', clickCard);
     var r;
     for (let j = 0; j < rowElements.length; j++) {
         if (order === 1) {
