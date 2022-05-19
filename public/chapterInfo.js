@@ -1006,8 +1006,8 @@ chapters = [
         },
         "recitations":[
             {
-                file: "alafasy_rahman_combined",
-                name: "Mishary Rashid Alafasy - 1427 & 1419"
+                file: "alafasy_rahman_1427",
+                name: "Mishary Rashid Alafasy - 1427"
             }
         ]
     },

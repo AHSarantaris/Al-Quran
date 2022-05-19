@@ -154,7 +154,8 @@ function updateRecitation() {
     timeStamps = {};
     $.getJSON(folderPath + '.json', function(json){
         timeStamps = json;
-    }).always(function(){
+        audioControlsElement.appendChild(createRecitationsButton());
+    }).fail(function(){
         audioControlsElement.appendChild(createRecitationsButton());
     });
 }
