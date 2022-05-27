@@ -145,6 +145,8 @@ function setAudio() {
     audioInfo = chapters[currentChapter-1].recitations;
     if (audioInfo) {
         updateRecitation();
+    } else {
+        audioControlsElement.appendChild(createRecitationsButton());
     }
 }
 
@@ -154,8 +156,6 @@ function updateRecitation() {
     timeStamps = {};
     $.getJSON(folderPath + '.json', function(json){
         timeStamps = json;
-        audioControlsElement.appendChild(createRecitationsButton());
-    }).fail(function(){
         audioControlsElement.appendChild(createRecitationsButton());
     });
 }
