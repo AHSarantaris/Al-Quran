@@ -1501,17 +1501,17 @@
 		[
 			"ٱلْإِحْسَـٰنِ",
 			"l-iḥ'sāni",
-			"for the good"
+			"(for) good"
 		],
 		[
 			"إِلَّا",
 			"illā",
-			"but"
+			"except"
 		],
 		[
 			"ٱلْإِحْسَـٰنُ",
 			"l-iḥ'sānu",
-			"good"
+			"good?"
 		]
 	],
 	"61": [
@@ -1540,17 +1540,17 @@
 		[
 			"وَمِن",
 			"wamin",
-			"Besides these two"
+			"And"
 		],
 		[
 			"دُونِهِمَا",
 			"dūnihimā",
-			"Besides these two"
+			"besides these two"
 		],
 		[
 			"جَنَّتَانِ",
 			"jannatāni",
-			"(are) two gardens"
+			"(are) two gardens."
 		]
 	],
 	"63": [
@@ -1579,7 +1579,7 @@
 		[
 			"مُدْهَآمَّتَانِ",
 			"mud'hāmmatāni",
-			"Dark green"
+			"Dark green."
 		]
 	],
 	"65": [
@@ -1701,7 +1701,7 @@
 		[
 			"حِسَانٌۭ",
 			"ḥisānun",
-			"and beautiful ones"
+			"beautiful ones"
 		]
 	],
 	"71": [
@@ -1735,7 +1735,7 @@
 		[
 			"مَّقْصُورَٰتٌۭ",
 			"maqṣūrātun",
-			"restrained"
+			"reserved"
 		],
 		[
 			"فِى",
@@ -1745,7 +1745,7 @@
 		[
 			"ٱلْخِيَامِ",
 			"l-khiyāmi",
-			"the pavilions"
+			"pavilions."
 		]
 	],
 	"73": [
@@ -1794,12 +1794,12 @@
 		[
 			"وَلَا",
 			"walā",
-			"and not"
+			"nor"
 		],
 		[
 			"جَآنٌّۭ",
 			"jānnun",
-			"any jinn"
+			"any jinn."
 		]
 	],
 	"75": [
@@ -1853,7 +1853,7 @@
 		[
 			"حِسَانٍۢ",
 			"ḥisānin",
-			"beautiful"
+			"beautiful."
 		]
 	],
 	"77": [
@@ -1892,22 +1892,22 @@
 		[
 			"رَبِّكَ",
 			"rabbika",
-			"(of) your Lord"
+			"(of) your Lord,"
 		],
 		[
 			"ذِى",
 			"dhī",
-			"Owner"
+			"possessor"
 		],
 		[
 			"ٱلْجَلَـٰلِ",
 			"l-jalāli",
-			"(of) Majesty"
+			"(of) majesty"
 		],
 		[
 			"وَٱلْإِكْرَامِ",
 			"wal-ik'rāmi",
-			"and Honor"
+			"and honor."
 		]
 	]
 }
