@@ -145,6 +145,12 @@ var verseTranslations;
 var wordTranslations;
 let wordSettings = {arabic: false, transliteration: true, translation: true};
 
+
+let backButtonElement = createBackButton();
+let settingsButtonElement = createSettingsButton();
+
+
+
 document.addEventListener('click', function(e) {
     if (settingsOverlayElement.getAttribute('open') && !e.target.matches('#settings-wrapper, #settings-wrapper *, #settings-button, #settings-button *')) {
         closeNav();
@@ -156,8 +162,6 @@ document.addEventListener('click', function(e) {
     }
 }, true);
 
-let backButtonElement = createBackButton();
-let settingsButtonElement = createSettingsButton();
 
 document.onreadystatechange = function(e) {
     if (document.readyState === 'interactive') {
