@@ -15,7 +15,6 @@ function createAudioControls() {
     playButton.addEventListener('click', clickPlayButton);
     res.appendChild(playButton);
     res.appendChild(versePlayingButton);
-    setAudio();
     return res;
 }
 

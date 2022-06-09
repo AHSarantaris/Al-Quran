@@ -5,6 +5,7 @@ function showChapterPage() {
     chapterPageElement.style.display = 'flex';
     createChapterTopbar(currentChapter);
     audioControlsElement = createAudioControls();
+    setAudio();
     if (isTestMode) {
         showVerseView();
         return;
