@@ -373,7 +373,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"Ta-Ha"
-        }
+        },
+        "recitations":[
+            {
+                file: "alafasy_taha_1421_combined",
+                name: "Alafasy 1421"
+            }
+        ]
     },
     {
         "id":21,
