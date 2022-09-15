@@ -1,4 +1,4 @@
-Themes: Guidance, covenant
+Themes: Guidance, misguidance, covenant, remembrance/prayer, Children of Israel,
 
 Reminder for the fearful, revelation, exalting God
 
@@ -7,6 +7,7 @@ revelation: {
     "4": "A revelation from He who created the earth and highest heavens,",
 	"13": "And I have chosen you, so listen to what is revealed [to you].",
     "38": "When We inspired to your mother what We inspired,",
+    "48": "Indeed, it has been revealed to us that the punishment will be upon whoever denies and turns away.'\"",
 }
 Reminder/Remembrance: {
     "3": "But only as a reminder for those who fear [Allah] -",
@@ -21,6 +22,7 @@ Fearing: {
 }
 Knowledge: {
     "7": "And if you speak aloud - then indeed, He knows the secret and what is [even] more hidden.",
+    "52": "[Moses] said, \"The knowledge thereof is with my Lord in a record. My Lord neither errs nor forgets.\""
 }
 Monotheism: {
     "8": "Allah - there is no deity except Him. To Him belong the best names.",
@@ -32,6 +34,8 @@ Names of God: {
 }
 Guidance: {
     "10": "When he saw a fire and said to his family, \"Stay here; indeed, I have perceived a fire; perhaps I can bring you a torch or find at the fire some guidance.\"",
+    "47": "So go to him and say, 'Indeed, we are messengers of your Lord, so send with us the Children of Israel and do not torment them. We have come to you with a sign from your Lord. And peace will be upon he who follows the guidance.",
+    "50": "He said, \"Our Lord is He who gave each thing its form and then guided [it].\"",
 }
 Misguidance: {
 	"16": "So do not let one avert you from it who does not believe in it and follows his desire, for you [then] would perish.",
@@ -39,16 +43,25 @@ Misguidance: {
 Signs: {
     "23": "That We may show you [some] of Our greater signs.",
     "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
+    "47": "So go to him and say, 'Indeed, we are messengers of your Lord, so send with us the Children of Israel and do not torment them. We have come to you with a sign from your Lord. And peace will be upon he who follows the guidance.",
+    "54": "Eat [therefrom] and pasture your livestock. Indeed in that are signs for those of intelligence",
+    "56": "And We certainly showed him [i.e., Pharaoh] Our signs - all of them - but he denied and refused.",
 }
 Prayer: {
     "14": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
 }
-Recompense: {
+Reward: {
     "15": "Indeed, the Hour is coming - I almost conceal it - so that every soul may be recompensed according to that for which it strives.",
+}
+Punishment: {
+    "47": "So go to him and say, 'Indeed, we are messengers of your Lord, so send with us the Children of Israel and do not torment them. We have come to you with a sign from your Lord. And peace will be upon he who follows the guidance.",
+    "48": "Indeed, it has been revealed to us that the punishment will be upon whoever denies and turns away.'\"",
+    "61": "Moses said to them [i.e., the magicians summoned by Pharaoh], \"Woe to you! Do not invent a lie against Allah or He will exterminate you with a punishment; and he has failed who invents [such falsehood].\"",
 }
 Transgression: {
     "24": "Go to Pharaoh. Indeed, he has transgressed [i.e., tyrannized].\"",
     "43": "Go, both of you, to Pharaoh. Indeed, he has transgressed.",
+    "45": "They said, \"Our Lord, indeed we are afraid that he will hasten [punishment] against us or that he will transgress.\"",
 }
 Exaltation: {
     "33": "That we may exalt You much",
@@ -56,10 +69,13 @@ Exaltation: {
 Deqree: {
     "40": Then you came [here] at the decreed time, O Moses.",
 }
-    "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
-    "43": "Go, both of you, to Pharaoh. Indeed, he has transgressed.",
-    "44": "And speak to him with gentle speech that perhaps he may be reminded or fear [Allah].\"",
-
+Earlier generations: {
+    "51": "[Pharaoh] said, \"Then what is the case of the former generations?\"",
+}
+Provision: {
+    "53": "[It is He] who has made for you the earth as a bed [spread out] and inserted therein for you roadways and sent down from the sky, rain and produced thereby categories of various plants.",
+    "54": "Eat [therefrom] and pasture your livestock. Indeed in that are signs for those of intelligence",
+}
 
 {
     "1": "Ṭā, Hā.",
@@ -112,11 +128,11 @@ Deqree: {
     "39": "[Saying], 'Cast him into the chest and cast it into the river, and the river will throw it onto the bank; there will take him an enemy to Me and an enemy to him.' And I bestowed upon you love from Me that you would be brought up under My eye [i.e., observation and care].",
     "40": "[And We favored you] when your sister went and said, 'Shall I direct you to someone who will be responsible for him?' So We restored you to your mother that she might be content and not grieve. And you killed someone, but We saved you from retaliation and tried you with a [severe] trial. And you remained [some] years among the people of Madyan. Then you came [here] at the decreed time, O Moses.",
     "41": "And I produced you for Myself.",
+    
+    
     "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
     "43": "Go, both of you, to Pharaoh. Indeed, he has transgressed.",
     "44": "And speak to him with gentle speech that perhaps he may be reminded or fear [Allah].\"",
-    
-    
     "45": "They said, \"Our Lord, indeed we are afraid that he will hasten [punishment] against us or that he will transgress.\"",
     "46": "[Allah] said, \"Fear not. Indeed, I am with you both; I hear and I see.",
     "47": "So go to him and say, 'Indeed, we are messengers of your Lord, so send with us the Children of Israel and do not torment them. We have come to you with a sign from your Lord. And peace will be upon he who follows the guidance.",
