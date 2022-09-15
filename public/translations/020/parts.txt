@@ -1,3 +1,5 @@
+Themes: Guidance, covenant
+
 {
     "1": "Ṭā, Hā.",
     "2": "We have not sent down to you the Qur’ān that you be distressed",
