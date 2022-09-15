@@ -12,6 +12,7 @@ Reminder/Remembrance: {
     "3": "But only as a reminder for those who fear [Allah] -",
     "14": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
     "34": "And remember You much.",
+    "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
 }
 Fearing: {
     "3": "But only as a reminder for those who fear [Allah] -",
@@ -35,6 +36,7 @@ Misguidance: {
 }
 Signs: {
     "23": "That We may show you [some] of Our greater signs.",
+    "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
 }
 Prayer: {
     "14": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
@@ -43,7 +45,8 @@ Recompense: {
     "15": "Indeed, the Hour is coming - I almost conceal it - so that every soul may be recompensed according to that for which it strives.",
 }
 Transgression: {
-    "24": "Go to Pharaoh. Indeed, he has transgressed [i.e., tyrannized].\""
+    "24": "Go to Pharaoh. Indeed, he has transgressed [i.e., tyrannized].\"",
+    "43": "Go, both of you, to Pharaoh. Indeed, he has transgressed.",
 }
 Exaltation: {
     "33": "That we may exalt You much",
@@ -51,6 +54,10 @@ Exaltation: {
 Deqree: {
     "40": Then you came [here] at the decreed time, O Moses.",
 }
+    "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
+    "43": "Go, both of you, to Pharaoh. Indeed, he has transgressed.",
+    "44": "And speak to him with gentle speech that perhaps he may be reminded or fear [Allah].\"",
+
 
 {
     "1": "Ṭā, Hā.",
