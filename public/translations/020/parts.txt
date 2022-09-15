@@ -37,6 +37,12 @@ Signs: {
 Prayer: {
     "14": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
 }
+Recompense: {
+    "15": "Indeed, the Hour is coming - I almost conceal it - so that every soul may be recompensed according to that for which it strives.",
+}
+Transgression: {
+    "24": "Go to Pharaoh. Indeed, he has transgressed [i.e., tyrannized].\""
+}
 
 {
     "1": "Ṭā, Hā.",
