@@ -1,5 +1,6 @@
 Themes: Guidance, covenant
 
+Reminder for the fearful, revelation, exalting God
 {
     "1": "Ṭā, Hā.",
     "2": "We have not sent down to you the Qur’ān that you be distressed",
@@ -11,6 +12,15 @@ Themes: Guidance, covenant
     "6": "To Him belongs what is in the heavens and what is on the earth and what is between them and what is under the soil.",
     "7": "And if you speak aloud - then indeed, He knows the secret and what is [even] more hidden.",
     "8": "Allah - there is no deity except Him. To Him belong the best names.",
+}
+
+Guidance: {
+	10: find at the fire some guidance
+}
+revelation: {
+	13: so listen to what is revealed
+}
+Misguidance: {
 }
 {
     "9": "And has the story of Moses reached you? -",
