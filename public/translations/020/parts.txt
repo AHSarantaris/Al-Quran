@@ -13,9 +13,11 @@ Reminder/Remembrance: {
     "14": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
     "34": "And remember You much.",
     "42": "Go, you and your brother, with My signs and do not slacken in My remembrance.",
+    "44": "And speak to him with gentle speech that perhaps he may be reminded or fear [Allah].\"",
 }
 Fearing: {
     "3": "But only as a reminder for those who fear [Allah] -",
+    "44": "And speak to him with gentle speech that perhaps he may be reminded or fear [Allah].\"",
 }
 Knowledge: {
     "7": "And if you speak aloud - then indeed, He knows the secret and what is [even] more hidden.",
