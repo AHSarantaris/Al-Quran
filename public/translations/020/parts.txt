@@ -6,10 +6,12 @@ revelation: {
     "2": "We have not sent down to you the Qur’ān that you be distressed",
     "4": "A revelation from He who created the earth and highest heavens,",
 	"13": "And I have chosen you, so listen to what is revealed [to you].",
+    "38": "When We inspired to your mother what We inspired,",
 }
 Reminder/Remembrance: {
     "3": "But only as a reminder for those who fear [Allah] -",
     "14": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
+    "34": "And remember You much.",
 }
 Fearing: {
     "3": "But only as a reminder for those who fear [Allah] -",
@@ -42,6 +44,12 @@ Recompense: {
 }
 Transgression: {
     "24": "Go to Pharaoh. Indeed, he has transgressed [i.e., tyrannized].\""
+}
+Exaltation: {
+    "33": "That we may exalt You much",
+}
+Deqree: {
+    "40": Then you came [here] at the decreed time, O Moses.",
 }
 
 {
