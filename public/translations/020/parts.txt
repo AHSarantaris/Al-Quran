@@ -107,8 +107,8 @@
     "80": "O Children of Israel, We delivered you from your enemy, and We made an appointment with you at the right side of the mount, and We sent down to you manna and quails,",
     "81": "[Saying], \"Eat from the good things with which We have provided you and do not transgress [or oppress others] therein, lest My anger should descend upon you. And he upon whom My anger descends has certainly fallen [i.e., perished].\"",
     "82": "But indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness and then continues in guidance.",
-    
-    
+
+
     "83": "[Allah said], \"And what made you hasten from your people, O Moses?\"",
     "84": "He said, \"They are close upon my tracks, and I hastened to You, my Lord, that You be pleased.\"",
     "85": "[Allah] said, \"But indeed, We have tried your people after you [departed], and the Sāmirī has led them astray.\"",
@@ -125,8 +125,8 @@
     "96": "He said, \"I saw what they did not see, so I took a handful [of dust] from the track of the messenger and threw it, and thus did my soul entice me.\"",
     "97": "[Moses] said, \"Then go. And indeed, it is [decreed] for you in [this] life to say, 'No contact.' And indeed, you have an appointment [in the Hereafter] you will not fail to keep. And look at your 'god' to which you remained devoted. We will surely burn it and blow it [i.e., its ashes] into the sea with a blast.",
     "98": "Your god is only Allah, except for whom there is no deity. He has encompassed all things in knowledge.\"",
-    
-    
+}    
+{    
     "99": "Thus, [O Muḥammad], We relate to you from the news of what has preceded. And We have certainly given you from Us a message [i.e., the Qur’ān].",
     "100": "Whoever turns away from it - then indeed, he will bear on the Day of Resurrection a burden [i.e., great sin],",
     "101": "[Abiding] eternally therein, and evil it is for them on the Day of Resurrection as a load -",
@@ -147,8 +147,8 @@
     
     "113": "And thus We have sent it down as an Arabic Qur’ān and have diversified therein the warnings that perhaps they will avoid [sin] or it would cause them remembrance.",
     "114": "So high [above all] is Allah, the Sovereign, the Truth. And, [O Muḥammad], do not hasten with [recitation of] the Qur’ān before its revelation is completed to you, and say, \"My Lord, increase me in knowledge.\"",
-    
-    
+}    
+{    
     "115": "And We had already taken a promise from Adam before, but he forgot; and We found not in him determination.",
     "116": "And [mention] when We said to the angels, \"Prostrate to Adam,\" and they prostrated, except Iblees; he refused.",
     "117": "So We said, \"O Adam, indeed this is an enemy to you and to your wife. Then let him not remove you from Paradise so you would suffer.",
@@ -164,8 +164,8 @@
     "125": "He will say, \"My Lord, why have you raised me blind while I was [once] seeing?\"",
     "126": "[Allah] will say, \"Thus did Our signs come to you, and you forgot [i.e., disregarded] them; and thus will you this Day be forgotten.\"",
     "127": "And thus do We recompense he who transgressed and did not believe in the signs of his Lord. And the punishment of the Hereafter is more severe and more enduring.",
-    
-    
+}
+{
     "128": "Then, has it not become clear to them how many generations We destroyed before them as they walk among their dwellings? Indeed in that are signs for those of intelligence.",
     "129": "And if not for a word that preceded from your Lord, it [i.e., punishment] would have been an obligation [due immediately], and [if not for] a specified term [decreed].",
     
