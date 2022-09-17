@@ -1,5 +1,7 @@
 :root {
     --large-text: 1.1em;
+    --medium-text: 0.95em;
+    
 
     --button-border: 1px;
 
@@ -17,8 +19,6 @@
     --padding-5: 4px;
 
 
-    --medium-text: 0.95em;
-    
     /* --playing-background-value: calc(-6 + var(--background-value));
     --playing-background-color: rgb(var(--playing-background-value),var(--playing-background-value),var(--playing-background-value)) */
 
@@ -101,6 +101,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -565,6 +566,33 @@ sup:hover  {
 }
 #verse-playing:focus-visible {
     outline: none;
+}
+#volume-dropdown {
+    margin-left: auto;
+}
+#volume-content {
+    bottom: 100%;
+    right: 0;
+    background-color: var(--background-color-2);
+    flex-direction: column-reverse;
+    align-items: center;
+    width: min-content;
+}
+.volume-content > * {
+    color: var(--text-color-3);
+    padding-top: var(--padding-3);
+    padding-bottom: var(--padding-3);
+}
+.volume-content .icon-button {
+    font-size: 0.9em;
+}
+#volume-slider {
+    -webkit-appearance: slider-vertical;
+    width: var(--padding-2);
+    height: 100px;
+    /* width: var(--padding-1);
+    color: var(--theme-color); */
+    background-color: var(--theme-color);
 }
 #recitations-dropdown {
     margin-left: auto;

@@ -11,10 +11,36 @@ function createAudioControls() {
     let res = document.getElementById('audio-controls');
     res.innerHTML = '';
     let playButton = createDiv({tagName: 'button', id: 'play-button', className: 'icon-button fas fa-play'});
+    let volumeButton = createVolumeButton();
     let versePlayingButton = createVersePlayingButton();
     playButton.addEventListener('click', clickPlayButton);
     res.appendChild(playButton);
     res.appendChild(versePlayingButton);
+    res.appendChild(volumeButton);
+    return res;
+}
+
+function createVolumeButton() {
+    let button = createDiv({tagName: 'button', className: 'icon-button fas fa-volume-up'});
+    let decreaseButton = createDiv({tagName: 'button', id: 'decrease-volume', className: 'icon-button fas fa-minus'});
+    let increaseButton = createDiv({tagName: 'button', id: 'increase-volume', className: 'icon-button fas fa-plus'});
+    let volumeSlider = createDiv({tagName: 'input', id: 'volume-slider'});
+    volumeSlider.type = 'range';
+    volumeSlider.min = 0;
+    volumeSlider.max = 100;
+    volumeSlider.value = volume;
+    let amount = 1;
+    decreaseButton.addEventListener('click', (e)=>{
+        setVolume(volume - amount);
+    })
+    increaseButton.addEventListener('click', (e)=>{
+        setVolume(volume + amount);
+    })
+    volumeSlider.addEventListener('change', (e)=>{
+        setVolume(parseInt(e.currentTarget.value));
+    })
+    let res = createDropdownButton(button, {id: 'volume-dropdown'});
+    res.appendChild(createDropdownContent([decreaseButton, volumeSlider, increaseButton], {id: 'volume-content'}));
     return res;
 }
 

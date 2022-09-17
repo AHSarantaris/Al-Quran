@@ -140,6 +140,7 @@ var verseView; // 1: single verse, 2: all verses, 3: external words
 var homeScrollTop;
 var chapterScrollTop;
 var fontSizeCounter;
+var volume;
 
 var verseTranslations;
 var wordTranslations;
@@ -157,7 +158,7 @@ document.addEventListener('click', function(e) {
         e.stopImmediatePropagation();
     }
     let dropdownContentElement = document.querySelector('.dropdown-content[selected]');
-    if (dropdownContentElement && !e.target.matches('.dropdown-button, .dropdown-button > *')) {
+    if (dropdownContentElement && !e.target.matches('.dropdown-button, .dropdown-button > *, #volume-dropdown *')) {
         dropdownContentElement.removeAttribute('selected');
     }
 }, true);
@@ -169,6 +170,7 @@ document.onreadystatechange = function(e) {
         currentChapter = parseInt(localStorage.getItem('chapter'));
         currentVerse = parseInt(localStorage.getItem('verse'));
         verseView = parseInt(localStorage.getItem('verse-view'));
+        volume = parseInt(localStorage.getItem('volume'));
         setCurrentTheme(parseInt(localStorage.getItem('theme')));
         setFontSize(parseInt(localStorage.getItem('font-size-counter')));
         setCurrentTranslations(JSON.parse(localStorage.getItem('current-translations')));
@@ -357,7 +359,9 @@ function setVerseView(view) {
         audioControlsElement.style.display = 'flex';
         verseSelectorButton.disabled = false;
     } else {
-        audioControlsElement.style.display = 'none';
+        if (audioControlsElement) {
+            audioControlsElement.style.display = 'none';
+        }
         verseSelectorButton.disabled = true;
     }
     if (verseView === 3) {
@@ -420,6 +424,18 @@ function setNameOfGod(name) {
         nameAllah.checked = false;
         nameGod.checked = true;
     }
+}
+
+function setVolume(v) {
+    if (!v) {
+        v = 80;
+    } else if (v > 100) {
+        v = 100;
+    }
+    audioPlayerElement.volume = v / 100.0;
+    document.getElementById('volume-slider').value = v;
+    volume = v;
+    localStorage.setItem('volume', v);
 }
 
 
