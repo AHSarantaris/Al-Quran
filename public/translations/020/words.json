@@ -810,7 +810,7 @@
         [
             "جَنَاحِكَ",
             "janāḥika",
-            "your side"
+            "your side,"
         ],
         [
             "تَخْرُجْ",
@@ -825,7 +825,7 @@
         [
             "مِنْ",
             "min",
-            "without any"
+            ""
         ],
         [
             "غَيْرِ",
@@ -835,7 +835,7 @@
         [
             "سُوٓءٍ",
             "sūin",
-            "disease"
+            "disease,"
         ],
         [
             "ءَايَةً",
@@ -845,7 +845,7 @@
         [
             "أُخْرَىٰ",
             "ukh'rā",
-            "another"
+            "another."
         ]
     ],
     "23": [
@@ -862,12 +862,12 @@
         [
             "ءَايَـٰتِنَا",
             "āyātinā",
-            "Our Signs"
+            "Our signs"
         ],
         [
             "ٱلْكُبْرَى",
             "l-kub'rā",
-            "the Greatest"
+            "the greatest."
         ]
     ],
     "24": [
@@ -884,34 +884,34 @@
         [
             "فِرْعَوْنَ",
             "fir'Ꜥawna",
-            "Firaun"
+            "Pharaoh,"
         ],
         [
             "إِنَّهُۥ",
             "innahu",
-            "Indeed, he"
+            "indeed"
         ],
         [
             "طَغَىٰ",
             "ṭaghā",
-            "(has) transgressed"
+            "he has transgressed."
         ]
     ],
     "25": [
         [
             "قَالَ",
             "qāla",
-            "He said"
+            "He said:"
         ],
         [
             "رَبِّ",
             "rabbi",
-            "My Lord"
+            "My Lord,"
         ],
         [
             "ٱشْرَحْ",
             "ish'raḥ",
-            "Expand"
+            "expand"
         ],
         [
             "لِى",
@@ -921,7 +921,7 @@
         [
             "صَدْرِى",
             "ṣadrī",
-            "my breast"
+            "my chest,"
         ]
     ],
     "26": [
@@ -938,7 +938,7 @@
         [
             "أَمْرِى",
             "amrī",
-            "my task"
+            "my task."
         ]
     ],
     "27": [
@@ -960,7 +960,7 @@
         [
             "لِّسَانِى",
             "lisānī",
-            "my tongue"
+            "my tongue,"
         ]
     ],
     "28": [
@@ -972,7 +972,7 @@
         [
             "قَوْلِى",
             "qawlī",
-            "my speech"
+            "my speech."
         ]
     ],
     "29": [
@@ -999,19 +999,19 @@
         [
             "أَهْلِى",
             "ahlī",
-            "my family"
+            "my family -"
         ]
     ],
     "30": [
         [
             "هَـٰرُونَ",
             "hārūna",
-            "Harun"
+            "Aaron,"
         ],
         [
             "أَخِى",
             "akhī",
-            "my brother"
+            "my brother."
         ]
     ],
     "31": [
@@ -1028,7 +1028,7 @@
         [
             "أَزْرِى",
             "azrī",
-            "my strength"
+            "my strength,"
         ]
     ],
     "32": [
@@ -1040,12 +1040,12 @@
         [
             "فِىٓ",
             "fī",
-            "[in]"
+            "in"
         ],
         [
             "أَمْرِى",
             "amrī",
-            "my task"
+            "my task."
         ]
     ],
     "33": [
@@ -1062,26 +1062,26 @@
         [
             "كَثِيرًۭا",
             "kathīran",
-            "much"
+            "much,"
         ]
     ],
     "34": [
         [
             "وَنَذْكُرَكَ",
             "wanadhkuraka",
-            "And [we] remember You"
+            "And remember You"
         ],
         [
             "كَثِيرًا",
             "kathīran",
-            "much"
+            "much."
         ]
     ],
     "35": [
         [
             "إِنَّكَ",
             "innaka",
-            "Indeed, [You]"
+            "Indeed"
         ],
         [
             "كُنتَ",
@@ -1096,14 +1096,14 @@
         [
             "بَصِيرًۭا",
             "baṣīran",
-            "All-Seer"
+            "seeing."
         ]
     ],
     "36": [
         [
             "قَالَ",
             "qāla",
-            "He said"
+            "He said:"
         ],
         [
             "قَدْ",
@@ -1123,14 +1123,14 @@
         [
             "يَـٰمُوسَىٰ",
             "yāmūsā",
-            "O Musa"
+            "O Moses."
         ]
     ],
     "37": [
         [
             "وَلَقَدْ",
             "walaqad",
-            "And indeed"
+            "And certainly"
         ],
         [
             "مَنَنَّا",
@@ -1140,17 +1140,17 @@
         [
             "عَلَيْكَ",
             "Ꜥalayka",
-            "on you"
+            "upon you"
         ],
         [
             "مَرَّةً",
             "marratan",
-            "another time"
+            "a time"
         ],
         [
             "أُخْرَىٰٓ",
             "ukh'rā",
-            "another time"
+            "another."
         ]
     ],
     "38": [
@@ -1182,19 +1182,19 @@
         [
             "يُوحَىٰٓ",
             "yūḥā",
-            "is inspired"
+            "was inspired."
         ]
     ],
     "39": [
         [
             "أَنِ",
             "ani",
-            "That"
+            "That:"
         ],
         [
             "ٱقْذِفِيهِ",
             "iq'dhifīhi",
-            "cast him"
+            "Cast him"
         ],
         [
             "فِى",
@@ -1209,7 +1209,7 @@
         [
             "فَٱقْذِفِيهِ",
             "fa-iq'dhifīhi",
-            "then cast it"
+            "and cast it"
         ],
         [
             "فِى",
@@ -1219,12 +1219,12 @@
         [
             "ٱلْيَمِّ",
             "l-yami",
-            "the river"
+            "the river."
         ],
         [
             "فَلْيُلْقِهِ",
             "falyul'qihi",
-            "then let cast it"
+            "Then let cast it"
         ],
         [
             "ٱلْيَمُّ",
@@ -1234,7 +1234,7 @@
         [
             "بِٱلسَّاحِلِ",
             "bil-sāḥili",
-            "on the bank"
+            "on the bank,"
         ],
         [
             "يَأْخُذْهُ",
@@ -1259,7 +1259,7 @@
         [
             "لَّهُۥ ۚ",
             "lahu",
-            "to him"
+            "to him."
         ],
         [
             "وَأَلْقَيْتُ",
@@ -1294,7 +1294,7 @@
         [
             "عَيْنِىٓ",
             "Ꜥaynī",
-            "My eye"
+            "My eye."
         ]
     ],
     "40": [
@@ -1316,7 +1316,7 @@
         [
             "فَتَقُولُ",
             "fataqūlu",
-            "and she said"
+            "and she said:"
         ],
         [
             "هَلْ",
@@ -1326,22 +1326,22 @@
         [
             "أَدُلُّكُمْ",
             "adullukum",
-            "I show you"
+            "I lead you"
         ],
         [
             "عَلَىٰ",
             "Ꜥalā",
-            "[to]"
+            "to"
         ],
         [
             "مَن",
             "man",
-            "(one) who"
+            "one who"
         ],
         [
             "يَكْفُلُهُۥ ۖ",
             "yakfuluhu",
-            "will nurse and rear him"
+            "will nurse and rear him?"
         ],
         [
             "فَرَجَعْنَـٰكَ",
@@ -1361,7 +1361,7 @@
         [
             "كَىْ",
             "kay",
-            "that"
+            "so that"
         ],
         [
             "تَقَرَّ",
@@ -1381,7 +1381,7 @@
         [
             "تَحْزَنَ ۚ",
             "taḥzana",
-            "she grieves"
+            "she grieved."
         ],
         [
             "وَقَتَلْتَ",
@@ -1391,7 +1391,7 @@
         [
             "نَفْسًۭا",
             "nafsan",
-            "a man"
+            "a soul,"
         ],
         [
             "فَنَجَّيْنَـٰكَ",
@@ -1406,7 +1406,7 @@
         [
             "ٱلْغَمِّ",
             "l-ghami",
-            "the distress"
+            "the distress,"
         ],
         [
             "وَفَتَنَّـٰكَ",
@@ -1416,7 +1416,7 @@
         [
             "فُتُونًۭا ۚ",
             "futūnan",
-            "(with) a trial"
+            "(with) a trial."
         ],
         [
             "فَلَبِثْتَ",
@@ -1426,7 +1426,7 @@
         [
             "سِنِينَ",
             "sinīna",
-            "(some) years"
+            "some years"
         ],
         [
             "فِىٓ",
@@ -1441,7 +1441,7 @@
         [
             "مَدْيَنَ",
             "madyana",
-            "(of) Madyan"
+            "(of) Madyan."
         ],
         [
             "ثُمَّ",
@@ -1466,7 +1466,7 @@
         [
             "يَـٰمُوسَىٰ",
             "yāmūsā",
-            "O Musa"
+            "O Moses."
         ]
     ],
     "41": [
