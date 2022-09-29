@@ -65,6 +65,7 @@ function createChapterNavigator() {
 }
 
 function previousChapter() {
+    setElapsedTime(0);
     setCurrentChapter(currentChapter-1);
     // if (verseView > 1) {
     //     setVerseView(verseView);
@@ -72,6 +73,7 @@ function previousChapter() {
 }
 
 function nextChapter() {
+    setElapsedTime(0);
     setCurrentChapter(currentChapter+1);
     // if (verseView > 1) {
     //     setVerseView(verseView);

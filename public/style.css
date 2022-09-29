@@ -70,6 +70,12 @@ body {
     width: 100vw;
     justify-content: flex-start;
 }
+a {
+    color: inherit;
+    text-decoration: inherit;
+    width: inherit;
+    height: inherit;
+}
 button {
     box-sizing: border-box;
     font-weight: inherit;
@@ -89,7 +95,7 @@ button:disabled {
     color: var(--text-color-2);    
     pointer-events: none;
 }
-button:focus-visible, input:focus-visible {
+button:focus-visible, input:focus-visible, a:focus-visible {
     outline: 2px solid var(--background-color-4);
     outline-offset: -2px;
 }
@@ -105,6 +111,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.block-button {
+    padding: var(--padding-2);
 }
 .icon-button {
     white-space: nowrap;
@@ -544,9 +554,9 @@ sup:hover  {
 
 /* AUDIO */
 #audio-controls {
-    padding: 0 var(--padding-1);
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     background-color: var(--background-color-1);
@@ -554,10 +564,56 @@ sup:hover  {
     border-top: 1px solid var(--background-color);
     /* padding: var(--padding-5); */
 }
+#audio-controls > * {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#upper-controls {
+    color: var(--text-color-2);
+    color: var(--theme-color-opaque);
+    /* color: var(--theme-color); */
+    /* font-size: 0.9em; */
+}
+#lower-controls {
+}
+#duration-label, #elapsed-label {
+    margin-left: auto;
+    padding: var(--padding-3);
+    white-space: nowrap;
+}
+#time-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: var(--padding-3);
+    border-radius: 50px;  
+    background: var(--background-color-4);
+    outline: none;
+    cursor: pointer;
+    opacity: 0.9;
+    background-image: linear-gradient(var(--theme-color-opaque),var(--theme-color-opaque));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+#time-slider:hover {
+    opacity: 1;
+}
+#time-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--padding-2);
+    height: var(--padding-2);
+    border-radius: 50%; 
+    background: var(--theme-color);
+}
+#time-slider::-webkit-slider-thumb:hover {
+    width: var(--padding-1);
+    height: var(--padding-1);
+}
 #verse-playing {
-    max-width: 48px;
+    box-sizing: border-box;
+    width: 48px;
     margin: 2px var(--padding-2);
-    font-size: 1.1em;
     font-weight: bold;
     border: 2px solid var(--theme-color-opaque);
     background-color: inherit;
@@ -577,25 +633,24 @@ sup:hover  {
     flex-direction: column-reverse;
     align-items: center;
     width: min-content;
+    gap: 0;
 }
-.volume-content > * {
+#volume-content > * {
     color: var(--text-color-3);
-    padding-top: var(--padding-3);
-    padding-bottom: var(--padding-3);
-}
-.volume-content .icon-button {
     font-size: 0.9em;
+    padding-top: var(--padding-3);
+}
+#volume-content .icon-button {
+    padding-bottom: var(--padding-3);
 }
 #volume-slider {
     -webkit-appearance: slider-vertical;
-    width: var(--padding-2);
-    height: 100px;
-    /* width: var(--padding-1);
-    color: var(--theme-color); */
-    background-color: var(--theme-color);
+    width: var(--padding-3);
+    height: 120px;
+    padding: 0;
+    cursor: pointer;
 }
 #recitations-dropdown {
-    margin-left: auto;
 }
 #recitations-dropdown > .dropdown-content {
     bottom: 100%;
@@ -707,7 +762,7 @@ sup:hover  {
 .transliterated-word {
     display: inline-block;
     text-decoration: underline;
-    text-underline-offset: var(--padding-5);
+    text-underline-offset: 4px;
     padding-bottom: var(--padding-4);
     cursor: pointer;
     /* font-size: 0.95em; */
@@ -718,7 +773,7 @@ sup:hover  {
     opacity: var(--hover-opacity-1);
 }
 .translated-word {
-    font-size: 0.8em;
+    font-size: 0.85em;
     color: var(--text-color-1);
 }
 .verse-header {
@@ -755,11 +810,11 @@ sup:hover  {
 
 @media only screen and (max-width: 350px) {
     :root {
-        --padding-1: 10px;
-        --padding-2: 6px;
-        --padding-3: 4px;
-        --padding-4: 3px;
-        --padding-5: 2px;
+        --padding-1: 12px;
+        --padding-2: 8px;
+        --padding-3: 6px;
+        --padding-4: 4px;
+        --padding-5: 3px;
     }
     body {
         font-size: 4vw;

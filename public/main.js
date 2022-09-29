@@ -141,6 +141,7 @@ var homeScrollTop;
 var chapterScrollTop;
 var fontSizeCounter;
 var volume;
+var elapsedTime;
 
 var verseTranslations;
 var wordTranslations;
@@ -171,6 +172,13 @@ document.onreadystatechange = function(e) {
         currentVerse = parseInt(localStorage.getItem('verse'));
         verseView = parseInt(localStorage.getItem('verse-view'));
         volume = parseInt(localStorage.getItem('volume'));
+        elapsedTime = parseInt(localStorage.getItem('elapsed-time'));
+        if (!volume) {
+            volume = 90;
+        }
+        if (!elapsedTime) {
+            elapsedTime = 0;
+        }
         setCurrentTheme(parseInt(localStorage.getItem('theme')));
         setFontSize(parseInt(localStorage.getItem('font-size-counter')));
         setCurrentTranslations(JSON.parse(localStorage.getItem('current-translations')));
@@ -427,15 +435,32 @@ function setNameOfGod(name) {
 }
 
 function setVolume(v) {
-    if (!v) {
-        v = 80;
+    if (!v && v !== 0) {
+        v = 90;
     } else if (v > 100) {
         v = 100;
+    } else if (v < 0) {
+        v = 0;
     }
     audioPlayerElement.volume = v / 100.0;
     document.getElementById('volume-slider').value = v;
+    document.getElementById('volume-count').innerHTML = v + '%';
     volume = v;
     localStorage.setItem('volume', v);
+}
+
+function setElapsedTime(s) {
+    if ((!s && s !== 0) || s < 0) {
+        s = 0;
+    } else if (s > audioPlayerElement.duration) {
+        s = audioPlayerElement.duration;
+    }
+    let slider = document.getElementById('time-slider');
+    slider.value = s;
+    slider.style.backgroundSize = Math.ceil(s * 100 / slider.max) + '% 100%';
+    document.getElementById('elapsed-label').innerHTML = timeInMinutes(s);
+    elapsedTime = s;
+    localStorage.setItem('elapsed-time', s);
 }
 
 

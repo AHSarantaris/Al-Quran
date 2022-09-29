@@ -209,6 +209,7 @@ function createBackButton() {
 function clickBackButton(e) {
     let c = currentChapter;
     pauseAudio();
+    setElapsedTime(0);
     setCurrentChapter(NaN);
     setCurrentVerse(NaN);
     setVerseView(NaN);

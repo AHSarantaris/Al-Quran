@@ -24,11 +24,13 @@ function createBismillah() {
     let transliteratedWords = ["bis'mi","l-lahi","l-raḥmāni","l-raḥīmi"];
     let translatedWords = ["In (the) name", `(of) ${nameOfGod ? 'Allah' : 'God'},`,"the Merciful,","the Compassionate."];
     let wordContainerElement = createDiv({className:'word-container'});
-    var transliteratedElement, translatedElement, wordElement;
+    var transliteratedElement, translatedElement, wordElement, wordId;
     for (let j = 0; j < 4; j++) {
+        wordId = `${1}:${1}:${j+1}`;
         wordElement = createDiv({className:'word'});
-        transliteratedElement = createDiv({className:'transliterated-word', id: `${1}:${1}:${j+1}`, innerHTML: transliteratedWords[j]});
-        transliteratedElement.addEventListener('click',clickWord)
+        transliteratedElement = createDiv({tagName: 'a', className:'transliterated-word', id: wordId, innerHTML: transliteratedWords[j]});
+        transliteratedElement.href = `https://corpus.quran.com/wordmorphology.jsp?location=(${wordId})`;
+        transliteratedElement.target = '_blank';
         translatedElement = createDiv({className:'translated-word', innerHTML: translatedWords[j]});
         wordElement.appendChild(transliteratedElement);
         wordElement.appendChild(translatedElement);
@@ -180,8 +182,11 @@ function createWordElement(v, w, word) {
     let wordText = createWordText(word);
     let wordElement = createDiv({className:'word'});
     if (wordSettings.transliteration) {
-        let transliteratedWord = createDiv({className:'transliterated-word', id: `${currentChapter}:${v}:${w+1}`, innerHTML: wordText.transliteration});
-        transliteratedWord.addEventListener('click',clickWord);
+        let wordId = `${currentChapter}:${v}:${w+1}`;
+        let transliteratedWord = createDiv({tagName: 'a', className:'transliterated-word', id: wordId, innerHTML: wordText.transliteration});
+        transliteratedWord.href = `https://corpus.quran.com/wordmorphology.jsp?location=(${wordId})`;
+        transliteratedWord.target = '_blank';
+        transliteratedWord.title = 'See grammar for this word\nin corpus.quran.com';
         wordElement.appendChild(transliteratedWord);
     }
     if (wordSettings.translation) {
@@ -211,16 +216,25 @@ function createWordText(word) {
 
 function createVerseButton(v) {
     var element;
-    let titles = ['Tafsir - Maududi', 'Tafsir - Ibn Kathir', 'Tafsir - Maarif-Ul-Quran', 'Quran.com'];
+    let titles = ['Tafsir - Tazkirul Quran', 'Tafsir - Maududi', 'Tafsir - Ibn Kathir', 'Tafsir - Maarif-Ul-Quran', 'Quran.com'];
+    let urls = [
+        `https://quran.com/${currentChapter}:${v}/tafsirs/tazkirul-quran-en`,
+        `https://www.alim.org/quran/tafsir/maududi/surah/${currentChapter}/0`,
+        `https://quran.com/${currentChapter}:${v}/tafsirs/en-tafisr-ibn-kathir`, 
+        `https://quran.com/${currentChapter}:${v}/tafsirs/en-tafsir-maarif-ul-quran`,
+        `https://quran.com/${currentChapter}/${v}` + (currentTranslations[0] ? '?translations='+currentTranslations[0].id : '')
+    ];
     let elements = [];
     for (let i = 0; i < titles.length; i++) {
-        element = createDiv({tagName: 'button', className: 'dropdown-item block-button', innerHTML: titles[i]});
+        element = createDiv({tagName: 'a', className: 'dropdown-item block-button', innerHTML: titles[i]});
+        element.href = urls[i];
+        element.target = '_blank';
         elements.push(element);
     }
-    elements[0].addEventListener('click', clickMaududi);
-    elements[1].addEventListener('click', clickIbnKathir);
-    elements[2].addEventListener('click', clickMaarifUlQuran);
-    elements[3].addEventListener('click', clickQuranWebsite);
+    // elements[0].addEventListener('click', clickMaududi);
+    // elements[1].addEventListener('click', clickIbnKathir);
+    // elements[2].addEventListener('click', clickMaarifUlQuran);
+    // elements[3].addEventListener('click', clickQuranWebsite);
     let button = createDiv({tagName: 'button', className: 'verse-links-button icon-button fas fa-ellipsis-v'});
     let res = createDropdownButton(button);
     let dropdownContent = createDropdownContent(elements);
@@ -279,7 +293,3 @@ function openBetaQuranWebsite(chapter,verse) {
     window.open(url);
 }
 
-function clickWord(e) {
-    let url = `https://corpus.quran.com/wordmorphology.jsp?location=(${e.currentTarget.id})`;
-    window.open(url);
-}

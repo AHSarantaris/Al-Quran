@@ -3,6 +3,12 @@ function createAudioPlayer() {
     let res = document.getElementById('audio-player');
     res.addEventListener('timeupdate', audioTimeUpdate);
     res.addEventListener('ended', audioEnded);
+    res.addEventListener('pause', pauseAudio);
+    res.addEventListener('play', playAudio);
+    res.addEventListener('loadedmetadata', function (e) {
+        document.getElementById('duration-label').innerHTML = timeInMinutes(audioPlayerElement.duration);
+        document.getElementById('time-slider').max = audioPlayerElement.duration;
+    })
     return res;
 }
 
@@ -10,21 +16,71 @@ function createAudioControls() {
     currentRecitation = 0;
     let res = document.getElementById('audio-controls');
     res.innerHTML = '';
+    let upperControls = createDiv({id: 'upper-controls'});
+    let lowerControls = createDiv({id: 'lower-controls'});
     let playButton = createDiv({tagName: 'button', id: 'play-button', className: 'icon-button fas fa-play'});
+    playButton.addEventListener('click', clickPlayButton);
     let volumeButton = createVolumeButton();
     let versePlayingButton = createVersePlayingButton();
-    playButton.addEventListener('click', clickPlayButton);
-    res.appendChild(playButton);
-    res.appendChild(versePlayingButton);
-    res.appendChild(volumeButton);
+    let elapsedLabel= createDiv({tagName: 'span', id: 'elapsed-label', innerHTML: timeInMinutes(elapsedTime)});
+    let durationLabel = createDiv({tagName: 'span', id: 'duration-label',innerHTML: timeInMinutes(audioPlayerElement.duration)});
+    let timeSlider = createTimeSlider();
+    upperControls.appendChild(elapsedLabel);
+    upperControls.appendChild(timeSlider);
+    upperControls.appendChild(durationLabel);
+    res.appendChild(upperControls);
+    res.appendChild(lowerControls);
+    lowerControls.appendChild(playButton);
+    lowerControls.appendChild(versePlayingButton);
+    lowerControls.appendChild(volumeButton);
+    setVolume(volume);
+    setElapsedTime(elapsedTime);
     return res;
 }
 
+function createTimeSlider() {
+    let res = createDiv({tagName: 'input', id: 'time-slider'});
+    res.type = 'range';
+    res.min = 0;
+    res.value = elapsedTime;
+    res.max = 100;
+    res.addEventListener('input', seekTimeSlider);
+    res.addEventListener('change', changeTimeSlider);
+    return res;
+}
+
+function seekTimeSlider(e) {
+    setElapsedTime(document.getElementById('time-slider').value);
+    audioPlayerElement.pause();    
+}
+
+function changeTimeSlider(e) {
+    seekTimeSlider(e);
+    audioPlayerElement.currentTime = elapsedTime;
+    if (timeStamps[1] ){
+        findVerseFromTime();
+    }
+}
+
+function timeInMinutes(time) {
+    if (!time && time !== 0) {
+        return 'No audio';
+    }
+    time = Math.floor(time);
+    let minutes = Math.floor(time/60);
+    let hours = Math.floor(minutes/60);
+    let seconds = time % 60;
+    let leadingZeroSeconds = seconds < 10 ? '0' : '';
+    let leadingZeroMinutes = minutes < 10 ? '0' : '';
+    return hours + ':' + leadingZeroMinutes + minutes + ':' + leadingZeroSeconds + seconds;
+}
+
 function createVolumeButton() {
-    let button = createDiv({tagName: 'button', className: 'icon-button fas fa-volume-up'});
+    let button = createDiv({tagName: 'button', id: 'volume-button', className: 'icon-button fas fa-volume-up'});
     let decreaseButton = createDiv({tagName: 'button', id: 'decrease-volume', className: 'icon-button fas fa-minus'});
     let increaseButton = createDiv({tagName: 'button', id: 'increase-volume', className: 'icon-button fas fa-plus'});
     let volumeSlider = createDiv({tagName: 'input', id: 'volume-slider'});
+    let volumeCount = createDiv({id: 'volume-count', innerHTML: volume + '%'});
     volumeSlider.type = 'range';
     volumeSlider.min = 0;
     volumeSlider.max = 100;
@@ -32,15 +88,16 @@ function createVolumeButton() {
     let amount = 1;
     decreaseButton.addEventListener('click', (e)=>{
         setVolume(volume - amount);
-    })
+    });
     increaseButton.addEventListener('click', (e)=>{
         setVolume(volume + amount);
-    })
-    volumeSlider.addEventListener('change', (e)=>{
+    });
+    volumeSlider.addEventListener('input', (e)=>{
+        document.getElementById('volume-count').innerHTML = volume + '%';
         setVolume(parseInt(e.currentTarget.value));
-    })
+    });
     let res = createDropdownButton(button, {id: 'volume-dropdown'});
-    res.appendChild(createDropdownContent([decreaseButton, volumeSlider, increaseButton], {id: 'volume-content'}));
+    res.appendChild(createDropdownContent([decreaseButton, volumeSlider, increaseButton, volumeCount], {id: 'volume-content'}));
     return res;
 }
 
@@ -81,7 +138,7 @@ function clickRecitation(e) {
 }
 
 function createVersePlayingButton() {
-    let res = createDiv({tagName: 'input', id: 'verse-playing', className: 'block-button', innerHTML: '1'});
+    let res = createDiv({tagName: 'input', id: 'verse-playing', innerHTML: '1'});
     res.setAttribute('type', 'number');
     res.addEventListener('click', clickVersePlayingButton);
     res.addEventListener('keyup', keyupVersePlaying);
@@ -101,7 +158,6 @@ function createVersePlayingButton() {
 }
 
 function clickPlayButton(e) {
-    let playButton = document.getElementById('play-button');
     let versePlayingButton = document.getElementById('verse-playing');
     let v = Number(versePlayingButton.value);
     let t = timeStamps[v] - 0.05;
@@ -110,7 +166,7 @@ function clickPlayButton(e) {
             audioPlayerElement.currentTime = t;
             playFromVerse(v, "smooth");
         }
-        playButton.className = 'fas fa-pause';
+        playAudio();
         audioPlayerElement.play();
     } else {
         pauseAudio();
@@ -120,7 +176,12 @@ function clickPlayButton(e) {
 function pauseAudio() {
     let playButton = document.getElementById('play-button');
     audioPlayerElement.pause();
-    playButton.className = 'fas fa-play';
+    playButton.className = 'icon-button fas fa-play';
+}
+
+function playAudio() {
+    let playButton = document.getElementById('play-button');
+    playButton.className = 'icon-button fas fa-pause';
 }
 
 function clickVersePlayingButton(e) {
@@ -164,15 +225,30 @@ function blurVersePlaying(e) {
 
 function setAudio() {
     if (isTestMode) {
+        // disableAudio();
         return;
     }
     currentRecitation = 0;
     audioInfo = chapters[currentChapter-1].recitations;
     if (audioInfo) {
+        enableAudio();
         updateRecitation();
     } else {
-        audioControlsElement.appendChild(createRecitationsButton());
+        disableAudio();
+        document.getElementById('lower-controls').appendChild(createRecitationsButton());
     }
+}
+
+function enableAudio() {
+    document.getElementById('upper-controls').style.display = 'flex';
+    document.getElementById('play-button').disabled = false;
+    document.getElementById('volume-button').disabled = false;
+}
+
+function disableAudio() {
+    document.getElementById('upper-controls').style.display = 'none';
+    document.getElementById('play-button').disabled = true;
+    document.getElementById('volume-button').disabled = true;
 }
 
 function updateRecitation() {
@@ -181,12 +257,13 @@ function updateRecitation() {
     timeStamps = {};
     $.getJSON(folderPath + '.json', function(json){
         timeStamps = json;
-        audioControlsElement.appendChild(createRecitationsButton());
+        document.getElementById('lower-controls').appendChild(createRecitationsButton());
     });
 }
 
 function audioTimeUpdate(e) {
-    if (!timeStamps[currentVersePlaying + 1] 
+    setElapsedTime(audioPlayerElement.currentTime);
+    if (!currentVersePlaying || !timeStamps[currentVersePlaying + 1] 
         || (audioPlayerElement.currentTime < timeStamps[currentVersePlaying + 1] - 0.5 && audioPlayerElement.currentTime > timeStamps[currentVersePlaying] - 0.5)) {
         return;
     }
@@ -200,7 +277,8 @@ function audioTimeUpdate(e) {
 }
 
 function findVerseFromTime() {
-    for (let i = 0; i < chapters[currentChapter-1].verses_count-1; i++) {
+    let i = 0;
+    for (i = 0; i < chapters[currentChapter-1].verses_count-1; i++) {
         if (audioPlayerElement.currentTime < timeStamps[i+1]) {
             playFromVerse(i, "auto");
             return;
@@ -210,6 +288,7 @@ function findVerseFromTime() {
 }
 
 function audioEnded(e) {
+
     if (verseView !== 1) {
         let previousVerseElement = document.querySelector(`.verse[verse="${currentVersePlaying}"]`);
         previousVerseElement.removeAttribute('playing');

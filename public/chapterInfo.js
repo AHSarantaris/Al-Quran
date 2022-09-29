@@ -376,7 +376,7 @@ chapters = [
         },
         "recitations":[
             {
-                file: "alafasy_taha_1421_LQ_better",
+                file: "alafasy_taha_1421_LQ_better03",
                 name: "Alafasy 1421"
             }
         ]
