@@ -1003,7 +1003,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Moon"
-        }
+        },
+        "recitations":[
+            {
+                file: "alafasy_qamar",
+                name: "Mishary Rashid Alafasy"
+            }
+        ]
     },
     {
         "id":55,
@@ -1385,7 +1391,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Cloaked One"
-        }
+        },
+        "recitations":[
+            {
+                file: "alafasy_muddathir",
+                name: "Mishary Rashid Alafasy",
+            }
+        ]
     },
     {
         "id":75,

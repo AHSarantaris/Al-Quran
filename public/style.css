@@ -651,6 +651,7 @@ sup:hover  {
 }
 #speed-count {
     padding: var(--padding-2) 0;
+    font-weight: bold;
 }
 #speed-count:hover {
     opacity: var(--hover-opacity-1);

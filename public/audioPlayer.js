@@ -290,6 +290,7 @@ function updateRecitation() {
     timeStamps = {};
     $.getJSON(folderPath + '.json', function(json){
         timeStamps = json;
+    }).always(() => {
         document.getElementById('lower-controls').appendChild(createRecitationsButton());
     });
 }
