@@ -114,12 +114,7 @@ function clickNextVerseButton() {
             continue;
         }
         if (verseRect.internalBottom <= contentRect.bottom) {
-            if (i === chapters[currentChapter-1].verses_count) {
-                let scrollTop = 0.5*$('#chapter-content-wrapper').height();
-                smoothScroll(scrollTop);
-            } else {
-                scrollToVerseSmooth(i+1,"end");
-            }
+            scrollToVerseSmooth(i+1,"end");
             return;
         } else if (verseRect.internalTop >= contentRect.top && verseRect.internalTop <= contentRect.bottom) {
             if (verseRect.externalBottom - verseRect.externalTop > contentRect.height) {
@@ -129,29 +124,64 @@ function clickNextVerseButton() {
             }
             return;
         } else if (verseRect.internalTop <= contentRect.bottom) {
-            if (verseRect.internalBottom - contentRect.top > 3/2*contentRect.height) {
-                let scrollTop = 0.5*contentRect.height;
-                smoothScroll(scrollTop);
-            } else {
-                scrollToVerseSmooth(i,"end");
-            }
+            scrollToVerseSmooth(i,"end");
             return;
         }
     }
 }
+// function clickNextVerseButton() {
+//     if (currentVerse === chapters[currentChapter-1].verses_count) {
+//         return;
+//     } else if (verseView === 1) {
+//         nextVerse();
+//         return;
+//     }
+//     var verseRect;
+//     let contentRect = chapterContentWrapperElement.getBoundingClientRect();
+//     for (let i = chapters[currentChapter-1].verses_count; i > 0; i--) {
+//         verseRect = getVersePositionsNext(i);
+//         if (!verseRect) {
+//             continue;
+//         }
+//         if (verseRect.internalBottom <= contentRect.bottom) {
+//             if (i === chapters[currentChapter-1].verses_count) {
+//                 let scrollTop = 0.5*$('#chapter-content-wrapper').height();
+//                 smoothScroll(scrollTop);
+//             } else {
+//                 scrollToVerseSmooth(i+1,"end");
+//             }
+//             return;
+//         } else if (verseRect.internalTop >= contentRect.top && verseRect.internalTop <= contentRect.bottom) {
+//             if (verseRect.externalBottom - verseRect.externalTop > contentRect.height) {
+//                 scrollToVerseSmooth(i, "start");
+//             } else {
+//                 scrollToVerseSmooth(i,"end");
+//             }
+//             return;
+//         } else if (verseRect.internalTop <= contentRect.bottom) {
+//             if (verseRect.internalBottom - contentRect.top > 3/2*contentRect.height) {
+//                 let scrollTop = 0.5*contentRect.height;
+//                 smoothScroll(scrollTop);
+//             } else {
+//                 scrollToVerseSmooth(i,"end");
+//             }
+//             return;
+//         }
+//     }
+// }
 
 function getVersePositionsPrevious(i) {
     let verse = document.querySelector(`.verse[verse="${i}"]`);
     if (!verse) {
         return undefined;
     } 
-    let currentContainer = document.querySelector(`.verse[verse="${i}"] .word-container`);
-    let previousContainer = document.querySelector(`.verse[verse="${i+1}"] .word-container`);
+    let currentTopElement = verse.children[1];
+    let previousTopElement = document.querySelector(`.verse[verse="${i+1}"]`).children[1];
     let verseRect = verse.getBoundingClientRect();
     var internalBottom;
-    let internalTop = currentContainer.getBoundingClientRect().top;
-    if (previousContainer) {
-        internalBottom = previousContainer.getBoundingClientRect().top;
+    let internalTop = currentTopElement.getBoundingClientRect().top;
+    if (previousTopElement) {
+        internalBottom = previousTopElement.getBoundingClientRect().top;
     } else {
         internalBottom = verseRect.bottom;
     }

@@ -919,7 +919,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"Qaf"
-        }
+        },
+        "recitations": [
+            {
+                file: "alafasy_qaf",
+                name: "Mishary Rashid Alafasy"
+            }
+        ]
     },
     {
         "id":51,
@@ -955,7 +961,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Mount"
-        }
+        },
+        "recitations": [
+            {
+                file: "humeid_tur_cut",
+                name: "Abdallah Humeid"
+            }
+        ]
     },
     {
         "id":53,
@@ -1035,6 +1047,10 @@ chapters = [
             "name":"The Event"
         },
         "recitations":[
+            {
+                file: "alafasy_waqiah_1427",
+                name: "Mishary Rashid Alafasy - 1427"
+            },
             {
                 file: "jamat-ul-dawah_waqiah",
                 name: "Abu Hafs Jamat ul-Dawah"
@@ -1390,7 +1406,7 @@ chapters = [
         },
         "recitations":[
             {
-                file: "alafasy_qiyamah_1428_america",
+                file: "alafasy_qiyamah_1428",
                 name: "Mishary Rashid Alafasy - 1428",
             }
         ]
@@ -1528,7 +1544,7 @@ chapters = [
         },
         "recitations":[
             {
-                file: "alafasy_infitar_1427_original_reverb",
+                file: "alafasy_infitar_1427",
                 name: "Mishary Rashid Alafasy - 1427"
             }
         ]

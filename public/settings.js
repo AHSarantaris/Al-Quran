@@ -24,13 +24,14 @@ function createTranslationSettings() {
 }
 
 function createCheckbox(value, label) {
-    let checkbox = createDiv({tagName: 'input', className: 'checkbox'});
+    let input = createDiv({tagName: 'input'});
+    let checkbox = createDiv({tagName: 'span', className: 'checkbox'});
     let labelElement = createDiv({tagName: 'label', innerHTML: label});
-    checkbox.type = 'checkbox';
-    checkbox.name = 'translations';
-    checkbox.value = value;
+    input.type = 'checkbox';
+    input.name = 'translations';
+    input.value = value;
     labelElement.for = value;
-    return createDiv({id: value, className: 'checkbox-container', children: [checkbox, labelElement]});
+    return createDiv({id: value, className: 'container', children: [input, checkbox, labelElement]});
 }
 
 function openNav() {
@@ -70,4 +71,19 @@ function changeFontSize(increase) {
     } else {
         setFontSize(fontSizeCounter-1);
     }
+}
+
+function clickWBW(element) {
+    let arabicWBW = document.getElementById('arabic-wbw');
+    let englishWBW = document.getElementById('english-wbw');
+    if (element === arabicWBW.parentNode) {
+        arabicWBW.checked = !arabicWBW.checked;
+        wordSettings.arabic = arabicWBW.checked;
+    } else {
+        englishWBW.checked = !englishWBW.checked;
+        wordSettings.translation = englishWBW.checked;
+        wordSettings.transliteration = englishWBW.checked;
+    }
+    saveWordSettings(wordSettings);
+    setVerseView(verseView);
 }

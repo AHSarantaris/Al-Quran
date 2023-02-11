@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
 :root {
     --large-text: 1.1em;
     --medium-text: 0.95em;
@@ -12,6 +14,7 @@
 
     --gap: 2px;
 
+    --padding-0: 30px;
     --padding-1: 20px;
     --padding-2: 12px;
     --padding-3: 8px;
@@ -402,11 +405,24 @@ sup:hover  {
     border-radius: 50%;
     border: var(--padding-5) solid var(--text-color-3);
 }
+.checkbox {
+    height: 14px;
+    width: 14px;
+    margin: var(--padding-5);
+    flex-shrink: 0;
+    background-color: var(--text-color-3);
+}
 .container:hover input:not(input:checked) ~ .checkmark {
     background-color: var(--theme-color);
 }
 .container input:checked ~ .checkmark {
     border-color: var(--theme-color);
+}
+.container:hover input ~ .checkbox {
+    opacity: var(--hover-opacity-1);
+}
+.container input:checked ~ .checkbox {
+    background-color: var(--theme-color);
 }
 .container input:checked ~ .theme-text {
     color: var(--theme-color);
@@ -418,8 +434,16 @@ sup:hover  {
 #font-settings .block-button {
     background-color: var(--background-color-1);
 }
+#translation-container, #wbw-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    align-items: center;
+}
 #translation-container {
-    flex-direction: column;
+    gap: var(--padding-5);
+}
+#wbw-container {
     gap: var(--padding-3);
 }
 .checkbox-container {
@@ -500,9 +524,6 @@ sup:hover  {
     background-color: var(--background-color-1);
 }
 
-#bismillah {
-    padding: calc(2*var(--padding-1)) 0 var(--padding-1) var(--padding-3);
-}
 #single-verse {
     display: flex;
     flex-direction: column;
@@ -623,10 +644,18 @@ sup:hover  {
 #verse-playing:focus-visible {
     outline: none;
 }
-#volume-dropdown {
+#speed-dropdown {
     margin-left: auto;
+    margin-right: var(--padding-2);
+    cursor: pointer;
 }
-#volume-content {
+#speed-count {
+    padding: var(--padding-2) 0;
+}
+#speed-count:hover {
+    opacity: var(--hover-opacity-1);
+}
+#volume-content, #speed-content {
     bottom: 100%;
     right: 0;
     background-color: var(--background-color-2);
@@ -635,15 +664,15 @@ sup:hover  {
     width: min-content;
     gap: 0;
 }
-#volume-content > * {
+#volume-content > *, #speed-content > * {
     color: var(--text-color-3);
     font-size: 0.9em;
     padding-top: var(--padding-3);
 }
-#volume-content .icon-button {
+#volume-content .icon-button, #speed-content .icon-button {
     padding-bottom: var(--padding-3);
 }
-#volume-slider {
+#volume-slider, #speed-slider {
     -webkit-appearance: slider-vertical;
     width: var(--padding-3);
     height: 120px;
@@ -673,6 +702,10 @@ sup:hover  {
     gap: 3px;
     background-color: var(--background-color-2);
 }
+#bismillah {
+    padding-top: calc(3*var(--padding-1));
+    padding-bottom: calc(2*var(--padding-1));
+}
 .verse {
     box-sizing: border-box;
     border-left: 4px solid transparent;
@@ -680,10 +713,11 @@ sup:hover  {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    padding: var(--padding-1) var(--padding-2) var(--padding-2) var(--padding-1);
+    /* padding: var(--padding-1) var(--padding-2) var(--padding-2) var(--padding-2); */
+    padding: var(--padding-1) var(--padding-3) var(--padding-2) var(--padding-1);
     background-color: var(--background-color);
     order: 1;
-    gap: var(--padding-2);
+    gap: var(--padding-1);
 }
 .verse[playing] {
     /* background-color: var(--playing-background-color); */
@@ -733,7 +767,7 @@ sup:hover  {
 .translation-container {
     display: flex;
     flex-direction: column;
-    gap: var(--padding-1);
+    gap: var(--padding-0);
 }
 .verse-translated {
     /* margin: var(--padding-2) 0; */
@@ -747,17 +781,57 @@ sup:hover  {
     color: var(--text-color-4);
     margin-top: var(--padding-3);
 }
+@font-face {
+    font-family: UthmanicHafs;
+    src: url(fonts/UthmanicHafs.otf);
+    font-display: swap;
+}
+@font-face {
+    font-family: UthmanTahaNaskh;
+    src: url(fonts/UthmanTahaNaskh.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: UH1_Ver17;
+    src: url(fonts/UH1_Ver17.woff2);
+    font-display: swap;
+}
+.arabic-word-container {
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--padding-1) ;
+    margin: 0 var(--padding-2);
+    padding-right: var(--padding-3);
+    white-space: nowrap;
+    font-size: 2.2em;
+    /* font-family: UthmanicHafs; */
+    font-family: UthmanTahaNaskh;
+    /* font-family: UH1_Ver17; */
+    direction: rtl;
+}
 .word-container {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-top: var(--padding-3);
-    padding-right: var(--padding-3);
+    margin: var(--padding-2) var(--padding-2);
+    /* padding-right: var(--padding-3); */
     white-space: nowrap;
+    gap: var(--padding-1) var(--padding-2);
 }
-.word {
-    margin: 0 0 var(--padding-1) var(--padding-2);
+.word-container .word {
+    /* margin: 0 0 var(--padding-1) var(--padding-2); */
+}
+.arabic-word {
+    /* box-sizing: content-box; */
+    cursor: pointer;
+}
+[selected-word] {
+    outline: 2px solid #555;
+    outline-offset: 4px;
 }
 .transliterated-word {
     display: inline-block;
@@ -791,7 +865,7 @@ sup:hover  {
 /* Scrollable */
 .scrollable::-webkit-scrollbar {
     height: var(--padding-5);
-    width: var(--padding-3);
+    width: var(--padding-2);
     border-top: 1px solid var(--background-color);
     border-bottom: 1px solid var(--background-color);
 }
@@ -810,6 +884,7 @@ sup:hover  {
 
 @media only screen and (max-width: 350px) {
     :root {
+        --padding-0: 16px;
         --padding-1: 12px;
         --padding-2: 8px;
         --padding-3: 6px;
@@ -838,6 +913,9 @@ sup:hover  {
 @media only screen and (min-width: 600px) {
     body {
         font-size: 14px;
+    }
+    .arabic-word-container {
+        font-size: 2.5em;
     }
     .content, .topbar, #audio-controls {
         padding-right: 10%;

@@ -21,20 +21,29 @@ function createAllVerses() {
 }
 
 function createBismillah() {
+    let arabicWords = ["بِسْمِ","ٱللَّهِ","ٱلرَّحْمَـٰنِ","ٱلرَّحِيمِ"];
     let transliteratedWords = ["bis'mi","l-lahi","l-raḥmāni","l-raḥīmi"];
     let translatedWords = ["In (the) name", `(of) ${nameOfGod ? 'Allah' : 'God'},`,"the Merciful,","the Compassionate."];
+    let arabicWordContainerElement = createDiv({className:'arabic-word-container'});
     let wordContainerElement = createDiv({className:'word-container'});
-    var transliteratedElement, translatedElement, wordElement, wordId;
+    var arabicElement, transliteratedElement, translatedElement, arabicWordElement, wordElement, wordId;
     for (let j = 0; j < 4; j++) {
         wordId = `${1}:${1}:${j+1}`;
+        arabicWordElement = createDiv({className:'word'});
+        arabicElement = createDiv({tagName: 'span', className:'arabic-word', innerHTML:arabicWords[j]});
         wordElement = createDiv({className:'word'});
         transliteratedElement = createDiv({tagName: 'a', className:'transliterated-word', id: wordId, innerHTML: transliteratedWords[j]});
         transliteratedElement.href = `https://corpus.quran.com/wordmorphology.jsp?location=(${wordId})`;
         transliteratedElement.target = '_blank';
         translatedElement = createDiv({className:'translated-word', innerHTML: translatedWords[j]});
+        arabicWordElement.appendChild(arabicElement);
         wordElement.appendChild(transliteratedElement);
         wordElement.appendChild(translatedElement);
+        arabicWordContainerElement.appendChild(arabicWordElement);
         wordContainerElement.appendChild(wordElement);
+    }
+    if (wordSettings.arabic) {
+        bismillahElement.appendChild(arabicWordContainerElement);
     }
     bismillahElement.appendChild(wordContainerElement);
 }
@@ -55,7 +64,7 @@ function getTranslationData(v, translationInfo, getWords, scroll) {
             translationsStr += ',' + translationInfo[i].id;
         }
     }
-    settings.url = `${baseURL}verses/by_key/${currentChapter}:${v}${languageQuery}&translations=${translationsStr}&word_fields=location&words=${isTestMode}`;
+    settings.url = `${baseURL}verses/by_key/${currentChapter}:${v}${languageQuery}&translations=${translationsStr}&word_fields=location,text_uthmani&words=${isTestMode}`;
     $.ajax(settings).done(function (response) {
         let verseData = response.verse;
         let wordData = isTestMode ? verseData.words : wordTranslations[v];
@@ -71,11 +80,11 @@ function getTranslationData(v, translationInfo, getWords, scroll) {
 
 
 function createVerseElement(v) {
-    var wordContainerElement, numberElement, verseElement, headerElement, verseButtonElement, translationContainerElement, translationWrapperElement;
+    var arabicWordContainerElement, wordContainerElement, numberElement, verseElement, headerElement, verseButtonElement, translationContainerElement, translationWrapperElement;
     verseElement = createDiv({className: 'verse'});
     headerElement = createDiv({className: 'verse-header'});
     numberElement = createDiv({tagName: 'span', className:'verse-number', innerHTML: v});
-    verseButtonElement = createVerseButton(v);
+    verseButtonElement = createVerseButton(v); arabicWordContainerElement = createDiv({className:'arabic-word-container'});
     wordContainerElement = createDiv({className:'word-container'});
     translationWrapperElement = createDiv({className: 'translation-container-wrapper'});
     translationContainerElement = createDiv({className: 'translation-container'});
@@ -84,7 +93,12 @@ function createVerseElement(v) {
     headerElement.appendChild(numberElement);
     headerElement.appendChild(verseButtonElement);
     verseElement.appendChild(headerElement);
-    verseElement.appendChild(wordContainerElement);
+    if (wordSettings.arabic) {
+        verseElement.appendChild(arabicWordContainerElement);
+    }
+    if (wordSettings.transliteration || wordSettings.translation) {
+        verseElement.appendChild(wordContainerElement);
+    }
     verseElement.appendChild(translationWrapperElement);
     appendToVerseContainer(verseElement, v);
 }
@@ -99,16 +113,23 @@ function createAllTranslationsButton(v) {
 }
 
 function createWordContainer(v,words) {
-    var word, wordElement;
+    var word, wordElement, arabicWordElement;
     let wordContainerElement = document.querySelector(`.verse[verse="${v}"] .word-container`);
+    let arabicWordContainerElement = document.querySelector(`.verse[verse="${v}"] .arabic-word-container`);
     let wordCount = words.length;
     if (isTestMode) {
         wordCount--;
     }
     for (let j = 0; j < wordCount; j++) {
         word = words[j];
-        wordElement = createWordElement(v,j,word);
-        wordContainerElement.appendChild(wordElement);
+        if (wordSettings.arabic) {
+            arabicWordElement = createArabicWordElement(v,j,word);
+            arabicWordContainerElement.appendChild(arabicWordElement);
+        }
+        if (wordSettings.translation || wordSettings.transliteration) {
+            wordElement = createWordElement(v,j,word);
+            wordContainerElement.appendChild(wordElement);
+        }
     }
 }
 
@@ -181,6 +202,7 @@ function createTranslationElement(v, text, name, id) {
 function createWordElement(v, w, word) {
     let wordText = createWordText(word);
     let wordElement = createDiv({className:'word'});
+    wordElement.setAttribute('word-location', w+1);
     if (wordSettings.transliteration) {
         let wordId = `${currentChapter}:${v}:${w+1}`;
         let transliteratedWord = createDiv({tagName: 'a', className:'transliterated-word', id: wordId, innerHTML: wordText.transliteration});
@@ -195,6 +217,21 @@ function createWordElement(v, w, word) {
         }
         let translatedWord = createDiv({className:'translated-word', innerHTML: wordText.translation});
         wordElement.appendChild(translatedWord);
+    }
+    return wordElement;
+}
+
+function createArabicWordElement(v,w,word) {
+    let wordText = createWordText(word);
+    let wordElement = createDiv({className:'word'});
+    if (wordSettings.arabic) {
+        let arabicWord = createDiv({tagName: 'span', className:'arabic-word', innerHTML: wordText.arabic});
+        arabicWord.setAttribute('verse-location', v);
+        arabicWord.setAttribute('word-location', w+1);
+        arabicWord.addEventListener('click', clickArabicWord);
+        // arabicWord.target = '_blank';
+        // arabicWord.title = 'See grammar for this word\nin corpus.quran.com';
+        wordElement.appendChild(arabicWord);
     }
     return wordElement;
 }
@@ -291,5 +328,19 @@ function openQuranWebsite(chapter,verse,translation) {
 function openBetaQuranWebsite(chapter,verse) {
     let url = `https://beta.quran.com/${chapter}/${verse}`;
     window.open(url);
+}
+
+function clickArabicWord(e) {
+    let target = e.currentTarget;
+    let wordLoc = parseInt(target.getAttribute('word-location'));
+    let pairedElement = target.parentElement.parentElement.nextElementSibling.children[wordLoc-1];
+    let previousTargets = document.querySelectorAll('[selected-word]');
+    target.setAttribute('selected-word', true);
+    pairedElement.setAttribute('selected-word', true);
+    if (previousTargets.length > 0) {
+        previousTargets[0].removeAttribute('selected-word');
+        previousTargets[1].removeAttribute('selected-word');
+    }
+
 }
 

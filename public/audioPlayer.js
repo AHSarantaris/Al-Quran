@@ -21,6 +21,7 @@ function createAudioControls() {
     let playButton = createDiv({tagName: 'button', id: 'play-button', className: 'icon-button fas fa-play'});
     playButton.addEventListener('click', clickPlayButton);
     let volumeButton = createVolumeButton();
+    let speedControl = createSpeedControls();
     let versePlayingButton = createVersePlayingButton();
     let elapsedLabel= createDiv({tagName: 'span', id: 'elapsed-label', innerHTML: timeInMinutes(elapsedTime)});
     let durationLabel = createDiv({tagName: 'span', id: 'duration-label',innerHTML: timeInMinutes(audioPlayerElement.duration)});
@@ -32,8 +33,10 @@ function createAudioControls() {
     res.appendChild(lowerControls);
     lowerControls.appendChild(playButton);
     lowerControls.appendChild(versePlayingButton);
+    lowerControls.appendChild(speedControl);
     lowerControls.appendChild(volumeButton);
     setVolume(volume);
+    setSpeed(speed);
     setElapsedTime(elapsedTime);
     return res;
 }
@@ -75,16 +78,46 @@ function timeInMinutes(time) {
     return hours + ':' + leadingZeroMinutes + minutes + ':' + leadingZeroSeconds + seconds;
 }
 
+function createSpeedControls() {
+    // let res = createDiv({tagName: 'div', id: 'speed-dropdown'});
+    let decreaseButton = createDiv({tagName: 'button', id: 'decrease-speed', className: 'icon-button fas fa-minus'});
+    let increaseButton = createDiv({tagName: 'button', id: 'increase-speed', className: 'icon-button fas fa-plus'});
+    let slider = createDiv({tagName: 'input', id: 'speed-slider'});
+    let count = createDiv({id: 'speed-count', innerHTML: speed + 'x'});
+    slider.type = 'range';
+    slider.min = -50;
+    slider.max = 50;
+    slider.step = 5;
+    slider.value = speed;
+    let amount = 1;
+    decreaseButton.addEventListener('click', (e)=>{
+        setSpeed(speed - amount);
+    });
+    increaseButton.addEventListener('click', (e)=>{
+        setSpeed(speed + amount);
+    });
+    slider.addEventListener('input', (e)=>{
+        document.getElementById('speed-count').innerHTML = speed + 'x';
+        setSpeed(parseInt(e.currentTarget.value));
+    });
+    // res.appendChild(slider);
+    // res.appendChild(count);
+    let res = createDropdownButton(count, {id: 'speed-dropdown'});
+    res.appendChild(createDropdownContent([decreaseButton, slider, increaseButton], {id: 'speed-content'}));
+    return res;
+
+}
+
 function createVolumeButton() {
     let button = createDiv({tagName: 'button', id: 'volume-button', className: 'icon-button fas fa-volume-up'});
     let decreaseButton = createDiv({tagName: 'button', id: 'decrease-volume', className: 'icon-button fas fa-minus'});
     let increaseButton = createDiv({tagName: 'button', id: 'increase-volume', className: 'icon-button fas fa-plus'});
-    let volumeSlider = createDiv({tagName: 'input', id: 'volume-slider'});
-    let volumeCount = createDiv({id: 'volume-count', innerHTML: volume + '%'});
-    volumeSlider.type = 'range';
-    volumeSlider.min = 0;
-    volumeSlider.max = 100;
-    volumeSlider.value = volume;
+    let slider = createDiv({tagName: 'input', id: 'volume-slider'});
+    let count = createDiv({id: 'volume-count', innerHTML: volume + '%'});
+    slider.type = 'range';
+    slider.min = 0;
+    slider.max = 100;
+    slider.value = volume;
     let amount = 1;
     decreaseButton.addEventListener('click', (e)=>{
         setVolume(volume - amount);
@@ -92,12 +125,12 @@ function createVolumeButton() {
     increaseButton.addEventListener('click', (e)=>{
         setVolume(volume + amount);
     });
-    volumeSlider.addEventListener('input', (e)=>{
+    slider.addEventListener('input', (e)=>{
         document.getElementById('volume-count').innerHTML = volume + '%';
         setVolume(parseInt(e.currentTarget.value));
     });
     let res = createDropdownButton(button, {id: 'volume-dropdown'});
-    res.appendChild(createDropdownContent([decreaseButton, volumeSlider, increaseButton, volumeCount], {id: 'volume-content'}));
+    res.appendChild(createDropdownContent([decreaseButton, slider, increaseButton, count], {id: 'volume-content'}));
     return res;
 }
 

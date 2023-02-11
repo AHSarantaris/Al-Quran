@@ -65,7 +65,7 @@
                             <span class="theme-text">Light Theme</span>
                         </div>
                         <div class="container" onclick="clickTheme(this)">
-                            <input id="dark-theme" type="radio" name="theme" checked="true">
+                            <input id="dark-theme" type="radio" name="theme" checked>
                             <span class="checkmark"></span>
                             <span class="theme-text">Dark Theme</span>
                         </div>
@@ -77,6 +77,21 @@
                         <button class="block-button fas fa-minus" onclick="changeFontSize(false)"></button>
                         <div id="font-counter"></div>
                         <button class="block-button fas fa-plus" onclick="changeFontSize(true)"></button>
+                    </div>
+                </div>
+                <div id="wbw-settings">
+                    <span class="wbw-title">Word By Word</span>
+                    <div id="wbw-container" class="settings-container">
+                        <div class="container" onclick="clickWBW(this)">
+                            <input id="arabic-wbw" type="checkbox" name="wbw">
+                            <span class="checkbox"></span>
+                            <label>Arabic</label>
+                        </div>
+                        <div class="container" onclick="clickWBW(this)">
+                            <input id="english-wbw" type="checkbox" name="wbw" checked>
+                            <span class="checkbox"></span>
+                            <label>Transliteration & Translation</label>
+                        </div>
                     </div>
                 </div>
                 <div id="translation-settings">

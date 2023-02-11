@@ -1,5 +1,7 @@
 'use strict'
 
+// const { func } = require("assert-plus");
+
 let isTestMode = 0;
 
 let baseURL = "https://api.quran.com/api/v4/";
@@ -25,6 +27,8 @@ let settings = {
     "credentials": 'include'
 };
 
+// var wordSettings;
+let wordSettings = {arabic: false, transliteration: true, translation: true};
 
 let translationOrder = [
     // {
@@ -141,11 +145,11 @@ var homeScrollTop;
 var chapterScrollTop;
 var fontSizeCounter;
 var volume;
+var speed;
 var elapsedTime;
 
 var verseTranslations;
 var wordTranslations;
-let wordSettings = {arabic: false, transliteration: true, translation: true};
 
 
 let backButtonElement = createBackButton();
@@ -158,8 +162,13 @@ document.addEventListener('click', function(e) {
         closeNav();
         e.stopImmediatePropagation();
     }
+    let selectedWords = document.querySelectorAll('[selected-word]');
+    if (selectedWords.length > 0) {
+        selectedWords[0].removeAttribute('selected-word');
+        selectedWords[1].removeAttribute('selected-word');
+    }
     let dropdownContentElement = document.querySelector('.dropdown-content[selected]');
-    if (dropdownContentElement && !e.target.matches('.dropdown-button, .dropdown-button > *, #volume-dropdown *')) {
+    if (dropdownContentElement && !e.target.matches('.dropdown-button, .dropdown-button > *, #volume-dropdown *, #speed-dropdown *')) {
         dropdownContentElement.removeAttribute('selected');
     }
 }, true);
@@ -172,9 +181,13 @@ document.onreadystatechange = function(e) {
         currentVerse = parseInt(localStorage.getItem('verse'));
         verseView = parseInt(localStorage.getItem('verse-view'));
         volume = parseInt(localStorage.getItem('volume'));
+        speed = parseInt(localStorage.getItem('speed'));
         elapsedTime = parseInt(localStorage.getItem('elapsed-time'));
         if (!volume) {
             volume = 90;
+        }
+        if (!speed) {
+            speed = 0;
         }
         if (!elapsedTime) {
             elapsedTime = 0;
@@ -183,29 +196,26 @@ document.onreadystatechange = function(e) {
         setFontSize(parseInt(localStorage.getItem('font-size-counter')));
         setCurrentTranslations(JSON.parse(localStorage.getItem('current-translations')));
         setNameOfGod(JSON.parse(localStorage.getItem('name-of-God')));
+        saveWordSettings(JSON.parse(localStorage.getItem('word-settings')));
         if (currentVerse || currentChapter) {
             chapterPageElement.style.display = 'flex';
         } else {
             homePageElement.style.display = 'flex';
         }
+        setIsTestMode()
     }
     if (document.readyState === 'complete') {
-        document.body.style.display = 'block'; 
+        document.body.style.display = 'block';
     }
 };
 
-init();
-
-function init() {
-    setIsTestMode();
-}
 
 function setIsTestMode() {
     $.getJSON('translations/108/words.json', function(){
         isTestMode = 0;
+        onReload();
     }).fail(function(){
         isTestMode = 1;
-    }).always(function() {
         onReload();
     });
 }
@@ -432,6 +442,37 @@ function setNameOfGod(name) {
         nameAllah.checked = false;
         nameGod.checked = true;
     }
+}
+
+function saveWordSettings(json) {
+    let arabicWBW = document.getElementById('arabic-wbw');
+    let englishWBW = document.getElementById('english-wbw');
+    if (json) {
+        wordSettings = json;
+        arabicWBW.checked = wordSettings.arabic;
+        englishWBW.checked = wordSettings.translation || wordSettings.transliteration;
+    } else {
+        wordSettings.arabic = arabicWBW.checked;
+        wordSettings.translation = englishWBW.checked;
+        wordSettings.transliteration = englishWBW.checked;
+    }
+    localStorage.setItem('word-settings', JSON.stringify(wordSettings));
+}
+
+function setSpeed(v) {
+    if (!v && v !== 0) {
+        v = 0;
+    } else if (v > 50) {
+        v = 50;
+    } else if (v < -50) {
+        v = -50;
+    }
+    let rate = 1 + v/100;
+    audioPlayerElement.playbackRate = rate;
+    document.getElementById('speed-slider').value = v;
+    document.getElementById('speed-count').innerHTML = (Math.round(rate*100)/100).toFixed(2) + 'x';
+    speed = v;
+    localStorage.setItem('speed', v);
 }
 
 function setVolume(v) {
