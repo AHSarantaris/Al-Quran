@@ -46,9 +46,9 @@ function clickTheme(element) {
     let lightTheme = document.getElementById('light-theme');
     let darkTheme = document.getElementById('dark-theme');
     if (element === lightTheme.parentNode && !lightTheme.checked) {
-        setCurrentTheme(1);
-    } else if (!darkTheme.checked) {
         setCurrentTheme(0);
+    } else if (!darkTheme.checked) {
+        setCurrentTheme(1);
     }
 }
 

@@ -400,15 +400,15 @@ function setCurrentTheme(theme) {
     let lightTheme = document.getElementById('light-theme');
     let darkTheme = document.getElementById('dark-theme');
     if (!theme) {
-        darkTheme.checked = true;
-        lightTheme.checked = false;
-        $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
-        $('link[href="light.css"]').remove();
-    } else {
         lightTheme.checked = true;
         darkTheme.checked = false;
         $('head').append('<link rel="stylesheet" href="light.css" type="text/css" />');
         $('link[href="dark.css"]').remove();
+    } else {
+        darkTheme.checked = true;
+        lightTheme.checked = false;
+        $('head').append('<link rel="stylesheet" href="dark.css" type="text/css" />');
+        $('link[href="light.css"]').remove();
     }
 }
 

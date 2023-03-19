@@ -124,7 +124,7 @@ function clickNextVerseButton() {
             }
             return;
         } else if (verseRect.internalTop <= contentRect.bottom) {
-            scrollToVerseSmooth(i,"end");
+            scrollToVerseSmooth(i+1,"end");
             return;
         }
     }
@@ -193,11 +193,13 @@ function getVersePositionsNext(i) {
     if (!verse) {
         return undefined;
     } 
-    let currentContainer = document.querySelector(`.verse[verse="${i}"] .translation-container`);
-    let previousContainer = document.querySelector(`.verse[verse="${i-1}"] .translation-container`);
+    // let currentContainer = document.querySelector(`.verse[verse="${i}"] .translation-container`);
+    // let previousContainer = document.querySelector(`.verse[verse="${i-1}"] .translation-container`);
+    let currentContainer = document.querySelector(`.verse[verse="${i}"]`).lastChild;
+    let previousContainer = document.querySelector(`.verse[verse="${i-1}"]`).lastChild;
     let verseRect = verse.getBoundingClientRect();
-    let internalBottom = currentContainer.getBoundingClientRect().bottom;
-    let internalTop = previousContainer.getBoundingClientRect().bottom;
+    let internalBottom = currentContainer.getBoundingClientRect().top;
+    let internalTop = previousContainer.getBoundingClientRect().top;
     return {externalTop: verseRect.top, externalBottom: verseRect.bottom, internalTop: internalTop, internalBottom: internalBottom};
 }
 

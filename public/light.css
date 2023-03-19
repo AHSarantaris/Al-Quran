@@ -12,16 +12,21 @@
     /* --theme-color: hsl(37, 55%, 36%);
     --theme-color-opaque: hsla(37, 55%, 36%, 0.6); */
 
-    --theme-color: hsl(230, 27%, 32%);
-    /* --theme-color: hsl(129, 16%, 35%); */
+    /* --theme-color: hsl(230, 27%, 32%); */
+    /* BLUE: */
+    --theme-color: hsl(228, 40%, 28%);
+    /* GREY: */
+    /* --theme-color: hsl(0, 0%, 29%); */
+    /* GREEN: */
+    /* --theme-color: hsl(128, 23%, 33%); */
     --theme-color-opaque: hsla(230, 23%, 39%, 0.6);
 
     --text-color-1: #222;
-    --text-color-2: #666;
-    --text-color-3: #888;
-    --text-color-4: #999;
+    --text-color-2: #444;
+    --text-color-3: #555;
+    --text-color-4: #777;
 
-    --background-value: 255;
+    --background-value: 245;
     --background-value-1: calc(-8 + var(--background-value));
     --background-value-2: calc(-6 + var(--background-value-1));
     --background-value-3: calc(-8 + var(--background-value-2));

@@ -467,7 +467,7 @@ sup:hover  {
     flex-direction: column;
     gap: var(--gap);
     position: absolute;
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
     font-weight: bold;
     color: var(--text-color-2);
 }
@@ -476,7 +476,7 @@ sup:hover  {
 }
 .dropdown-item {
     text-align: left;
-    background-color: var(--background-color-2);
+    background-color: var(--background-color-1);
 }
 .dropdown-item:hover {
     background-color: var(--background-color-3) !important;
@@ -782,16 +782,18 @@ sup:hover  {
     color: var(--text-color-4);
     margin-top: var(--padding-3);
 }
-@font-face {
+/* Strange circle e.g. in 2:286 */
+/* @font-face {
     font-family: UthmanicHafs;
     src: url(fonts/UthmanicHafs.otf);
     font-display: swap;
-}
-@font-face {
+} */
+/* Double consonant followed by long "i" shows as long "a" */
+/* @font-face {
     font-family: UthmanTahaNaskh;
     src: url(fonts/UthmanTahaNaskh.ttf);
     font-display: swap;
-}
+} */
 @font-face {
     font-family: UH1_Ver17;
     src: url(fonts/UH1_Ver17.woff2);
@@ -808,9 +810,7 @@ sup:hover  {
     padding-right: var(--padding-3);
     white-space: nowrap;
     font-size: 2.2em;
-    /* font-family: UthmanicHafs; */
-    font-family: UthmanTahaNaskh;
-    /* font-family: UH1_Ver17; */
+    font-family: UH1_Ver17;
     direction: rtl;
 }
 .word-container {
@@ -831,7 +831,8 @@ sup:hover  {
     cursor: pointer;
 }
 [selected-word] {
-    outline: 2px solid #555;
+    /* outline: 2px solid #555; */
+    outline: 2px solid var(--background-color-4);
     outline-offset: 4px;
 }
 .transliterated-word {
@@ -860,6 +861,7 @@ sup:hover  {
 }
 .verse-number {
     font-weight: bold;
+    font-size: 1.05em;
     text-align: center;
 }
 
