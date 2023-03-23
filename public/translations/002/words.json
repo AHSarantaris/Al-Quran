@@ -193,7 +193,7 @@
         [
             "إِنَّ",
             "inna",
-            "Indeed"
+            "Indeed,"
         ],
         [
             "ٱلَّذِينَ",
@@ -213,7 +213,7 @@
         [
             "عَلَيْهِمْ",
             "Ꜥalayhim",
-            "to them"
+            "for them"
         ],
         [
             "ءَأَنذَرْتَهُمْ",
@@ -233,7 +233,7 @@
         [
             "تُنذِرْهُمْ",
             "tundhir'hum",
-            "you warn them"
+            "warn them,"
         ],
         [
             "لَا",
@@ -243,7 +243,7 @@
         [
             "يُؤْمِنُونَ",
             "yu'minūna",
-            "they believe"
+            "they will believe."
         ]
     ],
     "7": [
@@ -260,7 +260,7 @@
         [
             "عَلَىٰ",
             "Ꜥalā",
-            "on"
+            "over"
         ],
         [
             "قُلُوبِهِمْ",
@@ -270,17 +270,17 @@
         [
             "وَعَلَىٰ",
             "waꜤalā",
-            "and on"
+            "and over"
         ],
         [
             "سَمْعِهِمْ ۖ",
             "samꜤihim",
-            "their hearing"
+            "their hearing."
         ],
         [
             "وَعَلَىٰٓ",
             "waꜤalā",
-            "and on"
+            "And over"
         ],
         [
             "أَبْصَـٰرِهِمْ",
@@ -290,7 +290,7 @@
         [
             "غِشَـٰوَةٌۭ ۖ",
             "ghishāwatun",
-            "(is) a veil"
+            "(is) a veil."
         ],
         [
             "وَلَهُمْ",
@@ -305,7 +305,7 @@
         [
             "عَظِيمٌۭ",
             "Ꜥaẓīmun",
-            "great"
+            "great."
         ]
     ],
     "8": [
@@ -322,17 +322,17 @@
         [
             "مَن",
             "man",
-            "(are some) who"
+            "(are ones) who"
         ],
         [
             "يَقُولُ",
             "yaqūlu",
-            "say"
+            "say:"
         ],
         [
             "ءَامَنَّا",
             "āmannā",
-            "We believed"
+            "We believe"
         ],
         [
             "بِٱللَّهِ",
@@ -347,12 +347,12 @@
         [
             "ٱلْـَٔاخِرِ",
             "l-ākhiri",
-            "[the] Last"
+            "the last."
         ],
         [
             "وَمَا",
             "wamā",
-            "but not"
+            "But not"
         ],
         [
             "هُم",
@@ -362,7 +362,7 @@
         [
             "بِمُؤْمِنِينَ",
             "bimu'minīna",
-            "(are) believers (at all)"
+            "(are) believers (at all)."
         ]
     ],
     "9": [
@@ -384,12 +384,12 @@
         [
             "ءَامَنُوا۟",
             "āmanū",
-            "believe[d]"
+            "believe."
         ],
         [
             "وَمَا",
             "wamā",
-            "and not"
+            "But not"
         ],
         [
             "يَخْدَعُونَ",
@@ -414,7 +414,7 @@
         [
             "يَشْعُرُونَ",
             "yashꜤurūna",
-            "they realize (it)"
+            "they realize (it)."
         ]
     ],
     "10": [
