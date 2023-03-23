@@ -56,6 +56,7 @@ html {
 }
 body {
     font-size: 3.8vmin; /* font-size: 16px; */
+    font-size: 4vmin; 
     position: fixed;
     margin: 0;
     font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
@@ -263,7 +264,7 @@ sup:hover  {
     font-weight: bold;
 }
 .chapter-name {
-    font-weight: bold;
+    /* font-weight: bold; */
     grid-column-start: 2;
     margin: 0 var(--padding-2);
     white-space: nowrap;
@@ -591,8 +592,8 @@ sup:hover  {
     width: 100%;
 }
 #upper-controls {
-    color: var(--text-color-2);
-    color: var(--theme-color-opaque);
+    color: var(--text-color-4);
+    /* color: var(--theme-color-opaque); */
     /* color: var(--theme-color); */
     /* font-size: 0.9em; */
 }
@@ -806,10 +807,11 @@ sup:hover  {
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0 var(--padding-1) ;
-    margin: 0 var(--padding-2);
+    margin-right: var(--padding-2);
     padding-right: var(--padding-3);
     white-space: nowrap;
-    font-size: 2.2em;
+    /* font-size: 2.2em; */
+    font-size: 2.4em;
     font-family: UH1_Ver17;
     direction: rtl;
 }
