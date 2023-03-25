@@ -800,6 +800,10 @@ sup:hover  {
     src: url(fonts/UH1_Ver17.woff2);
     font-display: swap;
 }
+@font-face {
+    font-family: UthmanicHafs1Ver18;
+    src: url(fonts/UthmanicHafs1Ver18.woff2);
+}
 .arabic-word-container {
     /* box-sizing: border-box; */
     display: flex;
@@ -810,9 +814,10 @@ sup:hover  {
     margin-right: var(--padding-2);
     padding-right: var(--padding-3);
     white-space: nowrap;
-    /* font-size: 2.2em; */
-    font-size: 2.4em;
-    font-family: UH1_Ver17;
+    /* font-size: 2.4em; */
+    /* font-family: UH1_Ver17; */
+    /* font-family:  UthmanicHafs1Ver18; */
+    font-size: 2.6em;
     direction: rtl;
 }
 .word-container {
@@ -920,7 +925,8 @@ sup:hover  {
         font-size: 14px;
     }
     .arabic-word-container {
-        font-size: 2.5em;
+        /* font-size: 2.5em; */
+        font-size: 3em;
     }
     .content, .topbar, #audio-controls {
         padding-right: 10%;
