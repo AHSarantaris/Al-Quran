@@ -364,16 +364,17 @@ function setCurrentVerse(v) {
 }
 
 function setVerseView(view) {
+    let verseSelectorButton = document.getElementById('verse-selector-button');
     verseView = view;
     localStorage.setItem('verse-view', view);
-    chapterContentElement.innerHTML = '';
-    verseContainerElement.innerHTML = '';
-    chapterContentElement.appendChild(verseContainerElement)
-    chapterContentWrapperElement.scrollTop = 0;
-    previousVerseElement.style.display = 'flex';
-    nextVerseElement.style.display = 'flex';
-    let verseSelectorButton = document.getElementById('verse-selector-button');
-    if (verseView) {
+    if (view) {
+        chapterContentElement.innerHTML = '';
+        verseContainerElement.innerHTML = '';
+        chapterContentElement.appendChild(verseContainerElement)
+        chapterContentWrapperElement.scrollTop = 0;
+        previousVerseElement.style.display = 'flex';
+        nextVerseElement.style.display = 'flex';
+        // 
         audioControlsElement.style.display = 'flex';
         verseSelectorButton.disabled = false;
     } else {

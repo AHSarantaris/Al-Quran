@@ -1420,6 +1420,10 @@ chapters = [
             {
                 file: "alafasy_qiyamah_1428",
                 name: "Mishary Rashid Alafasy - 1428",
+            },
+            {
+                file: "Hamza Taglass - Surah Al Qiyamah",
+                name: "Hamza Taglass",
             }
         ]
     },
