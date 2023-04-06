@@ -1161,7 +1161,7 @@
         [
             "إِنَّ",
             "inna",
-            "Indeed"
+            "Indeed,"
         ],
         [
             "ٱللَّهَ",
@@ -1198,7 +1198,7 @@
         [
             "ٱلنَّاسُ",
             "l-nāsu",
-            "mankind"
+            "mankind,"
         ],
         [
             "ٱعْبُدُوا۟",
@@ -1213,7 +1213,7 @@
         [
             "ٱلَّذِى",
             "alladhī",
-            "the One Who"
+            "who"
         ],
         [
             "خَلَقَكُمْ",
@@ -1228,12 +1228,12 @@
         [
             "مِن",
             "min",
-            "from"
+            ""
         ],
         [
             "قَبْلِكُمْ",
             "qablikum",
-            "before you"
+            "before you,"
         ],
         [
             "لَعَلَّكُمْ",
@@ -1243,7 +1243,7 @@
         [
             "تَتَّقُونَ",
             "tattaqūna",
-            "become righteous"
+            "become fearing."
         ]
     ],
     "22": [
@@ -1270,7 +1270,7 @@
         [
             "فِرَٰشًۭا",
             "firāshan",
-            "a resting place"
+            "a resting place,"
         ],
         [
             "وَٱلسَّمَآءَ",
