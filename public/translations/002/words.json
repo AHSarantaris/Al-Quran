@@ -1,4 +1,5 @@
 {
+	"current": "22",
     "1": [
         [
             "الٓمٓ",
@@ -1250,7 +1251,7 @@
         [
             "ٱلَّذِى",
             "alladhī",
-            "The One Who"
+            "The one who"
         ],
         [
             "جَعَلَ",
@@ -1300,7 +1301,7 @@
         [
             "مَآءًۭ",
             "māan",
-            "water"
+            "water,"
         ],
         [
             "فَأَخْرَجَ",
@@ -1310,17 +1311,17 @@
         [
             "بِهِۦ",
             "bihi",
-            "therewith"
+            "thereby"
         ],
         [
             "مِنَ",
             "mina",
-            "[of]"
+            ""
         ],
         [
             "ٱلثَّمَرَٰتِ",
             "l-thamarāti",
-            "the fruits"
+            "fruits"
         ],
         [
             "رِزْقًۭا",
@@ -1330,7 +1331,7 @@
         [
             "لَّكُمْ ۖ",
             "lakum",
-            "for you"
+            "for you."
         ],
         [
             "فَلَا",
@@ -1360,7 +1361,7 @@
         [
             "تَعْلَمُونَ",
             "taꜤlamūna",
-            "[you] know"
+            "know."
         ]
     ],
     "23": [
@@ -1392,17 +1393,17 @@
         [
             "نَزَّلْنَا",
             "nazzalnā",
-            "We have revealed"
+            "We have sent down"
         ],
         [
             "عَلَىٰ",
             "Ꜥalā",
-            "to"
+            "upon"
         ],
         [
             "عَبْدِنَا",
             "Ꜥabdinā",
-            "Our slave"
+            "Our servant"
         ],
         [
             "فَأْتُوا۟",
@@ -1417,12 +1418,12 @@
         [
             "مِّن",
             "min",
-            "[of]"
+            "from"
         ],
         [
             "مِّثْلِهِۦ",
             "mith'lihi",
-            "like it"
+            "the like of it,"
         ],
         [
             "وَٱدْعُوا۟",
@@ -1437,7 +1438,7 @@
         [
             "مِّن",
             "min",
-            "from"
+            ""
         ],
         [
             "دُونِ",
@@ -1462,14 +1463,14 @@
         [
             "صَـٰدِقِينَ",
             "ṣādiqīna",
-            "truthful"
+            "truthful."
         ]
     ],
     "24": [
         [
             "فَإِن",
             "fa-in",
-            "But if"
+            "Then if"
         ],
         [
             "لَّمْ",
@@ -1479,7 +1480,7 @@
         [
             "تَفْعَلُوا۟",
             "tafꜤalū",
-            "you do"
+            "you do,"
         ],
         [
             "وَلَن",
@@ -1489,7 +1490,7 @@
         [
             "تَفْعَلُوا۟",
             "tafꜤalū",
-            "will you do"
+            "will you do,"
         ],
         [
             "فَٱتَّقُوا۟",
@@ -1504,22 +1505,22 @@
         [
             "ٱلَّتِى",
             "allatī",
-            "whose"
+            "which"
         ],
         [
             "وَقُودُهَا",
             "waqūduhā",
-            "[its] fuel"
+            "its fuel"
         ],
         [
             "ٱلنَّاسُ",
             "l-nāsu",
-            "(is) [the] men"
+            "(is) men"
         ],
         [
             "وَٱلْحِجَارَةُ ۖ",
             "wal-ḥijāratu",
-            "and [the] stones"
+            "and stones -"
         ],
         [
             "أُعِدَّتْ",
@@ -1529,7 +1530,7 @@
         [
             "لِلْكَـٰفِرِينَ",
             "lil'kāfirīna",
-            "for the disbelievers"
+            "for the disbelievers."
         ]
     ],
     "25": [
@@ -1556,7 +1557,7 @@
         [
             "ٱلصَّـٰلِحَـٰتِ",
             "l-ṣāliḥāti",
-            "[the] righteous deeds"
+            "righteous deeds"
         ],
         [
             "أَنَّ",
@@ -1571,27 +1572,27 @@
         [
             "جَنَّـٰتٍۢ",
             "jannātin",
-            "(will be) Gardens"
+            "(are) gardens"
         ],
         [
             "تَجْرِى",
             "tajrī",
-            "flow"
+            "flowing"
         ],
         [
             "مِن",
             "min",
-            "[from]"
+            ""
         ],
         [
             "تَحْتِهَا",
             "taḥtihā",
-            "under them"
+            "beneath them"
         ],
         [
             "ٱلْأَنْهَـٰرُ ۖ",
             "l-anhāru",
-            "the rivers"
+            "rivers."
         ],
         [
             "كُلَّمَا",
@@ -1626,7 +1627,7 @@
         [
             "قَالُوا۟",
             "qālū",
-            "they (will) say"
+            "they say:"
         ],
         [
             "هَـٰذَا",
@@ -1636,7 +1637,7 @@
         [
             "ٱلَّذِى",
             "alladhī",
-            "the one which"
+            "that which"
         ],
         [
             "رُزِقْنَا",
@@ -1646,12 +1647,12 @@
         [
             "مِن",
             "min",
-            "from"
+            ""
         ],
         [
             "قَبْلُ ۖ",
             "qablu",
-            "before"
+            "before."
         ],
         [
             "وَأُتُوا۟",
@@ -1661,12 +1662,12 @@
         [
             "بِهِۦ",
             "bihi",
-            "therefrom"
+            "thereof"
         ],
         [
             "مُتَشَـٰبِهًۭا ۖ",
             "mutashābihan",
-            "(things) in resemblance"
+            "(things) in resemblance."
         ],
         [
             "وَلَهُمْ",
