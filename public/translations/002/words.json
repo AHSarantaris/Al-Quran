@@ -3159,7 +3159,7 @@
         [
             "قَلِيلًۭا",
             "qalīlan",
-            "small"
+            "small,"
         ],
         [
             "وَإِيَّـٰىَ",
@@ -3186,32 +3186,32 @@
         [
             "ٱلْحَقَّ",
             "l-ḥaqa",
-            "the Truth"
+            "the truth"
         ],
         [
             "بِٱلْبَـٰطِلِ",
             "bil-bāṭili",
-            "with [the] falsehood"
+            "with falsehood"
         ],
         [
             "وَتَكْتُمُوا۟",
             "wataktumū",
-            "and conceal"
+            "or conceal"
         ],
         [
             "ٱلْحَقَّ",
             "l-ḥaqa",
-            "the Truth"
+            "the truth"
         ],
         [
             "وَأَنتُمْ",
             "wa-antum",
-            "while you"
+            "when you"
         ],
         [
             "تَعْلَمُونَ",
             "taꜤlamūna",
-            "[you] know"
+            "know."
         ]
     ],
     "43": [
@@ -3223,7 +3223,7 @@
         [
             "ٱلصَّلَوٰةَ",
             "l-ṣalata",
-            "the prayer"
+            "prayer"
         ],
         [
             "وَءَاتُوا۟",
@@ -3233,7 +3233,7 @@
         [
             "ٱلزَّكَوٰةَ",
             "l-zakata",
-            "zakah"
+            "alms,"
         ],
         [
             "وَٱرْكَعُوا۟",
@@ -3248,7 +3248,7 @@
         [
             "ٱلرَّٰكِعِينَ",
             "l-rākiꜤīna",
-            "those who bow down"
+            "the ones who bow."
         ]
     ],
     "44": [
@@ -3260,17 +3260,17 @@
         [
             "ٱلنَّاسَ",
             "l-nāsa",
-            "[the] people"
+            "people"
         ],
         [
             "بِٱلْبِرِّ",
             "bil-biri",
-            "[the] righteousness"
+            "righteousness"
         ],
         [
             "وَتَنسَوْنَ",
             "watansawna",
-            "and you forget"
+            "and forget"
         ],
         [
             "أَنفُسَكُمْ",
@@ -3280,17 +3280,17 @@
         [
             "وَأَنتُمْ",
             "wa-antum",
-            "while you"
+            "when you"
         ],
         [
             "تَتْلُونَ",
             "tatlūna",
-            "[you] recite"
+            "recite"
         ],
         [
             "ٱلْكِتَـٰبَ ۚ",
             "l-kitāba",
-            "the Book"
+            "the Scripture."
         ],
         [
             "أَفَلَا",
@@ -3300,7 +3300,7 @@
         [
             "تَعْقِلُونَ",
             "taꜤqilūna",
-            "you use reason"
+            "you reason."
         ]
     ],
     "45": [
@@ -3317,12 +3317,12 @@
         [
             "وَٱلصَّلَوٰةِ ۚ",
             "wal-ṣalati",
-            "and the prayer"
+            "and prayer."
         ],
         [
             "وَإِنَّهَا",
             "wa-innahā",
-            "and indeed, it"
+            "And indeed, it"
         ],
         [
             "لَكَبِيرَةٌ",
@@ -3337,12 +3337,12 @@
         [
             "عَلَى",
             "Ꜥalā",
-            "on"
+            "for"
         ],
         [
             "ٱلْخَـٰشِعِينَ",
             "l-khāshiꜤīna",
-            "the humble ones"
+            "the humble ones."
         ]
     ],
     "46": [
