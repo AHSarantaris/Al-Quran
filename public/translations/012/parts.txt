@@ -7,44 +7,44 @@ The dream of Joseph: 4-6
 Intermediate: 7
 
 The sceme of his brothers: 8-20 [
-    His brothers plan to get rid of him: 8-10
-    They decieve their father and percuade him to let them take Joseph with them: 11-14
-    They put him in the well: 15
-    They decieve their father and tell him that a wolf ate Joseph: 16-18
-    Some travellers hide Joseph and sell him, making the plan successful: 19-20
+    A: His brothers plan to get rid of him: 8-10
+    B: They decieve their father and percuade him to let them take Joseph with them: 11-14
+    C: They put him in the well: 15
+    B: They decieve their father and tell him that a wolf ate Joseph: 16-18
+    A: Some travellers hide Joseph and sell him, making the plan successful: 19-20
 ]
 
 Joseph as a slave: 23-55 [
-    Joseph becomes a slave: 21-22 [
+    D: Joseph becomes a slave: 21-22 [
         A powerful man buys him: 21
         God established him in the land of Egypt: 21-22
     ]
-    Women try to seduce him: 23-34 [
+    E: Women try to seduce him: 23-34 [
         His master's wife tries to seduce him: 23-29
         The women at the banquet try to seduce him: 30-32
         He prefers prison: 33-34
     ]
-    He is imprisoned: 35
-    The dreams of the prisoners: 35-41 [
-        His fellow prisoners ask him to interpret their dreams: 36
-        He tells them about the religion of his forefathers: 37-40
-        He interprets their dreams: 41
+    F: He is imprisoned: 35
+    G: The dreams of the prisoners: 35-41 [
+        G1: His fellow prisoners ask him to interpret their dreams: 36
+        H: He tells them about the religion of his forefathers: 37-40
+        G1: He interprets their dreams: 41
     ]
-    The dream of the king: 42-49 [
-        He asks the one who would be set free to mention him to the King: 42
-        The king tells the chiefs about his dream: 43
-        The cheifs cannot interpret the dream: 44
-        The freed prisoner remembers Joseph: 45
-        He tells Joseph about the dream: 46
-        Joseph inerprets the dream: 47-49
+    G: The dream of the king: 42-49 [
+        G1: He asks the one who would be set free to mention him to the King: 42
+        G2: The king tells the chiefs about his dream: 43
+        G3: The cheifs cannot interpret the dream: 44
+        G1: The freed prisoner remembers Joseph: 45
+        G2: He tells Joseph about the dream: 46
+        G3: Joseph inerprets the dream: 47-49
     ]
-    The king frees Joseph: 50
-    The women admit that he is innocent: 50- 53 [
+    F: The king frees Joseph: 50
+    E: The women admit that he is innocent: 50- 53 [
         Joseph prefers to remain in prison until the case of the women is sorted out: 50
         The women confess: 51
         His masters wife confess: 51-53
     ]
-    Joseph becomes the minister of treasury: 54-57: [
+    D: Joseph becomes the minister of treasury: 54-57: [
         The king appoints him to a high position: 54-55
         God established him in the land to settle wherever he willed: 56-57
     ]
