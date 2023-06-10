@@ -139,9 +139,9 @@
     "112": "[Allah] will say, \"How long did you remain on earth in number of years?\"",
     "113": "They will say, \"We remained a day or part of a day; ask those who enumerate.\"",
     "114": "He will say, \"You stayed not but a little - if only you had known.",
+    "115": "Then did you think that We created you uselessly and that to Us you would not be returned?\"",
 },
 {
-    "115": "Then did you think that We created you uselessly and that to Us you would not be returned?\"",
     "116": "So exalted is Allah, the Sovereign, the Truth; there is no deity except Him, Lord of the Noble Throne.",
     "117": "And whoever invokes besides Allah another deity for which he has no proof - then his account is only with his Lord. Indeed, the disbelievers will not succeed.",
     "118": "And, [O Muḥammad], say, \"My Lord, forgive and have mercy, and You are the best of the merciful.\""
