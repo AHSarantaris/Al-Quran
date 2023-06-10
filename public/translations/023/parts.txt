@@ -62,9 +62,8 @@
     "51": "[Allah said], \"O messengers, eat from the good foods and work righteousness. Indeed I, of what you do, am Knowing.",
     "52": "And indeed this, your religion, is one religion, and I am your Lord, so fear Me.\"",
     "53": "But they [i.e., the people] divided their religion among them into portions [i.e., sects] - each faction, in what it has, rejoicing.",
-    "54": "So leave them in their confusion for a time.",
 },
-{
+    "54": "So leave them in their confusion for a time.",
     "55": "Do they think that what We extend to them of wealth and children",
     "56": "Is [because] We hasten for them good things? Rather, they do not perceive.",
     "57": "Indeed, they who are apprehensive from fear of their Lord",
