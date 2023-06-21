@@ -433,7 +433,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Believers"
-        }
+        },
+        "recitations": [
+            {
+                file: "alafasy_muminoon_combined",
+                name: "Mishary Rashid Alafasy - 1421 & 1431"
+            }
+        ]
     },
     {
         "id":24,
