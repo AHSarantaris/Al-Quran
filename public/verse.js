@@ -23,7 +23,7 @@ function createAllVerses() {
 function createBismillah() {
     let arabicWords = ["بِسْمِ","ٱللَّهِ","ٱلرَّحْمَـٰنِ","ٱلرَّحِيمِ"];
     let transliteratedWords = ["bis'mi","l-lahi","l-raḥmāni","l-raḥīmi"];
-    let translatedWords = ["In (the) name", `(of) ${nameOfGod ? 'Allah' : 'God'},`,"the Merciful,","the Compassionate."];
+    let translatedWords = ["In (the) name", `(of) ${nameOfGod ? 'God' : 'Allah'},`,"the Merciful,","the Compassionate."];
     let arabicWordContainerElement = createDiv({className:'arabic-word-container'});
     let wordContainerElement = createDiv({className:'word-container'});
     var arabicElement, transliteratedElement, translatedElement, arabicWordElement, wordElement, wordId;
@@ -180,12 +180,12 @@ function clickAllTranslationsButton(e) {
 function createTranslationElement(v, text, name, id) {
     // TODO: Footnotes should link to the correct translation
     if (name === 'Abdul Haleem') {
-        if (nameOfGod) {
+        if (!nameOfGod) {
             text = text.replaceAll('God', 'Allah');
         }
     } else if (name === 'Dr. T. B. Irving') {
-        text = text.replaceAll("Allah (God)", nameOfGod ? "Allah" : "God");
-    } else if (!nameOfGod && name !== 'Transliteration') {
+        text = text.replaceAll("Allah (God)", nameOfGod ? "God" : "Allah");
+    } else if (nameOfGod && name !== 'Transliteration') {
         text = text.replaceAll(/All(a|ā|â)h/g, "God");
     }
     let translationElement = createDiv({className:'verse-translated', innerHTML: text});
@@ -212,7 +212,7 @@ function createWordElement(v, w, word) {
         wordElement.appendChild(transliteratedWord);
     }
     if (wordSettings.translation) {
-        if (!nameOfGod) {
+        if (nameOfGod) {
             wordText.translation = wordText.translation.replaceAll(/All(a|ā|â)h/g, "God");
         }
         let translatedWord = createDiv({className:'translated-word', innerHTML: wordText.translation});

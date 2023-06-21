@@ -437,11 +437,11 @@ function setNameOfGod(name) {
     let nameGod = document.getElementById('name-God');
     let nameAllah = document.getElementById('name-Allah');
     if (name) {
-        nameGod.checked = false;
-        nameAllah.checked = true;
-    } else {
-        nameAllah.checked = false;
         nameGod.checked = true;
+        nameAllah.checked = false;
+    } else {
+        nameAllah.checked = true;
+        nameGod.checked = false;
     }
 }
 
