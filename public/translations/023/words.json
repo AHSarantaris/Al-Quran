@@ -3,7 +3,7 @@
         [
             "قَدْ",
             "qad",
-            "Indeed"
+            "Verily,"
         ],
         [
             "أَفْلَحَ",
@@ -13,7 +13,7 @@
         [
             "ٱلْمُؤْمِنُونَ",
             "l-mu'minūna",
-            "(are) the believers"
+            "(are) the believers."
         ]
     ],
     "2": [
@@ -25,34 +25,34 @@
         [
             "هُمْ",
             "hum",
-            "[they]"
+            "they"
         ],
         [
             "فِى",
             "fī",
-            "during"
+            "in"
         ],
         [
             "صَلَاتِهِمْ",
             "ṣalātihim",
-            "their prayers"
+            "their prayer"
         ],
         [
             "خَـٰشِعُونَ",
             "khāshiꜤūna",
-            "(are) humbly submissive"
+            "(are) humble."
         ]
     ],
     "3": [
         [
             "وَٱلَّذِينَ",
             "wa-alladhīna",
-            "Those who"
+            "And those who"
         ],
         [
             "هُمْ",
             "hum",
-            "[they]"
+            "they"
         ],
         [
             "عَنِ",
@@ -2423,17 +2423,17 @@
         [
             "يَـٰٓأَيُّهَا",
             "yāayyuhā",
-            "O Messengers"
+            "O"
         ],
         [
             "ٱلرُّسُلُ",
             "l-rusulu",
-            "O Messengers"
+            "Messengers,"
         ],
         [
             "كُلُوا۟",
             "kulū",
-            "Eat"
+            "eat"
         ],
         [
             "مِنَ",
@@ -2448,17 +2448,17 @@
         [
             "وَٱعْمَلُوا۟",
             "wa-iꜤ'malū",
-            "and do"
+            "and do deeds"
         ],
         [
             "صَـٰلِحًا ۖ",
             "ṣāliḥan",
-            "righteous (deeds)"
+            "of righteousness."
         ],
         [
             "إِنِّى",
             "innī",
-            "Indeed, I Am"
+            "Indeed, I am"
         ],
         [
             "بِمَا",
@@ -2473,7 +2473,7 @@
         [
             "عَلِيمٌۭ",
             "Ꜥalīmun",
-            "All-Knower"
+            "knowing."
         ]
     ],
     "52": [
@@ -2490,22 +2490,22 @@
         [
             "أُمَّتُكُمْ",
             "ummatukum",
-            "your religion"
+            "community of yours"
         ],
         [
             "أُمَّةًۭ",
             "ummatan",
-            "(is) religion"
+            "(is) a community"
         ],
         [
             "وَٰحِدَةًۭ",
             "wāḥidatan",
-            "one"
+            "single,"
         ],
         [
             "وَأَنَا۠",
             "wa-anā",
-            "And I Am"
+            "and I am"
         ],
         [
             "رَبُّكُمْ",
@@ -2515,19 +2515,19 @@
         [
             "فَٱتَّقُونِ",
             "fa-ittaqūni",
-            "so fear Me"
+            "so fear Me."
         ]
     ],
     "53": [
         [
             "فَتَقَطَّعُوٓا۟",
             "fataqaṭṭaꜤū",
-            "But they cut off"
+            "But they cut up"
         ],
         [
             "أَمْرَهُم",
             "amrahum",
-            "their affair (of unity)"
+            "their affair"
         ],
         [
             "بَيْنَهُمْ",
@@ -2537,12 +2537,12 @@
         [
             "زُبُرًۭا ۖ",
             "zuburan",
-            "(into) sects"
+            "(into) portions."
         ],
         [
             "كُلُّ",
             "kullu",
-            "each"
+            "Each"
         ],
         [
             "حِزْبٍۭ",
@@ -2552,7 +2552,7 @@
         [
             "بِمَا",
             "bimā",
-            "in what"
+            "with what"
         ],
         [
             "لَدَيْهِمْ",
@@ -2562,7 +2562,7 @@
         [
             "فَرِحُونَ",
             "fariḥūna",
-            "rejoicing"
+            "are rejoicing."
         ]
     ],
     "54": [
@@ -2611,7 +2611,7 @@
         [
             "بِهِۦ",
             "bihi",
-            "[with it]"
+            "of it"
         ],
         [
             "مِن",
@@ -2633,12 +2633,12 @@
         [
             "نُسَارِعُ",
             "nusāriꜤu",
-            "We hasten"
+            "Is to hasten"
         ],
         [
             "لَهُمْ",
             "lahum",
-            "to them"
+            "for them"
         ],
         [
             "فِى",
@@ -2648,12 +2648,12 @@
         [
             "ٱلْخَيْرَٰتِ ۚ",
             "l-khayrāti",
-            "the good"
+            "good?"
         ],
         [
             "بَل",
             "bal",
-            "Nay"
+            "Rather,"
         ],
         [
             "لَّا",
@@ -2663,7 +2663,7 @@
         [
             "يَشْعُرُونَ",
             "yashꜤurūna",
-            "they perceive"
+            "they are perceiving."
         ]
     ],
     "57": [
@@ -2680,7 +2680,7 @@
         [
             "هُم",
             "hum",
-            "[they]"
+            "are"
         ],
         [
             "مِّنْ",
@@ -2700,19 +2700,19 @@
         [
             "مُّشْفِقُونَ",
             "mush'fiqūna",
-            "(are) cautious"
+            "apprehensive."
         ]
     ],
     "58": [
         [
             "وَٱلَّذِينَ",
             "wa-alladhīna",
-            "And those"
+            "And those who"
         ],
         [
             "هُم",
             "hum",
-            "[they]"
+            "are"
         ],
         [
             "بِـَٔايَـٰتِ",
@@ -2727,19 +2727,19 @@
         [
             "يُؤْمِنُونَ",
             "yu'minūna",
-            "believe"
+            "believing."
         ]
     ],
     "59": [
         [
             "وَٱلَّذِينَ",
             "wa-alladhīna",
-            "And those"
+            "And those who"
         ],
         [
             "هُم",
             "hum",
-            "[they]"
+            "are"
         ],
         [
             "بِرَبِّهِمْ",
@@ -2749,12 +2749,12 @@
         [
             "لَا",
             "lā",
-            "(do) not"
+            "not"
         ],
         [
             "يُشْرِكُونَ",
             "yush'rikūna",
-            "associate partners"
+            "associating partners."
         ]
     ],
     "60": [
@@ -2766,7 +2766,7 @@
         [
             "يُؤْتُونَ",
             "yu'tūna",
-            "give"
+            "are giving"
         ],
         [
             "مَآ",
@@ -2806,19 +2806,19 @@
         [
             "رَٰجِعُونَ",
             "rājiꜤūna",
-            "(will) return"
+            "(will) return."
         ]
     ],
     "61": [
         [
             "أُو۟لَـٰٓئِكَ",
             "ulāika",
-            "(It is) those"
+            "Those"
         ],
         [
             "يُسَـٰرِعُونَ",
             "yusāriꜤūna",
-            "who hasten"
+            "are hastening"
         ],
         [
             "فِى",
@@ -2828,7 +2828,7 @@
         [
             "ٱلْخَيْرَٰتِ",
             "l-khayrāti",
-            "the good (deeds)"
+            "good"
         ],
         [
             "وَهُمْ",
@@ -2838,12 +2838,12 @@
         [
             "لَهَا",
             "lahā",
-            "in them"
+            "in it"
         ],
         [
             "سَـٰبِقُونَ",
             "sābiqūna",
-            "(are) foremost"
+            "(are) foremost."
         ]
     ],
     "62": [
@@ -2870,27 +2870,27 @@
         [
             "وُسْعَهَا ۖ",
             "wus'Ꜥahā",
-            "(to) its capacity"
+            "(to) its capacity."
         ],
         [
             "وَلَدَيْنَا",
             "waladaynā",
-            "and with Us"
+            "And with Us"
         ],
         [
             "كِتَـٰبٌۭ",
             "kitābun",
-            "(is) a Record"
+            "(is) a record"
         ],
         [
             "يَنطِقُ",
             "yanṭiqu",
-            "(which) speaks"
+            "speaking"
         ],
         [
             "بِٱلْحَقِّ ۚ",
             "bil-ḥaqi",
-            "with the truth"
+            "with truth"
         ],
         [
             "وَهُمْ",
@@ -2905,14 +2905,14 @@
         [
             "يُظْلَمُونَ",
             "yuẓ'lamūna",
-            "be wronged"
+            "be wronged."
         ]
     ],
     "63": [
         [
             "بَلْ",
             "bal",
-            "Nay"
+            "But"
         ],
         [
             "قُلُوبُهُمْ",
@@ -2937,12 +2937,12 @@
         [
             "هَـٰذَا",
             "hādhā",
-            "this"
+            "this."
         ],
         [
             "وَلَهُمْ",
             "walahum",
-            "and for them"
+            "And for them"
         ],
         [
             "أَعْمَـٰلٌۭ",
@@ -2952,7 +2952,7 @@
         [
             "مِّن",
             "min",
-            "besides"
+            ""
         ],
         [
             "دُونِ",
@@ -2967,17 +2967,17 @@
         [
             "هُمْ",
             "hum",
-            "they"
+            "(which) they"
         ],
         [
             "لَهَا",
             "lahā",
-            "for it"
+            "of it"
         ],
         [
             "عَـٰمِلُونَ",
             "Ꜥāmilūna",
-            "(are) doers"
+            "(are) doing."
         ]
     ],
     "64": [
@@ -3004,22 +3004,22 @@
         [
             "بِٱلْعَذَابِ",
             "bil-Ꜥadhābi",
-            "with the punishment"
+            "with punishment,"
         ],
         [
             "إِذَا",
             "idhā",
-            "behold"
+            "at once"
         ],
         [
             "هُمْ",
             "hum",
-            "They"
+            "they"
         ],
         [
             "يَجْـَٔرُونَ",
             "yajarūna",
-            "cry for help"
+            "(are) crying out."
         ]
     ],
     "65": [
@@ -3031,12 +3031,12 @@
         [
             "تَجْـَٔرُوا۟",
             "tajarū",
-            "cry for help"
+            "cry out"
         ],
         [
             "ٱلْيَوْمَ ۖ",
             "l-yawma",
-            "today"
+            "today."
         ],
         [
             "إِنَّكُم",
@@ -3051,24 +3051,24 @@
         [
             "لَا",
             "lā",
-            "not"
+            "(will) not"
         ],
         [
             "تُنصَرُونَ",
             "tunṣarūna",
-            "will be helped"
+            "be helped."
         ]
     ],
     "66": [
         [
             "قَدْ",
             "qad",
-            "Verily"
+            "Verily,"
         ],
         [
             "كَانَتْ",
             "kānat",
-            "were"
+            "would"
         ],
         [
             "ءَايَـٰتِى",
@@ -3078,22 +3078,22 @@
         [
             "تُتْلَىٰ",
             "tut'lā",
-            "recited"
+            "be recited"
         ],
         [
             "عَلَيْكُمْ",
             "Ꜥalaykum",
-            "to you"
+            "to you,"
         ],
         [
             "فَكُنتُمْ",
             "fakuntum",
-            "but you used"
+            "but you were"
         ],
         [
             "عَلَىٰٓ",
             "Ꜥalā",
-            "(to) on"
+            "on"
         ],
         [
             "أَعْقَـٰبِكُمْ",
@@ -3103,7 +3103,7 @@
         [
             "تَنكِصُونَ",
             "tankiṣūna",
-            "turn back"
+            "turning."
         ]
     ],
     "67": [
@@ -3115,34 +3115,34 @@
         [
             "بِهِۦ",
             "bihi",
-            "about it"
+            "regarding it,"
         ],
         [
             "سَـٰمِرًۭا",
             "sāmiran",
-            "conversing by night"
+            "conversing by night,"
         ],
         [
             "تَهْجُرُونَ",
             "tahjurūna",
-            "speaking evil"
+            "speaking evil."
         ]
     ],
     "68": [
         [
             "أَفَلَمْ",
             "afalam",
-            "Then, do not"
+            "Then, are not"
         ],
         [
             "يَدَّبَّرُوا۟",
             "yaddabbarū",
-            "they ponder"
+            "they pondering"
         ],
         [
             "ٱلْقَوْلَ",
             "l-qawla",
-            "the Word"
+            "the word"
         ],
         [
             "أَمْ",
@@ -3167,17 +3167,17 @@
         [
             "يَأْتِ",
             "yati",
-            "(had) come"
+            "has come"
         ],
         [
             "ءَابَآءَهُمُ",
             "ābāahumu",
-            "(to) their forefathers"
+            "(to) their farthers"
         ],
         [
             "ٱلْأَوَّلِينَ",
             "l-awalīna",
-            "(to) their forefathers"
+            "the earlier."
         ]
     ],
     "69": [
@@ -3189,12 +3189,12 @@
         [
             "لَمْ",
             "lam",
-            "(do) not"
+            "(are) not"
         ],
         [
             "يَعْرِفُوا۟",
             "yaꜤrifū",
-            "they recognize"
+            "they recognizing"
         ],
         [
             "رَسُولَهُمْ",
@@ -3209,12 +3209,12 @@
         [
             "لَهُۥ",
             "lahu",
-            "(are) rejecting him"
+            "towards him"
         ],
         [
             "مُنكِرُونَ",
             "munkirūna",
-            "(are) rejecting him"
+            "(are) rejecting."
         ]
     ],
     "70": [
@@ -3226,7 +3226,7 @@
         [
             "يَقُولُونَ",
             "yaqūlūna",
-            "they say"
+            "(are) they saying:"
         ],
         [
             "بِهِۦ",
@@ -3236,12 +3236,12 @@
         [
             "جِنَّةٌۢ ۚ",
             "jinnatun",
-            "(is) madness"
+            "(is) madness?"
         ],
         [
             "بَلْ",
             "bal",
-            "Nay"
+            "Rather,"
         ],
         [
             "جَآءَهُم",
@@ -3266,14 +3266,14 @@
         [
             "كَـٰرِهُونَ",
             "kārihūna",
-            "(are) averse"
+            "(are) averse."
         ]
     ],
     "71": [
         [
             "وَلَوِ",
             "walawi",
-            "But if"
+            "And if"
         ],
         [
             "ٱتَّبَعَ",
@@ -3313,12 +3313,12 @@
         [
             "فِيهِنَّ ۚ",
             "fīhinna",
-            "(is) therein"
+            "(is) therein."
         ],
         [
             "بَلْ",
             "bal",
-            "Nay"
+            "Rather,"
         ],
         [
             "أَتَيْنَـٰهُم",
@@ -3348,7 +3348,7 @@
         [
             "مُّعْرِضُونَ",
             "muꜤ'riḍūna",
-            "(are) turning away"
+            "(are) turning away."
         ]
     ],
     "72": [
@@ -3360,12 +3360,12 @@
         [
             "تَسْـَٔلُهُمْ",
             "tasaluhum",
-            "you ask them"
+            "do you ask them"
         ],
         [
             "خَرْجًۭا",
             "kharjan",
-            "(for) a payment"
+            "(for) a payment?"
         ],
         [
             "فَخَرَاجُ",
@@ -3380,7 +3380,7 @@
         [
             "خَيْرٌۭ ۖ",
             "khayrun",
-            "(is) best"
+            "(is) best,"
         ],
         [
             "وَهُوَ",
@@ -3390,12 +3390,12 @@
         [
             "خَيْرُ",
             "khayru",
-            "(is) the Best"
+            "(is) the best"
         ],
         [
             "ٱلرَّٰزِقِينَ",
             "l-rāziqīna",
-            "(of) the Providers"
+            "(of) Providers."
         ]
     ],
     "73": [
@@ -3417,12 +3417,12 @@
         [
             "صِرَٰطٍۢ",
             "ṣirāṭin",
-            "(the) Path"
+            "a path"
         ],
         [
             "مُّسْتَقِيمٍۢ",
             "mus'taqīmin",
-            "Straight"
+            "straight."
         ]
     ],
     "74": [
@@ -3439,12 +3439,12 @@
         [
             "لَا",
             "lā",
-            "(do) not"
+            "not"
         ],
         [
             "يُؤْمِنُونَ",
             "yu'minūna",
-            "believe"
+            "are believing"
         ],
         [
             "بِٱلْـَٔاخِرَةِ",
@@ -3464,7 +3464,7 @@
         [
             "لَنَـٰكِبُونَ",
             "lanākibūna",
-            "surely (are) deviating"
+            "(are) surely deviating."
         ]
     ],
     "75": [
@@ -3491,7 +3491,7 @@
         [
             "بِهِم",
             "bihim",
-            "(was) on them"
+            "(was) with them"
         ],
         [
             "مِّن",
@@ -3501,7 +3501,7 @@
         [
             "ضُرٍّۢ",
             "ḍurrin",
-            "(the) hardship"
+            "hardship"
         ],
         [
             "لَّلَجُّوا۟",
@@ -3521,7 +3521,7 @@
         [
             "يَعْمَهُونَ",
             "yaꜤmahūna",
-            "wandering blindly"
+            "wandering blindly."
         ]
     ],
     "76": [
@@ -3538,7 +3538,7 @@
         [
             "بِٱلْعَذَابِ",
             "bil-Ꜥadhābi",
-            "with the punishment"
+            "with punishment"
         ],
         [
             "فَمَا",
@@ -3548,7 +3548,7 @@
         [
             "ٱسْتَكَانُوا۟",
             "is'takānū",
-            "they submit"
+            "they yielded"
         ],
         [
             "لِرَبِّهِمْ",
@@ -3558,12 +3558,12 @@
         [
             "وَمَا",
             "wamā",
-            "and not"
+            "nor"
         ],
         [
             "يَتَضَرَّعُونَ",
             "yataḍarraꜤūna",
-            "they supplicate humbly"
+            "were they humbling themselves."
         ]
     ],
     "77": [
@@ -3580,12 +3580,12 @@
         [
             "فَتَحْنَا",
             "fataḥnā",
-            "We opened"
+            "We open"
         ],
         [
             "عَلَيْهِم",
             "Ꜥalayhim",
-            "for them"
+            "over them"
         ],
         [
             "بَابًۭا",
@@ -3595,12 +3595,12 @@
         [
             "ذَا",
             "dhā",
-            "of a punishment"
+            "of"
         ],
         [
             "عَذَابٍۢ",
             "Ꜥadhābin",
-            "of a punishment"
+            "a punishment"
         ],
         [
             "شَدِيدٍ",
@@ -3610,22 +3610,22 @@
         [
             "إِذَا",
             "idhā",
-            "behold"
+            "at once"
         ],
         [
             "هُمْ",
             "hum",
-            "They"
+            "they"
         ],
         [
             "فِيهِ",
             "fīhi",
-            "in it"
+            "therein"
         ],
         [
             "مُبْلِسُونَ",
             "mub'lisūna",
-            "(will be in) despair"
+            "(are) despairing."
         ]
     ],
     "78": [
@@ -3637,7 +3637,7 @@
         [
             "ٱلَّذِىٓ",
             "alladhī",
-            "(is) the One Who"
+            "(is) the One who"
         ],
         [
             "أَنشَأَ",
@@ -3652,22 +3652,22 @@
         [
             "ٱلسَّمْعَ",
             "l-samꜤa",
-            "the hearing"
+            "hearing"
         ],
         [
             "وَٱلْأَبْصَـٰرَ",
             "wal-abṣāra",
-            "and the sight"
+            "and vision"
         ],
         [
             "وَٱلْأَفْـِٔدَةَ ۚ",
             "wal-afidata",
-            "and the feeling"
+            "and intellect."
         ],
         [
             "قَلِيلًۭا",
             "qalīlan",
-            "little"
+            "Little"
         ],
         [
             "مَّا",
@@ -3677,7 +3677,7 @@
         [
             "تَشْكُرُونَ",
             "tashkurūna",
-            "you give thanks"
+            "you are grateful."
         ]
     ],
     "79": [
@@ -3689,7 +3689,7 @@
         [
             "ٱلَّذِى",
             "alladhī",
-            "(is) the One Who"
+            "(is) the One who"
         ],
         [
             "ذَرَأَكُمْ",
@@ -3699,7 +3699,7 @@
         [
             "فِى",
             "fī",
-            "in"
+            "on"
         ],
         [
             "ٱلْأَرْضِ",
@@ -3714,7 +3714,7 @@
         [
             "تُحْشَرُونَ",
             "tuḥ'sharūna",
-            "you will be gathered"
+            "you will be gathered."
         ]
     ],
     "80": [
@@ -3726,7 +3726,7 @@
         [
             "ٱلَّذِى",
             "alladhī",
-            "(is) the One Who"
+            "(is) the One who"
         ],
         [
             "يُحْىِۦ",
@@ -3736,17 +3736,17 @@
         [
             "وَيُمِيتُ",
             "wayumītu",
-            "and causes death"
+            "and causes death,"
         ],
         [
             "وَلَهُ",
             "walahu",
-            "and for Him"
+            "and to Him (belong)"
         ],
         [
             "ٱخْتِلَـٰفُ",
             "ikh'tilāfu",
-            "(is the) alternation"
+            "(the) alternation"
         ],
         [
             "ٱلَّيْلِ",
@@ -3756,7 +3756,7 @@
         [
             "وَٱلنَّهَارِ ۚ",
             "wal-nahāri",
-            "and the day"
+            "and the day."
         ],
         [
             "أَفَلَا",
@@ -3766,14 +3766,14 @@
         [
             "تَعْقِلُونَ",
             "taꜤqilūna",
-            "you reason"
+            "you reason?"
         ]
     ],
     "81": [
         [
             "بَلْ",
             "bal",
-            "Nay"
+            "Rather,"
         ],
         [
             "قَالُوا۟",
@@ -3783,12 +3783,12 @@
         [
             "مِثْلَ",
             "mith'la",
-            "(the) like"
+            "(the) same"
         ],
         [
             "مَا",
             "mā",
-            "(of) what"
+            "(as) what"
         ],
         [
             "قَالَ",
@@ -3798,24 +3798,24 @@
         [
             "ٱلْأَوَّلُونَ",
             "l-awalūna",
-            "the former (people)"
+            "the former peoples."
         ]
     ],
     "82": [
         [
             "قَالُوٓا۟",
             "qālū",
-            "They said"
+            "They said:"
         ],
         [
             "أَءِذَا",
             "a-idhā",
-            "What! When"
+            "When"
         ],
         [
             "مِتْنَا",
             "mit'nā",
-            "we are dead"
+            "we have died"
         ],
         [
             "وَكُنَّا",
@@ -3835,34 +3835,34 @@
         [
             "أَءِنَّا",
             "a-innā",
-            "would we"
+            "are we indeed"
         ],
         [
             "لَمَبْعُوثُونَ",
             "lamabꜤūthūna",
-            "surely be resurrected"
+            "really to be resurrected?"
         ]
     ],
     "83": [
         [
             "لَقَدْ",
             "laqad",
-            "Verily"
+            "Certainly"
         ],
         [
             "وُعِدْنَا",
             "wuꜤid'nā",
-            "we have been promised"
+            "we were promised"
         ],
         [
             "نَحْنُ",
             "naḥnu",
-            "[we]"
+            "us"
         ],
         [
             "وَءَابَآؤُنَا",
             "waābāunā",
-            "and our forefathers"
+            "and our forfathers"
         ],
         [
             "هَـٰذَا",
@@ -3872,12 +3872,12 @@
         [
             "مِن",
             "min",
-            "before"
+            ""
         ],
         [
             "قَبْلُ",
             "qablu",
-            "before"
+            "before."
         ],
         [
             "إِنْ",
@@ -3897,19 +3897,19 @@
         [
             "أَسَـٰطِيرُ",
             "asāṭīru",
-            "(the) tales"
+            "tales"
         ],
         [
             "ٱلْأَوَّلِينَ",
             "l-awalīna",
-            "(of) the former (people)"
+            "(of) the former peoples."
         ]
     ],
     "84": [
         [
             "قُل",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "لِّمَنِ",
@@ -3929,7 +3929,7 @@
         [
             "فِيهَآ",
             "fīhā",
-            "(is) in it"
+            "(is) on it,"
         ],
         [
             "إِن",
@@ -3939,29 +3939,29 @@
         [
             "كُنتُمْ",
             "kuntum",
-            "you"
+            "you should"
         ],
         [
             "تَعْلَمُونَ",
             "taꜤlamūna",
-            "know"
+            "know?"
         ]
     ],
     "85": [
         [
             "سَيَقُولُونَ",
             "sayaqūlūna",
-            "They will say"
+            "They will say:"
         ],
         [
             "لِلَّهِ ۚ",
             "lillahi",
-            "To Allah"
+            "To Allah (they belong)."
         ],
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "أَفَلَا",
@@ -3971,14 +3971,14 @@
         [
             "تَذَكَّرُونَ",
             "tadhakkarūna",
-            "you remember"
+            "you remember?"
         ]
     ],
     "86": [
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "مَن",
@@ -3993,12 +3993,12 @@
         [
             "ٱلسَّمَـٰوَٰتِ",
             "l-samāwāti",
-            "(of) the seven heavens"
+            "(of) the heavens"
         ],
         [
             "ٱلسَّبْعِ",
             "l-sabꜤi",
-            "(of) the seven heavens"
+            "the seven,"
         ],
         [
             "وَرَبُّ",
@@ -4013,24 +4013,24 @@
         [
             "ٱلْعَظِيمِ",
             "l-Ꜥaẓīmi",
-            "the Great"
+            "the Great?"
         ]
     ],
     "87": [
         [
             "سَيَقُولُونَ",
             "sayaqūlūna",
-            "They will say"
+            "They will say:"
         ],
         [
             "لِلَّهِ ۚ",
             "lillahi",
-            "Allah"
+            "To Allah (they belong)."
         ],
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "أَفَلَا",
@@ -4040,29 +4040,29 @@
         [
             "تَتَّقُونَ",
             "tattaqūna",
-            "you fear (Him)"
+            "you fear?"
         ]
     ],
     "88": [
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "مَنۢ",
             "man",
-            "Who is (it)"
+            "Who"
         ],
         [
             "بِيَدِهِۦ",
             "biyadihi",
-            "in Whose Hand(s)"
+            "(has) in his hand"
         ],
         [
             "مَلَكُوتُ",
             "malakūtu",
-            "(is the) dominion"
+            "dominion"
         ],
         [
             "كُلِّ",
@@ -4072,7 +4072,7 @@
         [
             "شَىْءٍۢ",
             "shayin",
-            "things"
+            "things,"
         ],
         [
             "وَهُوَ",
@@ -4087,49 +4087,49 @@
         [
             "وَلَا",
             "walā",
-            "and no (one)"
+            "and (there is) no"
         ],
         [
             "يُجَارُ",
             "yujāru",
-            "(can) be protected"
+            "protecting"
         ],
         [
             "عَلَيْهِ",
             "Ꜥalayhi",
-            "against Him"
+            "against Him -"
         ],
         [
             "إِن",
             "in",
-            "If"
+            "if"
         ],
         [
             "كُنتُمْ",
             "kuntum",
-            "you"
+            "you should"
         ],
         [
             "تَعْلَمُونَ",
             "taꜤlamūna",
-            "know"
+            "know?"
         ]
     ],
     "89": [
         [
             "سَيَقُولُونَ",
             "sayaqūlūna",
-            "They will say"
+            "They will say:"
         ],
         [
             "لِلَّهِ ۚ",
             "lillahi",
-            "Allah"
+            "To Allah (they belong)."
         ],
         [
             "قُلْ",
             "qul",
-            "Say"
+            "Say:"
         ],
         [
             "فَأَنَّىٰ",
@@ -4139,14 +4139,14 @@
         [
             "تُسْحَرُونَ",
             "tus'ḥarūna",
-            "are you deluded"
+            "are you deluded?"
         ]
     ],
     "90": [
         [
             "بَلْ",
             "bal",
-            "Nay"
+            "Rather,"
         ],
         [
             "أَتَيْنَـٰهُم",
@@ -4166,7 +4166,7 @@
         [
             "لَكَـٰذِبُونَ",
             "lakādhibūna",
-            "surely, (are) liars"
+            "(are) surely liars."
         ]
     ],
     "91": [
@@ -4178,12 +4178,12 @@
         [
             "ٱتَّخَذَ",
             "ittakhadha",
-            "Allah has taken"
+            "has taken"
         ],
         [
             "ٱللَّهُ",
             "l-lahu",
-            "Allah has taken"
+            "Allah"
         ],
         [
             "مِن",
@@ -4193,17 +4193,17 @@
         [
             "وَلَدٍۢ",
             "waladin",
-            "son"
+            "son,"
         ],
         [
             "وَمَا",
             "wamā",
-            "and not"
+            "nor"
         ],
         [
             "كَانَ",
             "kāna",
-            "is"
+            "is there"
         ],
         [
             "مَعَهُۥ",
@@ -4218,7 +4218,7 @@
         [
             "إِلَـٰهٍ ۚ",
             "ilāhin",
-            "god"
+            "diety."
         ],
         [
             "إِذًۭا",
@@ -4238,7 +4238,7 @@
         [
             "إِلَـٰهٍۭ",
             "ilāhin",
-            "god"
+            "diety"
         ],
         [
             "بِمَا",
@@ -4248,12 +4248,12 @@
         [
             "خَلَقَ",
             "khalaqa",
-            "he created"
+            "he created,"
         ],
         [
             "وَلَعَلَا",
             "walaꜤalā",
-            "and surely would have overpowered"
+            "and would surely have elevated themselves"
         ],
         [
             "بَعْضُهُمْ",
@@ -4263,22 +4263,22 @@
         [
             "عَلَىٰ",
             "Ꜥalā",
-            "[on]"
+            "over"
         ],
         [
             "بَعْضٍۢ ۚ",
             "baꜤḍin",
-            "others"
+            "others."
         ],
         [
             "سُبْحَـٰنَ",
             "sub'ḥāna",
-            "Glory be"
+            "Exalted"
         ],
         [
             "ٱللَّهِ",
             "l-lahi",
-            "(to) Allah"
+            "(is) Allah"
         ],
         [
             "عَمَّا",
@@ -4288,7 +4288,7 @@
         [
             "يَصِفُونَ",
             "yaṣifūna",
-            "they attribute"
+            "they are ascribing."
         ]
     ],
     "92": [
@@ -4305,12 +4305,12 @@
         [
             "وَٱلشَّهَـٰدَةِ",
             "wal-shahādati",
-            "and the witnessed"
+            "and the witnessed."
         ],
         [
             "فَتَعَـٰلَىٰ",
             "fataꜤālā",
-            "exalted is He"
+            "Then high is He"
         ],
         [
             "عَمَّا",
@@ -4320,7 +4320,7 @@
         [
             "يُشْرِكُونَ",
             "yush'rikūna",
-            "they associate"
+            "they are associating."
         ]
     ],
     "93": [
