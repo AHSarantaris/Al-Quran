@@ -286,7 +286,7 @@ function disableAudio() {
 
 function updateRecitation() {
     let folderPath = `audio/${addLeadingZeros(currentChapter)}/${audioInfo[currentRecitation].file}`;
-    audioPlayerElement.src = folderPath + '.ogg';
+    audioPlayerElement.src = folderPath + '.mp3';
     timeStamps = {};
     $.getJSON(folderPath + '.json', function(json){
         timeStamps = json;

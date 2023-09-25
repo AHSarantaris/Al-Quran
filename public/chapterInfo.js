@@ -18,10 +18,6 @@ chapters = [
         },
         "recitations": [
             {
-                file: "alafasy_fatihah_1428_bismillah",
-                name: "Mishary Rashid Alafasy - 1428"
-            },
-            {
                 file: "alafasy_fatihah_1424",
                 name: "Mishary Rashid Alafasy - 1424"
             }
@@ -331,7 +327,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Cave"
-        }
+        },
+        "recitations":[
+            {
+                file: "alafasy_kahf_1431_1426_combined",
+                name: "Mishary Alafasy 1431 & 1426"
+            }
+        ]
     },
     {
         "id":19,
@@ -377,7 +379,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_taha_1421_LQ_better03",
-                name: "Alafasy 1421"
+                name: "Mishary Alafasy 1421"
             }
         ]
     },
@@ -436,7 +438,7 @@ chapters = [
         },
         "recitations": [
             {
-                file: "alafasy_muminoon_combined",
+                file: "alafasy_muminoon_combined_02",
                 name: "Mishary Rashid Alafasy - 1421 & 1431"
             }
         ]
@@ -969,10 +971,6 @@ chapters = [
             "name":"The Mount"
         },
         "recitations": [
-            {
-                file: "humeid_tur_cut",
-                name: "Abdallah Humeid"
-            }
         ]
     },
     {
@@ -1062,10 +1060,6 @@ chapters = [
             {
                 file: "alafasy_waqiah_1427",
                 name: "Mishary Rashid Alafasy - 1427"
-            },
-            {
-                file: "jamat-ul-dawah_waqiah",
-                name: "Abu Hafs Jamat ul-Dawah"
             }
         ]
     },
@@ -1426,10 +1420,6 @@ chapters = [
             {
                 file: "alafasy_qiyamah_1428",
                 name: "Mishary Rashid Alafasy - 1428",
-            },
-            {
-                file: "Hamza Taglass - Surah Al Qiyamah",
-                name: "Hamza Taglass",
             }
         ]
     },
