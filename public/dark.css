@@ -10,7 +10,9 @@
     --theme-color: hsl(25, 60%, 65%);
     --theme-color: hsl(25, 70%, 65%);
     --theme-color: hsl(30, 70%, 65%);
-    --theme-color-opaque: hsla(30, 70%, 65%, 0.6);
+    --theme-color: hsl(30, 63%, 66%);
+    --theme-color: hsl(30, 55%, 65%);
+    --theme-color-opaque: hsla(30, 55%, 65%, 0.6);
 
     --text-color-1: #ccc;
     --text-color-2: #bbb;
@@ -19,10 +21,11 @@
 
     
     --background-value: 24;
-    --background-value-1: calc(6 + var(--background-value));
+    --background-value: 30;
+    --background-value-1: calc(10 + var(--background-value));
     --background-value-2: calc(6 + var(--background-value-1));
     --background-value-3: calc(8 + var(--background-value-2));
-    --background-value-4: calc(10 + var(--background-value-3));
+    --background-value-4: calc(8 + var(--background-value-3));
 
 }
 

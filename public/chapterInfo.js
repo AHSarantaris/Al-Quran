@@ -1513,10 +1513,10 @@ chapters = [
             "name":"He Frowned"
         },
         "recitations":[
-            {
-                file: "alafasy_abasa_1419",
-                name: "Mishary Rashid Alafasy - 1419"
-            }
+            // {
+            //     file: "alafasy_abasa_1419",
+            //     name: "Mishary Rashid Alafasy - 1419"
+            // }
         ]
     },
     {

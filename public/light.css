@@ -14,12 +14,14 @@
 
     /* --theme-color: hsl(230, 27%, 32%); */
     /* BLUE: */
-    --theme-color: hsl(228, 40%, 28%);
     --theme-color: hsl(228, 31%, 25%);
+    --theme-color: hsl(224, 19%, 30%);
+    --theme-color: hsl(224, 35%, 24%);
+    --theme-color: hsl(223, 14%, 20%);
     /* GREY: */
     /* --theme-color: hsl(0, 0%, 29%); */
     /* GREEN: */
-    /* --theme-color: hsl(128, 23%, 33%); */
+    /* --theme-color: hsl(128, 29%, 21%); */
     --theme-color-opaque: hsla(230, 23%, 39%, 0.6);
 
     --text-color-1: #222;
@@ -27,7 +29,7 @@
     --text-color-3: #555;
     --text-color-4: #777;
 
-    --background-value: 245;
+    --background-value: 255;
     --background-value-1: calc(-8 + var(--background-value));
     --background-value-2: calc(-6 + var(--background-value-1));
     --background-value-3: calc(-8 + var(--background-value-2));
@@ -43,8 +45,10 @@
 }
 #audio-controls {
     /* background-color: var(--background-color-2); */
-    border-top: 1px solid var(--background-color-4);
-    box-shadow: none;
+    border-top: 2px solid var(--background-color-4);
+    
+    /* box-shadow: 0px -4px 8px -8px var(--theme-color-opaque); */
+    /* box-shadow: none; */
 }
 #previous-verse-button {
     border-bottom: 1px solid var(--background-color-4);
