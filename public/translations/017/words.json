@@ -33,12 +33,12 @@
         [
             "ٱلْمَسْجِدِ",
             "l-masjidi",
-            "Al-Masjid Al-Haraam"
+            "the mosque"
         ],
         [
             "ٱلْحَرَامِ",
             "l-ḥarāmi",
-            "Al-Masjid Al-Haraam"
+            "the sacred"
         ],
         [
             "إِلَى",
@@ -48,12 +48,12 @@
         [
             "ٱلْمَسْجِدِ",
             "l-masjidi",
-            "Al-Masjid Al-Aqsa"
+            "the mosque"
         ],
         [
             "ٱلْأَقْصَا",
             "l-aqṣā",
-            "Al-Masjid Al-Aqsa"
+            "the farthest"
         ],
         [
             "ٱلَّذِى",
@@ -63,12 +63,12 @@
         [
             "بَـٰرَكْنَا",
             "bāraknā",
-            "We blessed"
+            "We have blessed"
         ],
         [
             "حَوْلَهُۥ",
             "ḥawlahu",
-            "its surroundings"
+            "its surroundings,"
         ],
         [
             "لِنُرِيَهُۥ",
@@ -83,12 +83,12 @@
         [
             "ءَايَـٰتِنَآ ۚ",
             "āyātinā",
-            "Our Signs"
+            "Our Signs."
         ],
         [
             "إِنَّهُۥ",
             "innahu",
-            "Indeed He"
+            "Indeed"
         ],
         [
             "هُوَ",
@@ -98,12 +98,12 @@
         [
             "ٱلسَّمِيعُ",
             "l-samīꜤu",
-            "(is) the All-Hearer"
+            "(is) the Hearing,"
         ],
         [
             "ٱلْبَصِيرُ",
             "l-baṣīru",
-            "the All-Seer"
+            "the Seeing."
         ]
     ],
     "2": [
@@ -115,7 +115,7 @@
         [
             "مُوسَى",
             "mūsā",
-            "Musa"
+            "Moses"
         ],
         [
             "ٱلْكِتَـٰبَ",
@@ -140,22 +140,22 @@
         [
             "إِسْرَٰٓءِيلَ",
             "is'rāīla",
-            "(of) Israel"
+            "(of) Israel,"
         ],
         [
             "أَلَّا",
             "allā",
-            "That not"
+            "that: Do not"
         ],
         [
             "تَتَّخِذُوا۟",
             "tattakhidhū",
-            "you take"
+            "take"
         ],
         [
             "مِن",
             "min",
-            "other than Me"
+            ""
         ],
         [
             "دُونِى",
