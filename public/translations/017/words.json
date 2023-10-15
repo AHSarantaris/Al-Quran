@@ -244,17 +244,17 @@
         [
             "ٱلْكِتَـٰبِ",
             "l-kitābi",
-            "the Book"
+            "the Scripture:"
         ],
         [
             "لَتُفْسِدُنَّ",
             "latuf'sidunna",
-            "Surely you will cause corruption"
+            "You will surely cause corruption"
         ],
         [
             "فِى",
             "fī",
-            "in"
+            "on"
         ],
         [
             "ٱلْأَرْضِ",
@@ -264,12 +264,12 @@
         [
             "مَرَّتَيْنِ",
             "marratayni",
-            "twice"
+            "twice,"
         ],
         [
             "وَلَتَعْلُنَّ",
             "walataꜤlunna",
-            "and surely you will reach"
+            "and you will surely reach"
         ],
         [
             "عُلُوًّۭا",
@@ -279,7 +279,7 @@
         [
             "كَبِيرًۭا",
             "kabīran",
-            "great"
+            "great."
         ]
     ],
     "5": [
@@ -301,7 +301,7 @@
         [
             "أُولَىٰهُمَا",
             "ūlāhumā",
-            "(for) the first of the two"
+            "the first of them"
         ],
         [
             "بَعَثْنَا",
@@ -326,17 +326,17 @@
         [
             "أُو۟لِى",
             "ulī",
-            "those of great military might"
+            "possessing"
         ],
         [
             "بَأْسٍۢ",
-            "basin",
-            "those of great military might"
+            "ba'sin",
+            "force"
         ],
         [
             "شَدِيدٍۢ",
             "shadīdin",
-            "those of great military might"
+            "great,"
         ],
         [
             "فَجَاسُوا۟",
@@ -356,7 +356,7 @@
         [
             "وَكَانَ",
             "wakāna",
-            "and (it) was"
+            "and it was"
         ],
         [
             "وَعْدًۭا",
@@ -366,7 +366,7 @@
         [
             "مَّفْعُولًۭا",
             "mafꜤūlan",
-            "fulfilled"
+            "fulfilled."
         ]
     ],
     "6": [
@@ -378,7 +378,7 @@
         [
             "رَدَدْنَا",
             "radadnā",
-            "We gave back"
+            "We returned"
         ],
         [
             "لَكُمُ",
@@ -388,32 +388,32 @@
         [
             "ٱلْكَرَّةَ",
             "l-karata",
-            "the return victory"
+            "the upper hand"
         ],
         [
             "عَلَيْهِمْ",
             "Ꜥalayhim",
-            "over them"
+            "against them,"
         ],
         [
             "وَأَمْدَدْنَـٰكُم",
             "wa-amdadnākum",
-            "And We reinforced you"
+            "and We reinforced you"
         ],
         [
             "بِأَمْوَٰلٍۢ",
             "bi-amwālin",
-            "with the wealth"
+            "with wealth"
         ],
         [
             "وَبَنِينَ",
             "wabanīna",
-            "and sons"
+            "and sons."
         ],
         [
             "وَجَعَلْنَـٰكُمْ",
             "wajaꜤalnākum",
-            "and made you"
+            "And We made you"
         ],
         [
             "أَكْثَرَ",
@@ -423,7 +423,7 @@
         [
             "نَفِيرًا",
             "nafīran",
-            "numerous"
+            "numerous."
         ]
     ],
     "7": [
@@ -445,7 +445,7 @@
         [
             "لِأَنفُسِكُمْ ۖ",
             "li-anfusikum",
-            "for yourselves"
+            "to your souls,"
         ],
         [
             "وَإِنْ",
@@ -454,13 +454,13 @@
         ],
         [
             "أَسَأْتُمْ",
-            "asatum",
+            "asa'tum",
             "you do evil"
         ],
         [
             "فَلَهَا ۚ",
             "falahā",
-            "then it is for it"
+            "then it (too) is to them."
         ],
         [
             "فَإِذَا",
@@ -494,13 +494,13 @@
         ],
         [
             "وَلِيَدْخُلُوا۟",
-            "waliyadkhulū",
-            "and to enter"
+            "waliyad'khulū",
+            "and for them to enter"
         ],
         [
             "ٱلْمَسْجِدَ",
             "l-masjida",
-            "the Masjid"
+            "the place of worship"
         ],
         [
             "كَمَا",
@@ -510,17 +510,17 @@
         [
             "دَخَلُوهُ",
             "dakhalūhu",
-            "they (had) entered it"
+            "they had entered it"
         ],
         [
             "أَوَّلَ",
             "awwala",
-            "first"
+            "(the) first"
         ],
         [
             "مَرَّةٍۢ",
             "marratin",
-            "time"
+            "time,"
         ],
         [
             "وَلِيُتَبِّرُوا۟",
@@ -540,29 +540,29 @@
         [
             "تَتْبِيرًا",
             "tatbīran",
-            "(with) destruction"
+            "(with) destruction."
         ]
     ],
     "8": [
         [
             "عَسَىٰ",
             "Ꜥasā",
-            "(It) may be"
+            "It might be"
         ],
         [
             "رَبُّكُمْ",
             "rabbukum",
-            "that your Lord"
+            "your Lord"
         ],
         [
             "أَن",
             "an",
-            "that your Lord"
+            "that"
         ],
         [
             "يَرْحَمَكُمْ ۚ",
             "yarḥamakum",
-            "(may) have mercy upon you"
+            "He will have mercy upon you."
         ],
         [
             "وَإِنْ",
@@ -577,7 +577,7 @@
         [
             "عُدْنَا ۘ",
             "Ꜥud'nā",
-            "We will return"
+            "We will return."
         ],
         [
             "وَجَعَلْنَا",
@@ -597,7 +597,7 @@
         [
             "حَصِيرًا",
             "ḥaṣīran",
-            "a prison-bed"
+            "a prison-bed."
         ]
     ],
     "9": [
