@@ -445,7 +445,7 @@
         [
             "لِأَنفُسِكُمْ ۖ",
             "li-anfusikum",
-            "to your souls,"
+            "to your own souls,"
         ],
         [
             "وَإِنْ",
@@ -475,7 +475,7 @@
         [
             "وَعْدُ",
             "waꜤdu",
-            "promise"
+            "(the) promise"
         ],
         [
             "ٱلْـَٔاخِرَةِ",
@@ -490,7 +490,7 @@
         [
             "وُجُوهَكُمْ",
             "wujūhakum",
-            "your faces"
+            "your faces,"
         ],
         [
             "وَلِيَدْخُلُوا۟",
@@ -614,7 +614,7 @@
         [
             "ٱلْقُرْءَانَ",
             "l-qur'āna",
-            "the Quran"
+            "Recitation"
         ],
         [
             "يَهْدِى",
@@ -644,7 +644,7 @@
         [
             "ٱلْمُؤْمِنِينَ",
             "l-mu'minīna",
-            "to the believers "
+            "to the believers-"
         ],
         [
             "ٱلَّذِينَ",
@@ -659,7 +659,7 @@
         [
             "ٱلصَّـٰلِحَـٰتِ",
             "l-ṣāliḥāti",
-            "the righteous deeds"
+            "righteous deeds"
         ],
         [
             "أَنَّ",
@@ -679,7 +679,7 @@
         [
             "كَبِيرًۭا",
             "kabīran",
-            "great"
+            "great."
         ]
     ],
     "10": [
@@ -726,19 +726,19 @@
         [
             "أَلِيمًۭا",
             "alīman",
-            "painful"
+            "painful."
         ]
     ],
     "11": [
         [
             "وَيَدْعُ",
             "wayadꜤu",
-            "And prays"
+            "And calls"
         ],
         [
             "ٱلْإِنسَـٰنُ",
             "l-insānu",
-            "the man"
+            "man"
         ],
         [
             "بِٱلشَّرِّ",
@@ -748,27 +748,27 @@
         [
             "دُعَآءَهُۥ",
             "duꜤāahu",
-            "(as) he prays"
+            "(as) he calls"
         ],
         [
             "بِٱلْخَيْرِ ۖ",
             "bil-khayri",
-            "for the good"
+            "for good."
         ],
         [
             "وَكَانَ",
             "wakāna",
-            "And is"
+            "And ever is"
         ],
         [
             "ٱلْإِنسَـٰنُ",
             "l-insānu",
-            "the man"
+            "man"
         ],
         [
             "عَجُولًۭا",
             "Ꜥajūlan",
-            "ever hasty"
+            "hasty."
         ]
     ],
     "12": [
@@ -790,12 +790,12 @@
         [
             "ءَايَتَيْنِ ۖ",
             "āyatayni",
-            "(as) two signs"
+            "signs,"
         ],
         [
             "فَمَحَوْنَآ",
             "famaḥawnā",
-            "Then We erased"
+            "and We erased"
         ],
         [
             "ءَايَةَ",
@@ -830,7 +830,7 @@
         [
             "لِّتَبْتَغُوا۟",
             "litabtaghū",
-            "that you may seek"
+            "for you to seek"
         ],
         [
             "فَضْلًۭا",
@@ -845,12 +845,12 @@
         [
             "رَّبِّكُمْ",
             "rabbikum",
-            "your Lord"
+            "your Lord,"
         ],
         [
             "وَلِتَعْلَمُوا۟",
             "walitaꜤlamū",
-            "and that you may know"
+            "and for you to know"
         ],
         [
             "عَدَدَ",
@@ -860,12 +860,12 @@
         [
             "ٱلسِّنِينَ",
             "l-sinīna",
-            "(of) the years"
+            "(of) years"
         ],
         [
             "وَٱلْحِسَابَ ۚ",
             "wal-ḥisāba",
-            "and the account"
+            "and the account."
         ],
         [
             "وَكُلَّ",
@@ -875,7 +875,7 @@
         [
             "شَىْءٍۢ",
             "shayin",
-            "thing "
+            "thing"
         ],
         [
             "فَصَّلْنَـٰهُ",
@@ -885,7 +885,7 @@
         [
             "تَفْصِيلًۭا",
             "tafṣīlan",
-            "(in) detail"
+            "(in) detail."
         ]
     ],
     "13": [
@@ -902,7 +902,7 @@
         [
             "أَلْزَمْنَـٰهُ",
             "alzamnāhu",
-            "We have fastened to him"
+            "We have fastened for him"
         ],
         [
             "طَـٰٓئِرَهُۥ",
@@ -912,17 +912,17 @@
         [
             "فِى",
             "fī",
-            "in"
+            "around"
         ],
         [
             "عُنُقِهِۦ ۖ",
             "Ꜥunuqihi",
-            "his neck"
+            "his neck."
         ],
         [
             "وَنُخْرِجُ",
             "wanukh'riju",
-            "and We will bring forth"
+            "And We will bring forth"
         ],
         [
             "لَهُۥ",
@@ -947,12 +947,12 @@
         [
             "يَلْقَىٰهُ",
             "yalqāhu",
-            "which he will find"
+            "he will find"
         ],
         [
             "مَنشُورًا",
             "manshūran",
-            "wide open"
+            "wide open."
         ]
     ],
     "14": [
@@ -964,17 +964,17 @@
         [
             "كِتَـٰبَكَ",
             "kitābaka",
-            "your record"
+            "your record."
         ],
         [
             "كَفَىٰ",
             "kafā",
-            "Sufficient"
+            "Sufficient (is it)"
         ],
         [
             "بِنَفْسِكَ",
             "binafsika",
-            "(is) yourself"
+            "with yourself"
         ],
         [
             "ٱلْيَوْمَ",
@@ -989,7 +989,7 @@
         [
             "حَسِيبًۭا",
             "ḥasīban",
-            "(as) accountant"
+            "(as) accountant."
         ]
     ],
     "15": [
