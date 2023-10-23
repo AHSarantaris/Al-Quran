@@ -29,7 +29,7 @@
     --text-color-3: #555;
     --text-color-4: #777;
 
-    --background-value: 255;
+    --background-value: 250;
     --background-value-1: calc(-8 + var(--background-value));
     --background-value-2: calc(-6 + var(--background-value-1));
     --background-value-3: calc(-8 + var(--background-value-2));

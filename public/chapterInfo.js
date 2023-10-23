@@ -969,9 +969,7 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Mount"
-        },
-        "recitations": [
-        ]
+        }
     },
     {
         "id":53,
@@ -1512,12 +1510,12 @@ chapters = [
             "language_name":"english",
             "name":"He Frowned"
         },
-        "recitations":[
-            // {
-            //     file: "alafasy_abasa_1419",
-            //     name: "Mishary Rashid Alafasy - 1419"
-            // }
-        ]
+        // "recitations":[
+        //     {
+        //         file: "alafasy_abasa_1419",
+        //         name: "Mishary Rashid Alafasy - 1419"
+        //     }
+        // ]
     },
     {
         "id":81,
