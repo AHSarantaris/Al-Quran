@@ -6,6 +6,8 @@
     "5": "They will be given drink from a boiling spring.",
     "6": "For them there will be no food except from a poisonous, thorny plant",
     "7": "Which neither nourishes nor avails against hunger.",
+}
+{
     "8": "[Other] faces, that Day, will show pleasure.",
     "9": "With their effort [they are] satisfied",
     "10": "In an elevated garden,",
@@ -15,10 +17,14 @@
     "14": "And cups put in place",
     "15": "And cushions lined up",
     "16": "And carpets spread around.",
+}
+{
     "17": "Then do they not look at the camels - how they are created?",
     "18": "And at the sky - how it is raised?",
     "19": "And at the mountains - how they are erected?",
     "20": "And at the earth - how it is spread out?",
+}
+{
     "21": "So remind, [O Muḥammad]; you are only a reminder.",
     "22": "You are not over them a controller.",
     "23": "However, he who turns away and disbelieves",
