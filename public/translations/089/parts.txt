@@ -28,12 +28,12 @@ C2:{
     "19": "And you consume inheritance, devouring [it] altogether,",
     "20": "And you love wealth with immense love.",
 }
-D1:{
+C3:{
     "21": "No! When the earth has been leveled - pounded and crushed",
     "22": "And your Lord has come and the angels, rank upon rank,",
     "23": "And brought [within view], that Day, is Hell - that Day, man will remember, but how [i.e., what good] to him will be the remembrance?",
 }
-D2:{
+C4:{
     "24": "He will say, \"Oh, I wish I had sent ahead [some good] for my life.\"",
     "25": "So on that Day, none will punish [as severely] as His punishment,",
     "26": "And none will bind [as severely] as His binding [of the evildoers].",
