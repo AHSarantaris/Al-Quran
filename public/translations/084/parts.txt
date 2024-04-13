@@ -10,6 +10,7 @@
     "7": "Then as for he who is given his record in his right hand,",
     "8": "He will be judged with an easy account",
     "9": "And return to his people in happiness.",
+    
     "10": "But as for he who is given his record behind his back,",
     "11": "He will cry out for destruction",
     "12": "And [enter to] burn in a Blaze.",
@@ -22,12 +23,10 @@
     "17": "And [by] the night and what it envelops",
     "18": "And [by] the moon when it becomes full",
     "19": "[That] you will surely embark upon [i.e., experience] state after state.",
-}
-{
+    
     "20": "So what is [the matter] with them [that] they do not believe,",
     "21": "And when the Qur’ān is recited to them, they do not prostrate [to Allah]?",
-}
-{
+
     "22": "But those who have disbelieved deny,",
     "23": "And Allah is most knowing of what they keep within themselves.",
     "24": "So give them tidings of a painful punishment,",
