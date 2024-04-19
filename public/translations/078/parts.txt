@@ -1,17 +1,17 @@
-Første gruppe:
+Group A:
 - Allah omtaler implicit deres forundring over at alle mennesker vil blive genoprejst på Dommens Dag. 
 
-Anden gruppe: 
+Group B: 
 - Først nævner Allah jorden, bjerge og ægtefæller som der giver os ro og hvile.
 - Så nævner Han nat, dag, himlen og solen.
 - Så nævner han vand der får planter og korn til at komme frem.
 
-Tredje gruppe:
+Group C:
 - Vi vil komme frem på dommens dag ligesom Allah bringer korn frem.
 - De "stærke" himle som han har skabt vil blive åbnet.
 - De bjerge som han har sat som pløkker til at holde Jorden fast vil blive fjernet.
 
-Last group:
+Group G:
 - Verse 37: Glorification of Allah
 - Verse 38: The Day of Judgement, as mentioned in group 3.
 - Verse 39: The righteous should return to their Lord, as they will be given the reward mentioned in group 5.
@@ -22,14 +22,14 @@ Last group:
 
 
 
-{
+A {
     "1": "About what are they asking one another?",
     "2": "About the great news -",
     "3": "That over which they are in disagreement.",
     "4": "No! They are going to know.",
     "5": "Then, no! They are going to know.",
 }
-{
+B {
     "6": "Have We not made the earth a resting place?",
     "7": "And the mountains as stakes?",
     "8": "And We created you in pairs.",
@@ -44,13 +44,13 @@ Last group:
     "15": "That We may bring forth thereby grain and vegetation.",
     "16": "And gardens of entwined growth.",
 }
-{
+C {
     "17": "Indeed, the Day of Judgement is an appointed time -",
     "18": "The Day the Horn is blown and you will come forth in multitudes",
     "19": "And the heaven is opened and will become gateways.",
     "20": "And the mountains are removed and will be [but] a mirage.",
 }
-{
+D {
     "21": "Indeed, Hell has been lying in wait",
     "22": "For the transgressors, a place of return,",
     "23": "In which they will remain for ages [unending].",
@@ -58,14 +58,15 @@ Last group:
     "24": "They will not taste therein [any] coolness or drink.",
     "25": "Except scalding water and [foul] purulence -",
     "26": "An appropriate recompense.",
-    
+}
+E {
     "27": "Indeed, they were not expecting an account",
     "28": "And denied Our verses with [emphatic] denial.",
     
     "29": "But all things We have enumerated in writing.",
     "30": "\"So taste [the penalty], and never will We increase you except in torment.\"",
 }
-{
+F {
     "31": "Indeed, for the righteous is attainment -",
     "32": "Gardens and grapevines.",
     "33": "And full-breasted [companions] of equal age.",
@@ -73,7 +74,7 @@ Last group:
     "35": "No ill speech will they hear therein or any falsehood -",
     "36": "[As] reward from your Lord, [a generous] gift [made due by] account,",
 }
-{
+G {
     "37": "[From] the Lord of the heavens and the earth and whatever is between them, the Most Merciful. They possess not from Him [authority for] speech.",
     
     "38": "The Day that the Spirit [i.e., Gabriel] and the angels will stand in rows, they will not speak except for one whom the Most Merciful permits, and he will say what is correct.",
