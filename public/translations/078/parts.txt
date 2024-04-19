@@ -1,6 +1,10 @@
 Group A:
 - Allah omtaler implicit deres forundring over at alle mennesker vil blive genoprejst på Dommens Dag.
-- This amazement is mentioned in the chapter verse 11 to 13
+- This amazement is mentioned in the chapter verse 11 to 13:
+    "10": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
+    "11": "Even if we should be decayed bones?\"",
+    "12": "They say, \"That, then, would be a losing return.\"",
+
 
 Group B: 
 - Først nævner Allah jorden, bjerge og ægtefæller som der giver os ro og hvile.
