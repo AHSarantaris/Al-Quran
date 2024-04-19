@@ -1,3 +1,5 @@
+Første gruppe:
+- Allah omtaler implicit deres forundring over at alle mennesker vil blive genoprejst på Dommens Dag. 
 Anden gruppe: 
 - Først nævner Allah jorden, bjerge og ægtefæller som der giver os ro og hvile.
 - Så nævner Han nat, dag, himlen og solen.
@@ -60,6 +62,8 @@ Tredje gruppe:
 }
 {
     "37": "[From] the Lord of the heavens and the earth and whatever is between them, the Most Merciful. They possess not from Him [authority for] speech.",
+}
+{
     "38": "The Day that the Spirit [i.e., Gabriel] and the angels will stand in rows, they will not speak except for one whom the Most Merciful permits, and he will say what is correct.",
     "39": "That is the True [i.e., certain] Day; so he who wills may take to his Lord a [way of] return.",
     "40": "Indeed, We have warned you of an impending punishment on the Day when a man will observe what his hands have put forth and the disbeliever will say, \"Oh, I wish that I were dust!\""
