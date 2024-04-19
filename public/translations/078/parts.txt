@@ -1,13 +1,26 @@
 Første gruppe:
 - Allah omtaler implicit deres forundring over at alle mennesker vil blive genoprejst på Dommens Dag. 
+
 Anden gruppe: 
 - Først nævner Allah jorden, bjerge og ægtefæller som der giver os ro og hvile.
 - Så nævner Han nat, dag, himlen og solen.
 - Så nævner han vand der får planter og korn til at komme frem.
+
 Tredje gruppe:
 - Vi vil komme frem på dommens dag ligesom Allah bringer korn frem.
 - De "stærke" himle som han har skabt vil blive åbnet.
 - De bjerge som han har sat som pløkker til at holde Jorden fast vil blive fjernet.
+
+Last group:
+- Verse 37: Glorification of Allah
+- Verse 38: The Day of Judgement, as mentioned in group 3.
+- Verse 39: The righteous should return to their Lord, as they will be given the reward mentioned in group 5.
+- Verse 40: Reminding about the punishment of mentioned in group 4. 
+    Parallel between what man has done and what Allah has made, as mentioned in group 2.
+    
+
+
+
 
 {
     "1": "About what are they asking one another?",
@@ -64,6 +77,7 @@ Tredje gruppe:
     "37": "[From] the Lord of the heavens and the earth and whatever is between them, the Most Merciful. They possess not from Him [authority for] speech.",
     
     "38": "The Day that the Spirit [i.e., Gabriel] and the angels will stand in rows, they will not speak except for one whom the Most Merciful permits, and he will say what is correct.",
+    
     "39": "That is the True [i.e., certain] Day; so he who wills may take to his Lord a [way of] return.",
 
     "40": "Indeed, We have warned you of an impending punishment on the Day when a man will observe what his hands have put forth and the disbeliever will say, \"Oh, I wish that I were dust!\""
