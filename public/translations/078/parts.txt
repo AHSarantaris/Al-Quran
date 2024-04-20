@@ -1,4 +1,13 @@
 
+Thematic overview:
+A: Denial of the resurrection.
+B: The creation and mercy of God.
+C: Description of the Day of Judgement.
+D: Description of Hell.
+E: Justification of the punishment.
+F: Description of Paradise.
+G: 
+
 Message:
 A: They disbelieve in the resurrection, but they will come to know.
 B: Allah has made so many things and done so many things for us, which shows his power and mercy towards us. He has created so much already so he can create us again, and He has given us so much already, and will give us more if we are righteous.
@@ -7,7 +16,7 @@ D: Those who transgress will rightfully be punished in Hell.
 E: The punishment is just, because they denied the resurrection and judgement, so they will not recieve mercy.
 F: The righteous will be given the good from the worldly life without the evil, not even ill speech.
 G: 
-    37: Allah is described by His power to create, His mercy and his power to control us if He wills. Even our speach He can withhold. 
+    37: Allah is described by His power over everything, His mercy and his power to control us if He wills. Even our speach He can withhold. 
     38: The angels, who are more powerful than us, will obey Allah and they will not even speak except by permission of God and thet will only say was is correct.
     39: The Day of Judgement is true, and it is up to us to take the right path back to God.
     40: The punishment of that day is close, and then we will see our deeds, and the disbeliever would wish it was not true and he was dust as he had thought he would become.
@@ -96,7 +105,6 @@ D {
 E {
     "27": "Indeed, they were not expecting an account",
     "28": "And denied Our verses with [emphatic] denial.",
-    
     "29": "But all things We have enumerated in writing.",
     "30": "\"So taste [the penalty], and never will We increase you except in torment.\"",
 }
