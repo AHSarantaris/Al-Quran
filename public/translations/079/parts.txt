@@ -18,8 +18,7 @@ Y {
 	    "10": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
 	    "11": "Even if we should be decayed bones?\"",
 	    "12": "They say, \"That, then, would be a losing return.\"",
-	}
-	{
+
 	    "13": "Indeed, it will be but one shout,",
 	    "14": "And suddenly they will be [alert] upon the earth's surface.",
 	}
