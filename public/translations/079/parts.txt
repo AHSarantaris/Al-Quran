@@ -11,7 +11,7 @@ B {
     "6": "On the Day the blast [of the Horn] will convulse [creation],",
     "7": "There will follow it the subsequent [one].",
     "8": "Hearts, that Day, will tremble,",
-    "9": "Their eyes humbled
+    "9": "Their eyes humbled",
 }
 {
     "10": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
