@@ -40,6 +40,7 @@ C {
     "27": "Are you a more difficult creation or is the heaven? He [i.e., Allah] constructed it.",
     "28": "He raised its ceiling and proportioned it.",
     "29": "And He darkened its night and extracted its brightness.",
+    
     "30": "And after that He spread the earth.",
     "31": "He extracted from it its water and its pasture,",
     "32": "And the mountains He set firmly",
@@ -49,11 +50,11 @@ D {
     "34": "But when there comes the greatest Overwhelming Calamity -",
     "35": "The Day when man will remember that for which he strove,",
     "36": "And Hellfire will be exposed for [all] those who see -",
-}
-E {
+
     "37": "So as for he who transgressed",
     "38": "And preferred the life of the world,",
     "39": "Then indeed, Hellfire will be [his] refuge.",
+    
     "40": "But as for he who feared the position of his Lord and prevented the soul from [unlawful] inclination,",
     "41": "Then indeed, Paradise will be [his] refuge.",
 }
