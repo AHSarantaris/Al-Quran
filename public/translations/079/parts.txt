@@ -7,21 +7,19 @@ A {
     "4": "And those who race each other in a race",
     "5": "And those who arrange [each] matter,",
 }
-Y {
-	{
-	    "6": "On the Day the blast [of the Horn] will convulse [creation],",
-	    "7": "There will follow it the subsequent [one].",
-	    "8": "Hearts, that Day, will tremble,",
-	    "9": "Their eyes humbled
-	}
-	{
-	    "10": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
-	    "11": "Even if we should be decayed bones?\"",
-	    "12": "They say, \"That, then, would be a losing return.\"",
+B {
+    "6": "On the Day the blast [of the Horn] will convulse [creation],",
+    "7": "There will follow it the subsequent [one].",
+    "8": "Hearts, that Day, will tremble,",
+    "9": "Their eyes humbled
+}
+{
+    "10": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
+    "11": "Even if we should be decayed bones?\"",
+    "12": "They say, \"That, then, would be a losing return.\"",
 
-	    "13": "Indeed, it will be but one shout,",
-	    "14": "And suddenly they will be [alert] upon the earth's surface.",
-	}
+    "13": "Indeed, it will be but one shout,",
+    "14": "And suddenly they will be [alert] upon the earth's surface.",
 }
 B {
     "15": "Has there reached you the story of Moses? -",
@@ -29,6 +27,7 @@ B {
     "17": "\"Go to Pharaoh. Indeed, he has transgressed.",
     "18": "And say to him, 'Would you [be willing to] purify yourself",
     "19": "And let me guide you to your Lord so you would fear [Him]?'\"",
+    
     "20": "And he showed him the greatest sign,",
     "21": "But he [i.e., Pharaoh] denied and disobeyed.",
     "22": "Then he turned his back, striving [i.e., plotting].",
