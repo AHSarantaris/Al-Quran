@@ -1,5 +1,8 @@
 Paired with Surah 'Abasa
 
+Message:
+A: Oath by the anfels
+
 A {
     "1": "By those [angels] who extract with violence",
     "2": "And [by] those who remove with ease",
