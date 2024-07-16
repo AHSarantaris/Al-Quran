@@ -133,7 +133,8 @@
     "83": "And that was Our [conclusive] argument which We gave Abraham against his people. We raise by degrees whom We will. Indeed, your Lord is Wise and Knowing.",
 }    
 
-10) {    
+10) Previous messengers
+{    
     "84": "And We gave to him [i.e., Abraham] Isaac and Jacob - all [of them] We guided. And Noah, We guided before; and among his descendants, David and Solomon and Job and Joseph and Moses and Aaron. Thus do We reward the doers of good.",
     "85": "And Zechariah and John and Jesus and Elias - and all were of the righteous.",
     "86": "And Ishmael and Elisha and Jonah and Lot - and all [of them] We preferred over the worlds.",
