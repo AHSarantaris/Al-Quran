@@ -28,8 +28,9 @@ Judgement day: {
     "20": "Those to whom We have given the Scripture recognize it as they recognize their [own] sons. Those who will lose themselves [in the Hereafter] do not believe.",
     "21": "And who is more unjust than one who invents about Allah a lie or denies His verses? Indeed, the wrongdoers will not succeed.",
 }
-    
-Associating partners: {
+
+Associating partners: 
+{
     "22": "And [mention, O Muḥammad], the Day We will gather them all together; then We will say to those who associated others with Allah, \"Where are your 'partners' that you used to claim [with Him]?\"",
     "23": "Then there will be no [excuse upon] examination except they will say, \"By Allah, our Lord, we were not those who associated.\"",
     "24": "See how they will lie about themselves. And lost from them will be what they used to invent.",
@@ -45,6 +46,7 @@ Associating partners: {
     "32": "And the worldly life is not but amusement and diversion; but the home of the Hereafter is best for those who fear Allah, so will you not reason?",
 }
 
+Denial:
 {
     "33": "We know that you, [O Muḥammad], are saddened by what they say. And indeed, they do not call you untruthful, but it is the verses of Allah that the wrongdoers reject.",
     "34": "And certainly were messengers denied before you, but they were patient over the denial, and they were harmed until Our victory came to them. And none can alter the words [i.e., decrees] of Allah. And there has certainly come to you some information about the [previous] messengers.",
