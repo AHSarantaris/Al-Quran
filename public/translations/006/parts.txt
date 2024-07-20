@@ -72,11 +72,11 @@
     "47": "Say, \"Have you considered: if the punishment of Allah should come to you unexpectedly or manifestly, will any be destroyed but the wrongdoing people?\"",
     "48": "And We send not the messengers except as bringers of good tidings and warners. So whoever believes and reforms - there will be no fear concerning them, nor will they grieve.",
     "49": "But those who deny Our verses - the punishment will touch them for their defiant disobedience.",
+    "50": "Say, [O Muḥammad], \"I do not tell you that I have the depositories [containing the provision] of Allah or that I know the unseen, nor do I tell you that I am an angel. I only follow what is revealed to me.\" Say, \"Is the blind equivalent to the seeing? Then will you not give thought?\"",
 }
     
 6) Believers:
 {    
-    "50": "Say, [O Muḥammad], \"I do not tell you that I have the depositories [containing the provision] of Allah or that I know the unseen, nor do I tell you that I am an angel. I only follow what is revealed to me.\" Say, \"Is the blind equivalent to the seeing? Then will you not give thought?\"",
     "51": "And warn by it [i.e., the Qur’ān] those who fear that they will be gathered before their Lord - for them besides Him will be no protector and no intercessor - that they might become righteous.",
     "52": "And do not send away those who call upon their Lord morning and afternoon, seeking His face [i.e., favor]. Not upon you is anything of their account and not upon them is anything of your account. So were you to send them away, you would [then] be of the wrongdoers.",
     "53": "And thus We have tried some of them through others that they [i.e., the disbelievers] might say, \"Is it these whom Allah has favored among us?\" Is not Allah most knowing of those who are grateful?",
