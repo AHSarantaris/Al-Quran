@@ -141,12 +141,11 @@
     "87": "And [some] among their fathers and their descendants and their brothers - and We chose them and We guided them to a straight path.",
     "88": "That is the guidance of Allah by which He guides whomever He wills of His servants. But if they had associated others with Allah, then worthless for them would be whatever they were doing.",
     
-    
     "89": "Those are the ones to whom We gave the Scripture and authority and prophethood. But if they [i.e., the disbelievers] deny it, then We have entrusted it to a people who are not therein disbelievers.",
     "90": "Those are the ones whom Allah has guided, so from their guidance take an example. Say, \"I ask of you for it [i.e., this message] no payment. It is not but a reminder for the worlds.\"",
 }    
 
-11) Punishment in the afterlife and blessings in the creation
+11) Punishment in the afterlife
 {
     "91": "And they did not appraise Allah with true appraisal when they said, \"Allah did not reveal to a human being anything.\" Say, \"Who revealed the Scripture that Moses brought as light and guidance to the people? You [Jews] make it into pages, disclosing [some of] it and concealing much. And you were taught that which you knew not - neither you nor your fathers.\" Say, \"Allah [revealed it].\" Then leave them in their [empty] discourse, amusing themselves.",
     "92": "And this is a Book which We have sent down, blessed and confirming what was before it, that you may warn the Mother of Cities [i.e., Makkah] and those around it. Those who believe in the Hereafter believe in it, and they are maintaining their prayers.",
