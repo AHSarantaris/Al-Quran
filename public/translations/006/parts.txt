@@ -144,29 +144,29 @@
     
     "89": "Those are the ones to whom We gave the Scripture and authority and prophethood. But if they [i.e., the disbelievers] deny it, then We have entrusted it to a people who are not therein disbelievers.",
     "90": "Those are the ones whom Allah has guided, so from their guidance take an example. Say, \"I ask of you for it [i.e., this message] no payment. It is not but a reminder for the worlds.\"",
-    "91": "And they did not appraise Allah with true appraisal when they said, \"Allah did not reveal to a human being anything.\" Say, \"Who revealed the Scripture that Moses brought as light and guidance to the people? You [Jews] make it into pages, disclosing [some of] it and concealing much. And you were taught that which you knew not - neither you nor your fathers.\" Say, \"Allah [revealed it].\" Then leave them in their [empty] discourse, amusing themselves.",
-}
+}    
 
 11) Punishment in the afterlife and blessings in the creation
-{    
+{
+    "91": "And they did not appraise Allah with true appraisal when they said, \"Allah did not reveal to a human being anything.\" Say, \"Who revealed the Scripture that Moses brought as light and guidance to the people? You [Jews] make it into pages, disclosing [some of] it and concealing much. And you were taught that which you knew not - neither you nor your fathers.\" Say, \"Allah [revealed it].\" Then leave them in their [empty] discourse, amusing themselves.",
     "92": "And this is a Book which We have sent down, blessed and confirming what was before it, that you may warn the Mother of Cities [i.e., Makkah] and those around it. Those who believe in the Hereafter believe in it, and they are maintaining their prayers.",
     "93": "And who is more unjust than one who invents a lie about Allah or says, \"It has been inspired to me,\" while nothing has been inspired to him, and one who says, \"I will reveal [something] like what Allah revealed.\" And if you could but see when the wrongdoers are in the overwhelming pangs of death while the angels extend their hands, [saying], \"Discharge your souls! Today you will be awarded the punishment of [extreme] humiliation for what you used to say against Allah other than the truth and [that] you were, toward His verses, being arrogant.\"",
     "94": "[It will be said to them], \"And you have certainly come to Us alone [i.e., individually] as We created you the first time, and you have left whatever We bestowed upon you behind you. And We do not see with you your 'intercessors' which you claimed that they were among you associates [of Allah]. It has [all] been severed between you, and lost from you is what you used to claim.\"",
-    
-    
+}   
+
+12) Description of God
+{    
     "95": "Indeed, Allah is the cleaver of grain and date seeds. He brings the living out of the dead and brings the dead out of the living. That is Allah; so how are you deluded?",
     "96": "[He is] the cleaver of daybreak and has made the night for rest and the sun and moon for calculation. That is the determination of the Exalted in Might, the Knowing.",
     "97": "And it is He who placed for you the stars that you may be guided by them through the darknesses of the land and sea. We have detailed the signs for a people who know.",
     "98": "And it is He who produced you from one soul and [gave you] a place of dwelling and of storage. We have detailed the signs for a people who understand.",
     "99": "And it is He who sends down rain from the sky, and We produce thereby the growth of all things. We produce from it greenery from which We produce grains arranged in layers. And from the palm trees - of its emerging fruit are clusters hanging low. And [We produce] gardens of grapevines and olives and pomegranates, similar yet varied. Look at [each of] its fruit when it yields and [at] its ripening. Indeed in that are signs for a people who believe.",
-}    
 
-12) {    
     "100": "But they have attributed to Allah partners - the jinn, while He has created them - and have fabricated for Him sons and daughters without knowledge. Exalted is He and high above what they describe.",
     "101": "[He is] Originator of the heavens and the earth. How could He have a son when He does not have a companion [i.e., wife] and He created all things? And He is, of all things, Knowing.",
     "102": "That is Allah, your Lord; there is no deity except Him, the Creator of all things, so worship Him. And He is Disposer of all things.",
     "103": "Vision perceives Him not, but He perceives [all] vision; and He is the Subtle, the Aware.",
-    
+}
     
     "104": "There has come to you enlightenment from your Lord. So whoever will see does so for [the benefit of] his soul, and whoever is blind [does harm] against it. And [say], \"I am not a guardian over you.\"",
     "105": "And thus do We diversify the verses so they [i.e., the disbelievers] will say, \"You have studied,\" and so We may make it [i.e., the Qur’ān] clear for a people who know.",
