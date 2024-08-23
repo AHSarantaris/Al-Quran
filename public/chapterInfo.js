@@ -1311,7 +1311,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Stairways"
-        }
+        },    
+        "recitations": [
+            {
+                file: "mamdouh_maarij",
+                name: "Yasser Mamdouh"
+            }
+        ]
     },
     {
         "id":71,
