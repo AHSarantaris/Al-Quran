@@ -1,0 +1,127 @@
+
+Thematic overview:
+A: Denial of the resurrection.
+B: The creation and mercy of God.
+C: Description of the Day of Judgement.
+D: Description of Hell.
+E: Justification of the punishment.
+F: Description of Paradise.
+G: The complete control of God on the Day of Judgement, and his mercy.
+
+Message:
+A: They disbelieve in the resurrection, but they will come to know.
+B: Allah has made so many things and done so many things for us, which shows his power and mercy towards us. He has created so much already so he can create us again, and He has given us so much already, and will give us more if we are righteous.
+C: The Day of Judgement that they disbelive will occur, and Allah will open the sky and remove the mountains which we consider so sturdy and heavy. Which again shows his power.
+D: Those who transgress will rightfully be punished in Hell.
+E: The punishment is just, because they denied the resurrection and judgement, so they will not recieve mercy.
+F: The righteous will be given the good from the worldly life without the evil, not even ill speech.
+G: 
+    37: Allah is described by His power over everything, His mercy and his power to control us if He wills. Even our speach He can withhold. 
+    38: The angels, who are more powerful than us, will obey Allah and they will not even speak except by permission of God and thet will only say was is correct.
+    39: The Day of Judgement is true, and it is up to us to take the right path back to God.
+    40: The punishment of that day is close, and then we will see our deeds, and the disbeliever would wish it was not true and he was dust as he had thought he would become.
+
+
+Parallels: 
+- Water is mentioned in group B, and then in group D and F the drinks of the inhabitants of Hell and Paradise are mentioned respectively.
+- Gardens are mentioned both in group B and F.
+- Speech is mentioned in group A, F and three times in G. 
+- Denial is mentioned in group A, E and G.
+
+
+Group A:
+- Allah omtaler implicit deres forundring over at alle mennesker vil blive genoprejst på Dommens Dag.
+- This amazement is mentioned in the chapter verse 10 to 12:
+    "10": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
+    "11": "Even if we should be decayed bones?\"",
+    "12": "They say, \"That, then, would be a losing return.\"",
+- It is also mentioned in chapter 56, where ghe word "dust" is used. The chapter before that one and the one before this one are similar, as both have a repeated verse, and "fabi ayyi..." ("then which...").
+
+
+
+Group B: 
+- Først nævner Allah jorden, bjerge og ægtefæller som der giver os ro og hvile.
+- Så nævner Han nat, dag, himlen og solen.
+- Så nævner han vand der får planter og korn til at komme frem.
+
+Group C:
+Paralleller til gruppe B:
+- Vi vil komme frem på dommens dag ligesom Allah bringer korn frem.
+- De "stærke" himle som han har skabt vil blive åbnet.
+- De bjerge som han har sat som pløkker til at holde Jorden fast vil blive fjernet.
+
+Group D:
+-
+
+Group G:
+- Verse 37: Glorification of Allah
+- Verse 38: The Day of Judgement, as mentioned in group 3.
+- Verse 39: The righteous should return to their Lord, as they will be given the reward mentioned in group 5.
+- Verse 40: Reminding about the punishment mentioned in group 4. 
+    Parallel between what man has done and what Allah has made, as mentioned in group 2.
+    The disbeliever will say "I wish I were dust", which is parallel to his statement: "when I am dust shall I really be resurrected?", which was implied in group 1. He would wish that it was not true that it would happen as mentioned in group 1.
+    
+
+
+
+
+A {
+    "1": "About what are they asking one another?",
+    "2": "About the great news -",
+    "3": "That over which they are in disagreement.",
+    "4": "No! They are going to know.",
+    "5": "Then, no! They are going to know.",
+}
+B {
+    "6": "Have We not made the earth a resting place?",
+    "7": "And the mountains as stakes?",
+    "8": "And We created you in pairs.",
+    "9": "And made your sleep [a means for] rest",
+    
+    "10": "And made the night as clothing.",
+    "11": "And made the day for livelihood.,
+    "12": "And constructed above you seven strong [heavens].",
+    "13": "And made [therein] a burning lamp",
+
+    "14": "And sent down, from the rain clouds, pouring water.",
+    "15": "That We may bring forth thereby grain and vegetation.",
+    "16": "And gardens of entwined growth.",
+}
+C {
+    "17": "Indeed, the Day of Judgement is an appointed time -",
+    "18": "The Day the Horn is blown and you will come forth in multitudes",
+    "19": "And the heaven is opened and will become gateways.",
+    "20": "And the mountains are removed and will be [but] a mirage.",
+}
+D {
+    "21": "Indeed, Hell has been lying in wait",
+    "22": "For the transgressors, a place of return,",
+    "23": "In which they will remain for ages [unending].",
+    
+    "24": "They will not taste therein [any] coolness or drink.",
+    "25": "Except scalding water and [foul] purulence -",
+    "26": "An appropriate recompense.",
+}
+E {
+    "27": "Indeed, they were not expecting an account",
+    "28": "And denied Our verses with [emphatic] denial.",
+    "29": "But all things We have enumerated in writing.",
+    "30": "\"So taste [the penalty], and never will We increase you except in torment.\"",
+}
+F {
+    "31": "Indeed, for the righteous is attainment -",
+    "32": "Gardens and grapevines.",
+    "33": "And full-breasted [companions] of equal age.",
+    "34": "And a full cup.",
+    "35": "No ill speech will they hear therein or any falsehood -",
+    "36": "[As] reward from your Lord, [a generous] gift [made due by] account,",
+}
+G {
+    "37": "[From] the Lord of the heavens and the earth and whatever is between them, the Most Merciful. They possess not from Him [authority for] speech.",
+    
+    "38": "The Day that the Spirit [i.e., Gabriel] and the angels will stand in rows, they will not speak except for one whom the Most Merciful permits, and he will say what is correct.",
+    
+    "39": "That is the True [i.e., certain] Day; so he who wills may take to his Lord a [way of] return.",
+
+    "40": "Indeed, We have warned you of an impending punishment on the Day when a man will observe what his hands have put forth and the disbeliever will say, \"Oh, I wish that I were dust!\""
+}

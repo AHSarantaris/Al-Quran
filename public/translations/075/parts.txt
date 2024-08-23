@@ -45,6 +45,7 @@
 3a: {
     "16": "Move not your tongue with it, [O Muḥammad], to hasten with it [i.e., recitation of the Qur’ān].",
     "17": "Indeed, upon Us is its collection [in your heart] and [to make possible] its recitation.",
+    
     "18": "So when We have recited it [through Gabriel], then follow its recitation.",
     "19": "Then upon Us is its clarification [to you].",
 }
@@ -68,13 +69,16 @@
     "31": "And he [i.e., the disbeliever] had not believed, nor had he prayed.",
     "32": "But [instead], he denied and turned away.",
     "33": "And then he went to his people, swaggering [in pride].",
+    
     "34": "Woe to you, and woe!",
     "35": "Then woe to you, and woe!",
 }
 1: {
     "36": "Does man think that he will be left neglected?",
+    
     "37": "Had he not been a sperm from semen emitted?",
     "38": "Then he was a clinging clot, and [Allah] created [his form] and proportioned [him]",
     "39": "And made of him two mates, the male and the female.",
+    
     "40": "Is not that [Creator] Able to give life to the dead?"
 }
