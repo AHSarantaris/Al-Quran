@@ -19,7 +19,7 @@ chapters = [
         "recitations": [
             {
                 file: "alafasy_fatihah_1424",
-                name: "Mishary Rashid Alafasy - 1424"
+                name: "Mishary Alafasy (1424)"
             }
         ]
     },
@@ -111,7 +111,13 @@ chapters = [
         "translated_name":{
             "language_name":"english",
             "name":"The Cattle"
-        }
+        },
+        "recitations": [
+            {
+                file: "al-an'am - alafasy - combined",
+                name: "Mishary Alafasy (1998 & 2009)"
+            }
+        ]
     },
     {
         "id":7,
@@ -331,7 +337,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_kahf_1431_1426_combined",
-                name: "Mishary Alafasy 1431 & 1426"
+                name: "Mishary Alafasy (1431 & 1426)"
             }
         ]
     },
@@ -379,7 +385,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_taha_1421_LQ_better03",
-                name: "Mishary Alafasy 1421"
+                name: "Mishary Alafasy (1421)"
             }
         ]
     },
@@ -439,7 +445,7 @@ chapters = [
         "recitations": [
             {
                 file: "alafasy_muminoon_combined_02",
-                name: "Mishary Rashid Alafasy - 1421 & 1431"
+                name: "Mishary Alafasy (1421 & 1431)"
             }
         ]
     },
@@ -931,7 +937,7 @@ chapters = [
         "recitations": [
             {
                 file: "alafasy_qaf",
-                name: "Mishary Rashid Alafasy"
+                name: "Mishary Alafasy"
             }
         ]
     },
@@ -1009,7 +1015,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_qamar",
-                name: "Mishary Rashid Alafasy"
+                name: "Mishary Alafasy"
             }
         ]
     },
@@ -1033,7 +1039,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_rahman_1427",
-                name: "Mishary Rashid Alafasy - 1427"
+                name: "Mishary Alafasy (1427)"
             }
         ]
     },
@@ -1057,7 +1063,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_waqiah_1427",
-                name: "Mishary Rashid Alafasy - 1427"
+                name: "Mishary Alafasy (1427)"
             }
         ]
     },
@@ -1339,7 +1345,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_nuh_1429",
-                name: "Mishary Rashid Alafasy - 1429"
+                name: "Mishary Alafasy (1429)"
             }
         ]
     },
@@ -1399,7 +1405,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_muddathir",
-                name: "Mishary Rashid Alafasy",
+                name: "Mishary Alafasy",
             }
         ]
     },
@@ -1423,7 +1429,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_qiyamah_1428",
-                name: "Mishary Rashid Alafasy - 1428",
+                name: "Mishary Alafasy (1428)",
             }
         ]
     },
@@ -1561,7 +1567,7 @@ chapters = [
         "recitations":[
             {
                 file: "alafasy_infitar_1427",
-                name: "Mishary Rashid Alafasy - 1427"
+                name: "Mishary Alafasy (1427)"
             }
         ]
     },
