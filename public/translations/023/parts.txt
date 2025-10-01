@@ -18,7 +18,7 @@ The humble origins of man is a sign of the resurrection {
     "15": "Then indeed, after that you are to die.",
     "16": "Then indeed you, on the Day of Resurrection, will be resurrected.",
 },
-The power, creations and favors of God upon humans {
+The creation, power, knowledge and favors of God upon humans {
     "17": "And We have created above you seven layered heavens, and never have We been of [Our] creation unaware.",
     "18": "And We have sent down rain from the sky in a measured amount and settled it in the earth. And indeed, We are Able to take it away.",
     "19": "And We brought forth for you thereby gardens of palm trees and grapevines in which for you are abundant fruits and from which you eat.",
