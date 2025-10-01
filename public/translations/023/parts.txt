@@ -98,9 +98,6 @@ Part 3 {
 	    "71": "But if the Truth [i.e., Allah] had followed their inclinations, the heavens and the earth and whoever is in them would have been ruined. Rather, We have brought them their message, but they, from their message, are turning away.",
 	    "72": "Or do you, [O Muḥammad], ask them for payment? But the reward of your Lord is best, and He is the best of providers.",
 	},
-}
-
-Part 4 {
 	Deviation and punishment {
 	    "73": "And indeed, you invite them to a straight path.",
 	    "74": "But indeed, those who do not believe in the Hereafter are deviating from the path.",
@@ -108,6 +105,9 @@ Part 4 {
 	    "76": "And We had gripped them with suffering [as a warning], but they did not yield to their Lord, nor did they humbly supplicate, [and will continue thus]",
 	    "77": "Until when We have opened before them a door of severe punishment, immediately they will be therein in despair.",
 	},
+}
+
+Part 4 {
 	{
 	    "78": "And it is He who produced for you hearing and vision and hearts [i.e., intellect]; little are you grateful.",
 	    "79": "And it is He who has multiplied you throughout the earth, and to Him you will be gathered.",
@@ -127,9 +127,6 @@ Part 4 {
 	    "91": "Allah has not taken any son, nor has there ever been with Him any deity. [If there had been], then each deity would have taken what it created, and some of them would have [sought to] overcome others. Exalted is Allah above what they describe [concerning Him].",
 	    "92": "[He is] Knower of the unseen and the witnessed, so high is He above what they associate [with Him].",
 	},
-}
-
-Part 5 {
 	{
 	    "93": "Say, [O Muḥammad], \"My Lord, if You should show me that which they are promised,",
 	    "94": "My Lord, then do not place me among the wrongdoing people.\"",
@@ -138,6 +135,9 @@ Part 5 {
 	    "97": "And say, \"My Lord, I seek refuge in You from the incitements of the devils,",
 	    "98": "And I seek refuge in You, my Lord, lest they be present with me.\"",
 	},
+}
+
+Part 5 {
 	{
 	    "99": "[For such is the state of the disbelievers] until, when death comes to one of them, he says, \"My Lord, send me back",
 	    "100": "That I might do righteousness in that which I left behind.\" No! It is only a word he is saying; and behind them is a barrier until the Day they are resurrected.",
