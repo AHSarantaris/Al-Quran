@@ -45,7 +45,7 @@ Story of Noah {
     "30": "Indeed in that are signs, and indeed, We are ever testing [Our servants].",
 },
 
-Story of unnamed messenger {
+Story of an unnamed messenger {
     "31": "Then We produced after them a generation of others.",
     "32": "And We sent among them a messenger from themselves, [saying], \"Worship Allah; you have no deity other than Him; then will you not fear Him?\"",
     "33": "And the eminent among his people who disbelieved and denied the meeting of the Hereafter while We had given them luxury in the worldly life said, \"This is not but a man like yourselves. He eats of that from which you eat and drinks of what you drink.",
@@ -81,7 +81,6 @@ Story of unnamed messenger {
 }
 
 Part 3 {
-
 	Description of the foremost believers {
 	    "57": "Indeed, they who are apprehensive from fear of their Lord",
 	    "58": "And they who believe in the signs of their Lord",
