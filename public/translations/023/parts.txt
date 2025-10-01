@@ -82,7 +82,7 @@ Story of unnamed messenger {
 
 Part 3 {
 
-{
+Description of the foremost believers{
     "57": "Indeed, they who are apprehensive from fear of their Lord",
     "58": "And they who believe in the signs of their Lord",
     "59": "And they who do not associate anything with their Lord",
