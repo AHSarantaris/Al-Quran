@@ -1,3 +1,6 @@
+
+Part 1 {
+
 Purpose of life and how to be succesfull {
     "1": "Certainly will the believers have succeeded:",
     "2": "They who are during their prayer humbly intent",
@@ -26,6 +29,11 @@ The creation, power, knowledge and favors of God upon humans {
     "21": "And indeed, for you in livestock is a lesson. We give you drink from that which is in their bellies, and for you in them are numerous benefits, and from them you eat.",
     "22": "And upon them and on ships you are carried.",
 },
+
+}
+
+Part 2 {
+
 Story of Noah {
     "23": "And We had certainly sent Noah to his people, and he said, \"O my people, worship Allah; you have no deity other than Him; then will you not fear Him?\"",
     "24": "But the eminent among those who disbelieved from his people said, \"This is not but a man like yourselves who wishes to take precedence over you; and if Allah had willed [to send a messenger], He would have sent down angels. We have not heard of this among our forefathers.",
@@ -36,6 +44,7 @@ Story of Noah {
     "29": "And say, 'My Lord, let me land at a blessed landing place, and You are the best to accommodate [us].'\"",
     "30": "Indeed in that are signs, and indeed, We are ever testing [Our servants].",
 },
+
 Story of unnamed messenger {
     "31": "Then We produced after them a generation of others.",
     "32": "And We sent among them a messenger from themselves, [saying], \"Worship Allah; you have no deity other than Him; then will you not fear Him?\"",
@@ -68,6 +77,10 @@ Story of unnamed messenger {
     "55": "Do they think that what We extend to them of wealth and children",
     "56": "Is [because] We hasten for them good things? Rather, they do not perceive.",
 },
+
+}
+
+Part 3 {
     "57": "Indeed, they who are apprehensive from fear of their Lord",
     "58": "And they who believe in the signs of their Lord",
     "59": "And they who do not associate anything with their Lord",
