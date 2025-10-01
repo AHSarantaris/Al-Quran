@@ -33,51 +33,48 @@ The creation, power, knowledge and favors of God upon humans {
 }
 
 Part 2 {
-
-Story of Noah {
-    "23": "And We had certainly sent Noah to his people, and he said, \"O my people, worship Allah; you have no deity other than Him; then will you not fear Him?\"",
-    "24": "But the eminent among those who disbelieved from his people said, \"This is not but a man like yourselves who wishes to take precedence over you; and if Allah had willed [to send a messenger], He would have sent down angels. We have not heard of this among our forefathers.",
-    "25": "He is not but a man possessed with madness, so wait concerning him for a time.\"",
-    "26": "[Noah] said, \"My Lord, support me because they have denied me.\"",
-    "27": "So We inspired to him, \"Construct the ship under Our observation and Our inspiration, and when Our command comes and the oven overflows, put into it [i.e., the ship] from each [creature] two mates and your family, except him for whom the decree [of destruction] has proceeded. And do not address Me concerning those who have wronged; indeed, they are to be drowned.",
-    "28": "And when you have boarded the ship, you and those with you, then say, 'Praise to Allah who has saved us from the wrongdoing people.'",
-    "29": "And say, 'My Lord, let me land at a blessed landing place, and You are the best to accommodate [us].'\"",
-    "30": "Indeed in that are signs, and indeed, We are ever testing [Our servants].",
-},
-
-Story of an unnamed messenger {
-    "31": "Then We produced after them a generation of others.",
-    "32": "And We sent among them a messenger from themselves, [saying], \"Worship Allah; you have no deity other than Him; then will you not fear Him?\"",
-    "33": "And the eminent among his people who disbelieved and denied the meeting of the Hereafter while We had given them luxury in the worldly life said, \"This is not but a man like yourselves. He eats of that from which you eat and drinks of what you drink.",
-    "34": "And if you should obey a man like yourselves, indeed, you would then be losers.",
-    "35": "Does he promise you that when you have died and become dust and bones that you will be brought forth [once more]?",
-    "36": "How far, how far, is that which you are promised.",
-    "37": "It [i.e., life] is not but our worldly life - we die and live, but we will not be resurrected.",
-    "38": "He is not but a man who has invented a lie about Allah, and we will not believe him.\"",
-    "39": "He said, \"My Lord, support me because they have denied me.\"",
-    "40": "[Allah] said, \"After a little, they will surely become regretful.\"",
-    "41": "So the shriek seized them in truth, and We made them as [plant] stubble. Then away with the wrongdoing people.",
-},
-{
-    "42": "Then We produced after them other generations.",
-    "43": "No nation will precede its time [of termination], nor will they remain [thereafter].",
-    "44": "Then We sent Our messengers in succession. Every time there came to a nation its messenger, they denied him, so We made them follow one another [to destruction], and We made them narrations. So away with a people who do not believe.",
-    "45": "Then We sent Moses and his brother Aaron with Our signs and a clear authority",
-    "46": "To Pharaoh and his establishment, but they were arrogant and were a haughty people.",
-    "47": "They said, \"Should we believe two men like ourselves while their people are for us in servitude?\"",
-    "48": "So they denied them and were of those destroyed.",
-    "49": "And We certainly gave Moses the Scripture that perhaps they would be guided.",
-},
-{
-    "50": "And We made the son of Mary and his mother a sign and sheltered them within a high ground having level [areas] and flowing water.",
-    "51": "[Allah said], \"O messengers, eat from the good foods and work righteousness. Indeed I, of what you do, am Knowing.",
-    "52": "And indeed this, your religion, is one religion, and I am your Lord, so fear Me.\"",
-    "53": "But they [i.e., the people] divided their religion among them into portions [i.e., sects] - each faction, in what it has, rejoicing.",
-    "54": "So leave them in their confusion for a time.",
-    "55": "Do they think that what We extend to them of wealth and children",
-    "56": "Is [because] We hasten for them good things? Rather, they do not perceive.",
-},
-
+	Story of Noah {
+	    "23": "And We had certainly sent Noah to his people, and he said, \"O my people, worship Allah; you have no deity other than Him; then will you not fear Him?\"",
+	    "24": "But the eminent among those who disbelieved from his people said, \"This is not but a man like yourselves who wishes to take precedence over you; and if Allah had willed [to send a messenger], He would have sent down angels. We have not heard of this among our forefathers.",
+	    "25": "He is not but a man possessed with madness, so wait concerning him for a time.\"",
+	    "26": "[Noah] said, \"My Lord, support me because they have denied me.\"",
+	    "27": "So We inspired to him, \"Construct the ship under Our observation and Our inspiration, and when Our command comes and the oven overflows, put into it [i.e., the ship] from each [creature] two mates and your family, except him for whom the decree [of destruction] has proceeded. And do not address Me concerning those who have wronged; indeed, they are to be drowned.",
+	    "28": "And when you have boarded the ship, you and those with you, then say, 'Praise to Allah who has saved us from the wrongdoing people.'",
+	    "29": "And say, 'My Lord, let me land at a blessed landing place, and You are the best to accommodate [us].'\"",
+	    "30": "Indeed in that are signs, and indeed, We are ever testing [Our servants].",
+	},
+	Story of an unnamed messenger {
+	    "31": "Then We produced after them a generation of others.",
+	    "32": "And We sent among them a messenger from themselves, [saying], \"Worship Allah; you have no deity other than Him; then will you not fear Him?\"",
+	    "33": "And the eminent among his people who disbelieved and denied the meeting of the Hereafter while We had given them luxury in the worldly life said, \"This is not but a man like yourselves. He eats of that from which you eat and drinks of what you drink.",
+	    "34": "And if you should obey a man like yourselves, indeed, you would then be losers.",
+	    "35": "Does he promise you that when you have died and become dust and bones that you will be brought forth [once more]?",
+	    "36": "How far, how far, is that which you are promised.",
+	    "37": "It [i.e., life] is not but our worldly life - we die and live, but we will not be resurrected.",
+	    "38": "He is not but a man who has invented a lie about Allah, and we will not believe him.\"",
+	    "39": "He said, \"My Lord, support me because they have denied me.\"",
+	    "40": "[Allah] said, \"After a little, they will surely become regretful.\"",
+	    "41": "So the shriek seized them in truth, and We made them as [plant] stubble. Then away with the wrongdoing people.",
+	},
+	{
+	    "42": "Then We produced after them other generations.",
+	    "43": "No nation will precede its time [of termination], nor will they remain [thereafter].",
+	    "44": "Then We sent Our messengers in succession. Every time there came to a nation its messenger, they denied him, so We made them follow one another [to destruction], and We made them narrations. So away with a people who do not believe.",
+	    "45": "Then We sent Moses and his brother Aaron with Our signs and a clear authority",
+	    "46": "To Pharaoh and his establishment, but they were arrogant and were a haughty people.",
+	    "47": "They said, \"Should we believe two men like ourselves while their people are for us in servitude?\"",
+	    "48": "So they denied them and were of those destroyed.",
+	    "49": "And We certainly gave Moses the Scripture that perhaps they would be guided.",
+	},
+	{
+	    "50": "And We made the son of Mary and his mother a sign and sheltered them within a high ground having level [areas] and flowing water.",
+	    "51": "[Allah said], \"O messengers, eat from the good foods and work righteousness. Indeed I, of what you do, am Knowing.",
+	    "52": "And indeed this, your religion, is one religion, and I am your Lord, so fear Me.\"",
+	    "53": "But they [i.e., the people] divided their religion among them into portions [i.e., sects] - each faction, in what it has, rejoicing.",
+	    "54": "So leave them in their confusion for a time.",
+	    "55": "Do they think that what We extend to them of wealth and children",
+	    "56": "Is [because] We hasten for them good things? Rather, they do not perceive.",
+	},
 }
 
 Part 3 {
