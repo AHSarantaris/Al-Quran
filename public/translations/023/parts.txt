@@ -155,7 +155,7 @@ Part 5 {
 	    "110": "But you took them in mockery to the point that they made you forget My remembrance, and you used to laugh at them.",
 	    "111": "Indeed, I have rewarded them this Day for their patient endurance - that they are the attainers [of success].\"",
 	},
-	{
+	The purpose of the short worldly life {
 	    "112": "[Allah] will say, \"How long did you remain on earth in number of years?\"",
 	    "113": "They will say, \"We remained a day or part of a day; ask those who enumerate.\"",
 	    "114": "He will say, \"You stayed not but a little - if only you had known.",
