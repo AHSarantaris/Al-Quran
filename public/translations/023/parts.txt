@@ -91,7 +91,7 @@ Part 3 {
 	    "66": "My verses had already been recited to you, but you were turning back on your heels.",
 	    "67": "In arrogance regarding it, conversing by night, speaking evil.",
 	},
-	Proofs of the truthfulness of the Qur'an{
+	Proofs of the truthfulness of the Qur'an {
 	    "68": "Then have they not reflected over the word [i.e., the Qur’ān], or has there come to them that which had not come to their forefathers?",
 	    "69": "Or did they not know their Messenger, so they are toward him disacknowledging?",
 	    "70": "Or do they say, \"In him is madness\"? Rather, he brought them the truth, but most of them, to the truth, are averse.",
