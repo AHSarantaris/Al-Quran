@@ -108,7 +108,7 @@ Part 3 {
 }
 
 Part 4 {
-	{
+	The power of God and the rejection of the ressurection {
 	    "78": "And it is He who produced for you hearing and vision and hearts [i.e., intellect]; little are you grateful.",
 	    "79": "And it is He who has multiplied you throughout the earth, and to Him you will be gathered.",
 	    "80": "And it is He who gives life and causes death, and His is the alternation of the night and the day. Then will you not reason?",
