@@ -116,7 +116,7 @@ Part 4 {
 	    "82": "They said, \"When we have died and become dust and bones, are we indeed to be resurrected?",
 	    "83": "We have been promised this, we and our forefathers, before; this is not but legends of the former peoples.\"",
 	},
-	{
+	Their logical fallacies{
 	    "84": "Say, [O Muḥammad], \"To whom belongs the earth and whoever is in it, if you should know?\"",
 	    "85": "They will say, \"To Allah.\" Say, \"Then will you not remember?\"",
 	    "86": "Say, \"Who is Lord of the seven heavens and Lord of the Great Throne?\"",
@@ -127,7 +127,7 @@ Part 4 {
 	    "91": "Allah has not taken any son, nor has there ever been with Him any deity. [If there had been], then each deity would have taken what it created, and some of them would have [sought to] overcome others. Exalted is Allah above what they describe [concerning Him].",
 	    "92": "[He is] Knower of the unseen and the witnessed, so high is He above what they associate [with Him].",
 	},
-	{
+	Supplication to not be among wrongdoers and devils {
 	    "93": "Say, [O Muḥammad], \"My Lord, if You should show me that which they are promised,",
 	    "94": "My Lord, then do not place me among the wrongdoing people.\"",
 	    "95": "And indeed, We are Able to show you what We have promised them.",
