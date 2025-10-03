@@ -62,9 +62,9 @@ Part 2 {
 	    "46": "To Pharaoh and his establishment, but they were arrogant and were a haughty people.",
 	    "47": "They said, \"Should we believe two men like ourselves while their people are for us in servitude?\"",
 	    "48": "So they denied them and were of those destroyed.",
+},
+{
 	    "49": "And We certainly gave Moses the Scripture that perhaps they would be guided.",
-	},
-	{
 	    "50": "And We made the son of Mary and his mother a sign and sheltered them within a high ground having level [areas] and flowing water.",
 	    "51": "[Allah said], \"O messengers, eat from the good foods and work righteousness. Indeed I, of what you do, am Knowing.",
 	    "52": "And indeed this, your religion, is one religion, and I am your Lord, so fear Me.\"",
