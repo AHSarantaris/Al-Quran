@@ -84,7 +84,7 @@ Part 3 {
 	    "61": "It is those who hasten to good deeds, and they outstrip [others] therein.",
 	    "62": "And We charge no soul except [with that within] its capacity, and with Us is a record which speaks with truth; and they will not be wronged.",
 	},
-	E: Disbelief and punishment {
+	G: Disbelief and punishment {
 	    "63": "But their hearts are covered with confusion over this, and they have [evil] deeds besides that [i.e., disbelief] which they are doing,",
 	    "64": "Until when We seize their affluent ones with punishment, at once they are crying [to Allah] for help.",
 	    "65": "Do not cry out today. Indeed, by Us you will not be helped.",
