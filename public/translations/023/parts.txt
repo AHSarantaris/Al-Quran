@@ -168,24 +168,3 @@ Part 5 {
 }
 
 
-
-	"68": "Then have they not reflected over the word [i.e., the Qur’ān], or has there come to them that which had not come to their forefathers?",
-	"69": "Or did they not know their Messenger, so they are toward him disacknowledging?",
-	"70": "Or do they say, \"In him is madness\"? Rather, he brought them the truth, but most of them, to the truth, are averse.",
-	"71": "But if the Truth [i.e., Allah] had followed their inclinations, the heavens and the earth and whoever is in them would have been ruined. Rather, We have brought them their message, but they, from their message, are turning away.",
-	"72": "Or do you, [O Muḥammad], ask them for payment? But the reward of your Lord is best, and He is the best of providers.",
-
-24: "But the eminent among those who disbelieved from his people said, \"This is not but a man like yourselves who wishes to take precedence over you {72}; and if Allah had willed [to send a messenger], He would have sent down angels {69}. We have not heard of this among our forefathers {68}.",
- "25": "He is not but a man possessed with madness, so wait concerning him for a time.\" {70}",
- 
-	    "33": "And the eminent among his people who disbelieved and denied the meeting of the Hereafter while We had given them luxury in the worldly life said, \"This is not but a man like yourselves. He eats of that from which you eat and drinks of what you drink.",
-	    "34": "And if you should obey a man like yourselves, indeed, you would then be losers.",
-	    "35": "Does he promise you that when you have died and become dust and bones that you will be brought forth [once more]?",
-	    "36": "How far, how far, is that which you are promised.",
-	    "37": "It [i.e., life] is not but our worldly life - we die and live, but we will not be resurrected.",
-	    "38": "He is not but a man who has invented a lie about Allah, and we will not believe him.\"",
-	    
-
-"81": "Rather, they say like what the former peoples said.",
-"82": "They said, \"When we have died and become dust and bones, are we indeed to be resurrected? {35}","
-83": "We have been promised this, we and our forefathers, before; this is not but legends of the former peoples.\"",
