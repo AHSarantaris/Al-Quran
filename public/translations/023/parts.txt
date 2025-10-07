@@ -186,6 +186,6 @@ Part 5 {
 	    "38": "He is not but a man who has invented a lie about Allah, and we will not believe him.\"",
 	    
 
- "81": "Rather, they say like what the former peoples said.","
- 82": "They said, \"When we have died and become dust and bones, are we indeed to be resurrected? {35}",
-	    "83": "We have been promised this, we and our forefathers, before; this is not but legends of the former peoples.\"",
+"81": "Rather, they say like what the former peoples said.",
+"82": "They said, \"When we have died and become dust and bones, are we indeed to be resurrected? {35}","
+83": "We have been promised this, we and our forefathers, before; this is not but legends of the former peoples.\"",
