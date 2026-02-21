@@ -74,11 +74,13 @@ Central theme: Guidance, God-fearfulness and trials
 	
 	end (207): And of the people is he who sells himself, seeking means to the approval of Allāh. And Allāh is Kind to [His] servants.
 	
-8d: 208-
+8d: 208-253
 	start (208): O you who have believed, enter into Islām completely [and perfectly] and do not follow the footsteps of Satan. Indeed, he is to you a clear enemy.
 	
-9: 254- 
+9: 254-283
 	start (254): O you who have believed, spend from that which We have provided for you before there comes a Day in which there is no exchange [i.e., ransom] and no friendship and no intercession. And the disbelievers - they are the wrongdoers.
+
+10: 284-286
 
 	
 	
