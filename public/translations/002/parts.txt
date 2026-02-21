@@ -92,6 +92,8 @@ Central theme: Guidance, God-fearfulness and trials
 	
 12: 254-283: Charity and usury
 	start (254): O you who have believed, spend from that which We have provided for you before there comes a Day in which there is no exchange [i.e., ransom] and no friendship and no intercession. And the disbelievers - they are the wrongdoers.
+	
+	end (283): And if you are on a journey and cannot find a scribe, then a security deposit [should be] taken. And if one of you entrusts another, then let him who is entrusted discharge his trust [faithfully] and let him fear Allāh, his Lord. And do not conceal testimony, for whoever conceals it - his heart is indeed sinful, and Allāh is Knowing of what you do.
 
 13: 284-286
 
