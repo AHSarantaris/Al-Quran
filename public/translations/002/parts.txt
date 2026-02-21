@@ -77,7 +77,9 @@ Central theme: Guidance, God-fearfulness and trials
 8d: 208-253
 	start (208): O you who have believed, enter into Islām completely [and perfectly] and do not follow the footsteps of Satan. Indeed, he is to you a clear enemy.
 	
-9: 254-283
+	end (253): Those messengers - some of them We caused to exceed others. Among them were those to whom Allāh spoke, and He raised some of them in degree. And We gave Jesus, the son of Mary, clear proofs, and We supported him with the Pure Spirit [i.e., Gabriel]. If Allāh had willed, those [generations] succeeding them would not have fought each other after the clear proofs had come to them. But they differed, and some of them believed and some of them disbelieved. And if Allāh had willed, they would not have fought each other, but Allāh does what He intends.
+	
+9: 254-283: Charity and usury
 	start (254): O you who have believed, spend from that which We have provided for you before there comes a Day in which there is no exchange [i.e., ransom] and no friendship and no intercession. And the disbelievers - they are the wrongdoers.
 
 10: 284-286
