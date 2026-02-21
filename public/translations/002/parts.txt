@@ -59,7 +59,7 @@ Central theme: Guidance, God-fearfulness and trials
 	
 	end (177): Righteousness is not that you turn your faces toward the east or the west, but [true] righteousness is [in] one who believes in Allāh, the Last Day, the angels, the Book, and the prophets and gives wealth, in spite of love for it, to relatives, orphans, the needy, the traveler, those who ask [for help], and for freeing slaves; [and who] establishes prayer and gives zakāh; [those who] fulfill their promise when they promise; and [those who] are patient in poverty and hardship and during battle. Those are the ones who have been true, and it is those who are the righteous.
 	
-8a: 178-186: New covenant
+8a: 178-186: New covenant (retribution, inheritance, fasting)
 	start (178): O you who have believed, prescribed for you is legal retribution for those murdered - the free for the free, the slave for the slave, and the female for the female.1 But whoever overlooks from his brother [i.e., the killer] anything,2 then there should be a suitable follow-up and payment to him [i.e., the deceased's heir or legal representative] with good conduct. This is an alleviation from your Lord and a mercy. But whoever transgresses after that3 will have a painful punishment.
 	
 	end (186): And when My servants ask you, [O Muḥammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me. So let them respond to Me [by obedience] and believe in Me that they may be [rightly] guided.
@@ -69,8 +69,17 @@ Central theme: Guidance, God-fearfulness and trials
 	
 	end (195): And spend in the way of Allāh and do not throw [yourselves] with your [own] hands into destruction [by refraining]. And do good; indeed, Allāh loves the doers of good.
 
-10: 196-207: Hajj and Umrah
+8c: 196-207: Hajj and Umrah
 	start (196): And complete the ḥajj and ʿumrah for Allāh. But if you are prevented, then [offer] what can be obtained with ease of sacrificial animals. And do not shave your heads until the sacrificial animal has reached its place of slaughter. And whoever among you is ill or has an ailment of the head [making shaving necessary must offer] a ransom of fasting [three days] or charity1 or sacrifice.2 And when you are secure,3 then whoever performs ʿumrah [during the ḥajj months]4 followed by ḥajj [offers] what can be obtained with ease of sacrificial animals. And whoever cannot find [or afford such an animal] - then a fast of three days during ḥajj and of seven when you have returned [home]. Those are ten complete [days]. This is for those whose family is not in the area of al-Masjid al-Ḥarām. And fear Allāh and know that Allāh is severe in penalty.
+	
+	end (207): And of the people is he who sells himself, seeking means to the approval of Allāh. And Allāh is Kind to [His] servants.
+	
+8d: 208-
+	start (208): O you who have believed, enter into Islām completely [and perfectly] and do not follow the footsteps of Satan. Indeed, he is to you a clear enemy.
+	
+9: 254- 
+	start (254): O you who have believed, spend from that which We have provided for you before there comes a Day in which there is no exchange [i.e., ransom] and no friendship and no intercession. And the disbelievers - they are the wrongdoers.
+
 	
 	
 
