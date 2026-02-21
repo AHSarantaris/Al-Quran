@@ -18,19 +18,21 @@ Central theme: Guidance, God-fearfulness and trials
 	start (83-84): And [recall] when We took the covenant from the Children of Israel, [enjoining upon them], "Do not worship except Allāh; and to parents do good and to relatives, orphans, and the needy. And speak to people good [words] and establish prayer and give zakāh." Then you turned away, except a few of you, and you were refusing. And [recall] when We took your covenant, [saying], "Do not shed your [i.e., each other's] blood or evict one another from your homes." Then you acknowledged [this] while you were witnessing.
 	
 	end (122-123) [same as 47-48]: O Children of Israel, remember My favor which I have bestowed upon you and that I preferred you over the worlds. And fear a Day when no soul will suffice for another soul1 at all, and no compensation will be accepted from it, nor will any intercession benefit it, nor will they be aided.
-	
-4: 124-134
+
+Part 2: 124-177 (33)
+
+4: 124-134 (11)
 	start (124-125): And [mention, O Muḥammad], when Abraham was tried by his Lord with words [i.e., commands] and he fulfilled them. [Allāh] said, "Indeed, I will make you a leader for the people." [Abraham] said, "And of my descendants?" [Allāh] said, "My covenant does not include the wrongdoers." And [mention] when We made the House [i.e., the Kaʿbah] a place of return for the people and [a place of] security. And take, [O believers], from the standing place of Abraham a place of prayer. And We charged Abraham and Ishmael, [saying], "Purify My House for those who perform ṭawāf1 and those who are staying [there] for worship and those who bow and prostrate [in prayer]."
 	
 	end (133-134): Or were you witnesses when death approached Jacob, when he said to his sons, "What will you worship after me?" They said, "We will worship your God and the God of your fathers, Abraham and Ishmael and Isaac - one God.1 And we are Muslims [in submission] to Him." That was a nation which has passed on. It will have [the consequence of] what it earned, and you will have what you have earned. And you will not be asked about what they used to do. 
 	
-5: 135-141:
+5: 135-141 (7):
 	start (135-136): They say, "Be Jews or Christians [so] you will be guided." Say, "Rather, [we follow] the religion of Abraham, inclining toward truth, and he was not of the polytheists."1 Say, [O believers], "We have believed in Allāh and what has been revealed to us and what has been revealed to Abraham and Ishmael and Isaac and Jacob and the Descendants [al-Asbāṭ]1 and what was given to Moses and Jesus and what was given to the prophets from their Lord. We make no distinction between any of them, and we are Muslims [in submission] to Him."
 	
 	
 	end (140-141): Or do you say that Abraham and Ishmael and Isaac and Jacob and the Descendants were Jews or Christians? Say, "Are you more knowing or is Allāh?" And who is more unjust than one who conceals a testimony1 he has from Allāh? And Allāh is not unaware of what you do. That is a nation which has passed on. It will have [the consequence of] what it earned, and you will have what you have earned. And you will not be asked about what they used to do.
 
-6: 142-152
+6: 142-152 (11)
 	title: The new direction
 	
 	content: The new faith community gets distinguished from the old ones.
@@ -39,7 +41,7 @@ Central theme: Guidance, God-fearfulness and trials
 	
 	end (150-152): And from wherever you go out [for prayer], turn your face toward al-Masjid al-Ḥarām. And wherever you [believers] may be, turn your faces toward it in order that the people will not have any argument against you, except for those of them who commit wrong; so fear them not but fear Me. And [it is] so I may complete My favor upon you and that you may be guided, Just as We have sent among you a messenger from yourselves reciting to you Our verses and purifying you and teaching you the Book and wisdom1 and teaching you that which you did not know. So remember Me; I will remember you. And be grateful to Me and do not deny Me.
 	
-6: 153-163: 
+7: 153-163 (11)
 	title: The new covenant
 	Content: The foundation of the new covenant is the same as the old.
 	
@@ -52,12 +54,22 @@ Central theme: Guidance, God-fearfulness and trials
 	
 	end (163) [similar to 133]: And your god is one God. There is no deity [worthy of worship] except Him, the Entirely Merciful, the Especially Merciful.
 
-7: 164-177
+8: 164-167 (4)
 	164: signs
 	165-167:
+	
+	start (164): Indeed, in the creation of the heavens and the earth, and the alternation of the night and the day, and the [great] ships which sail through the sea with that which benefits people, and what Allāh has sent down from the heavens of rain, giving life thereby to the earth after its lifelessness and dispersing therein every [kind of] moving creature, and [His] directing of the winds and the clouds controlled between the heaven and earth are signs for a people who use reason.
+	
+	end (167): Those who followed will say, "If only we had another turn [at worldly life] so we could disassociate ourselves from them as they have disassociated themselves from us." Thus will Allāh show them their deeds as regrets upon them. And they are never to emerge from the Fire.
+
+9: 168-177 (10)
 	168-170: 
 	
+	start (168): O mankind, eat from whatever is on earth [that is] lawful and good and do not follow the footsteps of Satan. Indeed, he is to you a clear enemy.
+	
 	end (177): Righteousness is not that you turn your faces toward the east or the west, but [true] righteousness is [in] one who believes in Allāh, the Last Day, the angels, the Book, and the prophets and gives wealth, in spite of love for it, to relatives, orphans, the needy, the traveler, those who ask [for help], and for freeing slaves; [and who] establishes prayer and gives zakāh; [those who] fulfill their promise when they promise; and [those who] are patient in poverty and hardship and during battle. Those are the ones who have been true, and it is those who are the righteous.
+
+Part 3: 178-286 (108)
 
 8: 178-207 (30)
 	8a: 178-186: New covenant (retribution, inheritance, fasting)
