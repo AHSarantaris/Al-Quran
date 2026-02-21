@@ -80,14 +80,20 @@ Central theme: Guidance, God-fearfulness and trials
 	
 	end (214): Or do you think that you will enter Paradise while such [trial] has not yet come to you as came to those who passed on before you? They were touched by poverty and hardship and were shaken until [even their] messenger and those who believed with him said, "When is the help of Allāh?" Unquestionably, the help of Allāh is near.
 	
-10: 215-253
+10: 215-245
 	start (215): They ask you, [O Muḥammad], what they should spend. Say, "Whatever you spend of good is [to be] for parents and relatives and orphans and the needy and the traveler. And whatever you do of good - indeed, Allāh is Knowing of it."
+	
+	end (245): Who is it that would loan Allāh a goodly loan so He may multiply it for him many times over? And it is Allāh who withholds and grants abundance, and to Him you will be returned.
+	
+11: 246-253
+	start (246): Have you not considered the assembly of the Children of Israel after [the time of] Moses when they said to a prophet of theirs, "Send to us a king, and we will fight in the way of Allāh"? He said, "Would you perhaps refrain from fighting if battle was prescribed for you?" They said, "And why should we not fight in the cause of Allāh when we have been driven out from our homes and from our children?" But when battle was prescribed for them, they turned away, except for a few of them. And Allāh is Knowing of the wrongdoers.
+	
 	end (253): Those messengers - some of them We caused to exceed others. Among them were those to whom Allāh spoke, and He raised some of them in degree. And We gave Jesus, the son of Mary, clear proofs, and We supported him with the Pure Spirit [i.e., Gabriel]. If Allāh had willed, those [generations] succeeding them would not have fought each other after the clear proofs had come to them. But they differed, and some of them believed and some of them disbelieved. And if Allāh had willed, they would not have fought each other, but Allāh does what He intends.
 	
-9: 254-283: Charity and usury
+12: 254-283: Charity and usury
 	start (254): O you who have believed, spend from that which We have provided for you before there comes a Day in which there is no exchange [i.e., ransom] and no friendship and no intercession. And the disbelievers - they are the wrongdoers.
 
-10: 284-286
+13: 284-286
 
 	
 	
