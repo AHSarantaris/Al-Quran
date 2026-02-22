@@ -9,8 +9,10 @@ Adressing:
 		21: O mankind, worship your Lord, who created you and those before you, that you may become righteous -
 		25 [the prophet]: And give good tidings to those who believe and do righteous deeds that they will have gardens [in Paradise] beneath which rivers flow. [...]
 	30-39: God adressing the angels, Adam and the Devil.
-	40-83: The children of Israel
+	40-74: The children of Israel
 		40: O Children of Israel, remember My favor which I have bestowed upon you and fulfill My covenant [upon you] that I will fulfill your covenant [from Me], and be afraid of [only] Me.
+	75-?: The believers
+		75: 
 
 
 Part 1: 1-39 (39)
@@ -26,7 +28,7 @@ Part 1: 1-39 (39)
 
 Part 2: 40-123 (84)
 
-2: 40-75 (36)
+2: 40-74 (35)
 	40-48
 	
 	75-82
