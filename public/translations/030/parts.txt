@@ -8,7 +8,18 @@
 9-10: "Have they not traveled through the earth and observed how was the end of those before them? They were greater than them in power, and they plowed [or excavated] the earth and built it up more than they [i.e., the Makkans] have built it up, and their messengers came to them with clear evidences. And Allah would not ever have wronged them, but they were wronging themselves.", "Then the end of those who did evil was the worst [consequence] because they denied the signs of Allah and used to ridicule them.",
 51-53: "But if We should send a [bad] wind and they saw [their crops] turned yellow, they would remain thereafter disbelievers.", "So indeed, you will not make the dead hear, nor will you make the deaf hear the call when they turn their backs, retreating.", "And you cannot guide the blind away from their error. You will only make hear those who believe in Our verses so they are Muslims [in submission to Allah].", 
 
+11-13: "Allah begins creation; then He will repeat it; then to Him you will be returned.", "And the Day the Hour appears the criminals will be in despair.", "And there will not be for them among their [alleged] partners any intercessors, and they will [then] be disbelievers in their partners.",
+47-50: "And We have already sent messengers before you to their peoples, and they came to them with clear evidences; then We took retribution from those who committed crimes, and incumbent upon Us was support of the believers.", "It is Allah who sends the winds, and they stir the clouds and spread them in the sky however He wills, and He makes them fragments so you see the rain emerge from within them. And when He causes it to fall upon whom He wills of His servants, immediately they rejoice", "Although they were, before it was sent down upon them - before that, in despair.", "So observe the effects of the mercy of Allah - how He gives life to the earth after its lifelessness. Indeed, that [same one] will give life to the dead, and He is over all things competent.",
 
+14": "And the Day the Hour appears - that Day they will become separated.",
+    "15": "And as for those who had believed and done righteous deeds, they will be in a garden [of Paradise], delighted.",
+    "16": "But as for those who disbelieved and denied Our verses and the meeting of the Hereafter, those will be brought into the punishment [to remain].",
+"43": "So direct your face [i.e., self] toward the correct religion before a Day comes from Allah of which there is no repelling. That Day, they will be divided.",
+    "44": "Whoever disbelieves - upon him is [the consequence of] his disbelief. And whoever does righteousness - they are for themselves preparing,",
+    "45": "That He may reward those who have believed and done righteous deeds out of His bounty. Indeed, He does not like the disbelievers.",
+	"46": "And of His signs is that He sends the winds as bringers of good tidings and to let you taste His mercy [i.e., rain] and so the ships may sail at His command and so you may seek of His bounty, and perhaps you will be grateful.",
+
+Similar verses:
     "11": "Allah begins creation; then He will repeat it; then to Him you will be returned.",
     "27": "And it is He who begins creation; then He repeats it, and that is [even] easier for Him. To Him belongs the highest description [i.e., attribute] in the heavens and earth. And He is the Exalted in Might, the Wise.",
 
