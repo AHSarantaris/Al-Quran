@@ -1,4 +1,8 @@
 
+2-7: "The Byzantines have been defeated", "In the nearest land. But they, after their defeat, will overcome", "Within three to nine years. To Allah belongs the command [i.e., decree] before and after. And that day the believers will rejoice", "In the victory of Allah. He gives victory to whom He wills, and He is the Exalted in Might, the Merciful.", "[It is] the promise of Allah. Allah does not fail in His promise, but most of the people do not know.",
+58-60: "And We have certainly presented to the people in this Qur’ān from every [kind of] example. But, [O Muḥammad], if you should bring them a sign, the disbelievers will surely say, \"You [believers] are but falsifiers.\"", "Thus does Allah seal the hearts of those who do not know.", "So be patient. Indeed, the promise of Allah is truth. And let them not disquiet you who are not certain [in faith]."
+
+
     "11": "Allah begins creation; then He will repeat it; then to Him you will be returned.",
     "27": "And it is He who begins creation; then He repeats it, and that is [even] easier for Him. To Him belongs the highest description [i.e., attribute] in the heavens and earth. And He is the Exalted in Might, the Wise.",
 
