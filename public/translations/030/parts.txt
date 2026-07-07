@@ -4,6 +4,7 @@
 
 	"19": "He brings the living out of the dead and brings the dead out of the living and brings to life the earth after its lifelessness. And thus will you be brought out.",
     "24": "And of His signs is [that] He shows you the lightning [causing] fear and aspiration, and He sends down rain from the sky by which He brings to life the earth after its lifelessness. Indeed in that are signs for a people who use reason.",
+    "40": "Allah is the one who created you, then provided for you, then will cause you to die, and then will give you life. Are there any of your \"partners\" who does anything of that? Exalted is He and high above what they associate with Him.",
     "50": "So observe the effects of the mercy of Allah - how He gives life to the earth after its lifelessness. Indeed, that [same one] will give life to the dead, and He is over all things competent.",
     
 
