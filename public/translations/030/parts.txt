@@ -14,6 +14,13 @@
 14-16: "And the Day the Hour appears - that Day they will become separated.", "And as for those who had believed and done righteous deeds, they will be in a garden [of Paradise], delighted.", "But as for those who disbelieved and denied Our verses and the meeting of the Hereafter, those will be brought into the punishment [to remain].",
 43-46: "So direct your face [i.e., self] toward the correct religion before a Day comes from Allah of which there is no repelling. That Day, they will be divided.", "Whoever disbelieves - upon him is [the consequence of] his disbelief. And whoever does righteousness - they are for themselves preparing,","That He may reward those who have believed and done righteous deeds out of His bounty. Indeed, He does not like the disbelievers.", "And of His signs is that He sends the winds as bringers of good tidings and to let you taste His mercy [i.e., rain] and so the ships may sail at His command and so you may seek of His bounty, and perhaps you will be grateful.",
 
+    "17": "So exalted is Allah when you reach the evening and when you reach the morning.",
+    	"18": "And to Him is [due all] praise throughout the heavens and the earth. And [exalted is He] at night and when you are at noon.",
+			"19": "He brings the living out of the dead and brings the dead out of the living and brings to life the earth after its lifelessness. And thus will you be brought out.",
+    "40": "Allah is the one who created you, then provided for you, then will cause you to die, and then will give you life. Are there any of your \"partners\" who does anything of that? Exalted is He and high above what they associate with Him.",
+    "41": "Corruption has appeared throughout the land and sea by [reason of] what the hands of people have earned so He [i.e., Allah] may let them taste part of [the consequence of] what they have done that perhaps they will return [to righteousness].",
+    "42": "Say, [O Muḥammad], \"Travel through the land and observe how was the end of those before. Most of them were associators [of others with Allah].",
+
 Similar verses:
     "11": "Allah begins creation; then He will repeat it; then to Him you will be returned.",
     "27": "And it is He who begins creation; then He repeats it, and that is [even] easier for Him. To Him belongs the highest description [i.e., attribute] in the heavens and earth. And He is the Exalted in Might, the Wise.",
